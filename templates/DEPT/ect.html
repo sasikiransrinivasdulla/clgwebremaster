@@ -1,0 +1,3429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("./header.html"); 
+  $("#footer").load("./footer.html"); 
+});
+</script> 
+
+
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>ECT Deprtment</title>
+
+	<!-- CSS -->
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/media-queries.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--dept profile link tag-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<!-- Optional: jQuery (required for some Bootstrap components) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Optional: Popper.js (required for some Bootstrap components) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div id="header"></div>
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+
+				<h3 class="ml-3"
+					style="font-size: 30px;font-weight: 700;color: #fff;letter-spacing: 1px;font-family: 'Poppins', Arial, Helvetica, sans-serif;">
+					Departments<a href="index.html"></a>
+				</h3>
+
+			</div>
+
+
+			<ul class="list-unstyled components mb-5">
+				<li class="active">
+					<a onclick="
+						location.reload();
+						" data-toggle="tab">Department Profile</a>
+				</li>
+				<li>
+					<a href="#tab2" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
+						Profiles</a>
+				</li>
+				<li>
+					<a href="#tab3" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Board of
+						Studies</a>
+				</li>
+				<li>
+					<a href="#tab4" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Physical
+						Facilities</a>
+				</li>
+				<li>
+					<a href="#tab5" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Department
+						Library</a>
+				</li>
+				<li>
+					<a href="#tab6" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">MoUs</a>
+				</li>
+				<li>
+					<a href="#tab7" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
+						Development<br> Programs</a>
+				</li>
+				<li>
+					<a href="#tab8" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
+						Achievements</a>
+				</li>
+				<li>
+					<a href="#tab9" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Workshops/SOC/Seminars/<br>Guest Lectures</a>
+				</li>
+				<li>
+					<a href="#tab10" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Student
+						Achievements</a>
+				</li>
+				<li>
+					<a href="#tab11" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Placements</a>
+				</li>
+				<li>
+					<a href="#tab12" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Merit
+						Scholarship/Academic Toppers</a>
+				</li>
+				<li>
+					<a href="#tab13" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Technical
+						Association</a>
+				</li>
+				<li>
+					<a href="#tab14" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Training
+						Activities</a>
+				</li>
+				<li>
+					<a href="#tab15" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Newsletters</a>
+				</li>
+				<li>
+					<a href="#tab16" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Extra-Curricular Activities</a>
+				</li>
+				<li>
+					<a href="#tab17" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Hackthons</a>
+				</li>
+				<li>
+					<a href="#tab18" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">e-Resources</a>
+				</li>
+				<li>
+					<a href="#tab19" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Syllabus</a>
+				</li>
+				<li>
+					<a href="#tab20" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Handbooks</a>
+				</li>
+				<li>
+					<a href="#tab21" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Contact</a>
+				</li>
+			</ul>
+
+
+
+
+
+		</nav>
+		<!-- End sidebar -->
+
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+
+
+
+		<!------------------------------------------TAB 1 CONTENT STARTS---------------->
+
+
+		<!------------------------------------------TAB 1 CONTENT ENDS------------------->
+		<!------------------------------------------TAB 2 CONTENT STARTS---------------->
+
+
+		<div class="tab-pane" id="tab2">
+
+			<div class="container mt-4">
+
+				<h2 class="mt-8" style="margin-bottom: 30px; color: #850209;">Profile Page</h2>
+				<!-- Profile selection buttons -->
+				<div class=" nav-content mb-5">
+					<details open>
+						<summary>Faculty Profile</summary>
+						<!-- Faculty Profile Table (Initially hidden) -->
+						<div class=" tab4-table" style="display: flex;justify-content: center; align-items: center;">
+							<table class="table table-bordered faculty-table mb-4 table-responsive" id="faculty-profile"
+								class="tab4-table">
+								<thead>
+									<tr class="tab4-tr" style="
+										color: #343a40 !important;">
+										<th class="tab4-th">S.No.</th>
+										<th class="tab4-th">Name of the Faculty</th>
+										<th class="tab4-th">Qualification</th>
+										<th class="tab4-th">Designation</th>
+										<th class="tab4-th">Profile</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="tab4-tr">
+										<td class="tab4-td">1</td>
+										<td class="tab4-td">John Doe</td>
+										<td class="tab4-td">Ph.D. in Computer Science</td>
+										<td class="tab4-td">Professor</td>
+										<td class="tab4-td"><a class="profile-link" href="#">View Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">2</td>
+										<td class="tab4-td">Jane Smith</td>
+										<td class="tab4-td">M.Sc. in Mathematics</td>
+										<td class="tab4-td">Associate Professor</td>
+										<td class="tab4-td"><a class="profile-link" href="#">View Profile</a></td>
+									</tr>
+									<!-- Add more faculty profile rows as needed -->
+								</tbody>
+							</table>
+						</div>
+					</details>
+					<!-- Course Information Table (Initially hidden) -->
+					<details>
+						<summary>Non-Teaching Profiles</summary>
+						<div class="table-responsive tab4-table mb-4" id="non-teaching">
+							<table class="table course-table">
+								<thead>
+									<tr>
+										<th>S.No</th>
+										<th>Name of the Faculty</th>
+										<th>Designation</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mr. K.N. Suresh</td>
+										<td>System Admin</td>
+
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Ms. BNG Lakshmi Durga</td>
+										<td>Programmer</td>
+
+									</tr>
+									<!-- Add more course information rows as needed -->
+								</tbody>
+							</table>
+						</div>
+					</details>
+				</div>
+			</div>
+		</div>
+
+		<!------------------------------------------TAB 2 CONTENT ENDS---------------->
+		<!------------------------------------------TAB 3 CONTENT STARTS---------------->
+
+		<div class="tab-pane " id="tab3">
+			<div class="container mt-4">
+				<h2 style="color:#850209; margin-bottom: 18px;">Board of Studies</h2>
+				<div class=" nav-content">
+
+					<!-- Board of Studies Table -->
+					<div class="table-responsive tab4-table mb-4">
+						<table class="table bos-table" class="tab4-table">
+							<thead>
+								<tr class="tab4-tr">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Name of the BOS Member</th>
+									<th class="tab4-th">Designation</th>
+									<th class="tab4-th">Organization</th>
+									<th class="tab4-th">Position in JOB</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-tr">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">Dr. D Jaya Kumari</td>
+									<td class="tab4-td">Professor & HOD</td>
+									<td class="tab4-td">Dept of CSE, SVEC</td>
+									<td class="tab4-td">Chairperson</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Dr. A Krishna Mohan</td>
+									<td class="tab4-td">Professor of CSE</td>
+									<td class="tab4-td">JNTUK, Kakinada</td>
+									<td class="tab4-td">University Nominee</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">Dr. R.B.V Subramaanyam</td>
+									<td class="tab4-td">Professor of CSE</td>
+									<td class="tab4-td">NITW</td>
+									<td class="tab4-td">Academic Expert</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Dr. S Pallam Setty</td>
+									<td class="tab4-td">Professor of CSE</td>
+									<td class="tab4-td">Andhra University</td>
+									<td class="tab4-td">Academic Expert</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">5</td>
+									<td class="tab4-td">Mr. SrinivasaRaju Vuppalapati</td>
+									<td class="tab4-td">Senior Consultant</td>
+									<td class="tab4-td">MSR IT Services LLP</td>
+									<td class="tab4-td">Industry Expert</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">6</td>
+									<td class="tab4-td">Mr. Eedala Rambabu</td>
+									<td class="tab4-td">Member of Technical Staff2</td>
+									<td class="tab4-td">Micro Focus, Bangalore</td>
+									<td class="tab4-td">Alumni CSE Dept</td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">7</td>
+									<td class="tab4-td">All the Faculty Members in the CSE Dept.</td>
+									<td class="tab4-td">Members in BOS</td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="mt-4">
+					<div class=" nav-content mb-5">
+						<h5 style="color: #850209; margin-bottom: 10px;">Board of Studies Meeting Minutes:</h5>
+
+						<ul class="list-unstyled" style="margin-top: 20px;">
+							<li>Minutes of 6th meeting of the Board of Studies, dated 25.07.2022<a href="#"
+									id="pdfDownloader">View</a></li>
+							<li>Minutes of 5th meeting of the Board of Studies, dated 02.09.2021<a href="#"
+									id="pdfDownloader">View</a></li>
+							<li>Minutes of 4th meeting of the Board of Studies, dated 29.12.2020<a href="#"
+									id="pdfDownloader">View</a></li>
+							<li>Minutes of 3rd meeting of the Board of Studies, dated 31.05.2020 <a href="#"
+									id="pdfDownloader">View</a></li>
+							<li>Minutes of 2nd meeting of the Board of Studies, dated 20.04.2019<a href="#"
+									id="pdfDownloader">View</a></li>
+							<li>Minutes of 1st meeting of the Board of Studies, dated 02.06.2018<a href="#"
+									id="pdfDownloader">View</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!------------------------------------------TAB 3 CONTENT ENDS---------------->
+
+		<!------------------------------------------------TAB 4 CONTENT START------------->
+		<!------------------------------------------------TAB 4 CONTENT START------------->
+		<div class="tab-pane" id="tab4">
+			<h2 class="text-center" style="color: #850209;">Physical Facililties</h2>
+			<details style="margin-top: 80px;" open>
+				<summary>Class Rooms</summary>
+				<div>
+					<ul class="fdp-list">
+						<li class="fdp-item">
+							CSE_Master Timetable_A.Y for Sem-II 2022-23 - <a href="#" id="pdfDownloader1">View</a>
+						</li>
+						<li class="fdp-item">
+							CSE_Master Timetable_A.Y for Sem-I 2022-23 - <a href="#" id="pdfDownloader2">View</a>
+						</li>
+						<li class="fdp-item">
+							CSE_Master Timetable_A.Y for Sem-II 2021-22- <a href="#" id="pdfDownloader3">View</a>
+						</li>
+						<li class="fdp-item">
+							CSE_Master Timetable_A.Y for Sem-I 2021-22 - <a href="#" id="pdfDownloader4">View</a>
+						</li>
+
+					</ul>
+				</div>
+			</details>
+			<details>
+				<summary>Seminar Halls</summary>
+				<div>
+					<ul class="fdp-list">
+						<li class="fdp-item">
+							Seminar halls with ICT Enabled Facilities-<a href="#" id="pdfDownloader1">View</a>
+						</li>
+					</ul>
+				</div>
+			</details>
+			<details>
+				<summary>Laboratories</summary>
+				<div class="container">
+					<p>
+						The Department has well equipped labs with the latest Configuration. Total 9 Computer Labs for UG, PG
+						and
+						one research lab consisting a total of 674 systems. The various servers in the server room include
+						Oracle
+						11g Database Server, Intranet Server (TOMCAT), NPTEL Video/Web Server, MAT Lab Server 2012 R2, Red Hat
+						Linux
+						5.0 Server, Library Automation Server, A-Mail Server, ECAP Server.
+					</p>
+					<p>
+						The college has high-speed internet connectivity throughout the campus through a leased line from BSNL
+						with
+						200Mbps, 400Mbps from Jio, and 40 Mbps (Broadband).
+					</p>
+					<p>
+						The following Laboratories are available in the department:
+					</p>
+					<div class="container mt-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+						<h3 class="text-center">JG Lab</h3>
+						<img src="lab_image.jpg" alt="JG Lab">
+						<div style="display: flex;
+						justify-content: center;
+						align-items: center;flex-direction: column;">
+							<table class="table-responsive tab4-table" style="max-width: max-content;">
+								<thead>
+									<tr class="tab4-tr">
+										<th class="tab4-th">S.No</th>
+										<th class="tab4-th" style="min-width:90px;">Name of the Lab</th>
+										<th class="tab4-th" style="min-width:300px;">Configuration</th>
+										<th class="tab4-th">Usage</th>
+										<th class="tab4-th">No. of Systems</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="tab4-tr">
+										<td class="tab4-td">1</td>
+										<td class="tab4-td">EF Codd Lab</td>
+										<td class="tab4-td">Model: HCL Infinity MA380Pro/True<br>
+											Processor: Core i3 3rd gen 3.22GHZ<br>
+											4.00 GB RAM, 500 GB Hard Disk<br>
+											System type: x64 – based Processor<br>
+											Monitor: 18.5” LED Monitor<br>
+											Keyboard: Multimedia Keyboard<br>
+											Mouse: Optical Scroll Mouse
+										</td>
+										<td class="tab4-td">DBMS, OS&LP, DS Lab</td>
+										<td class="tab4-td">70</td>
+									</tr>
+								</tbody>
+							</table>
+							<h3>EF Codd Lab</h3>
+							<img src="ef_codd_lab_image.jpg" alt="EF Codd Lab">
+
+							<table class="table-responsive tab4-table" style="max-width: max-content; ">
+								<thead>
+									<tr>
+										<th class="tab4-th">S.No</th>
+										<th class="tab4-th" style="min-width:90px;">Name of the Lab</th>
+										<th class="tab4-th" style="min-width:300px;">Configuration</th>
+										<th class="tab4-th">Usage</th>
+										<th class="tab4-th">No. of Systems</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="tab4-tr">
+										<td class="tab4-td">1</td>
+										<td class="tab4-td">EF Codd Lab</td>
+										<td class="tab4-td">Model: HCL Infinity MA380Pro/True<br>
+											Processor: Core i3 3rd gen 3.22GHZ<br>
+											4.00 GB RAM, 500 GB Hard Disk<br>
+											System type: x64 – based Processor<br>
+											Monitor: 18.5” LED Monitor<br>
+											Keyboard: Multimedia Keyboard<br>
+											Mouse: Optical Scroll Mouse
+										</td>
+										<td class="tab4-td">DBMS, OS&LP, DS Lab</td>
+										<td class="tab4-td">70</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+
+				</div>
+			</details>
+		</div>
+		<!------------------------------------------------TAB 4 CONTENT ENDS--------------->
+		<!------------------------------------------------TAB 4 CONTENT ENDS--------------->
+
+
+		<!------------------------------------------------TAB 5 CONTENT STARTS-->
+		<div class="tab-pane" id="tab5">
+			<div class="container mt-4">
+
+				<div class="nav-content">
+					<h3 class="text-center mt-5 pt-3" style="color: #850209;">LIBRARY</h3>
+					<p style="
+										font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+									">
+						Department Library offers a variety of books related to Computer
+						Science and Basic Science subjects. Reference books of various
+						subjects are procured. Various Competitive Books are available to
+						satisfy the thirst of the students. Books are issued to students
+						and staff. Students can access the Library facility according to
+						their convenience any time round-the-clock.
+					</p>
+					<div style="display: flex;justify-content: center; align-items: center;">
+						<table class="table table-bordered library-table table-responsive" class="tab4-table">
+							<thead>
+								<tr class="tab4-tr">
+									<th class="tab4-th">No. of Titles</th>
+									<th class="tab4-th">No. of Volumes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-tr">
+									<td class="tab4-td">455</td>
+									<td class="tab4-td">684</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- Faculty Incharge Details -->
+					<div class="container">
+						<div class="row" style="display: flex;justify-content: center;align-items: center;">
+							<div class="col-12 col-md-6 mx-auto d-block" id="lib-img" style="max-width: fit-content;;">
+								<img src="assets/img/cse-lib.jpg" alt="Faculty Incharge" class="faculty-img mb-4" />
+							</div>
+							<div class="col-12 text-center col-md-6 faculty-info">
+								<p><strong>Faculty Incharge</strong></p>
+								<p>Mrs. G.Prasanthi, Asst. Professor</p>
+								<p>Phone: 08818-284355</p>
+								<p>
+									E-mail:
+									<a href="mailto:prasanthi.cse@srivasaviengg.ac.in"
+										id="pdfDownloader">prasanthi.cse@srivasaviengg.ac.in</a>
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<!-- Description -->
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------------TAB 5 CONTENT ENDS-->
+
+
+		<!----------------------------------------TAB 6 CONTENT STARTS------------->
+		<div class="tab-pane" id="tab6">
+			<div class="container mt-4">
+				<h2 style="color: #850209; text-align: center;margin-bottom: 30PX;">MoUs</h2>
+				<h4>A. MOUs with Industries</h4>
+				<div class="nav-content" style="display: flex;justify-content: center; align-items: center;">
+
+					<table class="table tab4-table table-responsive table-bordered mou-table">
+						<thead>
+							<tr class="tab4-tr">
+								<th class="tab4-th">S.No</th>
+								<th class="tab4-th">Organization Name</th>
+								<th class="tab4-th">Duration</th>
+								<th class="tab4-th">From</th>
+								<th class="tab4-th">To</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="tab4-tr">
+								<td class="tab4-td">1</td>
+								<td class="tab4-td">NIT ANP</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">31-12-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">2</td>
+								<td class="tab4-td">Alteryx SparkED Partner</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">30-12-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">3</td>
+								<td class="tab4-td">Juniper Networks</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">30-11-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">4</td>
+								<td class="tab4-td">Celonis Academic Alliance</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">11-11-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">5</td>
+								<td class="tab4-td">Palo Alto Networks Cyber Security Academy</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">08-11-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">6</td>
+								<td class="tab4-td">Blue Prism Academia Program</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">01-11-2022</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">7</td>
+								<td class="tab4-td">Eduskills</td>
+								<td class="tab4-td">31-10-2022</td>
+								<td class="tab4-td">31-10-2025</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">8</td>
+								<td class="tab4-td">Hexaware</td>
+								<td class="tab4-td">25-04-2020</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">9</td>
+								<td class="tab4-td">APSSDC</td>
+								<td class="tab4-td">29-03-2019</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">10</td>
+								<td class="tab4-td">Alykas Innovations Pvt.Ltd</td>
+								<td class="tab4-td">30-01-2018</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">11</td>
+								<td class="tab4-td">thingTronics Pvt Ltd,Bangalore</td>
+								<td class="tab4-td">20-08-2016</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">12</td>
+								<td class="tab4-td">TCSiON</td>
+								<td class="tab4-td">25-04-2012</td>
+								<td class="tab4-td">Till Date</td>
+								<td class="tab4-td">Till Date</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h2 style="text-align: left;">B. Interaction with the Industry</h2>
+				<div class="nav-content">
+					<ul>
+						<li>
+							Various Programs organized during Academic Year 2021-22-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2020-21-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2019-20-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2018-19-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2017-18-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2016-17-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2015-16-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+						<li>
+							Various Programs organized during Academic Year 2014-15-<a href="#" id="pdfDOWNLOADER6">
+								View</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!----------------------------------------TAB 6 CONTENT ENDS------------->
+
+		<!----------------------------------------TAB 7 STARTS---------------->
+
+
+		<div class="tab-pane" id="tab7">
+			<div class="container">
+				<h2 style="color: #850209; text-align: center;margin-bottom: 30PX;">Faculty Development Programs</h2>
+				<div class="section">
+					<h4>FDP Attended</h4>
+					<div class="nav-content">
+						<ul class="fdp-list">
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2022-23 - <a href="#" id="pdfDownloader1">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2021-22 - <a href="#" id="pdfDownloader2">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2020-21 - <a href="#" id="pdfDownloader3">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2019-20 - <a href="#" id="pdfDownloader4">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2018-19 - <a href="#" id="pdfDownloader5">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2017-18 - <a href="#" id="pdfDownloader6">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2016-17 - <a href="#" id="pdfDownloader7">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2015-16 - <a href="#" id="pdfDownloader8">View</a>
+							</li>
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2014-15 - <a href="#" id="pdfDownloader9">View</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h4>FDPs/ Workshops/ Training Programmes Conducted</h4>
+				<div class="nav-content">
+					<ul class="fdp-list">
+
+						<li class="fdp-item">
+							FDPs conducted by the Department to the Faculty - <a href="#" id="pdfDownloader9">View</a>
+						</li>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div class="nav-content" style="margin-top: 30px;">
+						<h3>Gallery</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------TAB 7 ENDS--------------->
+		<!----------------------------------------------TAB 8 STARTS--------------->
+		<!----------------------------------------------TAB 8 STARTS--------------->
+		<div class="tab-pane" id="tab8">
+			<h2 class="text-center" style="color: #850209;">Faculty Achievements</h2>
+			<div class="mt-4 m-2">
+				<details open>
+					<summary>Journal Publications</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Faculty Publication Details 2023-2024 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2022-2023 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2021-2022 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2020-2021 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2019-2020 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2018-2019 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2017-2018 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2016-2017 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2015-2016 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2014-2015 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2013-2014 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Publication Details 2012-2013 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+						</ul>
+					</div>
+				</details>
+			</div>
+			<div class="mt-4">
+				<details>
+					<summary>Conferences</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Faculty Conferences Details 2022-2023 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2021-2022 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2020-2021 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2019-2020 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2018-2019 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2016-2017 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2015-2016 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+							<li>
+								Faculty Conferences Details 2014-2015 - <a href="#" id="pdfDownloader">For more Details</a>
+							</li>
+						</ul>
+					</div>
+				</details>
+			</div>
+			<div class="tab4 mt-4">
+				<details>
+					<summary>Book Publications</summary>
+					<div class=" table">
+						<table class="tab4-table table-responsive">
+							<thead style="background-color: #343a40; color: #fff;">
+								<tr class="tab4-tr" style="background-color: #fff !important;color: #000 !important; ">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Name of the Faculty</th>
+									<th class="tab4-th">Title of the Book</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-th" style="background-color: #fff !important;color: #000 !important;">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">Dr. O Sri Nagesh</td>
+									<td class="tab4-td">Public Auditing Technique for Securing Privacy in Cloud Storage: ISSBN:
+										978-620-2-52368-4,
+										LAMBERT ACADEMIC PUBLICATIONS, 2020.</td>
+								</tr>
+								<tr class="tab4-th" style="background-color: #fff !important;color: #000 !important; ">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Dr.V.S.Naresh</td>
+									<td class="tab4-td">"Secure Multiparty Key Agreement": Theory and Practice,
+										ISSBN:987-620-0-32764-2, LAMBERT
+										ACADEMIC PUBLICATIONS,2019.<br>Title of the Book: Intelligent Decision Support Systems. Title of
+										the Chapter Published: Coronary Heart Disease prediction using genetic algorithm based decision
+										tree, 2019</td>
+								</tr>
+								<tr class="tab4-th" style="background-color: #fff !important;color: #000 !important;">
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">Dr. D. Jaya Kumari</td>
+									<td class="tab4-td">"XML and its Applications", LAP- Publications, ISBN 978-3-659-86708-8,
+										2016.<br>"A
+										Dissertation
+										report on the secure Online Banking", LAP- Publication, ISBN 978-3-659-86312-7, 2016</td>
+								</tr>
+								<tr class="tab4-th" style="background-color: #fff !important;color: #000 !important;">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Mr. Ch. Raja Ramesh</td>
+									<td class="tab4-td">"Data Structures and Algorithms", TK Publications, ISBN 9789 3859 09849</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</details>
+			</div>
+			<div class="tab4 mt-4">
+				<details>
+					<summary>Certifications</summary>
+					<div class="nav-content">
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Certifications done by the faculty during the A.Y. 2022-23<a href="#" id="pdfDownloader">For more
+									Details</a>
+							</li>
+							<li>
+								Certifications done by the faculty during the A.Y. 2021-22<a href="#" id="pdfDownloader">For more
+									Details</a>
+							</li>
+							<li>
+								Certifications done by the faculty during the A.Y. 2020-21<a href="#" id="pdfDownloader">For more
+									Details</a>
+							</li>
+							<li>
+								Certifications done by the faculty during the A.Y. 2019-20<a href="#" id="pdfDownloader">For more
+									Details</a>
+							</li>
+							<li>
+								Certifications done by the faculty during the A.Y. 2018-19<a href="#" id="pdfDownloader">For more
+									Details</a>
+							</li>
+						</ul>
+					</div>
+				</details>
+			</div>
+
+			<div class="tab4 mt-4">
+				<details>
+					<summary>Patents</summary>
+					<div class="nav-content">
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>Patents Published by Faculty during the A.Y 2023-2024 - <a href="#" id="pdfDownloader">For more
+									Details</a></li>
+							<li>Patents Published by Faculty during the A.Y 2021-2022 - <a href="#" id="pdfDownloader">For more
+									Details</a></li>
+							<li>Patents Published by Faculty during the A.Y 2020-2021 - <a href="#" id="pdfDownloader">For more
+									Details</a></li>
+							<li>Patents Published by Faculty during the A.Y 2019-2020 - <a href="#" id="pdfDownloader">For more
+									Details</a></li>
+						</ul>
+					</div>
+				</details>
+
+			</div>
+
+
+		</div>
+		<!---------------------------------------------------TAB 8 ENDS-------------------->
+		<!---------------------------------------------------TAB 8 ENDS-------------------->
+
+		<!-------------------------------------------------------TAB 9 STARTS CONTENT------------->
+		<div class="tab-pane" id="tab9">
+			<h3 class="text-center mt-5 pt-3" style="color: #850209;">Workshops/SOC/Seminars/<br>Guest Lectures</h3>
+			<div class="tab4 mt-5 pt-3">
+				<details open>
+					<summary>Workshops/SOC</summary>
+					<div class="nav-content px-3">
+						<ol style="margin-top: 20px; padding-left: 20px;">
+							<li>Workshops/SOC organized during the Academic Year 2022-23 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Workshops/SOC organized during the Academic Year 2021-22 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Workshops organized during the Academic Year 2020-21 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2019-20 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2018-19 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2017-18 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2016-17 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2015-16 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2014-15 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+							<li>Workshops organized during the Academic Year 2012-13 - <a href="#" id="pdfDownloader">View
+									More</a>
+							</li>
+						</ol>
+					</div>
+					<div class="text-center">
+						<h3>
+							Workshops/SOC Gallery PICS</h3>
+					</div>
+
+				</details>
+
+
+			</div>
+			<div class="tab4 mt-4">
+				<details>
+					<summary>Guest Lecturers/Seminars</summary>
+					<div class="nav-content px-3">
+						<ol style="margin-top: 20px; padding-left: 20px;">
+							<li>Guest Lectures Organized during the Academic Year 2022-23 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2021-22 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2019-20 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2018-19 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2017-18 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2016-17 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2015-16 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2014-15 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2013-14 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+							<li>Guest Lectures Organized during the Academic Year 2012-13 - <a href="#" id="pdfDownloader">View
+									More</a></li>
+						</ol>
+					</div>
+					<div class="text-center">
+						<p class="mt-3 ">
+						<h3>Guest Lectures/Seminars Gallery pics</h3>
+						</p>
+					</div>
+				</details>
+			</div>
+		</div>
+		<!-------------------------------------------------------TAB 9 STARTS ENDS------------->
+
+		<!-----------------------------------------------------TAB 10 STARTS -------------------->
+		<div class="tab-pane" id="tab10">
+			<h3 class="text-center mt-5 pt-3" style="color: #850209;">Student Achievements</h3>
+			<div class="tab4 mt-4">
+				<details open>
+					<summary>Internships</summary>
+					<div class="nav-content">
+						<ol style="margin-top: 20px; padding-left: 20px;" class="ml-3">
+							<li>Internships during the Academic Year 2022-23 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2021-22 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2020-21 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2019-20 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2018-19 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2017-18 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2016-17 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2015-16 - <a href="#" id="pdfDownloader">View More</a></li>
+							<li>Internships during the Academic Year 2014-15 - <a href="#" id="pdfDownloader">View More</a></li>
+						</ol>
+					</div>
+				</details>
+
+			</div>
+			<div class="tab4 mt-4">
+				<details>
+					<summary>Conference Publications</summary>
+					<div class="m-3 ">
+
+						<p>Conferences during the Academic Year 2022-23 -<a href="your_conference_publications_link_here"
+								style="color: #850209;font-weight: 500;"></h3>View
+								More</a></p>
+						<div class="tab10-table-responsive">
+							<table class="tab10-table table-striped">
+								<thead>
+									<tr>
+										<th>Batch</th>
+										<th>Roll Number</th>
+										<th>Name of The Student</th>
+										<th>CGPA/Aggregate</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2018-22</td>
+										<td>18A81A0518</td>
+										<td>DATLA SRIYA</td>
+										<td>88.03</td>
+									</tr>
+									<tr>
+										<td>2018-22</td>
+										<td>18A81A0513</td>
+										<td>VANIMIREDDY BHANU TEJA</td>
+										<td>82.25</td>
+									</tr>
+									<!-- Add more rows for other students -->
+									<!-- Example: 
+								<tr>
+										<td>Batch</td>
+										<td>Roll Number</td>
+										<td>Name of The Student</td>
+										<td>CGPA/Aggregate</td>
+								</tr>
+								-->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</details>
+			</div>
+			<div class="tab4 pl-0 mt-4">
+				<details>
+					<summary>Gallery</summary>
+					<div></div>
+				</details>
+			</div>
+
+		</div>
+		<!------------------------------------------------------TAB 10 ENDS-------------------------->
+
+		<!------------------------------------------------TAB 11 STARTS HTML----------------->
+		<div class="tab-pane" id="tab11">
+			<div class="container">
+				<div class="section">
+					<h2 class="text-center mt-5 pt-3" style="color: #850209;">Placements</h2>
+					<div class="nav-content">
+
+						<details open>
+							<summary>Placements for Batch 2020-24</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2019-23</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2018-22</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2017-21</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2016-20</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2015-19</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2014-18</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2013-17</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2012-16</summary>
+						</details>
+						<details>
+							<summary>Placements for Batch 2011-15</summary>
+						</details>
+					</div>
+					<div class="nav-content" style="margin-top: 30px;">
+						<h2 style="margin-top: 3px;">Gallery</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------------TAB 11 ENDS HTML----------------->
+
+
+		<!----------------------------------------TAB 12 STARTS------------------->
+		<div class="tab-pane" id="tab12">
+			<div class="container mt-4">
+				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Merit Scholarships and Academic Toppers</h2>
+				<h3 style="margin-top: 30px">Merit Scholarships</h3>
+				<div class="nav-content">
+					<details open>
+						<summary>Merit Scholarships during the A.Y 2018-19</summary>
+						<!-- Content for A.Y 2018-19 goes here -->
+					</details>
+
+					<details>
+						<summary>Merit Scholarships during the A.Y 2017-18</summary>
+						<!-- Content for A.Y 2017-18 goes here -->
+					</details>
+
+					<details>
+						<summary>Merit Scholarships during the A.Y 2016-17</summary>
+						<!-- Content for A.Y 2016-17 goes here -->
+					</details>
+
+					<details>
+						<summary>Merit Scholarships during the A.Y 2015-16</summary>
+						<!-- Content for A.Y 2015-16 goes here -->
+					</details>
+
+					<details>
+						<summary>Merit Scholarships during the A.Y 2014-15</summary>
+						<!-- Content for A.Y 2014-15 goes here -->
+					</details>
+
+					<details>
+						<summary>Merit Scholarships during the A.Y 2013-14</summary>
+						<!-- Content for A.Y 2013-14 goes here -->
+					</details>
+				</div>
+
+
+				<h3 style="margin: 20px auto">Academic Toppers</h3>
+
+				<div class="nav-content row" style="display: flex;
+					justify-content: center;
+					align-items: center;
+					">
+					<table class="table tab4-table table-responsive table-bordered scholarship-table col-lg-12"
+						class="tab4-table">
+						<thead>
+							<tr class="tab4-tr">
+								<th class="tab4-th">S.No</th>
+								<th class="tab4-th">Academic Year</th>
+								<th class="tab4-th">Particulars</th>
+								<th class="tab4-th">No. of Students Benefited</th>
+								<th class="tab4-th">Scholarship Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="tab4-tr">
+								<td class="tab4-td">1</td>
+								<td class="tab4-td">2022-23</td>
+								<td class="tab4-td">Academic Toppers</td>
+								<td class="tab4-td">24</td>
+								<td class="tab4-td">26000</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td rowspan="2" style="vertical-align: middle" class="tab4-td">2</td>
+								<td class="tab4-td">2021-22</td>
+								<td rowspan="2" style="vertical-align: middle" class="tab4-td">
+									Academic Toppers
+								</td>
+								<td rowspan="2" style="vertical-align: middle" class="tab4-td">124</td>
+								<td rowspan="2" style="vertical-align: middle" class="tab4-td">133750</td>
+							</tr>
+							<tr class="tab4-tr">
+								<td class="tab4-td">2021-22</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Image Gallery -->
+				<h3 style="margin: 20px auto">Image Gallery</h3>
+				<div class="nav-content mb-5">
+					<div class="container">
+						<div class="row" style="display: flex;
+							justify-content: center;
+							align-items: center;
+							">
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k121.jpeg" alt="Image 1" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k122.jpeg" alt="Image 2" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k191.jpg" alt="Image 3" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k192.jpeg" alt="Image 4" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k194.jpeg" alt="Image 5" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k195.jpeg" alt="Image 6" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\academic_toppers_2k193.jpeg" alt="Image 7" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-5 m-3">
+								<img src="assets\img\farewell_2018_2.jpg" alt="Image 8" class="img-fluid">
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!----------------------------------------TAB 12 ENDS------------------->
+
+		<!---------------------------------------TAB 13 STARTS-------------------------------->
+		<div class="tab-pane" id="tab13">
+			<div class="container">
+				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Technical Association</h2>
+				<div class="nav-content">
+					<p>
+						Department Association - Society of Computers for Ultimate
+						Diligence (SCUD) was started in the year 2002. SCUD team conducts
+						regularly technical fests, workshops, and guest lectures for the
+						benefit of students.
+					</p>
+
+
+					<details open>
+						<summary>SCUD Activities during the year 2022-23</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2021-22</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2019-20</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2018-19</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2017-18</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2016-17</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2015-16</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2014-15</summary>
+					</details>
+					<details>
+						<summary>SCUD Activities during the year 2013-14</summary>
+					</details>
+
+				</div>
+
+				<!-- Image Carousel Placeholder -->
+				<h1 style="margin-left: 10px; margin: 20px auto">Images</h1>
+				<h2 style="text-align: center">TechFest-2K23</h2>
+				<div class="nav-content">
+					<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/img/tab13DSC05983.jpeg" alt="Image 1" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/img/tab13DSC05994.jpeg" alt="Image 2" />
+							</div>
+							<div class="carousel-item">
+								<img src="image3.jpg" alt="Image 3" />
+							</div>
+							<!-- Add more carousel items with images as needed -->
+						</div>
+					</div>
+				</div>
+				<h2 style="text-align: center">HACKOVERFLOW 2K23</h2>
+				<div class="nav-content">
+					<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/img/tab13DSC05983.jpeg" alt="Image 1" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/img/tab13DSC05994.jpeg" alt="Image 2" />
+							</div>
+							<div class="carousel-item">
+								<img src="image3.jpg" alt="Image 3" />
+							</div>
+							<!-- Add more carousel items with images as needed -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------TAB 13 ENDS-------------------------------->
+
+		<!----------------------------------TAB 14 STARTS--------------------------------------->
+		<div class="tab-pane" id="tab14">
+			<div class="container">
+				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Training Activities</h2>
+
+				<details open>
+					<summary>Training Activities during the Academic Year 2022-2023</summary>
+				</details>
+				<details>
+					<summary>Training Activities during the Academic Year 2021-2022</summary>
+				</details>
+				<details>
+					<summary>Training Activities during the Academic Year 2020-2021</summary>
+				</details>
+				<details>
+					<summary>Training Activities during the Academic Year 2019-2020</summary>
+				</details>
+				<details>
+					<summary>Training Activities during the Academic Year 2018-2019</summary>
+				</details>
+
+
+				<h2>Gallery</h2>
+				<!-- Responsive Image Gallery -->
+				<div class="gallery">
+					<div class="gallery-item">
+						<img src="image1.jpg" alt="Image 1" />
+					</div>
+					<div class="gallery-item">
+						<img src="image2.jpg" alt="Image 2" />
+					</div>
+					<div class="gallery-item">
+						<img src="image3.jpg" alt="Image 3" />
+					</div>
+					<!-- Add more gallery items with images as needed -->
+				</div>
+			</div>
+		</div>
+		<!------------------------------------TAB 14 ENDS------------------------------------->
+
+		<!-----------------------------------TAB 15 STARTS------------------------------------>
+		<div class="tab-pane" id="tab15">
+			<div class="container">
+				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Newsletters</h2>
+				<div class="nav-content">
+
+					<details open>
+						<summary>Newsletter Volume 12 Issue 4 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 12 Issue 3 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 12 Issue 2 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 11 Issue 1 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 11 Issue 4 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 11 Issue 3 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 11 Issue 2 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 11 Issue 1 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 10 Issue 4 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 10 Issue 3 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 10 Issue 2 2022</summary>
+					</details>
+					<details>
+						<summary>Newsletter Volume 10 Issue 1 2022</summary>
+					</details>
+					</details>
+				</div>
+			</div>
+		</div>
+
+		<!---------------------------------------TAB 15 ENDS---------------------------------->
+		<!-------------------------------------TAB 16 STARTS------------------------------------->
+		<div class="tab-pane" id="tab16">
+			<div class="container">
+
+				<div class="section">
+					<h2 class="text-center mt-5 pt-3" style="color: #850209;">
+						Extra-Curricular Activities
+					</h2>
+					<div class="nav-content">
+						<ul class="activity-list px-3 text-center">
+							<li class="activity-item">
+								Extracurricular activities during the Year 2022-23 - <a href="#pdfDownloader" class="view-more">View
+									More</a>
+							</li>
+							<li class="activity-item">
+								Extracurricular activities during the Year 2021-22 - <a href="#pdfDownloader" class="view-more">View
+									More</a>
+							</li>
+							<li class="activity-item">
+								Extracurricular activities during the Year 2019-20 - <a href="#pdfDownloader" class="view-more">View
+									More</a>
+							</li>
+							<li class="activity-item">
+								Extracurricular activities during the Year 2018-19 - <a href="#pdfDownloader" class="view-more">View
+									More</a>
+							</li>
+							<li class="activity-item">
+								Extracurricular activities during the Year 2017-18 - <a href="#pdfDownloader" class="view-more">View
+									More</a>
+							</li>
+						</ul>
+					</div>
+					<h2>
+						Sahaya
+					</h2>
+					<div class="nav-content">
+						<div class="container mt-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+							<h3 style="margin-top: 10PX;">Social Services</h3>
+							<p>
+								We come across many heart-rending incidents and pathetic conditions of people in the society every
+								day. We may not be in a position to give an immediate reaction though we want to. But the Computer
+								Science and Engineering Students of Sri Vasavi Engineering College extended their hands to help
+								the
+								needy. These helping activities are going on under the name of "SAHAYA" with the slogan 'The
+								Helping
+								Hands,' which aptly suits its purpose.
+							</p>
+							<p>
+								SAHAYA is not a one-man army; rather, it is the brainchild of '07 batch students and is being
+								carried
+								on by the subsequent batch students, which sounds the real meaning of teamwork. SAHAYA, from its
+								first
+								day, was engaged in performing its activities. It was started with the event "CHEYUTHA" in the
+								memory
+								of SVEC Academic Director LATE Dr. B. Janardhan Reddy at ZP High school, Pedatadepalli by
+								providing
+								the fee for needy students and their necessities for study like compass boxes, books, etc., and
+								thereafter, the journey of helping the needy continued uninterruptedly till date.
+							</p>
+							<p>
+								Students may have many thoughts in mind, but the seeds of thought have sprouted to grow with great
+								confidence by the magnanimous support of the Management. The Management of Sri Vasavi Engineering
+								College always infuses confidence in the students by extending their heartfelt cooperation.
+								"SAHAYA"
+								is aptly serving its motto and contributing its little part to society. A drop may be small, but
+								many
+								drops together form an ocean. So, one hand may seem weak, but joining the hands together makes
+								many
+								changes to step into a brighter world.
+							</p>
+							<h3 style="color: #850209;">Faculty Coordinator:</h3>
+							<p style="font-weight: bold;">
+								Mr. P. Ramamohan Rao<br>
+								Assistant Professor
+							</p>
+							<hr>
+							<h3>LIST OF SAHAYA EVENTS CONDUCTED YEAR WISE</h3>
+							<ul>
+								<li>
+									2022-2023 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2021-2022 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2020-2021 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2019-2020 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2018-2019 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2017-2018 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2016-2017 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2015-2016 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2014-2015 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2013-2014 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+								<li>
+									2012-2013 - <a href="#" id="pdfDownloader11">For more details</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content" style="border-color: green; border-style: dotted;">
+							<h1>Gallery</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-----------------------------------------TAB 16 ENDS------------------------>
+
+		<!-----------------------------------------TAB 17 STARTS---------------------------->
+		<div class="tab-pane" id="tab17">
+			<div class="nav-content">
+				<div class="container mt-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+					<h2 class="text-center mt-5 pt-3" style="color: #850209;">Hackthons</h2>
+					<p>
+						A 24-hour student hackathon is an event where students come together to collaborate, innovate, and
+						create
+						projects within a short time frame. These hackathons have gained immense popularity in recent years,
+						and
+						they hold significant importance for students for several reasons:
+					</p>
+					<ul>
+						<li>Hands-on learning: Hackathons provide students with a unique opportunity to engage in hands-on
+							learning. They encourage participants to apply their knowledge and skills to real-world problems and
+							challenges. It allows students to go beyond theoretical knowledge and gain practical experience by
+							working on a project from start to finish within a limited time.</li>
+						<li>Collaboration and teamwork: Hackathons foster collaboration and teamwork among students.
+							Participants
+							usually form teams, bringing together individuals with diverse backgrounds and expertise. Working
+							together, they learn to communicate effectively, leverage each other's strengths, and tackle complex
+							problems collectively. The experience of collaborating with peers from different disciplines helps
+							develop essential teamwork and interpersonal skills.</li>
+						<li>Innovation and creativity: The time constraint of a 24-hour hackathon encourages participants to
+							think
+							innovatively and creatively. Students are often required to come up with novel solutions to problems
+							or
+							create something entirely new within a limited timeframe. This pressure fuels innovation and pushes
+							participants to explore unconventional ideas, leading to the development of unique projects.</li>
+						<li>Networking and industry exposure: Student hackathons often attract participants, mentors, and
+							judges
+							from various industries and organizations. This provides an excellent networking opportunity for
+							students to connect with professionals, potential employers, and like-minded peers. Building
+							connections
+							during a hackathon can lead to future internships, job opportunities, or collaborations on other
+							projects.</li>
+						<li>Skill development: Hackathons offer a platform for students to enhance their existing skills and
+							acquire new ones. During the event, participants may have to learn and use new technologies,
+							programming
+							languages, or tools to complete their projects. This process helps broaden their skillset, exposes
+							them
+							to different technologies, and allows them to experiment with cutting-edge tools and platforms.</li>
+						<li>Resume/portfolio enhancement: Participating in hackathons adds value to a student's resume or
+							portfolio. It demonstrates their passion for learning, problem-solving ability, teamwork skills, and
+							ability to work under pressure. Employers and educational institutions often consider hackathon
+							experience as a strong indicator of a student's practical skills and motivation.</li>
+						<li>Recognition and awards: Many hackathons offer prizes, recognition, or opportunities for
+							participants
+							to showcase their projects to a wider audience. Winning or being recognized in a hackathon can boost
+							a
+							student's confidence, provide validation for their work, and open doors to further opportunities.
+						</li>
+					</ul>
+					<p>
+						In conclusion, 24-hour student hackathons are important because they promote hands-on learning, foster
+						collaboration, encourage innovation, provide networking opportunities, facilitate skill development,
+						enhance resumes/portfolios, and offer recognition for participants. They serve as a platform for
+						students
+						to showcase their abilities, learn from their peers, and gain valuable experience in a short period.
+					</p>
+
+					<!-- Hackthons Conducted Table -->
+					<div style="display: flex;
+						justify-content: center;
+						align-items: center;
+						">
+						<table class="table table-bordered table-responsive tab4-table table-hackthon">
+							<thead style="background-color: #850209; color: white;">
+								<tr>
+									<th>Academic Year</th>
+									<th>For Brochure</th>
+									<th>For Winners List</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2022-23</td>
+									<td><a href="#" id="pdfDownloader8" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+									<td><a href="#" id="pdfDownloader9" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-22</td>
+									<td><a href="#" id="pdfDownloader10" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+									<td><a href="#" id="pdfDownloader11" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2019-20</td>
+									<td><a href="#" id="pdfDownloader12" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+									<td><a href="#" id="pdfDownloader13" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2018-19</td>
+									<td><a href="#" id="pdfDownloader14" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+									<td><a href="#" id="pdfDownloader15" style="text-decoration: none; color: #850209;">Click
+											Here</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="nav-content" style="margin-top: 30px; border-color: blueviolet;">
+				<h2 class="mb-4" style="text-align: center; margin-top: 5px;">Gallery</h2>
+				<div class="container">
+					<div class="col-12" style="text-align: center;font-size: 25px;font-size: 500;">Hackathon 2022</div>
+					<div class="row" style="display: flex;
+						justify-content: center;
+						align-items: center;
+						">
+						<!-- First div with two images -->
+
+						<div class="col col-md-5 ">
+							<img src="assets\img\Hackthon_2022_23 (1).jpg" class="img-fluid m-3" alt="Image 1">
+							<img src="assets\img\Hackthon 2021_22 (1).jpeg" class="img-fluid m-3" alt="Image 2">
+						</div>
+
+						<!-- Second div with two images -->
+
+						<div class="col col-md-5">
+							<img src="assets\img\Hackthon 2021_22 (1).jpeg" class="img-fluid m-3" alt="Image 3">
+							<img src="assets\img\Hackthon_2022_23 (2) (1).jpg" class="img-fluid m-3" alt="Image 4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-----------------------------------------TAB 17 ENDS---------------------->
+
+
+		<!--------------------------------------------TAB 18 STARTS------------------->
+		<div class="tab-pane" id="tab18">
+
+			<div class="nav-content">
+				<div class="container mt-4 content" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+					<h2 class="text-center mt-5 pt-3" style="color: #850209;">e-Resources</h2>
+					<p>Innovations by the Faculty in Teaching and Learning. Activities of the department towards improvement
+						in
+						teaching-learning are indicated in the office records as well as on the college website. They are open
+						for
+						reproduction, further improvement, and review.</p>
+
+					<p>Some of the methods adopted by the faculty members in Teaching & Learning are:</p>
+					<ul>
+						<li>Presentations using PPT, wherever necessary.</li>
+						<li>Technical videos for demonstration of certain concepts.</li>
+						<li>Usage of Software's like Rational Rose, R Software to demonstrate the concepts practically.</li>
+						<li>Use of E-Learning Resources like NPTEL lectures, Online journals, and Online lectures like QEEE &
+							MOOCS for effective learning.</li>
+						<li>Providing Question bank with short answer questions and quiz questions.</li>
+						<li>Student paper and poster presentations.</li>
+						<li>Student seminars.</li>
+						<li>Conducting peer group learning to encourage the slow learners.</li>
+						<li>Student participation in skill tests and technical events.</li>
+						<li>To incorporate real-time problem-solving skills, we are using online tools like EBOX, EDYST etc.
+						</li>
+					</ul>
+
+					<h3>(i) Innovations in Teaching and Learning</h3>
+					<ul>
+						<li>Project Based Learning</li>
+						<li>Z TO A Approach</li>
+						<li>NPTEL Web and Video Courses</li>
+						<li>PPTs</li>
+						<li>Question Banks</li>
+						<li>Mind Map</li>
+					</ul>
+
+					<h3>(ii) Tools used in Teaching and Learning</h3>
+					<ul>
+						<li>LMS</li>
+						<li>Conduira</li>
+						<li>PEARSON MePro</li>
+						<li>EBox</li>
+						<li>Edyst</li>
+					</ul>
+				</div>
+				<h3>V20- Subjects</h3>
+				<div style="display: flex;justify-content: center; align-items: center;">
+					<div class="table-responsive tab4-table mb-4">
+						<table class="table tab4-table">
+							<thead class="table-header">
+								<tr class="tab4-tr">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Regulation</th>
+									<th class="tab4-th">Sem</th>
+									<th class="tab4-th">Subject</th>
+									<th class="tab4-th">PPT</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-tr">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">I</td>
+									<td class="tab4-td">Problem Solving through C-Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Data Structures</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Computer Organization and Architecture</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">OOP's through C++</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">5</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Managerial Economics and Financial Analysis</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">6</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Mathematical Foundation Of Computer Science</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">7</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Design Analysis of Algorithms</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">8</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Java Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">9</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Software Engineering</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">10</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Statistical Visualization using R Lab</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">11</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Artificial Intelligence</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">12</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Data Mining</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">13</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Web Technologies</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">14</td>
+									<td class="tab4-td">V20</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Unified Modeling Language Lab</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!-- V18- Subjects Table -->
+				<h3>V18- Subjects</h3>
+				<div style="display: flex;justify-content: center; align-items: center;">
+					<div class="table-responsive mb-4">
+						<table class="table tab4-table">
+							<thead class="table-header">
+								<tr class="tab4-tr">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Regulation</th>
+									<th class="tab4-th">Sem</th>
+									<th class="tab4-th">Subject</th>
+									<th class="tab4-th">PPT</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-th">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">I/II</td>
+									<td class="tab4-td">Programming in C for Problem Solving</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Object Oriented Programming for Problem Solving</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Digital Electronics</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">5</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">III</td>
+									<td class="tab4-td">Data Mining</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">6</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Computer Organization</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">7</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Software Engineering</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">8</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Python Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">9</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Java Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">10</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">IV</td>
+									<td class="tab4-td">Formal Languages and Automata Theory</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">11</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Database Management Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">12</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Operating Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">13</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Design Analysis of Algorithms</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">14</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Unix Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">15</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Artificial Intelligence</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">16</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Computer Graphics</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">17</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">V</td>
+									<td class="tab4-td">Computer Networks</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">18</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Data Mining</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">19</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Object Oriented Analysis and Design</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">20</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Compiler Design</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">21</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Cryptography and Network Security</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">22</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Software Testing Methodologies</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">23</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VI</td>
+									<td class="tab4-td">Machine Learning</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">24</td>
+									<td>V18</td>
+									<td class="tab4-td">VII</td>
+									<td class="tab4-td">Advanced Java & Web Technologies</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">25</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VII</td>
+									<td class="tab4-td">SNSW</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">26</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VII</td>
+									<td class="tab4-td">Distributed Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">27</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VII</td>
+									<td class="tab4-td">Human-Computer Interaction</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">28</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VIII</td>
+									<td class="tab4-td">Cyber Security</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">29</td>
+									<td class="tab4-td">V18</td>
+									<td class="tab4-td">VIII</td>
+									<td class="tab4-td">Software Project Management</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- R16- Subjects Table -->
+				<h3>R16- Subjects</h3>
+				<div style="display: flex;justify-content: center; align-items: center;">
+					<div class="table-responsive mb-4">
+						<table class="table tab4-table">
+							<thead class="table-header">
+								<tr class="tab4-tr">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Regulation</th>
+									<th class="tab4-th">Year</th>
+									<th class="tab4-th">Subject</th>
+									<th class="tab4-th">PPT</th>
+									<th class="tab4-th">QBank</th>
+									<th class="tab4-th">OldQP</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-tr">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">Computer Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Data Structures through C++</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Advanced Data Structures</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Computer Graphics</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">5</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Principles of Programming Languages</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">6</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Python Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">7</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Java Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">8</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">Formal Languages and Automata Theory</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">9</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Mobile Computing</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">10</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Web Technology</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">11</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Software Project Management</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">12</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Software Architecture and Design Patterns</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">13</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Distributed Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">14</td>
+									<td class="tab4-td">R16</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Concurrent and Parallel Programming</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!-- R13- Subjects Table -->
+				<h3>R13- Subjects</h3>
+				<div style="display: flex;justify-content: center; align-items: center;">
+					<div class="table-responsive mb-4">
+						<table class="table tab4-table">
+							<thead class="table-header">
+								<tr class="tab4-tr">
+									<th class="tab4-th">S.No</th>
+									<th class="tab4-th">Regulation</th>
+									<th class="tab4-th">Year</th>
+									<th class="tab4-th">Subject</th>
+									<th class="tab4-th">PPT</th>
+									<th class="tab4-th">QBank</th>
+									<th class="tab4-th">OldQP</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab4-tr">
+									<td class="tab4-td">1</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">Software Engineering</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">2</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">Database Management Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Distributed Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr class=" tab4-td"">
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Cryptography and Network Security</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">5</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">UML & Design Patterns</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">6</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">3</td>
+									<td class="tab4-td">Operating Systems</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+								<tr class="tab4-tr">
+									<td class="tab4-td">7</td>
+									<td class="tab4-td">R13</td>
+									<td class="tab4-td">4</td>
+									<td class="tab4-td">Human Computer Interaction</td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+									<td class="tab4-td"><a href="#">Download</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+		<!------------------------------------------------TAB 18 ENDS----------------->
+		<!-------------------------------------------------TAB 19 STARTS---------------->
+		<div class="tab-pane" id="tab19">
+			<h1 style="text-align: center;">Computer Science And Engineering</h1>
+			<div class="container">
+				<div class="section">
+					<details open>
+						<summary>B.Tech (CSE & CST)</summary>
+						<div class="nav-content">
+							<ul class="fdp-list">
+								<li class="fdp-item">
+									B.Tech - V20 Syllabus- <a href="#" id="pdfDownloader1">View</a>
+								</li>
+								<li class="fdp-item">
+									B.Tech - V18 Syllabus - <a href="#" id="pdfDownloader2">View</a>
+								</li>
+								<li class="fdp-item">
+									B.Tech - R16 Syllabus - <a href="#" id="pdfDownloader3">View</a>
+								</li>
+								<li class="fdp-item">
+									B.Tech - R13 Syllabus - <a href="#" id="pdfDownloader4">View</a>
+								</li>
+
+							</ul>
+						</div>
+					</details>
+				</div>
+				<details>
+					<summary>M.TECH(CS)</summary>
+					<div class="nav-content">
+						<ul class="fdp-list">
+							<li class="fdp-item">
+								M.Tech - V21 Syllabus- <a href="#" id="pdfDownloader1">View</a>
+							</li>
+							<li class="fdp-item">
+								M.Tech - V18 Syllabus - <a href="#" id="pdfDownloader2">View</a>
+							</li>
+							<li class="fdp-item">
+								M.Tech - R16 Syllabus - <a href="#" id="pdfDownloader3">View</a>
+							</li>
+							<li class="fdp-item">
+								M.Tech - R13 Syllabus - <a href="#" id="pdfDownloader4">View</a>
+							</li>
+
+						</ul>
+					</div>
+				</details>
+				<details>
+					<summary>SOC Syllabus</summary>
+					<div class="nav-content">
+						<ul class="fdp-list">
+							<li class="fdp-item">
+								SOC Syllabus during the Academic Year 2022-23- <a href="#" id="pdfDownloader1">View</a>
+							</li>
+							<li class="fdp-item">
+								SOC Syllabus during the Academic Year 2022-23- <a href="#" id="pdfDownloader2">View</a>
+							</li>
+
+						</ul>
+					</div>
+				</details>
+
+
+
+
+			</div>
+		</div>
+		<!------------------------------------------------TAB 19 END--------------------->
+		<!--------------------------------TAB 20 STARTS------------------>
+		<div class="tab-pane" id="tab20">
+
+			<div class="nav-content">
+				<div class="container">
+					<h4 style="text-decoration: none ;color: #850209;" class="text-center mt-5 mb-3 pt-3">Academic HandBooks</h4>
+
+					<h5>Academic year 2023-24:</h5>
+					<ul>
+						<li> I-Sem Handbooks <a href="#" id="pdfDOWNLOADER11"
+								style="text-decoration: none ;color: #850209;">View</a>
+						</li>
+						<li> V-Sem V20 Regulation Handbook <a href="#" id="pdfDOWNLOADER11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+						<li> VII-Sem V20 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+					</ul>
+
+					<h5>Academic year 2022-23:</h5>
+					<ul>
+						<li> II-Sem Handbooks</li>
+						<li> IV-Sem V20 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+						<li> VI-Sem V20 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+						<li> VIII-Sem V18 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+					</ul>
+
+					<h5>Academic year 2022-23:</h5>
+					<ul>
+						<li> I-Sem Handbooks</li>
+						<li> III-Sem V20 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+						<li> V-Sem V20 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+						<li> VII-Sem V18 Regulation Handbook <a href="#" id="pdfDownloader11"
+								style="text-decoration: none ;color: #850209;">View</a></li>
+					</ul>
+
+					<!-- Continue listing the academic years and handbooks as needed -->
+				</div>
+			</div>
+		</div>
+
+		<!---------------------------------------------TAB 20 ENDS------------>
+		<!----------------------------------------------TAB21 STARTS ---------------->
+		<div class="tab-pane" id="tab21">
+			<h1 style="color:green;text-align:center;margin-top: 80px;">
+				Contact-Info
+			</h1>
+			<div class="container">
+				<div class="card " style="width:18rem; margin: 20px auto;  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+					;
+					">
+
+					<img class="card-img-top" src="assets/img/cse_hod1.jpeg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">
+							Dr.D.Jaya Kumari</h5>
+						<p class="card-textHOD">
+							<strong> Professor& Head of the Department</strong><br>
+							Phone No: 08818-284355(O)-(Ext.-377)Fax No: 08818-284322
+						</p>
+
+						<a href="#" class="btn btn-primary">
+							See Profile
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------------TAB 21 ENDS-------------->
+	</div>
+
+	<!-- -----------------------MIDDLE OPTINONS Content STARTS (MISSION ,VISION ETC)------------------------------- -->
+
+	<!-- Content -->
+	<div class="content ml-0">
+
+		<!-- open sidebar menu -->
+		<a class="btn btn-primary btn-customized open-menu " href="#" role="button">
+			<i class="fas fa-align-left" style="display: flex;align-items: center;justify-content: center;"></i>
+		</a>
+
+		<div id="content" class="container-fluid p-4 p-md-5 pt-5">
+			<h2 class="mb-4 mt-6">CSE Department</h2>
+			<div class="container-fluid my-5" id="large">
+				<nav>
+					<div class="nav flex-column flex-lg-row" id="nav-tab" role="tablist">
+						<button class="nav-link active ml-md-0" id="nav-department-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-department" type="button" role="tab" aria-controls="nav-department"
+							aria-selected="true">
+							Department
+						</button>
+
+						<button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button"
+							role="tab" aria-controls="nav-vision" aria-selected="false">
+							Vision
+						</button>
+
+						<button class="nav-link" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+							type="button" role="tab" aria-controls="nav-mission" aria-selected="false">
+							Mission
+						</button>
+
+						<button class="nav-link" id="nav-peos-tab" data-bs-toggle="tab" data-bs-target="#nav-peos" type="button"
+							role="tab" aria-controls="nav-peos" aria-selected="false">
+							PEOs
+						</button>
+
+						<button class="nav-link" id="nav-pos-tab" data-bs-toggle="tab" data-bs-target="#nav-pos" type="button"
+							role="tab" aria-controls="nav-pos" aria-selected="false">
+							POS
+						</button>
+
+						<button class="nav-link" id="nav-psos-tab" data-bs-toggle="tab" data-bs-target="#nav-psos" type="button"
+							role="tab" aria-controls="nav-psos" aria-selected="false">
+							PSOS
+						</button>
+
+						<button class="nav-link" id="nav-cos-tab" data-bs-toggle="tab" data-bs-target="#nav-cos" type="button"
+							role="tab" aria-controls="nav-cos" aria-selected="false">
+							COS
+						</button>
+
+						<button class="nav-link" id="nav-salient-features-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-salient-features" type="button" role="tab" aria-controls="nav-salient-features"
+							aria-selected="false">
+							Salient Features
+						</button>
+					</div>
+				</nav>
+
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active p-3" id="nav-department" role="tabpanel"
+						aria-labelledby="nav-department-tab">
+						<div class="row">
+							<div class="col-md-8">
+								<img class="img-fluid" src="assets/img/cse_hod1.jpeg" height="160" style="border: 0px solid #3c7593" />
+							</div>
+							<div class="col-md-4 text-md-left text-sm-center">
+								<h2>Dr. D. Jaya Kumari</h2>
+								<p>Professor & Head of the Department</p>
+								<p>Phone No: 08818-284355(O)-(Ext.-377)</p>
+								<p>Fax No: 08818-284322</p>
+								<p>Email: hod_cse@srivasaviengg.ac.in</p>
+							</div>
+						</div>
+						<div class="profile-card">
+							<h3>Department Profile</h3>
+							<p>
+								CSE Department came into inception from 2001 onwards with an
+								intake of 60 seats in B.Tech. From 2006 onwards the intake
+								was increased to 120 seats. From 2013 onwards the intake was
+								increased to 180 seats. From 2015 onwards intake was
+								increased to 240 seats.
+							</p>
+							<p>
+								CSE Department is offering M.Tech (CS) program from 2020
+								onwards with a present intake of 12.
+							</p>
+						</div>
+						<h3>Courses</h3>
+						<div class="table-responsive mb-4">
+							<table class="table tab4-table">
+								<thead>
+									<tr class="tab4-tr">
+										<th class="tab4-th">S.No</th>
+										<th class="tab4-th">Name of the Course</th>
+										<th class="tab4-th">Eligibility Criteria</th>
+										<th class="tab4-th">Duration</th>
+										<th class="tab4-th">Intake</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="tab4-tr">
+										<td class="tab4-td">1</td>
+										<td class="tab4-td">B.Tech-Computer Science and Engineering</td>
+										<td class="tab4-td">AP EAPCET</td>
+										<td class="tab4-td">4 Years</td>
+										<td class="tab4-td">240</td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">2</td>
+										<td class="tab4-td">M.Tech-Computer Science</td>
+										<td>GATE / PGECET</td>
+										<td class="tab4-td">2 Years</td>
+										<td class="tab4-td">12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+						<h2 style="margin-top: 10px;">Vision</h2>
+						<p class="card-text" style="margin-top: 10px;text-align: left; font-weight: 450;">
+							To evolve as a centre of academic and research excellence in the area of Computer
+							Science and
+							Engineering.
+						</p>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+						<h2 style="margin-top: 10px; ">Mission</h2>
+						<p class="card-text" style="margin-top: 10px; text-align: left;font-weight: 450;">To utilize
+							innovative
+							learning
+							methods for academic improvement.To encourage higher studies and research to meet the
+							futuristic
+							requirements of
+							Computer Science and Engineering.To inculcate Ethics and Human values for developing
+							students with good
+							character</p>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-peos" role="tabpanel" aria-labelledby="nav-peos-tab">
+						<h2 style="margin-top: 10px;">PEOs</h2>
+						<p
+							style="font-weight: 700; margin-left: 39px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+							CSE
+							Graduates of this programme will be able to :</p>
+						<p class="card-text" style="text-align: left; margin-top: 3px; font-size: 17px;">1. Adapt to
+							evolving
+							technology.<br>2. Provide optimal solutions to real time problems.<br>3. Demonstrate
+							his/her abilities
+							to
+							support service activities with due consideration for Professional &nbsp; &nbsp; and
+							Ethical Values.</p>
+					</div>
+
+					<div class="tab-pane fade p-3" id="nav-pos" role="tabpanel" aria-labelledby="nav-pos-tab">
+						<h2 style="margin-top: 10px; ">POS</h2>
+						<div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+							<h3 style="color: #850209; text-align: center; font-size: 900; text-align: left;margin-bottom: 20px;">
+								&nbsp;Computer Science Engineering Graduates will be able to:</h3>
+							<ol style="list-style-type: decimal; padding-left: 20px; list-style: none;">
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">1. Engineering knowledge:</strong> Apply the
+									knowledge of
+									Mathematics,
+									Science, Engineering Fundamentals, and Concepts of Computer Science Engineering
+									to the solution of
+									complex
+									Engineering problems.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">2. Problem Analysis:</strong> Identify,
+									formulate, review research
+									literature, and analyze complex engineering problems reaching substantiated
+									conclusions using first
+									principles of Mathematics, Natural Sciences, and Computer Science.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">3. Design/development of solutions:</strong>
+									Design solutions for
+									complex
+									engineering problems and design system components or processes that meet the
+									specific needs with
+									appropriate
+									consideration for public health and safety, and the cultural, societal, and
+									environmental
+									considerations.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">4. Conduct investigations of complex
+										problems:</strong> Use
+									research-based
+									knowledge and research methods, including the design of experiments, analysis
+									and interpretation of
+									data,
+									and synthesis of information to provide valid conclusions.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">5. Modern tool usage:</strong> Create, select,
+									and apply appropriate
+									techniques, resources, and modern engineering and IT tools, including prediction
+									and modeling, to
+									complex
+									Engineering activities with an understanding of the limitations.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">6. The engineer and society:</strong> Apply
+									reasoning informed by
+									contextual
+									knowledge to assess societal, health, safety, legal, and cultural issues and the
+									consequent
+									responsibilities
+									relevant to professional Engineering practice.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">7. Environment and sustainability:</strong>
+									Understand the impact of
+									professional engineering solutions in societal and environmental contexts and
+									demonstrate knowledge
+									of, and
+									the need for sustainable development.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">8. Ethics:</strong> Apply ethical principles and
+									commit to
+									professional
+									ethics and responsibilities and norms of Engineering practice.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">9. Individual and team work:</strong> Function
+									effectively as an
+									individual
+									and as a member or leader in diverse teams and in multidisciplinary settings.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">10. Communication:</strong> Communicate
+									effectively on complex
+									Engineering
+									activities with the Engineering community and with society at large, such as
+									being able to
+									comprehend and
+									write effective reports and design documentation, make effective presentations,
+									and give and receive
+									clear
+									instructions.
+								</li>
+								<li style="margin-bottom: 10px;">
+									<strong style="color: #850209;">11. Project management and finance:</strong>
+									Demonstrate knowledge
+									and
+									understanding of Engineering and Management principles and apply these to one's
+									own work, as a
+									member and
+									leader in a team, to manage projects and in multidisciplinary environments.
+								</li>
+								<li>
+									<strong style="color: #850209;">12. Life-long learning:</strong> Recognize the
+									need for, and have
+									the
+									preparation and ability to engage in independent and life-long learning in the
+									broadest context of
+									technological change.
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-psos" role="tabpanel" aria-labelledby="nav-psos-tab">
+						<h2 style="margin-top: 10px;">PSOS</h2>
+						<p style="text-align:left;color: #850209;font-size:large ;margin-left: 26px; font-weight: 600">
+							&nbsp;
+							&nbsp; A
+							graduate of the Computer Science and Engineering Programme will be able to:</p>
+						<ol style="list-style-type: decimal; margin-left: 30px;">
+							<li><span class="heading " style="color:#850209">PSO1:</span> Use Mathematical
+								Abstractions and
+								Algorithmic
+								Design along with Open Source Programming tools to solve complexities involved in
+								Programming. <span style="font-weight: bold;">[K3]</span></li>
+							<li><span class="heading" style="color:#850209">PSO2:</span> Use Professional
+								Engineering practices and
+								strategies for development and maintenance of software. <span style="font-weight: bold;">[K3]</span>
+							</li>
+						</ol>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-cos" role="tabpanel" aria-labelledby="nav-cos-tab">
+						<h2 style="margin-top: 10px;margin-bottom: 20px;">COS</h2>
+						<div class="contentCO">
+							<h1 style="font-weight:2;font-size:20px ;">Course Outcomes (V20 Regulation) <a
+									href="path-to-your-pdf-file.pdf" class="view-button" style="font-size: 20px;" target="_blank">View
+									PDF</a>
+							</h1>
+							<!-- Place your content here -->
+
+							<h1 style="font-weight: 250;font-size: 20px;">Course Outcomes (V18 Regulation) <a
+									href="path-to-your-pdf-file.pdf" class="view-button" style="font-size: 20px;" target="_blank">View
+									PDF</a>
+							</h1>
+							<!-- Place your content here -->
+
+							<!-- "View PDF" button -->
+						</div>
+					</div>
+					<div class="tab-pane fade p-3" id="nav-salient-features" role="tabpanel"
+						aria-labelledby="nav-salient-features-tab">
+						<h2 style="margin-top: 10px;">Salient Features</h2>
+						<div class="decorated-text">
+							<p>→ <span class="side-heading">Accredited by NBA</span> in 2012, 2018, 2021, 2022 for 3
+								years.</p>
+							<p>→ <span class="side-heading">Accredited by NAAC</span> with<span class="side-heading">"A" </span>
+								Grade.</p>
+							<p>→ From the Academic Year 2019-20 to 2022-23, the Department was recognized as a
+								research center by
+								JNTUK.</p>
+							<p>→ All Class Rooms are ICT enabled.</p>
+							<p>→ Established 2 Digital Classrooms with a capacity of 150 each.</p>
+							<p>→ MoUs with NIT ANP, Eduskills, Hexaware, APSSDC, Alykas Innovations
+								Pvt.Ltd,thingTronics Pvt
+								Ltd,Bangalore,TCS-&iON.</p>
+							<p>→ College has MOU with TCS for conducting Online Competitive Exams for which
+								Department Resources are
+								being
+								utilized.</p>
+							<p>→ Professional Society memberships in ISTE.</p>
+							<p>→ Good faculty retention.</p>
+							<p>→ More than 15% of our faculty are Doctorates.</p>
+							<p>→ <span class="side-heading">Sahaya, Social Service Unit</span>, managed by CSE
+								Students donated
+								Rs.<span class="side-heading">8,14,525/- </span>with support of College Management.
+							</p>
+							<p>→ Established the AI&DL Lab under MODROBS Scheme Sanctioned by AICTE.</p>
+							<p>→ Introduced the B.Tech(Hons) and B.Tech(Minors) from 2018 onwards.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="accordion-content" id="small">
+				<div class="accordion" id="accordionTabs">
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-department" aria-expanded="false">
+						<div class="card-header" id="nav-department-heading">
+							<h2 class="mt-0 mb-0">
+								<button class="btn btn-link">Department</button>
+							</h2>
+						</div>
+
+						<div class="tab-pane fade show active collapse p-3" id="nav-department" class="collapse show"
+							aria-labelledby="nav-department-tab">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-7 pr-0">
+										<img class="img-fluid" src="assets\img\cse_hod1.jpeg" height="160"
+											style="border: 0px solid #3c7593" />
+									</div>
+									<div class="col-md-5 text-md-left text-sm-center">
+										<h2 class="mt-4" id="dept-head">Dr. D. Jaya Kumari</h2>
+										<p>Professor & Head of the Department</p>
+										<p>Phone No: 08818-284355(O)-(Ext.-377)</p>
+										<p>Fax No: 08818-284322</p>
+										<p>Email: hod_cse@srivasaviengg.ac.in</p>
+									</div>
+								</div>
+								<div class="profile-card">
+									<h3>Department Profile</h3>
+									<p>
+										CSE Department came into inception from 2001 onwards
+										with an intake of 60 seats in B.Tech. From 2006 onwards
+										the intake was increased to 120 seats. From 2013 onwards
+										the intake was increased to 180 seats. From 2015 onwards
+										intake was increased to 240 seats.
+									</p>
+									<p>
+										CSE Department is offering M.Tech (CS) program from 2020
+										onwards with a present intake of 12.
+									</p>
+								</div>
+								<h3>Courses</h3>
+								<div class="table-responsive mb-4">
+									<table class="table tab4-table">
+										<thead>
+											<tr class="tab4-tr">
+												<th class="tab4-th">S.No</th>
+												<th class="tab4-th">Name of the Course</th>
+												<th class="tab4-th">Eligibility Criteria</th>
+												<th class="tab4-th">Duration</th>
+												<th class="tab4-th">Intake</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="tab4-tr">
+												<td class="tab4-td">1</td>
+												<td class="tab4-td">B.Tech-Computer Science and Engineering</td>
+												<td class="tab4-td">AP EAPCET</td>
+												<td class="tab4-td">4 Years</td>
+												<td class="tab4-td">240</td>
+											</tr>
+											<tr class="tab4-tr">
+												<td class="tab4-td">2</td>
+												<td class="tab4-td">M.Tech-Computer Science</td>
+												<td class="tab4-td">GATE / PGECET</td>
+												<td class="tab4-td">2 Years</td>
+												<td class="tab4-td">12</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-vision-content" aria-expanded="false">
+						<a href="#nav-vision-content">
+							<div class="card-header" id="nav-vision-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">Vision</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-vision-content"
+							aria-labelledby="nav-vision-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">Vision</h2>
+								<p class="card-text" style="
+											margin-top: 10px;
+											text-align: left;
+											font-weight: 450;
+										">
+									To evolve as a centre of academic and research excellence
+									in the area of Computer Science and Engineering.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-mission-content" aria-expanded="true">
+						<a href="#nav-mission-content">
+							<div class="card-header" id="nav-mission-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">Mission</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-mission-content" class="collapse"
+							aria-labelledby="nav-vision-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">Mission</h2>
+								<p class="card-text" style="
+											margin-top: 10px;
+											text-align: left;
+											font-weight: 450;
+										">
+									To utilize innovative learning methods for academic
+									improvement.To encourage higher studies and research to
+									meet the futuristic requirements of Computer Science and
+									Engineering.To inculcate Ethics and Human values for
+									developing students with good character
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-peos-content" aria-expanded="true">
+						<a href="#nav-peos-content">
+							<div class="card-header" id="nav-peos-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">PEOS</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-peos-content" class="collapse"
+							aria-labelledby="nav-peos-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">PEOs</h2>
+								<p style="
+											font-weight: 700;
+											margin-left: 39px;
+											font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+												sans-serif;
+										">
+									CSE Graduates of this programme will be able to :
+								</p>
+								<p class="card-text" style="text-align: left; margin-top: 3px; font-size: 17px">
+									1. Adapt to evolving technology.<br />2. Provide optimal
+									solutions to real time problems.<br />3. Demonstrate
+									his/her abilities to support service activities with due
+									consideration for Professional &nbsp; &nbsp; and Ethical
+									Values.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-pos-content" aria-expanded="true">
+						<a href="#nav-pos-content">
+							<div class="card-header" id="nav-pos-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">POS</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-pos-content" class="collapse"
+							aria-labelledby="nav-pos-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">POS</h2>
+								<div style="
+											max-width: 800px;
+											margin: 0 auto;
+											font-family: Arial, sans-serif;
+										">
+									<h3 style="
+												color: #850209;
+												text-align: center;
+												font-size: 900;
+												text-align: left;
+												margin-bottom: 20px;
+											">
+										&nbsp;Computer Science Engineering Graduates will be
+										able to:
+									</h3>
+									<ol style="
+												list-style-type: decimal;
+												padding-left: 20px;
+												list-style: none;
+											">
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">1. Engineering knowledge:</strong>
+											Apply the knowledge of Mathematics, Science,
+											Engineering Fundamentals, and Concepts of Computer
+											Science Engineering to the solution of complex
+											Engineering problems.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">2. Problem Analysis:</strong>
+											Identify, formulate, review research literature, and
+											analyze complex engineering problems reaching
+											substantiated conclusions using first principles of
+											Mathematics, Natural Sciences, and Computer Science.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">3. Design/development of solutions:</strong>
+											Design solutions for complex engineering problems and
+											design system components or processes that meet the
+											specific needs with appropriate consideration for
+											public health and safety, and the cultural, societal,
+											and environmental considerations.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">4. Conduct investigations of complex
+												problems:</strong>
+											Use research-based knowledge and research methods,
+											including the design of experiments, analysis and
+											interpretation of data, and synthesis of information
+											to provide valid conclusions.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">5. Modern tool usage:</strong>
+											Create, select, and apply appropriate techniques,
+											resources, and modern engineering and IT tools,
+											including prediction and modeling, to complex
+											Engineering activities with an understanding of the
+											limitations.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">6. The engineer and society:</strong>
+											Apply reasoning informed by contextual knowledge to
+											assess societal, health, safety, legal, and cultural
+											issues and the consequent responsibilities relevant to
+											professional Engineering practice.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">7. Environment and sustainability:</strong>
+											Understand the impact of professional engineering
+											solutions in societal and environmental contexts and
+											demonstrate knowledge of, and the need for sustainable
+											development.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">8. Ethics:</strong>
+											Apply ethical principles and commit to professional
+											ethics and responsibilities and norms of Engineering
+											practice.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">9. Individual and team work:</strong>
+											Function effectively as an individual and as a member
+											or leader in diverse teams and in multidisciplinary
+											settings.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">10. Communication:</strong>
+											Communicate effectively on complex Engineering
+											activities with the Engineering community and with
+											society at large, such as being able to comprehend and
+											write effective reports and design documentation, make
+											effective presentations, and give and receive clear
+											instructions.
+										</li>
+										<li style="margin-bottom: 10px">
+											<strong style="color: #850209">11. Project management and finance:</strong>
+											Demonstrate knowledge and understanding of Engineering
+											and Management principles and apply these to one's own
+											work, as a member and leader in a team, to manage
+											projects and in multidisciplinary environments.
+										</li>
+										<li>
+											<strong style="color: #850209">12. Life-long learning:</strong>
+											Recognize the need for, and have the preparation and
+											ability to engage in independent and life-long
+											learning in the broadest context of technological
+											change.
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-psos-content" aria-expanded="true">
+						<a href="#nav-psos-content">
+							<div class="card-header" id="nav-psos-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">PSOS</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-psos-content" class="collapse"
+							aria-labelledby="nav-psos-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">PSOS</h2>
+								<p style="
+											text-align: left;
+											color: #850209;
+											font-size: large;
+											margin-left: 26px;
+											font-weight: 600;
+										">
+									&nbsp; &nbsp; A graduate of the Computer Science and
+									Engineering Programme will be able to:
+								</p>
+								<ol style="list-style-type: decimal; margin-left: 30px">
+									<li>
+										<span class="heading" style="color: #850209">PSO1:</span>
+										Use Mathematical Abstractions and Algorithmic Design
+										along with Open Source Programming tools to solve
+										complexities involved in Programming.
+										<span style="font-weight: bold">[K3]</span>
+									</li>
+									<li>
+										<span class="heading" style="color: #850209">PSO2:</span>
+										Use Professional Engineering practices and strategies
+										for development and maintenance of software.
+										<span style="font-weight: bold">[K3]</span>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-cos-content" aria-expanded="true">
+						<a href="#nav-cos-content">
+							<div class="card-header" id="nav-cos-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">COS</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-cos-content" class="collapse"
+							aria-labelledby="nav-cos-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px; margin-bottom: 20px">COS</h2>
+								<div class="contentCO">
+									<h1 style="font-weight: 2; font-size: 20px">
+										Course Outcomes (V20 Regulation)
+										<a href="path-to-your-pdf-file.pdf" class="view-button" style="font-size: 20px" target="_blank">View
+											PDF</a>
+									</h1>
+									<!-- Place your content here -->
+
+									<h1 style="font-weight: 250; font-size: 20px">
+										Course Outcomes (V18 Regulation)
+										<a href="path-to-your-pdf-file.pdf" class="view-button" style="font-size: 20px" target="_blank">View
+											PDF</a>
+									</h1>
+									<!-- Place your content here -->
+
+									<!-- "View PDF" button -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-bs-toggle="collapse" data-bs-target="#nav-salient-features-content"
+						aria-expanded="true">
+						<a href="#nav-salient-features-content">
+							<div class="card-header" id="nav-salient-features-heading">
+								<h2 class="mt-0 mb-0">
+									<button class="btn btn-link">Salient Features</button>
+								</h2>
+							</div>
+						</a>
+						<div class="tab-pane fade show active collapse p-3 collapsing" id="nav-salient-features-content"
+							class="collapse" aria-labelledby="nav-salient-features-heading">
+							<div class="card-body">
+								<h2 style="margin-top: 10px">Salient Features</h2>
+								<div class="decorated-text">
+									<p>
+										→ <span class="side-heading">Accredited by NBA</span> in
+										2012, 2018, 2021, 2022 for 3 years.
+									</p>
+									<p>
+										→
+										<span class="side-heading">Accredited by NAAC</span>
+										with<span class="side-heading">"A" </span> Grade.
+									</p>
+									<p>
+										→ From the Academic Year 2019-20 to 2022-23, the
+										Department was recognized as a research center by JNTUK.
+									</p>
+									<p>→ All Class Rooms are ICT enabled.</p>
+									<p>
+										→ Established 2 Digital Classrooms with a capacity of
+										150 each.
+									</p>
+									<p>
+										→ MoUs with NIT ANP, Eduskills, Hexaware, APSSDC, Alykas
+										Innovations Pvt.Ltd,thingTronics Pvt
+										Ltd,Bangalore,TCS-&iON.
+									</p>
+									<p>
+										→ College has MOU with TCS for conducting Online
+										Competitive Exams for which Department Resources are
+										being utilized.
+									</p>
+									<p>→ Professional Society memberships in ISTE.</p>
+									<p>→ Good faculty retention.</p>
+									<p>→ More than 15% of our faculty are Doctorates.</p>
+									<p>
+										→
+										<span class="side-heading">Sahaya, Social Service Unit</span>, managed by CSE Students donated
+										Rs.<span class="side-heading">8,14,525/- </span>with support of College Management.
+									</p>
+									<p>
+										→ Established the AI&DL Lab under MODROBS Scheme
+										Sanctioned by AICTE.
+									</p>
+									<p>
+										→ Introduced the B.Tech(Hons) and B.Tech(Minors) from
+										2018 onwards.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Repeat the card structure for other accordion items
+				</div> -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer
+		<footer class="bg-dark text-light py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-lg-3 ">
+
+						<p style="font-size: 16px;opacity: 0.8;">Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Nemo at,
+							accusamus
+							dolores quas praesentium
+							voluptatum odio quo dolorem, commodi possimus maxime voluptatibus eius atque placeat
+							optio reprehenderit
+							nihil. Asperiores, delectus.</p>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<h5>Quick Links</h5>
+						<ul class="list-unstyled quicklinks">
+							<li><a href="#">Photo Gallery</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Hostels</a></li>
+							<li><a href="#">Sports <br>Facililties</a></li>
+							<li><a href="#">Transport</a></li>
+
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<h5>Useful Links</h5>
+						<ul class="list-unstyled quicklinks">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<h5>Connect with Us</h5>
+						<ul class="list-unstyled social-icons">
+							<li><a class="facebook" href="#"><i class="fab fa-facebook" style="font-size: 24px;"></i></a></li>
+							<li><a class="twitter" href="https://twitter.com/Gdsc_Svec" target="twitter"><i class="fab fa-x-twitter"
+										style="font-size: 24px;"></i></a></li>
+							<li><a class="instagram" href="https://www.instagram.com/gdsc.svec/" target="instagram"><i
+										class="fab fa-instagram" style="font-size: 24px;"></i></a>
+							</li>
+							<li><a class="linkedin" href="#"><i class="fab fa-linkedin" style="font-size: 24px;"></i></a></li>
+							<li><a class="youtube" href="https://www.youtube.com/@GDSC_SVEC" target="youtube"><i
+										class="fab fa-youtube" style="font-size: 24px;"></i></a></li>
+						</ul>
+
+						<h5>Contact Us</h5>
+
+						<p class="address">
+							Sri Vasavi Engineering College <br> Pedatadepalli,Tadepalligudem <br>534 101 West
+							Godavari Dist.,
+							<br>Andhra
+							Pradesh.
+
+							<span class="phone"><i class="fas fa-phone " style="margin-right: 4px;"></i><a
+									href="tel:+918818284322">+91-8818284322 </a><br>(9:30
+								AM-4:30 PM)</span>
+							<span class=" phone" style="color: #ff5a2c !important;text-decoration: none;"> <i class="fas fa-envelope"
+									style="margin-right: 4px;">
+								</i><a href="mailto:principal@srivasaviengg.ac.in"
+									style="color: #ff5a2c !important;text-decoration: none;">principal@srivasaviengg.ac.in</a>
+							</span>
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<p style="text-align: center;opacity: 0.7;">Powered by <a href="#"
+					style="font-weight: 700;margin-right:5px;margin-left:5px;">
+					<span style="color:#4285F4 ;">G</span>
+					<span style="color:#34A853 ;">D</span>
+					<span style="color:#FBBC05 ;">S</span>
+					<span style="color:#EA4335; margin-right:8px;">C</span> X SVEC Web Devs</a></p>
+			<p style="text-align: center;opacity: 0.7;">Copyright © 2023 Sri Vasavi Engineering College. All Rights
+				Reserved.
+			</p>
+
+		</footer> -->
+		<div id="footer"></div>
+
+	</div>
+	<!-- End content -->
+
+	</div>
+	<!-- End wrapper -->
+
+	<!-- Javascript -->
+	<script>
+		// J to handle tab/accordion behavior
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get all tab links and accordion buttons
+			const tabLinks = document.querySelectorAll(".nav-link");
+			const accordionCards = document.querySelectorAll(".accordion .card");
+
+			// Add click event listeners to tab links
+			tabLinks.forEach(function (link) {
+				link.addEventListener("click", function () {
+					// Hide all tab content
+					document.querySelectorAll(".tab-pane").forEach(function (pane) {
+						pane.classList.remove("show", "active");
+					});
+
+					// Show the selected tab content
+					const targetId = link.getAttribute("data-bs-target").replace("#", "");
+					document.getElementById(targetId).classList.add("show", "active");
+				});
+			});
+
+			// Add click event listeners to accordion cards
+			accordionCards.forEach(function (card) {
+				card.addEventListener("click", function () {
+					// Hide all accordion content
+					document.querySelectorAll(".accordion-content .card .collapse").forEach(function (collapse) {
+						collapse.classList.remove("show");
+					});
+
+					// Show the selected accordion content
+					const targetId = card.getAttribute("data-bs-target").replace("#", "");
+					document.getElementById(targetId).classList.add("show");
+				});
+			});
+		});
+
+	</script>
+
+
+	<!--  -->
+
+	<script>
+		function show(id) {
+			const contentContainer = document.querySelector("#content");
+			const selectedTab = document.querySelector(id);
+
+			if (selectedTab) {
+				// Replace the content of #content with the selected tab's content
+				contentContainer.innerHTML = selectedTab.innerHTML;
+			}
+			document.querySelector(".sidebar").classList.remove("active");
+			removeActiveFromAnchors();
+			// Remove the overlay
+			document.querySelector(".overlay").classList.remove("active");
+		}
+
+		const dismissButton = document.querySelector(".dismiss");
+		const contentContainer = document.querySelector("#content");
+
+		dismissButton.addEventListener("click", function () {
+			// Hide the sidebar and reset active states
+			document.querySelector(".sidebar").classList.remove("active");
+			removeActiveFromAnchors();
+
+			// Restore the original content in the content container
+
+		});
+
+		const originalContentHTML = contentContainer.innerHTML;
+
+		function removeActiveFromAnchors() {
+			const anchors = document.querySelectorAll(".list-unstyled.components li a");
+			anchors.forEach((anchor) => {
+				anchor.classList.remove("active");
+			});
+
+		}
+
+		// Add click event listeners to navlinks
+		const navlinks = document.querySelectorAll(".list-unstyled.components li a");
+		navlinks.forEach((link) => {
+			link.addEventListener("click", function (e) {
+				e.preventDefault();
+				removeActiveFromAnchors();
+				this.classList.add("active");
+				show(this.getAttribute("href"));
+			});
+		});
+	</script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="./assets/js/jquery.backstretch.min.js"></script>
+	<script src="./assets/js/wow.min.js"></script>
+	<script src="./assets/js/jquery.waypoints.min.js"></script>
+	<script src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>

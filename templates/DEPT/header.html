@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../css/header.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="fixed-top">
+      <nav
+        class="shadow navbar navbar-expand-lg bg-color nav-elements-large pb-2"
+      >
+        <div class="container-fluid">
+          <div
+            class="navbar-brand d-flex"
+            style="gap: 10px; align-items: center; color: #fff"
+          >
+            <img
+              style="height: 60px; width: 300px"
+              src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1694167975/formlogo_fx3rcb.png"
+              alt="Your Image"
+              height="50"
+              width="50"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            style="flex-grow: 0"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../../"
+                  style="color: #fff; font-weight: 500"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="dropdown show">
+                  <a
+                    class="btn btn-white w-100 dropdown-toggle pt-2"
+                    style="border-style: none; color: #fff; font-weight: 500"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Administration
+                  </a>
+                  <div
+                    class="dropdown-menu w-100"
+                    style="width: fit-content !important"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="../admin/maintechdirector.html"
+                      >Director-Technical</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="../admin/principal.html"
+                      >Principal</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="../admin/ourdeans.html"
+                      >Deans</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="../admin/departmentheads.html"
+                      >Head of the Departments</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../academics.html"
+                  style="color: #fff; font-weight: 500; text-decoration: none"
+                >
+                  <div class="text-center">Academics</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown show">
+                  <a
+                    class="btn btn-white w-100 dropdown-toggle pt-2"
+                    style="border-style: none; font-weight: 500; color: #fff"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Departments
+                  </a>
+
+                  <div
+                    class="dropdown-menu w-100 p-2"
+                    style="width: fit-content !important"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./cse.html"
+                    >
+                      <div>Computer Science & Engineering</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./cst.html"
+                    >
+                      <div>Computer Science & Technology</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="http://srivasaviengg.ac.in/cai.php"
+                      >Computer Science & Engineering<br />(Artificial
+                      Intelligence)</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="http://srivasaviengg.ac.in/aiml.php"
+                    >
+                      <div>
+                        Artificial Intelligence & <br />Machine Learning
+                      </div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./ece.html"
+                    >
+                      <div>Electronics & Communication <br />Engineering</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./ect.html"
+                    >
+                      <div>Electronics & Communication <br />Technology</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./eee.html"
+                    >
+                      <div>Electrical & Electronic<br />Engineering</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./me.html"
+                      >Mechanical Engineering</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./ce.html"
+                      >Civil Engineering</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./bsh.html"
+                    >
+                      <div>Basic Science<br />& Humanities</div>
+                    </a>
+                    <a
+                      class="dropdown-item dept-dropdown-items"
+                      href="./mba.html"
+                    >
+                      <div>Masters of Business<br />Administration</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../campusLife.html"
+                  style="color: #fff; font-weight: 500"
+                >
+                  <div class="text-center">Campus Life</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="color: #fff; font-weight: 500"
+                  >Placements</a
+                >
+              </li>
+              <li class="nav-item dropdown d-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #fff"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="shadow-lg bg-white second2-navbar-large nav-elements-large d-flex flex-row justify-content-center"
+        id="second-large-navbar"
+      >
+        <div
+          class="second2-navbar-large-contents text-center d-flex flex-row justify-content-center"
+          id="largeSecondNavbarContentsDiv"
+        >
+          <a
+            href="https://www.srivasaviengg.ac.in/grievance/index.php"
+            class="m-2"
+            id="nav-bar2-text"
+            >V Grievance</a
+          >
+          <a
+            href="http://srivasaviengg.ac.in/naac.php"
+            class="m-2"
+            id="nav-bar2-text2"
+          >
+            NAAC
+          </a>
+          <a href="../academics.html" class="m-2" id="nav-bar2-text3"
+            >Academics</a
+          >
+          <a
+            href="http://srivasaviengg.ac.in/r&d_profile.php"
+            class="m-2"
+            id="nav-bar2-text4"
+            >R & D</a
+          >
+          <a href="http://srivasaviengg.ac.in" class="m-2" id="nav-bar2-text5"
+            >Mandates</a
+          >
+          <a
+            href="http://srivasaviengg.ac.in/feestructure.php"
+            class="m-2"
+            id="nav-bar2-text6"
+            >Category B</a
+          >
+          <a href="http://srivasaviengg.ac.in/" class="m-2" id="nav-bar2-text7"
+            >UGC</a
+          >
+          <a href="http://srivasaviengg.ac.in/" class="m-2" id="nav-bar2-text8"
+            >NIRF</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="nav-elements-small fixed-top">
+      <nav class="small-navbar p-1 pb-2">
+        <div class="d-flex flex-row">
+          <img
+            src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1694167975/formlogo_fx3rcb.png"
+            class="logo-image mt-2"
+          />
+        </div>
+        <button class="small-navbar-nav-button mt-2" id="button">
+          <i class="fa-solid fa-bars" id="changeItem"></i>
+        </button>
+      </nav>
+      <div class="small-navbar-menu-navbar bg-white" id="menuItems">
+        <div class="container-fluid text-center" style="border: 1px solid grey">
+          <div class="row text-center" style="border: 1px solid grey">
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="small-navbar-nav-item p-2">
+                <a
+                  class="small-navbar-items-last-div-anchor active"
+                  aria-current="page"
+                  href="../../"
+                  style="color: #000000; font-weight: bold !important"
+                  >Home</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="dropdown show">
+                <a
+                  class="btn btn-white w-100 dropdown-toggle"
+                  style="border-style: none; font-weight: bold"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Administration
+                </a>
+
+                <div
+                  class="dropdown-menu w-100"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="../admin/maintechdirector.html"
+                    >Director-Technical</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="../admin/principal.html"
+                    >Principal</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="../admin/ourdeans.html"
+                    >Deans</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="../admin/departmentheads.html"
+                    >Head of the Departments</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="small-navbar-nav-item p-2">
+                <a
+                  class="small-navbar-items-last-div-anchor active"
+                  aria-current="page"
+                  href="../academics.html"
+                  style="
+                    color: #000000 !important;
+                    font-weight: bold !important;
+                  "
+                  >Academics</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="dropdown show">
+                <a
+                  class="btn btn-white w-100 dropdown-toggle"
+                  style="border-style: none; font-weight: bold"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Departments
+                </a>
+
+                <div
+                  class="dropdown-menu w-100 p-1"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <a class="dropdown-item dept-dropdown-items" href="./cse.html"
+                    >Computer Science & Engineering</a
+                  >
+                  <a class="dropdown-item dept-dropdown-items" href="./cst.html"
+                    >Computer Science & Technology</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="http://srivasaviengg.ac.in/cai.php"
+                    >Computer Science & Engineering<br />(Artificial
+                    Intelligence)</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="http://srivasaviengg.ac.in/aiml.php"
+                  >
+                    <div style="width: 100%">
+                      Artificial Intelligence & <br />Machine Learning
+                    </div>
+                  </a>
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="./ece.html"
+                  >
+                    <div>Electronics & Communication <br />Engineering</div>
+                  </a>
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="./ect.html"
+                  >
+                    <div>Electronics & Communication <br />Technology</div>
+                  </a>
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="./eee.html"
+                  >
+                    <div>Electrical & Electronic<br />Engineering</div>
+                  </a>
+                  <a class="dropdown-item dept-dropdown-items" href="./me.html"
+                    >Mechanical Engineering</a
+                  >
+                  <a class="dropdown-item dept-dropdown-items" href="./ce.html"
+                    >Civil Engineering</a
+                  >
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="./bsh.html"
+                  >
+                    <div>Basic Science & Humanities</div>
+                  </a>
+                  <a
+                    class="dropdown-item dept-dropdown-items"
+                    href="./mba.html"
+                  >
+                    <div>Master of Business<br />Administration</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="small-navbar-nav-item p-2">
+                <a
+                  class="small-navbar-items-last-div-anchor active"
+                  aria-current="page"
+                  href="../campusLife.html"
+                  style="
+                    color: #000000 !important;
+                    font-weight: bold !important;
+                  "
+                  >Campus Life</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 text-center"
+              style="border: 1px solid grey; box-sizing: border-box"
+            >
+              <div class="small-navbar-nav-item p-2">
+                <a
+                  class="small-navbar-items-last-div-anchor active"
+                  aria-current="page"
+                  href="#"
+                  style="
+                    color: #000000 !important;
+                    font-weight: bold !important;
+                  "
+                  >Placements</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="small-navbar-last-div-navbar p-2"
+          style="
+            border: 1px solid grey;
+            border-bottom-width: 1px;
+            border-top-width: 0px;
+          "
+        >
+          <p class="text-center" style="font-weight: bold; color: #000000">
+            Information for:
+          </p>
+          <div class="small-navbar-items-last-div-element p-0">
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="https://www.srivasaviengg.ac.in/grievance/index.php"
+              >V Grievance</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="http://srivasaviengg.ac.in/naac.php"
+              >NAAC
+            </a>
+            <a
+              href="../academics.html"
+              class="p-2 small-navbar-items-last-div-anchor"
+              >Academics</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="http://srivasaviengg.ac.in/r&d_profile.php"
+              >R & D</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="http://srivasaviengg.ac.in/feestructure.php"
+              >Category B</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="http://srivasaviengg.ac.in/"
+              >UGC</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
+              href="http://srivasaviengg.ac.in/"
+              >NIRF</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/header.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

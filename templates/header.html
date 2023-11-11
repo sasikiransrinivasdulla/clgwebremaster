@@ -1,50 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../css/header.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!--- <script
-      type="text/javascript"
-      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
-    ></script> --->
-    <script
-      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/20c5629a29.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./header.css">
+  <title>Document</title>
+  <script
+  src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://kit.fontawesome.com/20c5629a29.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
     <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg bg-color nav-elements-large">
+      <nav class="navbar navbar-expand-lg bg-color fixed nav-elements-large">
         <div class="container-fluid">
           <div
             class="navbar-brand d-flex"
@@ -63,7 +41,7 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
+            aria-controls="#navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -78,7 +56,7 @@
               <li class="nav-item hover-overline-animation">
                 <a
                   class="nav-link"
-                  href="../"
+                  href="../../index.html"
                   style="color: #fff; font-weight: 500"
                   >Home</a
                 >
@@ -86,19 +64,19 @@
               <li class="nav-item hover-overline-animation">
                 <div class="dropdown show">
                   <a
-                    class="btn btn-white w-100 dropdown-toggle pt-2"
+                    class="btn w-100 dropdown-toggle pt-2"
                     style="border-style: none; color: #fff; font-weight: 500"
                     href="#"
                     role="button"
                     id="dropdownMenuLink"
-                    data-toggle="dropdown"
+                    data-bs-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
                     Administration
                   </a>
                   <div
-                    class="dropdown-menu w-100"
+                    class="dropdown-menu w-100 p-2"
                     style="width: fit-content !important"
                     aria-labelledby="dropdownMenuLink"
                   >
@@ -142,7 +120,7 @@
                     href="#"
                     role="button"
                     id="dropdownMenuLink"
-                    data-toggle="dropdown"
+                    data-bs-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
@@ -162,19 +140,18 @@
                     </a>
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/cst.html"
+                      href="./cst.html"
                     >
                       <div>Computer Science & Technology</div>
                     </a>
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="http://srivasaviengg.ac.in/cai.php"
-                      >Computer Science & Engineering<br />(Artificial
-                      Intelligence)</a
+                      href="./DEPT/cai.html"
+                      >Computer Science Engineering(AI)</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="http://srivasaviengg.ac.in/aiml.php"
+                      href="./DEPT/aiml.html"
                     >
                       <div>
                         Artificial Intelligence & <br />Machine Learning
@@ -188,29 +165,29 @@
                     </a>
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/ect.html"
+                      href="./ect.html"
                     >
                       <div>Electronics & Communication <br />Technology</div>
                     </a>
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/eee.html"
+                      href="./eee.html"
                     >
                       <div>Electrical & Electronic<br />Engineering</div>
                     </a>
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/me.html"
+                      href="./DEPT/mech.html"
                       >Mechanical Engineering</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/ce.html"
+                      href="./DEPT/civil.html"
                       >Civil Engineering</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./DEPT/mba.html"
+                      href="./templates/DEPT/mba.html"
                     >
                       <div>Basic Science<br />Humanities</div>
                     </a>
@@ -235,57 +212,96 @@
               <li class="nav-item hover-overline-animation">
                 <a
                   class="nav-link"
-                  href="./placements.html"
+                  href="../placements.html"
                   style="color: #fff; font-weight: 500"
                   >Placements</a
                 >
+              </li>
+              <li class="nav-item dropdown d-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #fff"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div
-        class="second2-navbar-large nav-elements-large d-flex flex-row justify-content-center"
+        class="second2-navbar-large nav-elements-large d-flex flex-row justify-content-center shadow"
         id="second-large-navbar"
       >
         <div
           class="second2-navbar-large-contents text-center d-flex flex-row justify-content-center"
         >
           <a
-            href="https://www.srivasaviengg.ac.in/grievance/index.php"
-            class="m-2"
+            href="./V_Grivence.html"
+            class="m-2 hover-underline-animation"
             id="nav-bar2-text"
+            style="text-decoration: none !important; color:black"
             >V Grievance</a
           >
           <a
             href="http://srivasaviengg.ac.in/naac.php"
-            class="m-2"
+            class="m-2 hover-underline-animation"
             id="nav-bar2-text2"
+            style="text-decoration: none !important; color:black"
           >
             NAAC
           </a>
-          <a href="./academics.html" class="m-2" id="nav-bar2-text3"
+          <a
+            href="./templates/academics.html"
+            class="m-2 hover-underline-animation"
+            id="nav-bar2-text3"
+            style="text-decoration: none !important; color:black"
             >Academics</a
           >
           <a
             href="http://srivasaviengg.ac.in/r&d_profile.php"
-            class="m-2"
+            class="m-2 hover-underline-animation"
             id="nav-bar2-text4"
+            style="text-decoration: none !important; color:black"
             >R & D</a
           >
-          <a href="http://srivasaviengg.ac.in" class="m-2" id="nav-bar2-text5"
+          <a
+            href="http://srivasaviengg.ac.in"
+            class="m-2 hover-underline-animation"
+            id="nav-bar2-text5"
+            style="text-decoration: none !important; color:black"
             >Mandates</a
           >
           <a
             href="http://srivasaviengg.ac.in/feestructure.php"
-            class="m-2"
+            class="m-2 hover-underline-animation"
             id="nav-bar2-text6"
+            style="text-decoration: none !important; color:black"
             >Category B</a
           >
-          <a href="http://srivasaviengg.ac.in/" class="m-2" id="nav-bar2-text7"
+          <a
+            href="http://srivasaviengg.ac.in/"
+            class="m-2 hover-underline-animation"
+            id="nav-bar2-text7"
+            style="text-decoration: none !important; color:black"
             >UGC</a
           >
-          <a href="http://srivasaviengg.ac.in/" class="m-2" id="nav-bar2-text8"
+          <a
+            href="http://srivasaviengg.ac.in/"
+            class="m-2 hover-underline-animation"
+            id="nav-bar2-text8"
+            style="text-decoration: none !important; color:black"
             >NIRF</a
           >
         </div>
@@ -314,7 +330,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="../"
+                  href="../../index.html"
                   style="color: #000000; font-weight: bold !important"
                   >Home</a
                 >
@@ -327,11 +343,11 @@
               <div class="dropdown show">
                 <a
                   class="btn btn-white w-100 dropdown-toggle"
-                  style="border-style: none; font-weight: bold"
+                  style="border-style: none !important; font-weight: bold"
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -377,7 +393,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="./academics.html"
+                  href="../academics.html"
                   style="color: #000000; font-weight: bold !important"
                   >Academics</a
                 >
@@ -394,7 +410,7 @@
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -417,80 +433,58 @@
                   aria-labelledby="dropdownMenuLink"
                 >
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/cse.html"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./dept/cse.html"
                     >Computer Science & Engineering</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/cst.html"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./cst.html"
                     >Computer Science & Technology</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="http://srivasaviengg.ac.in/cai.php"
-                    >Computer Science & Engineering<br />(Artificial
-                    Intelligence)</a
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./DEPT/cai.html"
+                    >Computer Science<br />
+                    Engineering(AI)</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="http://srivasaviengg.ac.in/aiml.php"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./aiml.html"
                   >
                     <div style="width: 100%">
                       Artificial Intelligence & <br />Machine Learning
                     </div>
                   </a>
                   <a
-                    class="dropdown-item dept-dropdown-items"
+                    class="dropdown-item dept-dropdown-items drop"
                     href="./DEPT/ece.html"
                   >
                     <div>Electronics & Communication <br />Engineering</div>
                   </a>
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/ect.html"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./ect.html"
                   >
                     <div>Electronics & Communication <br />Technology</div>
                   </a>
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/eee.html"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./eee.html"
                   >
                     <div>Electrical & Electronic<br />Engineering</div>
                   </a>
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/me.html"
+                    class="dropdown-item dept-dropdown-items drop"
+                    href="./DEPT/mech.html"
                     >Mechanical Engineering</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/ce.html"
-                    >Civil Engineering</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/bsh.html"
-                  >
-                    <div>Basic Science & Humanities</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="./DEPT/mba.html"
-                  >
-                    <div>Master of Business<br />Administration</div>
                     class="dropdown-item dept-dropdown-items drop"
-                    href="./DEPT/me.html" >Mechanical Engineering</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./DEPT/ce.html"
+                    href="./DEPT/civil.html"
                     >Civil Engineering
                   </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./DEPT/bsh.html"
-                  >
+                  <a class="dropdown-item dept-dropdown-items drop" href="">
                     <div>Basic Science<br />Humanities</div>
                   </a>
                   <a
@@ -524,7 +518,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="./placements.html"
+                  href="../placements.html"
                   style="color: #000000; font-weight: bold !important"
                   >Placements</a
                 >
@@ -544,7 +538,7 @@
           <div class="small-navbar-items-last-div-element p-0">
             <a
               class="p-2 small-navbar-items-last-div-anchor"
-              href="https://www.srivasaviengg.ac.in/grievance/index.php"
+              href="./V_Grivence.html"
               >V Grievance</a
             >
             <a
@@ -553,7 +547,7 @@
               >NAAC
             </a>
             <a
-              href="./academics.html"
+              href="./templates/academics.html"
               class="p-2 small-navbar-items-last-div-anchor"
               >Academics</a
             >
@@ -581,10 +575,7 @@
         </div>
       </div>
     </div>
-    <script src="../js/header.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="./header.js">
+    </script>
+</body>
 </html>

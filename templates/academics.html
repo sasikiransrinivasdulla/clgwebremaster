@@ -27,17 +27,19 @@
     />
     <link rel="stylesheet" type="text/css" href="../css/academics.css" />
     <style type="text/css">
-      * {
+        * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-        color: #54677c;
+        
       }
       body {
         background: #f0f0f0;
+        color: #54677c;
       }
-
+      .card-color-text{
+        color: #54677c;
+      }
       .row {
         display: flex;
         flex-direction: row;
@@ -110,6 +112,7 @@
           font-size: 11px;
         }
       }
+
       .wrapper {
         position: relative;
         display: flex;
@@ -301,6 +304,15 @@
           animation: fadeIn 1.5s ease-in-out forwards;
         }
       }
+       @media screen and (max-width: 400px){
+        .animated-heading{
+          margin-top: 0px;
+          margin-bottom: 100px;
+          font-size: 2px;
+          opacity: 0;
+           animation: fadeIn 1.5s ease-in-out forwards;
+        }
+      }
       .tabs {
         display: flex;
         flex-wrap: wrap;
@@ -436,6 +448,12 @@
           margin: auto;
         }
       }
+      @media screen and (max-width: 380px){
+        .academic{
+          margin-top: 110px;
+          font-size: 25px!important;
+        }
+      }
       @media screen and (max-width: 470px) {
         .title {
           font-size: 1.9rem;
@@ -452,9 +470,9 @@
     </style>
   </head>
 
-  <body>
+  <body id="academics-body">
     <div id="header"></div>
-    <div style="margin-top: 150px">
+    <div style="margin-top: 150px" >
       <div class="containers" style="background-color: #f0f0f0">
         <h1 class="animated-heading" style="margin-bottom: 0px; padding: 25px">
           Academics
@@ -494,11 +512,11 @@
         </div>
       </section>
 
-      <div>
-        <h1
+      <div >
+        <h1 class="academic"
           style="
             text-align: center;
-            padding-top: 10px;
+            padding-top: 0px;
             padding-bottom: 30px;
             font-size: 35px;
             color: #b1040e;
@@ -743,7 +761,7 @@
               color: #b1040e;
             "
           >
-            Undergraduate Courses
+          B.Tech
           </h1>
         </div>
 
@@ -762,19 +780,19 @@
                   <h2>Civil</h2>
                   <h2>Engineering</h2>
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
@@ -783,15 +801,15 @@
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
@@ -811,36 +829,36 @@
                   <h2>Electronics</h2>
                   <h2>Engineering</h2>
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
-                  <span class="value">60</span>
+                  <span class="value">120</span>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
@@ -859,36 +877,36 @@
                   <h2>Mechanical</h2>
                   <h2>Engineering</h2>
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
-                  <span class="value">60</span>
+                  <span class="value">120</span>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
@@ -908,19 +926,67 @@
                   <h2>Communication</h2>
                   <h2>Engineering</h2>
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">180</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">8</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹63,000</span>
+              </div>
+            </div>
+          </div>
+           <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/mass-media.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Electronics &</h2>
+                  <h2>Communication</h2>
+                  <h2>Technology</h2>
+                </span>
+                <span class="btech card-color-text">B.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">4 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
@@ -929,15 +995,15 @@
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
@@ -953,23 +1019,73 @@
               </div>
               <div class="sub1name">
                 <span class="name">
-                  <h2>Computer Science</h2>
-                  <h2>Engineering &</h2>
-                  <h2>Technology</h2>
+                  <h2>Computer</h2>
+                  <h2>Science &</h2>
+                  <h2>Engineering</h2>
+                
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">240</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">8</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹63,000</span>
+              </div>
+            </div>
+          </div>
+           <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/programming-2.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Computer</h2>
+                  <h2>Science &</h2>
+                  <h2>Technology</h2>
+                
+                </span>
+                <span class="btech card-color-text">B.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">4 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
@@ -978,19 +1094,18 @@
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
-
           <div class="subdiv">
             <div class="sub1div">
               <div class="sub1pic">
@@ -1002,39 +1117,40 @@
               </div>
               <div class="sub1name">
                 <span class="name">
-                  <h2>Artificial</h2>
-                  <h2>Intelligence</h2>
+                  <h2>CSE</h2>
+                  <h2>(Artificial</h2>
+                  <h2>Intelligence)</h2>
                 </span>
-                <span class="btech">B.Tech</span>
+                <span class="btech card-color-text">B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
-                  <span class="value">60</span>
+                  <span class="value">120</span>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
                 <span class="value">8</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹63,000</span>
               </div>
             </div>
           </div>
@@ -1050,22 +1166,419 @@
               </div>
               <div class="sub1name">
                 <span class="name">
-                  <h2>Machine</h2>
-                  <h2>Learning</h2>
+                  <h2>Artificial</h2>
+                  <h2>Intelligence &</h2>
+                  <h2>Machine Learning</h2>
                 </span>
                 <span>B.Tech</span>
               </div>
             </div>
             <div class="sub2div">
               <div class="row">
-                <div class="row11">
+                <div class="row11 card-color-text">
                   <span class="prop">
                     <i class="fas fa-calendar"></i>
                     Duration -&nbsp;
                   </span>
                   <span class="value">4 Yrs</span>
                 </div>
-                <div class="row11">
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">120</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">8</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹63,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section id="acad1">
+        <div>
+          <h1
+            style="
+              text-align: center;
+              padding-top: 60px;
+              padding-bottom: 30px;
+              font-size: 35px;
+              color: #b1040e;
+            "
+          >
+            MBA
+          </h1>
+        </div>
+
+        <div class="maindiv">
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/growth.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Master of</h2>
+                  <h2>Business</h2>
+                    <h2>Administration</h2>
+                </span>
+              
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">120</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹33,500</span>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+         
+         <section id="acad">
+        <div>
+          <h1
+            style="
+              text-align: center;
+              padding-top: 60px;
+              padding-bottom: 30px;
+              font-size: 35px;
+              color: #b1040e;
+            "
+          >
+          M.Tech
+          </h1>
+        </div>
+
+        <div class="maindiv">
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/project-management.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Power Electronics</h2>
+                  <h2>& Power Systems</h2>
+                  <h2>(EEE)</h2>
+                 
+                </span>
+                <span class="btech card-color-text">M.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">18</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹55,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/mass-media.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Embedded</h2>
+                  <h2>Systems & VLSI</h2>
+                  <h2>(ECE)</h2>
+
+                </span>
+                <span class="btech card-color-text">M.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">18</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹55,900</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/programming-2.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Computer</h2>
+                  <h2>Science</h2>
+                  <h2>(CSE)</h2>
+                </span>
+                <span class="btech card-color-text">M.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">18</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹55,900</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/piston-3.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Thermal</h2>
+                 
+                  <h2>Engineering</h2>
+                  <h2>(Mechanical)</h2>
+                </span>
+                <span class="btech card-color-text">M.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">18</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹55,000</span>
+              </div>
+            </div>
+          </div>
+           <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/surveying-2.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Structural</h2>
+                   <h2>Engineering</h2>
+                   <h2>(Civil)</h2>
+                </span>
+                <span class="btech card-color-text">M.Tech</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">2 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">18</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">4</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹55,000</span>
+              </div>
+            </div>
+          </div>
+</div>
+</section>
+<section id="acad">
+        <div>
+          <h1
+            style="
+              text-align: center;
+              padding-top: 60px;
+              padding-bottom: 30px;
+              font-size: 35px;
+              color: #b1040e;
+            "
+          >
+          Diploma(Polytechnic)
+          </h1>
+        </div>
+
+        <div class="maindiv">
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/surveying-2.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Civil</h2>
+                  <h2>Engineering</h2>
+                </span>
+                <span class="btech card-color-text">Diploma</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">3 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
                   <span class="prop"
                     ><i class="fas fa-users"></i>Intake -
                   </span>
@@ -1074,20 +1587,214 @@
               </div>
             </div>
             <div class="row">
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"
                   ><i class="fas fa-stopwatch"></i>Semesters -
                 </span>
-                <span class="value">8</span>
+                <span class="value">6</span>
               </div>
-              <div class="row11">
+              <div class="row11 card-color-text">
                 <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
-                <span class="value">₹45,900</span>
+                <span class="value">₹25,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/project-management.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Electrical &</h2>
+                  <h2>Electronics</h2>
+                  <h2>Engineering</h2>
+                </span>
+                <span class="btech card-color-text">Diploma</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">3 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">120</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">6</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹25,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/piston-3.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Mechanical</h2>
+                  <h2>Engineering</h2>
+                </span>
+                <span class="btech card-color-text">Diploma</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">3 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">120</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">6</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹25,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/mass-media.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Electronics &</h2>
+                  <h2>Communication</h2>
+                  <h2>Engineering</h2>
+                </span>
+                <span class="btech card-color-text">Diploma</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">3 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">60</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">6</span>
+              </div>
+              <div class="row11 card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹25,000</span>
+              </div>
+            </div>
+          </div>
+           <div class="subdiv">
+            <div class="sub1div">
+              <div class="sub1pic">
+                <img
+                  src="../images/academics/programming-2.png"
+                  height="120"
+                  width="120"
+                />
+              </div>
+              <div class="sub1name">
+                <span class="name">
+                  <h2>Computer</h2>
+                  <h2>Engineering</h2>
+                 
+                </span>
+                <span class="btech card-color-text">Diploma</span>
+              </div>
+            </div>
+            <div class="sub2div">
+              <div class="row">
+                <div class="row11 card-color-text">
+                  <span class="prop">
+                    <i class="fas fa-calendar"></i>
+                    Duration -&nbsp;
+                  </span>
+                  <span class="value">3 Yrs</span>
+                </div>
+                <div class="row11 card-color-text">
+                  <span class="prop"
+                    ><i class="fas fa-users"></i>Intake -
+                  </span>
+                  <span class="value">60</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row11 card-color-text">
+                <span class="prop"
+                  ><i class="fas fa-stopwatch"></i>Semesters -
+                </span>
+                <span class="value">6</span>
+              </div>
+              <div class="row11 card-color-text card-color-text">
+                <span class="prop"><i class="fas fa-coins"></i>Fee - </span>
+                <span class="value">₹25,000</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        </section>
     </div>
     <div id="footer"></div>
   </body>

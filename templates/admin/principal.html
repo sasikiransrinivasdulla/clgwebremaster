@@ -32,17 +32,18 @@
     ></script>
     <style>
       .header_main {
-        padding-top: 30px;
-        background-color: rgb(248, 247, 247);
+        background-color: rgb(240, 238, 238);
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
         text-align: center;
         margin: 0px;
+        width: 100%;
       }
       .icon-text-container {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding-left: 320px;
       }
 
       .icon {
@@ -60,18 +61,8 @@
         font-size: 3rem;
         opacity: 0.5;
         rotate: 180deg;
-        padding-left: 30%;
+
         padding-bottom: 5%;
-      }
-      .navbar {
-        text-align: left;
-        padding: 1em;
-      }
-      .navbar a {
-        color: #fff;
-        text-decoration: none;
-        margin-left: 1em;
-        font-size: 19px;
       }
       .name-bg {
         background-color: #b1040e;
@@ -88,7 +79,7 @@
 
       .section {
         width: 100%;
-        min-height: 100vh;
+
         background-color: white;
       }
       .container {
@@ -141,43 +132,46 @@
 
       @media screen and (max-width: 925px) {
         .quotation-first {
-          margin-right: 250px;
+          align-self: flex-start;
         }
         .quotation-last {
-          margin-left: 250px;
+          align-self: flex-end;
+        }
+        #body_container{
+          margin-top: 70px !important;
         }
       }
 
-      @media screen and (max-width: 768px) {
-        .quotation-first {
-          margin-right: 720px;
+      @media screen and (min-width:768px){
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 150px;
         }
-        .quotation-last {
-          margin-left: 600px;
-          padding: auto;
-        }
-      }
-      @media screen and (max-width: 425px) {
-        .quotation-first {
-          margin-right: 350px;
-        }
-        .quotation-last {
-          margin-left: 300px;
+        .header_main{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
-      @media screen and (max-width: 320px) {
-        .quotation-first {
-          margin-right: 200px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
+
       @media screen and (max-width: 768px) {
         .header_main {
           padding-top: 20px;
         }
-
+        .header_main{
+          margin-top: 5px;
+          padding: 10px;
+        }
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         .icon-text-container {
           flex-direction: column;
           padding-left: 0;
@@ -237,7 +231,7 @@
         box-sizing: border-box;
         background-color: white;
       }
-      ul {
+      #objectivePoints ul {
         padding-left: 15%;
         font-size: 20px;
       }
@@ -411,93 +405,85 @@
   </head>
   <body>
     <div id="header"></div>
-    <div class="header_main">
-      <!--<div class="navbar">
-        <div class="ain ">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-        </div>
-        </div>-->
-      <h1
-        style="font-size: 40px; color: #c5121b"
-        class="hover-underline-animation"
-      >
-        Our Principal
-      </h1>
-      <div class="icon-text-container" align="center">
-        <div class="quotation-first">
-          <i align="center" class="bi bi-quote"></i>
-        </div>
-        <h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
-          augue vel diam dignissim, vel posuere mi fringilla.
-        </h4>
-        <div class="quotation-last">
-          <i align="center" class="bi bi-quote"></i>
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="section">
-        <div class="container">
-          <div class="content-section">
-            <div class="title">
-              <h1 class="hover-underline-animation">Profile</h1>
-            </div>
-            <div class="content">
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi ipsam delectus hic.
-              </h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quia, a atque hic deleniti sunt provident quae
-                similique cupiditate doloribus at suscipit beatae magni nesciunt
-                voluptate aspernatur, repellat quod nihil! Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Velit, facere voluptatem esse
-                officiis dignissimos nihil iste,fuga molestias, ex accusantium
-                repellat quasi excepturi quam quis perspiciatis impedit
-                recusandae cum est Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Cum architecto saepe dignissimos quas
-                reprehenderit voluptatem ab, dicta doloremque rem sed voluptas
-                aliquid, id non totam? Blanditiis maxime perferendis facere at!
-              </p>
-
-              <p></p>
-            </div>
-
-            <div class="social">
-              <a href=""><i class="bi bi-envelope-fill"></i></a>
-              <a href=""><i class="bi bi-telephone-fill"></i></a>
-              <a href=""><i class="bi bi-twitter"></i></a>
-            </div>
+    <div id="body_container">
+      <div class="header_main">
+        <h1
+          style="font-size: 40px; color: #c5121b"
+          class="hover-underline-animation"
+        >
+          Our Principal
+        </h1>
+        <div class="icon-text-container" align="center">
+          <div class="quotation-first">
+            <i align="center" class="bi bi-quote"></i>
           </div>
-          <div class="image-section">
-            <img src="https://srivasaviengg.ac.in/image/Principal_1.jpg" />
-            <br /><br />
-            <h3 class="name-bg" align="center">Dr.Guduru VNSR Ratnakara Rao</h3>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
+            augue vel diam dignissim, vel posuere mi fringilla.
+          </h4>
+          <div class="quotation-last">
+            <i align="center" class="bi bi-quote"></i>
           </div>
         </div>
       </div>
-    </div>
-    <div class="leastele">
-      <h1 align="center">
-        <span style="color: #727171; padding-bottom: 2ch">Principal </span
-        >Objectives
-      </h1>
-      <br />
-      <ul>
-        <li>To improve the industry institute interaction</li>
-        <li>To organize Conferences/Workshops/Seminars</li>
-        <li>To promote R & D activity</li>
-        <li>To strive for student's placement</li>
-        <li>To organize co-curricular and extra-curricular activities</li>
-        <li>To improve personality of teaching & non-teaching staff</li>
-        <li>To create new facilities</li>
-      </ul>
-      <br />
-      <br />
-      <br />
+      <div class="main">
+        <div class="section">
+          <div class="container">
+            <div class="content-section">
+              <div class="title">
+                <h1 class="hover-underline-animation">Profile</h1>
+              </div>
+              <div class="content">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ipsam delectus hic.
+                </h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quia, a atque hic deleniti sunt provident quae
+                  similique cupiditate doloribus at suscipit beatae magni
+                  nesciunt voluptate aspernatur, repellat quod nihil! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                  facere voluptatem esse officiis dignissimos nihil iste,fuga
+
+                </p>
+  
+                <p></p>
+              </div>
+  
+              <div class="social">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-telephone-fill"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="http://srivasaviengg.ac.in/image/Principal_1.jpg" />
+              <br /><br />
+              <h3 class="name-bg" align="center">Dr.Guduru VNSR Ratnakara Rao</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="leastele">
+        <h1 align="center">
+          <span style="padding-bottom: 2ch">Principal </span
+          >Objectives
+        </h1>
+        <br />
+        <ul id="objectivePoints">
+          <li>To improve the industry institute interaction</li>
+          <li>To organize Conferences/Workshops/Seminars</li>
+          <li>To promote R & D activity</li>
+          <li>To strive for student's placement</li>
+          <li>To organize co-curricular and extra-curricular activities</li>
+          <li>To improve personality of teaching & non-teaching staff</li>
+          <li>To create new facilities</li>
+        </ul>
+        <br />
+        <br />
+        <br />
+      </div>
     </div>
     <div id="footer"></div>
     <script>

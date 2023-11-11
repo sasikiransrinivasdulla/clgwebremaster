@@ -32,7 +32,6 @@
     <title>Team profile cards</title>
     <style>
       .header_main {
-        padding-top: 10px;
         background-color: rgb(236, 234, 234);
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
@@ -51,8 +50,9 @@
       }
       .icon-text-container {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding-left: 320px;
       }
 
       .icon {
@@ -70,7 +70,6 @@
         font-size: 3rem;
         opacity: 0.5;
         rotate: 180deg;
-        padding-left: 30%;
         padding-bottom: 5%;
       }
       .all-carad {
@@ -174,40 +173,21 @@
       }
       @media screen and (max-width: 925px) {
         .quotation-first {
-          margin-right: 250px;
+          align-self: flex-start;
         }
         .quotation-last {
-          margin-left: 250px;
+          align-self: flex-end;
+        }
+        #body_container{
+          margin-top: 70px !important;
         }
       }
 
       @media screen and (max-width: 768px) {
-        .quotation-first {
-          margin-right: 720px;
+        .header_main{
+          margin-top: 5px;
+          padding: 10px;
         }
-        .quotation-last {
-          margin-left: 600px;
-          padding: auto;
-        }
-      }
-      @media screen and (max-width: 425px) {
-        .quotation-first {
-          margin-right: 350px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-      @media screen and (max-width: 320px) {
-        .quotation-first {
-          margin-right: 200px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
         .header_main {
           padding-top: 20px; /* Adjust padding-top for smaller screens */
         }
@@ -222,6 +202,11 @@
           font-size: 2rem; /* Reduce font size for quotations */
           padding-bottom: 1ch; /* Adjust padding for quotations */
           padding-left: 0; /* Remove left padding */
+        }
+      }
+      @media screen and (min-width:768px){
+        #body_container{
+          margin-top: 150px;
         }
       }
       a {
@@ -267,7 +252,10 @@
         display: block;
         margin-top: 4px;
       }
-
+      footer a{
+        text-decoration: none;
+        color: #fff;
+      }
       footer p {
         font-size: 16px;
       }
@@ -286,37 +274,7 @@
         margin-top: 20px;
       }
 
-      /* Facebook */
-      .social-icons .facebook:hover i {
-        color: #1877f2;
-        /* Facebook blue */
-      }
-
-      /* Twitter */
-      .social-icons .twitter:hover i {
-        color: #1da1f2;
-        /* Twitter blue */
-      }
-
-      /* Instagram */
-      .social-icons .instagram:hover i {
-        color: #e4405f;
-        /* Instagram pink */
-      }
-
-      /* Replace with your Instagram logo image */
-
-      /* LinkedIn */
-      .social-icons .linkedin:hover i {
-        color: #0077b5;
-        /* LinkedIn blue */
-      }
-
-      /* YouTube */
-      .social-icons .youtube:hover i {
-        color: #ff0000;
-        /* YouTube red */
-      }
+      
     </style>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -332,15 +290,10 @@
   </head>
   <body>
     <div id="header"></div>
+    <div id="body_container">
     <div style="margin-top: 130px">
       <div class="back-gr">
         <div class="header_main">
-          <!--<div class="navbar">
-          <div class="ain ">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-          </div>
-          </div>-->
           <h1
             style="font-size: 40px; color: #c5121b"
             class="hover-underline-animation"
@@ -498,6 +451,7 @@
         </div>
       </div>
     </div>
+  </div>
     <div id="footer"></div>
   </body>
 </html>

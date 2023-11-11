@@ -33,8 +33,7 @@
     <title>Team profile cards</title>
     <style>
       .header_main {
-        padding-top: 10px;
-        background-color: white;
+        background-color: #e4e4e4;
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
         text-align: center;
@@ -42,8 +41,9 @@
       }
       .icon-text-container {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding-left: 320px;
       }
 
       .icon {
@@ -61,45 +61,31 @@
         font-size: 3rem;
         opacity: 0.5;
         rotate: 180deg;
-        padding-left: 30%;
         padding-bottom: 5%;
       }
       @media screen and (max-width: 925px) {
         .quotation-first {
-          margin-right: 250px;
+          align-self: flex-start;
         }
         .quotation-last {
-          margin-left: 250px;
+          align-self: flex-end;
+        }
+        #body_container{
+          margin-top: 70px !important;
         }
       }
 
       @media screen and (max-width: 768px) {
-        .quotation-first {
-          margin-right: 720px;
+        .header_main{
+          margin-top: 20px;
+          padding: 10px;
         }
-        .quotation-last {
-          margin-left: 600px;
-          padding: auto;
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
-      }
-      @media screen and (max-width: 425px) {
-        .quotation-first {
-          margin-right: 350px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-      @media screen and (max-width: 320px) {
-        .quotation-first {
-          margin-right: 200px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
         .header_main {
           padding-top: 20px; /* Adjust padding-top for smaller screens */
         }
@@ -116,7 +102,12 @@
           padding-left: 0; /* Remove left padding */
         }
       }
+      @media screen and (min-width:768px){
+        #body_container{
 
+          margin-top: 150px;
+        }
+      }
       .card-main {
         margin: 0;
         padding: 0;
@@ -126,9 +117,8 @@
       }
 
       .carad {
-        min-height: 100vh;
+
         width: 100%;
-        background-color: #e4e4e4;
         display: flex;
         /* Responsive behaviour */
         flex-wrap: wrap;
@@ -324,67 +314,69 @@
   <body>
     <div id="header"></div>
     <div style="margin-top: 130px">
-      <div class="header_main">
-        <h1
-          style="font-size: 40px; color: #c5121b"
-          class="hover-underline-animation"
-        >
-          Our Deans
-        </h1>
-        <div class="icon-text-container" align="center">
-          <div class="quotation-first">
-            <i align="center" class="bi bi-quote"></i>
-          </div>
-          <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vehicula augue vel diam dignissim, vel posuere mi fringilla.
-          </h4>
-          <div class="quotation-last">
-            <i align="center" class="bi bi-quote"></i>
+      <div id="body_container">
+        <div class="header_main">
+          <h1
+            style="font-size: 40px; color: #c5121b"
+            class="hover-underline-animation"
+          >
+            Our Deans
+          </h1>
+          <div class="icon-text-container" align="center">
+            <div class="quotation-first">
+              <i align="center" class="bi bi-quote"></i>
+            </div>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vehicula augue vel diam dignissim, vel posuere mi fringilla.
+            </h4>
+            <div class="quotation-last">
+              <i align="center" class="bi bi-quote"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-main">
-        <div class="carad">
-          <div class="card">
-            <div class="card-image">
-              <img
-                height="130"
-                width="130"
-                src="https://srivasaviengg.ac.in/image/V.S.naresh.JPG"
-                alt="Profile image"
-              />
+        <div class="card-main">
+          <div class="carad">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  height="130"
+                  width="130"
+                  src="http://srivasaviengg.ac.in/image/V.S.naresh.JPG"
+                  alt="Profile image"
+                />
+              </div>
+              <p class="name">Dr.V.S.Naresh</p>
+              <p><bold>Dean(R&D)</bold></p>
+              <p class="hover-underline-animation">
+                <bold>Professor of CSE DEpartment</bold>
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                delectus, mollitia tenetur libero quam recusandae alias in
+                incidunt.
+              </p>
             </div>
-            <p class="name">Dr.V.S.Naresh</p>
-            <p><bold>Dean(R&D)</bold></p>
-            <p class="hover-underline-animation">
-              <bold>Professor of CSE DEpartment</bold>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img
-                style="height: 100%; width: auto"
-                src="https://media.licdn.com/dms/image/C4E03AQGSpyyx9qvUnw/profile-displayphoto-shrink_800_800/0/1529932837090?e=2147483647&v=beta&t=Bk4bWdiVENa2m_GufsfKn82UDLRpQHCu4WUjv2MzSz4"
-                alt="Profile image"
-              />
+  
+            <div class="card">
+              <div class="card-image">
+                <img
+                  style="height: 100%; width: auto"
+                  src="https://media.licdn.com/dms/image/C4E03AQGSpyyx9qvUnw/profile-displayphoto-shrink_800_800/0/1529932837090?e=2147483647&v=beta&t=Bk4bWdiVENa2m_GufsfKn82UDLRpQHCu4WUjv2MzSz4"
+                  alt="Profile image"
+                />
+              </div>
+              <p class="name">Dr.Ch.Rambabu</p>
+              <p><bold>Dean(Student Affairs)</bold></p>
+              <p class="hover-underline-animation">
+                <bold>Professor of EEE Department</bold>
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                delectus, mollitia tenetur libero quam recusandae alias in
+                incidunt.
+              </p>
             </div>
-            <p class="name">Dr.Ch.Rambabu</p>
-            <p><bold>Dean(Student Affairs)</bold></p>
-            <p class="hover-underline-animation">
-              <bold>Professor of EEE Department</bold>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
           </div>
         </div>
       </div>

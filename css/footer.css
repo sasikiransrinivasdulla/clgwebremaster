@@ -10,7 +10,6 @@ footer a {
     margin-right: 10px;
     display: flex;
     justify-content: space-around;
-
     align-items: center;
 }
 
@@ -59,8 +58,10 @@ footer p {
 }
 
 .logo {
-    height: 80px;
-    width: fit-content;
+    height: 180px;
+    width: 153px;
+    padding-top: 10px !important;
+
 }
 
 footer h5 {
@@ -69,19 +70,19 @@ footer h5 {
 
 /* Facebook */
 .social-icons .facebook:hover i {
-    color: #1877f2;
+    color: #b1040e;
     /* Facebook blue */
 }
 
 /* Twitter */
 .social-icons .twitter:hover i {
-    color: #1DA1F2;
+    color: #b1040e;
     /* Twitter blue */
 }
 
 /* Instagram */
 .social-icons .instagram:hover i {
-    color: #E4405F;
+    color: #b1040e
     /* Instagram pink */
 }
 
@@ -90,13 +91,13 @@ footer h5 {
 
 /* LinkedIn */
 .social-icons .linkedin:hover i {
-    color: #0077B5;
+    color: #b1040e
     /* LinkedIn blue */
 }
 
 /* YouTube */
 .social-icons .youtube:hover i {
-    color: #FF0000;
+    color: #b1040e;
     /* YouTube red */
 }
 

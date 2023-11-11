@@ -27,18 +27,24 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      body{
+        box-sizing: border-box;
+        margin: 0;
+      }
       .header_main {
-        padding-top: 10px;
-        background-color: rgb(240, 238, 238);
+        background-color: rgb(236, 234, 234);
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
         text-align: center;
         margin: 0px;
+        width: 100%;
       }
       .icon-text-container {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding-left: 320px;
+
       }
 
       .icon {
@@ -56,7 +62,7 @@
         font-size: 3rem;
         opacity: 0.5;
         rotate: 180deg;
-        padding-left: 30%;
+
         padding-bottom: 5%;
       }
       .animated-text {
@@ -157,7 +163,6 @@
 
       .section {
         width: 100%;
-        min-height: 100vh;
         background-color: white;
       }
       .container {
@@ -207,42 +212,32 @@
       .content-section .social i:hover {
         color: #c90d0d;
       }
+
+
       @media screen and (max-width: 925px) {
         .quotation-first {
-          margin-right: 250px;
+          align-self: flex-start;
         }
         .quotation-last {
-          margin-left: 250px;
+          align-self: flex-end;
+        }
+        #body_container{
+          margin-top: 70px !important;
         }
       }
+      
 
       @media screen and (max-width: 768px) {
-        .quotation-first {
-          margin-right: 720px;
+        .header_main{
+          margin-top: 5px;
+          padding: 10px;
         }
-        .quotation-last {
-          margin-left: 600px;
-          padding: auto;
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
-      }
-      @media screen and (max-width: 425px) {
-        .quotation-first {
-          margin-right: 350px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-      @media screen and (max-width: 320px) {
-        .quotation-first {
-          margin-right: 200px;
-        }
-        .quotation-last {
-          margin-left: 300px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
         .header_main {
           padding-top: 20px; /* Adjust padding-top for smaller screens */
         }
@@ -289,6 +284,15 @@
         }
         .content-section .social {
           text-align: center;
+        }
+      }
+      @media screen and (min-width:768px){
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 150px;
         }
       }
       .leastele {
@@ -428,13 +432,13 @@
     <script>
       $(function () {
         $("#header").load("./header.html");
-        $("#footer").load("./footer.html");
+        $("#footer").load("../DEPT/footer.html");
       });
     </script>
   </head>
   <body>
     <div id="header"></div>
-    <div style="margin-top: 130px" id="body_container">
+    <div id="body_container">
       <div class="header_main">
         <h1
           style="font-size: 40px; color: #c5121b"
@@ -474,12 +478,7 @@
                   nesciunt voluptate aspernatur, repellat quod nihil! Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Velit,
                   facere voluptatem esse officiis dignissimos nihil iste,fuga
-                  molestias, ex accusantium repellat quasi excepturi quam quis
-                  perspiciatis impedit recusandae cum est Lorem ipsum dolor sit,
-                  amet consectetur adipisicing elit. Cum architecto saepe
-                  dignissimos quas reprehenderit voluptatem ab, dicta doloremque
-                  rem sed voluptas aliquid, id non totam? Blanditiis maxime
-                  perferendis facere at!
+                 
                 </p>
 
                 <p></p>
@@ -506,7 +505,7 @@
           <h1 align="center">Technical director <span></span></h1>
           <br />
         </div>
-        <ul>
+        <ul style="box-sizing: border-box;">
           <li>To improve the industry institute interaction</li>
           <li>To organize Conferences/Workshops/Seminars</li>
           <li>To promote R & D activity</li>

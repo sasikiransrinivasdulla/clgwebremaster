@@ -380,7 +380,7 @@ footer h5 {
 }
 .purpose-title{
   font-family: Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 2.5rem !important;
   font-weight:800 ;
   margin-bottom: 30px;
 }

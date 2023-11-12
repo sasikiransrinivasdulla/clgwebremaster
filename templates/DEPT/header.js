@@ -18,3 +18,8 @@ button.addEventListener("click", function() {
         flag = 0;
     }
 });
+
+let dropdownItem=document.getElementById("dropdownElement");
+function hoverEffect(){
+    dropdownItem.classList.toggle("small-hover-effect");
+}

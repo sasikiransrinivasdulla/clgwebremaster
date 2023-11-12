@@ -399,7 +399,7 @@
           <i class="fa-solid fa-bars" id="changeItem"></i>
         </button>
       </nav>
-      <div class="small-navbar-menu-navbar bg-white" id="menuItems">
+      <nav class="small-navbar-menu-navbar bg-white" id="menuItems">
         <div class="container-fluid text-center" style="border: 1px solid grey">
           <div class="row text-center" style="border: 1px solid grey">
             <div
@@ -473,7 +473,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="./templates/academics.html"
+                  href="../academics.html"
                   style="color: #000000; font-weight: bold !important"
                   >Academics</a
                 >
@@ -512,42 +512,58 @@
                   class="dropdown-menu w-100 p-2"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/cse.html"
-                    >Computer Science & Engineering</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/cse.html"
-                    >Computer Science & Technology</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/cai.html"
-                    >Computer Science<br />
-                    Engineering(AI)</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/aiml.html"
-                  >
-                    <div style="width: 100%">
-                      Artificial Intelligence & <br />Machine Learning
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/ece.html"
-                  >
-                    <div>Electronics & Communication <br />Engineering</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../DEPT/ece.html"
-                  >
-                    <div>Electronics & Communication <br />Technology</div>
-                  </a>
+                <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="../DEPT/cse.html"
+                ><div style="width: 100%">
+                  <span id="bigVisible"> Computer Science & Engineering</span>
+                  <span id="smallVisible" >Computer Science &<br/> Engineering</span>
+                </div>
+                </a
+              >
+              <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="../DEPT/cst.html"
+                ><div style="width: 100%">
+                  <span id="bigVisible"> Computer Science & Technology</span>
+                  <span id="smallVisible" >Computer Science &<br/> Technology</span>
+                </div></a
+              >
+              <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="../DEPT/cai.html"
+                ><div style="width: 100%">
+                  <span id="bigVisible"> Computer Science & Engineering (AI)</span>
+                  <span id="smallVisible" >Computer Science &<br/>Engineering (AI)</span>
+                </div></a
+              >
+              <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="../DEPT/aiml.html"
+              >
+              <div style="width: 100%">
+                <span id="bigVisible"> Artificial Intelligence & Machine Learning</span>
+                <span id="smallVisible" >Artificial Intelligence &<br/> Machine Learning</span>
+              </div>
+              </a>
+              <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="../DEPT/ece.html"
+              >
+              <div style="width: 100%">
+                <span id="bigVisible"> Electronics & Communication Engineering</span>
+                <span id="smallVisible" >Electronics Communication <br/>Engineering</span>
+              </div> 
+              </a>
+              <a
+                class="dropdown-item dept-dropdown-items drop"
+                href="./ect.html"
+              >
+              <div style="width: 100%">
+                <span id="bigVisible"> Electronics & Communication Technology</span>
+                <span id="smallVisible" >Electronics Communication <br/>Technology</span>
+              </div>
+              </a>
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./eee.html"
@@ -584,7 +600,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="./templates/campusLife.html"
+                  href="../campusLife.html"
                   style="color: #000000; font-weight: bold !important"
                   >Campus Life</a
                 >
@@ -653,7 +669,7 @@
             >
           </div>
         </div>
-      </div>
+      </nav>
     </div>
     <script src="./header.js">
     </script>

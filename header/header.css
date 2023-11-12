@@ -207,9 +207,10 @@ i {
     border: 2px solid #ffffff88;
     border-radius: 5px;
     height: fit-content;
-    padding: 6px;
+    padding: 3px;
     color:#ffffff90;
-    height: fit-content;
+    height: 38px;
+    width: 50px;
 }
 .small-navbar-center-text {
     color: #ffffff;

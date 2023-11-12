@@ -307,7 +307,7 @@
         </div>
       </div>
     </div>
-    <div class="nav-elements-small fixed-top">
+    <nav class="nav-elements-small fixed-top">
       <nav class="small-navbar p-1 pb-2">
         <div class="d-flex flex-row">
           <img
@@ -393,7 +393,7 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="../academics.html"
+                  href="./academics.html"
                   style="color: #000000; font-weight: bold !important"
                   >Academics</a
                 >
@@ -435,38 +435,54 @@
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./dept/cse.html"
-                    >Computer Science & Engineering</a
+                    ><div style="width: 100%">
+                      <span id="bigVisible"> Computer Science & Engineering</span>
+                      <span id="smallVisible" >Computer Science &<br/> Engineering</span>
+                    </div>
+                    </a
                   >
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./cst.html"
-                    >Computer Science & Technology</a
+                    ><div style="width: 100%">
+                      <span id="bigVisible"> Computer Science & Technology</span>
+                      <span id="smallVisible" >Computer Science &<br/> Technology</span>
+                    </div></a
                   >
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./DEPT/cai.html"
-                    >Computer Science<br />
-                    Engineering(AI)</a
+                    ><div style="width: 100%">
+                      <span id="bigVisible"> Computer Science & Engineering (AI)</span>
+                      <span id="smallVisible" >Computer Science &<br/>Engineering (AI)</span>
+                    </div></a
                   >
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./aiml.html"
                   >
-                    <div style="width: 100%">
-                      Artificial Intelligence & <br />Machine Learning
-                    </div>
+                  <div style="width: 100%">
+                    <span id="bigVisible"> Artificial Intelligence & Machine Learning</span>
+                    <span id="smallVisible" >Artificial Intelligence &<br/> Machine Learning</span>
+                  </div>
                   </a>
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./DEPT/ece.html"
                   >
-                    <div>Electronics & Communication <br />Engineering</div>
+                  <div style="width: 100%">
+                    <span id="bigVisible"> Electronics & Communication Engineering</span>
+                    <span id="smallVisible" >Electronics Communication <br/>Engineering</span>
+                  </div> 
                   </a>
                   <a
                     class="dropdown-item dept-dropdown-items drop"
                     href="./ect.html"
                   >
-                    <div>Electronics & Communication <br />Technology</div>
+                  <div style="width: 100%">
+                    <span id="bigVisible"> Electronics & Communication Technology</span>
+                    <span id="smallVisible" >Electronics Communication <br/>Technology</span>
+                  </div>
                   </a>
                   <a
                     class="dropdown-item dept-dropdown-items drop"
@@ -574,7 +590,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </nav>
     <script src="./header.js">
     </script>
 </body>

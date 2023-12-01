@@ -116,9 +116,8 @@ body {
     text-shadow: 5px 5px 5px #000000;
 }
  /* DROPDOWN ITEMS FONT SIZE IN SMALL SIZE  */
-.dept-dropdown-items{
-    font-size: 13px;
-}
+
+
 /* .menu-item-link {
     color: #d0b200;
     font-family: "Roboto";
@@ -441,19 +440,34 @@ footer h5 {
 
 
 /* media query for display navbars and dropdowns */
-@media screen and (min-width:457px) and (max-width: 556px) {
+.dept-dropdown-items{
+    font-size: 0.8rem !important;
+}
+.dept-dropdown-items:hover{
+    background-color: #b1040e !important;
+    color: white !important;
+}
+.dept-dropdown-items{
+    background-color:white !important;
+    color: black!important;
+}
+@media screen and (max-width:576px){
+    #smallVisible{
+        display: block;
+    }
     .dept-dropdown-items{
-        font-size: 10px;
+        padding-left: 0.4rem !important;
+    }
+    #bigVisible{
+        display: none;
     }
 }
-@media screen and (max-width: 456px) {
-    .dept-dropdown-items{
-        font-size: 7px;
+@media not screen and (max-width:576px){
+    #smallVisible{
+        display: none;
     }
-}
-@media screen and (min-width:768px) and (max-width: 834px) {
-    .dept-dropdown-items{
-        font-size: 11px;
+    #bigVisible{
+        display: block;
     }
 }
 /* something  */

@@ -405,7 +405,7 @@
                 </a>
 
                 <div
-                  class="dropdown-menu w-100"
+                  class="dropdown-menu w-100 p-1"
                   aria-labelledby="dropdownMenuLink"
                 >
                   <a
@@ -479,70 +479,86 @@
                 </style>
 
                 <div
-                  class="dropdown-menu w-100 p-2"
-                  aria-labelledby="dropdownMenuLink"
+                class="dropdown-menu w-100 p-2"
+                aria-labelledby="dropdownMenuLink"
                 >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="../templates/DEPT/cse.html"
-                    >Computer Science & Engineering</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/cst.html"
-                    >Computer Science & Technology</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/cai.html"
-                    >Computer Science<br />
-                    Engineering(AI)</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/aiml.html"
-                  >
-                    <div style="width: 100%">
-                      Artificial Intelligence & <br />Machine Learning
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/ece.html"
-                  >
-                    <div>Electronics & Communication <br />Engineering</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/ect.html"
-                  >
-                    <div>Electronics & Communication <br />Technology</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/eee.html"
-                  >
-                    <div>Electrical & Electronic<br />Engineering</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/mech.html"
-                    >Mechanical Engineering</a
-                  >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/civil.html"
-                    >Civil Engineering
-                  </a>
-                  <a class="dropdown-item dept-dropdown-items drop" href="">
-                    <div>Basic Science<br />Humanities</div>
-                  </a>
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    href="./templates/DEPT/mba.html"
-                  >
-                    <div>Masters in Business<br />Administration</div>
-                  </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/cse.html"
+                  ><div style="width: 100%">
+                    <span id="bigVisible"> Computer Science & Engineering</span>
+                    <span id="smallVisible" >Computer Science <br/> & Engineering</span>
+                  </div>
+                  </a
+                >
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/cse.html"
+                  ><div style="width: 100%">
+                    <span id="bigVisible"> Computer Science & Technology</span>
+                    <span id="smallVisible" >Computer Science <br/> & Technology</span>
+                  </div></a
+                >
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/cai.html"
+                  ><div style="width: 100%">
+                    <span id="bigVisible"> Computer Science & Engineering (AI)</span>
+                    <span id="smallVisible" >Computer Science <br/> & Engineering (AI)</span>
+                  </div></a
+                >
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/aiml.html"
+                >
+                <div style="width: 100%">
+                  <span id="bigVisible"> Artificial Intelligence & Machine Learning</span>
+                  <span id="smallVisible" >Artificial Intelligence <br/> & Machine Learning</span>
+                </div>
+                </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/ece.html"
+                >
+                <div style="width: 100%">
+                  <span id="bigVisible"> Electronics & Communication Engineering</span>
+                  <span id="smallVisible" >Electronics & <br/>Communication <br/>Engineering</span>
+                </div> 
+                </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/ect.html"
+                >
+                <div style="width: 100%">
+                  <span id="bigVisible"> Electronics & Communication Technology</span>
+                  <span id="smallVisible" >Electronics & <br/>Communication <br/>Technology</span>
+                </div>
+                </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/eee.html"
+                >
+                  <div>Electrical & Electronic<br />Engineering</div>
+                </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/mech.html"
+                  >Mechanical Engineering</a
+                >
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/civil.html"
+                  >Civil Engineering
+                </a>
+                <a class="dropdown-item dept-dropdown-items drop" href="">
+                  <div>Basic Science<br />Humanities</div>
+                </a>
+                <a
+                  class="dropdown-item dept-dropdown-items drop"
+                  href="./templates/DEPT/mba.html"
+                >
+                  <div>Masters in Business<br />Administration</div>
+                </a>
                 </div>
               </div>
             </div>
@@ -1262,15 +1278,15 @@
         
       </div>
     </div>
-    <footer class="bg-dark text-light py-4" >
+    <footer class="bg-dark text-light " >
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-12 col-lg-3">
             <img
               class="logo"
               src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
               alt="College-logo"
-              style="margin-bottom: 20px"
+              style="margin-bottom: 20px;"
             />
             <p style="font-size: 16px; opacity: 0.8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at,
@@ -1279,7 +1295,7 @@
               reprehenderit nihil. Asperiores, delectus.
             </p>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-6 col-lg-3">
             <h5>Quick Links</h5>
             <ul class="list-unstyled quicklinks">
               <li><a href="#" style="text-decoration: none;color:inherit;">Photo Gallery</a></li>
@@ -1291,7 +1307,7 @@
               <li><a href="#" style="text-decoration: none;color:inherit;">Transport</a></li>
             </ul>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-6 col-lg-3">
             <h5>Useful Links</h5>
             <ul class="list-unstyled quicklinks">
               <li><a href="./" style="text-decoration: none;color:inherit;">Home</a></li>
@@ -1300,7 +1316,7 @@
               <li><a href="#" style="text-decoration: none;color:inherit;">Contact</a></li>
             </ul>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-12 col-lg-3">
             <h5>Connect with Us</h5>
             <ul class="list-unstyled social-icons">
               <li>
@@ -1373,7 +1389,7 @@
           <span style="color: #ea4335; margin-right: 5px">C </span><span>Web Devs</span></a
         >
       </p>
-      <p style="text-align: center; opacity: 0.7">
+      <p style="text-align: center; opacity: 0.7;margin:0;">
         Copyright © 2023 Sri Vasavi Engineering College. All Rights Reserved.
       </p>
     </footer>

@@ -86,6 +86,9 @@ body{
     #smallVisible{
         display: block;
     }
+    .dept-dropdown-items{
+        padding-left: 0.4rem !important;
+    }
     #bigVisible{
         display: none;
     }

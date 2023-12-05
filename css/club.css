@@ -1,128 +1,298 @@
-#section-heading {
-    padding: 25px;
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    color: black;
-}
-.card{
-    height: 400px !important;
-}
-body {
-    height: fit-content !important;
-    margin: 0;
-    /* background: #EEE; */
-    user-select: none;
-    font-family: sans-serif;
-}
-
-#slider {
+.image-container {
     position: relative;
-    width: 50%;
-    height: 32vw;
-    margin: 150px auto;
-    font-family: 'Helvetica Neue', sans-serif;
-    perspective: 1400px;
-    transform-style: preserve-3d;
+    overflow: hidden;
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
 }
 
-input[type=radio] {
+.content-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-left: 100px;
     position: relative;
-    top: 108%;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    margin: 0 15px 0 0;
-    opacity: 0.4;
-    transform: translateX(-83px);
-    cursor: pointer;
-    display: none;
+    height: 500px;
+    text-align: justify;
+    margin-left: -100px;
+    margin-top: -40px;
+    z-index: -1;
 }
 
-input[type=radio]:nth-child(5) {
-    margin-right: 0px;
+.contents-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-right: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-right: -100px;
+    margin-top: -40px;
+    z-index: -1;
 }
 
-input[type=radio]:checked {
-    opacity: 1;
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }
 
-#slider label,
-#slider label img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-    border-radius: 3px;
-    cursor: pointer;
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.card-slide-animation {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.card-slide-right-animation {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@media (max-width: 768px), (min-width: 769px) and (max-width: 1000px), (max-width: 320px) {
+    .image-container {
+        width: 100%;
+    }
+
+    .content-container,
+    .contents-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        text-align: left;
+    }
+    .contents-container {
+        margin-bottom: -40px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .container-fluid img {
+        max-width: 100%;
+    }
+
+    .text-center.container {
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Startclub {
+        margin-top: 30px;
+    }
+
+    .cubp {
+        margin: 10px;
+    }
+}
+
+
+.campclubs {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    transition: transform 400ms ease;
 }
 
-/* Slider Functionality */
-/* Active Slide */
-#s1:checked~#slide1,
-#s2:checked~#slide2,
-#s3:checked~#slide3,
-#s4:checked~#slide4,
-#s5:checked~#slide5 {
-    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
-    transform: translate3d(0%, 0, 0px);
+.campclubs .colu, .card {
+    margin: 10px 0;
 }
-
-/* Next Slide */
-#s1:checked~#slide2,
-#s2:checked~#slide3,
-#s3:checked~#slide4,
-#s4:checked~#slide5,
-#s5:checked~#slide1 {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
-    transform: translate3d(20%, 0, -100px);
-}
-
-/* Next to Next Slide */
-#s1:checked~#slide3,
-#s2:checked~#slide4,
-#s3:checked~#slide5,
-#s4:checked~#slide1,
-#s5:checked~#slide2 {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    transform: translate3d(40%, 0, -250px);
-}
-
-/* Previous to Previous Slide */
-#s1:checked~#slide4,
-#s2:checked~#slide5,
-#s3:checked~#slide1,
-#s4:checked~#slide2,
-#s5:checked~#slide3 {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    transform: translate3d(-40%, 0, -250px);
-}
-
-/* Previous Slide */
-#s1:checked~#slide5,
-#s2:checked~#slide1,
-#s3:checked~#slide2,
-#s4:checked~#slide3,
-#s5:checked~#slide4 {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
-    transform: translate3d(-20%, 0, -100px);
-}
-@media screen and (min-width:1400px){
-    .card-img-top{
-        height: 70%;
+.image-container {
+    position: relative;
+    overflow: hidden;
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
     }
-    .card-text{
-        font-size: 18px !important;
+}
+
+.content-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-left: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-left: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+.contents-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-right: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-right: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
     }
-    .card-text-custom{
-        font-size: 12px;
+    100% {
+      transform: translateX(0);
     }
+}
+
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.card-slide-animation {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.card-slide-right-animation {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@media (max-width: 768px), (min-width: 769px) and (max-width: 1000px), (max-width: 320px) {
+    .image-container {
+        width: 100%;
+    }
+
+    .content-container,
+    .contents-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        text-align: left;
+    }
+    .contents-container {
+        margin-bottom: -40px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .container-fluid img {
+        max-width: 100%;
+    }
+
+    .text-center.container {
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Startclub {
+        margin-top: 30px;
+    }
+
+    .cubp {
+        margin: 10px;
+    }
+}
+
+
+.campclubs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.campclubs .colu, .card {
+    margin: 10px 0;
 }

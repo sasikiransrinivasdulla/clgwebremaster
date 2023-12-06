@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav2text5= document.getElementById("nav-bar2-text5");
     const nav2text6= document.getElementById("nav-bar2-text6");
     const nav2text7= document.getElementById("nav-bar2-text7");
-    const nav2text8= document.getElementById("nav-bar2-text8");
+    console.log(nav2text7);
     const showDiv = document.querySelector('.nav-color');
     navbar.style.backgroundColor ='transparent';
     navbar2.style.backgroundColor = "transparent";
@@ -114,12 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
             nav2text6.classList.remove("hover-underline-animation");
             nav2text6.classList.add("hover-underline-animation-1");
             nav2text6.style.color="black";
-            nav2text7.classList.remove("hover-underline-animation");
-            nav2text7.classList.add("hover-underline-animation-1");
+            nav2text7.classList.remove("hover-underline-animation","navbar2-dropdown");
+            nav2text7.classList.add("hover-underline-animation-1","navbar2-dropdown-chnage");
             nav2text7.style.color="black";
-            nav2text8.classList.remove("hover-underline-animation");
-            nav2text8.classList.add("hover-underline-animation-1");
-            nav2text8.style.color="black";
             navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
         }
@@ -153,16 +150,18 @@ button.addEventListener("click", function() {
 //code for top button
 
 let mybutton = document.getElementById("myBtn");
-
+console.log(mybutton);
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "transparent";
+    mybutton.classList.add("d-block");
+    mybutton.classList.remove("d-none");
     
   } else {
-    mybutton.style.display = "none";
+    mybutton.classList.add("d-none");
+    mybutton.classList.remove("d-block");
 
     const navbar = document.querySelector('.navbar');
     const navbar2 = document.querySelector('.navbar-expand-lg');
@@ -198,12 +197,9 @@ function scrollFunction() {
     nav2text6.classList.remove("hover-underline-animation-1");
     nav2text6.classList.add("hover-underline-animation");
     nav2text6.style.color="white";
-    nav2text7.classList.remove("hover-underline-animation-1");
-    nav2text7.classList.add("hover-underline-animation");
+    nav2text7.classList.remove("hover-underline-animation-1","navbar2-dropdown-change");
+    nav2text7.classList.add("hover-underline-animation","navbar2-dropdown");
     nav2text7.style.color="white";
-    nav2text8.classList.remove("hover-underline-animation-1");
-    nav2text8.classList.add("hover-underline-animation");
-    nav2text8.style.color="white";
     navelement.classList.remove("shadow-lg");
   }
 }

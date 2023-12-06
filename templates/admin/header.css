@@ -64,6 +64,13 @@ body{
     font-size: 80px;
     text-shadow: 5px 5px 5px #000000;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+  }
 .dept-dropdown-items{
     font-size: 0.8rem !important;
 }

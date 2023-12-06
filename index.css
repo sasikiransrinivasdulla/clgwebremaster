@@ -75,7 +75,14 @@ body {
     width: 100%;
     border: 2 solid yellow;
 }
-
+.navbar2-dropdown{
+    color: white !important;
+    font-weight: 500 !important;
+}
+.navbar2-dropdown-change{
+    color: black !important ;
+    font-weight: 500 !important;
+}
 .second2-navbar-large-contents {
     border: 2 solid red;
     color: white;
@@ -356,7 +363,7 @@ footer h5 {
 
 /* for top button  */
   #myBtn {
-  display: none;
+
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -418,21 +425,27 @@ footer h5 {
 
 .company-logos:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.41));
 }
 
 .company-logos:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.41));
 }
 
 .company-logos-slide {
     display: inline-block;
     animation: 50s slide infinite linear;
+    animation-duration: 50s;
 }
 
 .company-logos-slide img {
     height: 50px;
+    margin: 0 50px;
+}
+.company-logos-slide .jpeg-img {
+    max-height: 100px;
+    height: min-content;
     margin: 0 50px;
 }
 

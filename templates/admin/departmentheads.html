@@ -32,7 +32,6 @@
     <title>Team profile cards</title>
     <style>
       .header_main {
-        background-color: rgb(236, 234, 234);
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
         text-align: center;
@@ -213,67 +212,24 @@
         text-decoration: none;
         color: #fff;
       }
-
-      .social-icons {
-        margin-right: 10px;
-        display: flex;
-        justify-content: space-around;
-
-        align-items: center;
+      .deans-image{
+        height: 200px;
       }
+      .deans-name{
+        font-size: 1.2rem;
+        color: #000;
+        font-family: "Roboto";
+        font-weight: bold;
+      }
+      .deans-dept{
+        font-size: 1rem;
+        color: #000;
+        font-family: "Roboto";
 
-      .list-unstyled.social-icons {
-        list-style: none;
-        padding: 0;
-        margin: 15px 0;
-        display: flex;
       }
-
-      .list-unstyled.social-icons li {
-        margin: 0 10px;
-        height: 20px;
+      .card-container{
+        height: fit-content;
       }
-
-      .quicklinks li {
-        margin: 5px;
-        opacity: 0.7;
-        transition: all 0.2ms;
-      }
-
-      .quicklinks li:hover {
-        opacity: 1;
-        font-weight: 500;
-      }
-
-      .phone {
-        color: #ff5a2c;
-        font-family: Poppins Helvetica, sans-serif;
-        /* font-size: 15px; */
-        display: block;
-        margin-top: 4px;
-      }
-      footer a{
-        text-decoration: none;
-        color: #fff;
-      }
-      footer p {
-        font-size: 16px;
-      }
-
-      .address {
-        font-size: 16px;
-        padding-left: 7px;
-      }
-
-      .logo {
-        height: 80px;
-        width: fit-content;
-      }
-
-      footer h5 {
-        margin-top: 20px;
-      }
-
       
     </style>
     <script
@@ -290,163 +246,279 @@
   </head>
   <body>
     <div id="header"></div>
-    <div id="body_container">
-    <div style="margin-top: 130px">
-      <div class="back-gr">
-        <div class="header_main">
-          <h1
-            style="font-size: 40px; color: #c5121b"
-            class="hover-underline-animation"
-          >
-            Our Department Heads
-          </h1>
-          <div class="icon-text-container" align="center">
-            <div class="quotation-first">
-              <i align="center" class="bi bi-quote"></i>
-            </div>
-            <h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vehicula augue vel diam dignissim, vel posuere mi fringilla.
-            </h4>
-            <div class="quotation-last">
-              <i align="center" class="bi bi-quote"></i>
+      <div id="body_container">
+        <div >
+          <div class="back-gr">
+            <div class="header_main">
+              <h1
+                style="font-size: 40px; color: #c5121b"
+                class="hover-underline-animation"
+              >
+                Our Department Heads
+              </h1>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="all-carad">
-        <div class="card-main">
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/civilhod.jpg"
-                alt="Profile image"
-                width="150"
-                height="150"
-              />
+          <!-- large devices code -->
+          <div class="d-none d-md-block container text-center mb-5 mt-4">
+            <div class="row">
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow" >
+                  <div>
+                    <img
+                  class="deans-image"
+                    src="../../images/admin/naresh.jpeg"
+                    alt="Profile image"
+                  />
+                  </div>
+                  <div class="dean-content d-flex flex-row justify-content-center p-2 w-100" >
+                    <div class="d-flex flex-column justify-content-center">
+                      <h1 class="deans-name">Dr.G. Radha Krishnan</h1>
+                    <h1 class="deans-dept">Civil Department</h1>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow" >
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Dr.D.Sudha Rani</h1>
+                    <h1 class="deans-dept">Electrical and Electronics Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Dr.M.V.Ramesh</h1>
+                    <h1 class="deans-dept">Mechanical Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Dr.E.Kusuma Kumari</h1>
+                    <h1 class="deans-dept">Electronics and Communication Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans ">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Dr.D.Jaya Kumari</h1>
+                    <h1 class="deans-dept">Computer and Science Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Dr.G.Loshma</h1>
+                    <h1 class="deans-dept">Computer and Science Engineering(AI)<br/>&<br/>Artificial Intelligence & Machine Learning</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Mr.N.Raja Sekhar</h1>
+                    <h1 class="deans-dept">Basic Sciences and Humanities</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 card-deans mb-2 ">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
+                    <h1 class="deans-name">Mr.D.Naveen Kumar</h1>
+                    <h1 class="deans-dept">MBA Department</h1>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="name">Dr.G. RadhaKrishnan</p>
-            <p style="color: #ac0606"><bold>CIVIL DEPARTMENT</bold></p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
           </div>
+          <!-- Small devices code -->
+          <div class="d-block d-md-none container text-center mb-5">
+            <div class="row">
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2 ">
+                  <div >
+                    <img
+                    class="deans-image "
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.G. Radha Krishnan</h1>
+                    <h1 class="deans-dept">Civil Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.D.Sudha Rani</h1>
 
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/eeehod.jpg"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Dr.D.Sudha Rani</p>
-            <p style="color: #ac0606">
-              <bold>Electrical and Electronics Engineering Department</bold>
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
+                    <h1 class="deans-dept">Electrical and Electronics Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.M.V.Ramesh</h1>
 
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/mechhod.jpg"
-                alt="Profile image"
-              />
+                    <h1 class="deans-dept">Mechanical Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.E.Kusuma Kumari</h1>
+                    <h1 class="deans-dept">Electronics and Communication Engineering Department</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.D.Jaya Kumari</h1>
+                    <h1 class="deans-dept">Computer and Science Engineering Department
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.G.Loshma</h1>
+
+                    <h1 class="deans-dept">Computer and Science Engineering(AI)<br/>
+                      &<br/>
+                      Artificial Intelligence & Machine Learning</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Mr.N.Raja Sekhar</h1>
+
+                    <h1 class="deans-dept">Basic Sciences and Humanities</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Mr.D.Naveen Kumar</h1>
+  
+                    <h1 class="deans-dept">MBA Department</h1>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="name">Dr.M.V Ramesh</p>
-            <p style="color: #ac0606">
-              <bold>Mechanical Engineering Department</bold>
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/ece_hods.jpg"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Dr.E.Kusuma Kumari</p>
-            <p style="color: #ac0606">
-              <bold>Electronics and Communication Engineering Department</bold>
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/cse_hods.jpeg"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Dr.D.Jaya Kumari</p>
-            <p style="color: #ac0606">
-              <bold>Computer and Science Engineerin</bold>
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/Dr.%20G.%20Loshma.jpg"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Dr.G.Loshma</p>
-            <p style="color: #ac0606"><bold>CAI & AI Department</bold></p>
-            <p class="paragraph" class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/bshhod.jpg"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Mr.N.Raja Sekhar</p>
-            <p style="color: #ac0606">Basic Humanities and Sciences</p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                src="http://srivasaviengg.ac.in/faculty_pic/mbaHod1.JPG"
-                alt="Profile image"
-              />
-            </div>
-            <p class="name">Mr.D.Naveen Kumar</p>
-            <p style="color: #ac0606"><bold>MBA Department</bold></p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              delectus, mollitia tenetur libero quam recusandae alias in
-              incidunt.
-            </p>
+            
           </div>
         </div>
       </div>

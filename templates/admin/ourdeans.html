@@ -33,7 +33,6 @@
     <title>Team profile cards</title>
     <style>
       .header_main {
-        background-color: #e4e4e4;
         font-family: "Times New Roman", Times, serif;
         color: #1d1c1c;
         text-align: center;
@@ -204,6 +203,24 @@
         transform: scaleX(1);
         transform-origin: bottom right;
       }
+      .deans-image{
+        height: 200px;
+      }
+      .deans-name{
+        font-size: 1.5rem;
+        color: #000;
+        font-family: "Roboto";
+        font-weight: bold;
+      }
+      .deans-dept{
+        font-size: 1rem;
+        color: #000;
+        font-family: "Roboto";
+
+      }
+      .card-container{
+        height: fit-content;
+      }
       a {
         text-decoration: none;
         color: #fff;
@@ -233,7 +250,7 @@
   </head>
   <body>
     <div id="header"></div>
-    <div style="margin-top: 100px">
+    <div>
       <div id="body_container">
         <div class="header_main">
           <h1
@@ -242,69 +259,85 @@
           >
             Our Deans
           </h1>
-          <div class="icon-text-container" align="center">
-            <div class="quotation-first">
-              <i align="center" class="bi bi-quote"></i>
-            </div>
-            <h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vehicula augue vel diam dignissim, vel posuere mi fringilla.
-            </h4>
-            <div class="quotation-last">
-              <i align="center" class="bi bi-quote"></i>
-            </div>
-          </div>
         </div>
-        <div class="card-main pt-5">
-          <div class="container text-center">
+
+          <!-- large devices code -->
+          <div class="d-none d-md-block container text-center mb-5">
             <div class="row">
               <div class="col-12 col-lg-6 card-deans">
-                <div class="card">
-                  <div class="card-image">
+                <div class="card-container d-flex flex-row justify-content-center shadow" >
+                  <div >
                     <img
-                      height="130"
-                      width="130"
+                    class="deans-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
-                  <p class="name">Dr.V.S.Naresh</p>
-                  <p><bold>Dean(R&D)</bold></p>
-                  <p class="hover-underline-animation">
-                    <bold>Professor of CSE DEpartment</bold>
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                    delectus, mollitia tenetur libero quam recusandae alias in
-                    incidunt.
-                  </p>
+                  <div class="dean-content d-flex flex-row justify-content-center p-3" >
+                    <div class="d-flex flex-column justify-content-center">
+                      <h1 class="deans-name">Dr.V.S.Naresh</h1>
+                    <p>Dean(R&D)</p>
+                    <h1 class="deans-dept">Professor of CSE Department</h1>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 card-deans">
-                <div class="card">
-                  <div class="card-image">
+              <div class="col-12 col-lg-6 card-deans ">
+                <div class="card-container d-flex flex-row justify-content-center shadow">
+                  <div>
                     <img
-                      style="height: 100%; width: auto"
-                      src="../../images/admin/rambabu.jpeg"
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
-                  <p class="name">Dr.Ch.Rambabu</p>
-                  <p><bold>Dean(Student Affairs)</bold></p>
-                  <p class="hover-underline-animation">
-                    <bold>Professor of EEE Department</bold>
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                    delectus, mollitia tenetur libero quam recusandae alias in
-                    incidunt.
-                  </p>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.Ch.Rambabu</h1>
+                    <p>Dean(Student Affairs)</p>
+                    <h1 class="deans-dept">Professor of EEE Department</h1>
+                  </div>
                 </div>
               </div>
             </div>
             
           </div>
-        </div>
+          <!-- Small devices code -->
+          <div class="d-block d-md-none container text-center mb-5">
+            <div class="row">
+              <div class="col-12 col-lg-6 card-deans">
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.V.S.Naresh</h1>
+                    <p>Dean(R&D)</p>
+                    <h1 class="deans-dept">Professor of CSE Department</h1>
+                  </div>
+                </div>
+                <div class="card-container d-flex flex-column shadow mb-2">
+                  <div>
+                    <img
+                    class="deans-image"
+                      src="../../images/admin/naresh.jpeg"
+                      alt="Profile image"
+                    />
+                  </div>
+                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                    <h1 class="deans-name">Dr.Ch.Rambabu</h1>
+                    <p>Dean(Student Affairs)</p>
+                    <h1 class="deans-dept">Professor of EEE Department</h1>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
       </div>
     </div>
     <div id="footer"></div>

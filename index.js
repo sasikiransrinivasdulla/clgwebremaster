@@ -209,10 +209,5 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-const myCarouselElement = document.querySelector('.carousel')
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 3000,
-  touch: false
-})
 

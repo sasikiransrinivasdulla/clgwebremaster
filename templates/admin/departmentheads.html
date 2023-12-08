@@ -47,37 +47,6 @@
         filter: blur(10px);
         z-index: -1;
       }
-      .icon-text-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .icon {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-      .quotation-first {
-        color: rgb(235, 18, 18);
-        font-size: 3rem;
-        opacity: 0.5;
-        padding-bottom: 2ch;
-      }
-      .quotation-last {
-        color: rgb(235, 18, 18);
-        font-size: 3rem;
-        opacity: 0.5;
-        rotate: 180deg;
-        padding-bottom: 5%;
-      }
-      .all-carad {
-        margin-top: 4ch;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
-        color: #54677c;
-      }
 
       .card-main {
         min-height: 100vh;
@@ -89,59 +58,6 @@
         justify-content: center;
         align-items: center;
         padding: 40px 16px;
-      }
-
-      .card {
-        position: relative;
-        width: 450px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-        padding: 16px;
-        margin: 56px 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /*border: 3px solid #C70039;*/
-      }
-
-      .card-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.06),
-          0 5px 20px 0 rgba(0, 0, 0, 0.1);
-        /*border: 5px solid #C70039;*/
-      }
-
-      .card-image img {
-        width: 100%;
-        transform: scale(1.2);
-      }
-      .card:hover {
-        transform: scale(1.1);
-      }
-      .paragraph {
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        margin-bottom: 12px;
-        text-align: center;
-        color: #504f4f;
-      }
-
-      .name {
-        margin-top: 80px;
-        font-size: 1.4em;
-        color: #333;
-        font-weight: bold;
-        letter-spacing: 0.8px;
-        margin-bottom: 8px;
       }
       .w3rcontainer {
         border: 1px solid #cccfdb;
@@ -171,12 +87,6 @@
         transform-origin: bottom right;
       }
       @media screen and (max-width: 925px) {
-        .quotation-first {
-          align-self: flex-start;
-        }
-        .quotation-last {
-          align-self: flex-end;
-        }
         #body_container{
           margin-top: 70px !important;
         }
@@ -190,18 +100,6 @@
         .header_main {
           padding-top: 20px; /* Adjust padding-top for smaller screens */
         }
-
-        .icon-text-container {
-          flex-direction: column; /* Stack elements vertically */
-          padding-left: 0; /* Remove left padding */
-        }
-
-        .quotation-first,
-        .quotation-last {
-          font-size: 2rem; /* Reduce font size for quotations */
-          padding-bottom: 1ch; /* Adjust padding for quotations */
-          padding-left: 0; /* Remove left padding */
-        }
       }
       @media screen and (min-width:768px){
         #body_container{
@@ -212,16 +110,16 @@
         text-decoration: none;
         color: #fff;
       }
-      .deans-image{
+      .hod-image{
         height: 200px;
       }
-      .deans-name{
+      .hod-name{
         font-size: 1.2rem;
         color: #000;
         font-family: "Roboto";
         font-weight: bold;
       }
-      .deans-dept{
+      .hod-dept{
         font-size: 1rem;
         color: #000;
         font-family: "Roboto";
@@ -265,15 +163,15 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow" >
                   <div>
                     <img
-                  class="deans-image"
+                  class="hod-image"
                     src="../../images/admin/naresh.jpeg"
                     alt="Profile image"
                   />
                   </div>
                   <div class="dean-content d-flex flex-row justify-content-center p-2 w-100" >
                     <div class="d-flex flex-column justify-content-center">
-                      <h1 class="deans-name">Dr.G. Radha Krishnan</h1>
-                    <h1 class="deans-dept">Civil Department</h1>
+                      <h1 class="hod-name">Dr.G. Radha Krishnan</h1>
+                    <h1 class="hod-dept">Civil Department</h1>
                     </div>
                   </div>
                 </div>
@@ -283,14 +181,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow" >
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Dr.D.Sudha Rani</h1>
-                    <h1 class="deans-dept">Electrical and Electronics Engineering Department</h1>
+                    <h1 class="hod-name">Dr.D.Sudha Rani</h1>
+                    <h1 class="hod-dept">Electrical and Electronics Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -298,14 +196,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Dr.M.V.Ramesh</h1>
-                    <h1 class="deans-dept">Mechanical Engineering Department</h1>
+                    <h1 class="hod-name">Dr.M.V.Ramesh</h1>
+                    <h1 class="hod-dept">Mechanical Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -313,14 +211,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Dr.E.Kusuma Kumari</h1>
-                    <h1 class="deans-dept">Electronics and Communication Engineering Department</h1>
+                    <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
+                    <h1 class="hod-dept">Electronics and Communication Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -328,14 +226,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Dr.D.Jaya Kumari</h1>
-                    <h1 class="deans-dept">Computer and Science Engineering Department</h1>
+                    <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
+                    <h1 class="hod-dept">Computer and Science Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -343,14 +241,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Dr.G.Loshma</h1>
-                    <h1 class="deans-dept">Computer and Science Engineering(AI)<br/>&<br/>Artificial Intelligence & Machine Learning</h1>
+                    <h1 class="hod-name">Dr.G.Loshma</h1>
+                    <h1 class="hod-dept">Computer and Science Engineering(AI)<br/>&<br/>Artificial Intelligence & Machine Learning</h1>
                   </div>
                 </div>
               </div>
@@ -358,14 +256,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Mr.N.Raja Sekhar</h1>
-                    <h1 class="deans-dept">Basic Sciences and Humanities</h1>
+                    <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
+                    <h1 class="hod-dept">Basic Sciences and Humanities</h1>
                   </div>
                 </div>
               </div>
@@ -373,14 +271,14 @@
                 <div class="card-container d-flex flex-row justify-content-center shadow">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="deans-name">Mr.D.Naveen Kumar</h1>
-                    <h1 class="deans-dept">MBA Department</h1>
+                    <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
+                    <h1 class="hod-dept">MBA Department</h1>
                   </div>
                 </div>
               </div>
@@ -393,14 +291,14 @@
                 <div class="card-container d-flex flex-column shadow mb-2 ">
                   <div >
                     <img
-                    class="deans-image "
+                    class="hod-image "
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.G. Radha Krishnan</h1>
-                    <h1 class="deans-dept">Civil Department</h1>
+                    <h1 class="hod-name">Dr.G. Radha Krishnan</h1>
+                    <h1 class="hod-dept">Civil Department</h1>
                   </div>
                 </div>
               </div>
@@ -408,15 +306,15 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.D.Sudha Rani</h1>
+                    <h1 class="hod-name">Dr.D.Sudha Rani</h1>
 
-                    <h1 class="deans-dept">Electrical and Electronics Engineering Department</h1>
+                    <h1 class="hod-dept">Electrical and Electronics Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -424,15 +322,15 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.M.V.Ramesh</h1>
+                    <h1 class="hod-name">Dr.M.V.Ramesh</h1>
 
-                    <h1 class="deans-dept">Mechanical Engineering Department</h1>
+                    <h1 class="hod-dept">Mechanical Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -440,14 +338,14 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.E.Kusuma Kumari</h1>
-                    <h1 class="deans-dept">Electronics and Communication Engineering Department</h1>
+                    <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
+                    <h1 class="hod-dept">Electronics and Communication Engineering Department</h1>
                   </div>
                 </div>
               </div>
@@ -455,14 +353,14 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.D.Jaya Kumari</h1>
-                    <h1 class="deans-dept">Computer and Science Engineering Department
+                    <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
+                    <h1 class="hod-dept">Computer and Science Engineering Department
                     </h1>
                   </div>
                 </div>
@@ -471,15 +369,15 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Dr.G.Loshma</h1>
+                    <h1 class="hod-name">Dr.G.Loshma</h1>
 
-                    <h1 class="deans-dept">Computer and Science Engineering(AI)<br/>
+                    <h1 class="hod-dept">Computer and Science Engineering(AI)<br/>
                       &<br/>
                       Artificial Intelligence & Machine Learning</h1>
                   </div>
@@ -489,15 +387,15 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Mr.N.Raja Sekhar</h1>
+                    <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
 
-                    <h1 class="deans-dept">Basic Sciences and Humanities</h1>
+                    <h1 class="hod-dept">Basic Sciences and Humanities</h1>
                   </div>
                 </div>
               </div>
@@ -505,15 +403,15 @@
                 <div class="card-container d-flex flex-column shadow mb-2">
                   <div>
                     <img
-                    class="deans-image"
+                    class="hod-image"
                       src="../../images/admin/naresh.jpeg"
                       alt="Profile image"
                     />
                   </div>
                   <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="deans-name">Mr.D.Naveen Kumar</h1>
+                    <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
   
-                    <h1 class="deans-dept">MBA Department</h1>
+                    <h1 class="hod-dept">MBA Department</h1>
                   </div>
                 </div>
               </div>

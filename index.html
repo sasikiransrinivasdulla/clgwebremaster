@@ -13,6 +13,7 @@
     />
     <meta name="author" content="GDSC x SVEC" />
     <title>Sri Vasavi</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,13 +47,6 @@
       src="https://kit.fontawesome.com/b2b9ab5ba1.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- testimonials externals starts here -->
-    <!-- Swiper CSS -->
-    <!-- CSS -->
-
-    <!-- Boxicons CSS -->
-
     <script> 
       $(function(){
         $("#newsAndEvents").load("./newsandevents.html"); 
@@ -331,80 +325,30 @@
             style="text-decoration: none !important; color: #fff"
             >Category B</a
           >
-          <a class=" ">
-            <div class="dropdown show pt-1" id="nav-bar2-text7">
-              <a
-                class="btn btn-white w-100 dropdown-toggle pt-2 hover-underline-animation text-white"
-                style="border-style: none;"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Administration
-              </a>
-              <div
-                class="dropdown-menu w-100"
-                style="width: fit-content !important"
-                aria-labelledby="dropdownMenuLink"
-              >
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="./templates/admin/maintechdirector.html"
-                  >Director-Technical</a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="./templates/admin/principal.html"
-                  >Principal</a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="./templates/admin/ourdeans.html"
-                  >Deans</a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="./templates/admin/departmentheads.html"
-                  >Head of the Departments</a
-                >
-              </div>
+            <div class="dropdown hover-underline-animation" id="nav-bar2-text7" >
+              <button class="btn  dropdown-toggle second-large-navbar-dropdown pt-2" style="color: #fff;font-weight: 500;border-style: none;" id="dropdownTextElementUGC" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                UGC
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Board of Governance</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Academic Council</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Board of Studies</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Finance Committe</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">IQAC</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Non Statustory Committe</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Fee Structure</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">Undertaking</a></li>
+              </ul>
             </div>
-          </a>
-          <a>
-            <div class="dropdown show hover-underline-animation pt-2" id="nav-bar2-text7">
-              <a
-                class="m-2 w-100 dropdown-toggle pt-2"
-                style="text-decoration: none !important; color:black"
-                href="#"
-                role="button"
-                id="nav-bar2-text7"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+            <div class="dropdown hover-underline-animation" id="nav-bar2-text8" >
+              <button class="btn  dropdown-toggle second-large-navbar-dropdown pt-2" style="color: #fff;font-weight: 500;border-style: none;" id="dropdownTextElementNIRF" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 NIRF
-              </a>
-              <div
-                class="dropdown-menu w-100 p-2"
-                style="width: fit-content !important"
-                aria-labelledby="dropdownMenuLink"
-              >
-                <a
-                  class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20OVERALL.pdf"
-                  >SVEC-Overall Category NIRF</a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf"
-                  >SVEC-Engineering Category NIRF</a
-                >
-              </div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">SVEC-Overall Category NIRF</a></li>
+                <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">SVEC-Engineering Category NIRF</a></li>
+              </ul>
             </div>
-          </a>
           <a
             href="./templates/academics.html"
             class="m-2 hover-underline-animation"
@@ -703,14 +647,14 @@
       </div>
     </div>
 
-    <div class="container-fluid fixed-main-image w-100 p-0">
+    <div class="container-fluid fixed-main-image w-100 p-0" >
       <div class="shadow-layer p-0">
         <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1>
       </div>
     </div>
     <div class="empty-1"></div>
-    <div class="content">
-      <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+    <div class="content" >
+      <div class="explore-menu-section pt-1 pb-5" id="exploreMenuSection" data-aos="fade-up">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -762,9 +706,8 @@
       </div>
 
 
-      <hr class="mt-4" />
       <div class="nav-color mt-5"></div>
-        <div class="college-stats" id="lastStats">
+        <div class="college-stats" id="lastStats"  data-aos="fade-up">
           <div class="stats">
            
             <p id="facultyNumber" class="count-increase">500+</p>
@@ -779,23 +722,13 @@
             <p>Years <br />Excellence</p>
           </div>
         </div>
-        <hr />
 
         <div class="empty-1"></div>
       <!-- news start here  -->
-      <h1 class="text-center mt-5  news-title wcu-section-heading"  >NEWS & EVENTS</h1>
-      <h4 class="text-center mt-3 news-desc">Stories about people, research, and innovation across the Farm</h4>
-      <div class="container mt-5">
+      <h1 class="text-center mt-5  news-title wcu-section-heading" data-aos="fade-up" >NEWS & EVENTS</h1>
+      <h4 class="text-center mt-3 news-desc" data-aos="fade-up">Stories about people, research, and innovation across the Farm</h4>
+      <div class="container mt-5" data-aos="fade-up">
           <div class="row flex flex-wrap">
-              <!-- <div class="col-lg-6 mt-3 d-none d-sm-block">
-                  <div class="card shadow">
-                      <div class="my-div card-img-top">
-                          <div class="text-overlay">
-                              <h5 class="text-2 text-center">Image Title</h5>
-                          </div>
-                      </div>
-                  </div>
-              </div> -->
               <div class="col-12 ">
                 <div id="newsAndEvents"></div>
               </div>
@@ -854,11 +787,11 @@
 
 
       <div class="empty-1"></div>
-      <div class="placement-content mt-5" id="placement-stats">
+      <div class="placement-content mt-5" id="placement-stats" data-aos="fade-up">
         <h1 style="font-weight: bold;">Placement Stats</h1>
       </div>
-      <hr/>
-      <div class="company-logos">
+
+      <div class="company-logos" data-aos="fade-up">
         <div class="company-logos-slide">
           <img src="./company_icons/1.png" alt="Company Icon" />
           <img src="./company_icons/2.png" alt="Company Icon" />
@@ -893,8 +826,7 @@
           
         </div>
       </div>
-      <hr/>
-      <div class="placement-content-1" style="background-color: transparent">
+      <div class="placement-content-1" style="background-color: transparent" data-aos="fade-up">
         <div class="stats">
           <p id="placement-2021" class="count-increase">600+</p>
           <p class="placement-size">Placements</p>
@@ -911,14 +843,14 @@
           <p>2023</p>
         </div>
       </div>
-      <hr/>
+
       <div class="wcu-section pt-5 pb-4" id="wcuSection">
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-up">
               <h1 class="wcu-section-heading text-center">Courses Offered</h1>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/cse.html"
                 style="text-decoration: none; color: black"
@@ -946,7 +878,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/cai.html"
                 style="text-decoration: none; color: black"
@@ -974,7 +906,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/aim.html"
                 style="text-decoration: none; color: black"
@@ -1002,7 +934,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/cst.html"
                 style="text-decoration: none; color: black"
@@ -1029,7 +961,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/ece.html"
                 style="text-decoration: none; color: black"
@@ -1057,7 +989,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/ect.html"
                 style="text-decoration: none; color: black"
@@ -1084,7 +1016,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/eee.html"
                 style="text-decoration: none; color: black"
@@ -1112,7 +1044,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/mech.html"
                 style="text-decoration: none; color: black"
@@ -1138,7 +1070,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4 mt-2 mb-3">
+            <div class="col-12 col-md-4 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/civil.html"
                 style="text-decoration: none; color: black"
@@ -1167,7 +1099,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-6 mt-2 mb-3">
+            <div class="col-12 col-md-6 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/mba.html"
                 style="text-decoration: none; color: black"
@@ -1195,7 +1127,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-6 mt-2 mb-3">
+            <div class="col-12 col-md-6 mt-2 mb-3" data-aos="fade-up">
               <a
                 href="./templates/DEPT/mba.html"
                 style="text-decoration: none; color: black"
@@ -1231,10 +1163,10 @@
 
         
       </div>
-      <div class="placement-content " id="placement-stats">
+      <div class="placement-content " id="placement-stats" data-aos="fade-up">
         <h1 style="font-weight: bold;">MOU's Signed</h1>
       </div>
-      <div class="company-logos">
+      <div class="company-logos" data-aos="fade-up">
         <div class="company-logos-slide">
           <img src="./mou_images/Indian_Biomedical_Skill_Consortium_(IBSC).png" alt="Company Icon" />
           <img src="./mou_images/british council.jpg" alt="Company Icon" />
@@ -1372,7 +1304,13 @@
       crossorigin="anonymous"
     ></script>
     <!-- JavaScript -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 2000
+      });
+    </script>
 
   </body>
 </html>

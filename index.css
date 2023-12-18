@@ -46,11 +46,11 @@ body {
     color: black;
     background-color: white;
 }
-.dept-dropdown-items:hover{
+.dept-dropdown-items,.dept-dropdown-item:hover{
     background-color: #b1040e!important;
     color: white !important;
 }
-.dept-dropdown-items{
+.dept-dropdown-items,.dept-dropdown-items{
     background-color:white !important;
     color: black!important;
 }
@@ -70,6 +70,11 @@ body {
 }
 */
 /*second-large-navbar*/
+.second-large-navbar-dropdown{
+    background-color: transparent !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
 .second2-navbar-large {
     background-color: transparent;
     width: 100%;
@@ -87,7 +92,7 @@ body {
     border: 2 solid red;
     color: white;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .shadow-layer {
     width: 100%;
@@ -856,7 +861,7 @@ i {
  .hover-underline-animation {
    display: inline-block;
    position: relative;
-   color: #ffffff;
+   color: #ffffff !important;
  }
  
  .hover-underline-animation:after {
@@ -876,6 +881,28 @@ i {
    transform: scaleX(1);
    transform-origin: bottom right;
  }
+ .hover-underline-animation-1 {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+   }
+  .hover-underline-animation-1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+   }
+  
+  .hover-underline-animation-1:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom right;
+  }
 /* navbar large hver animation ends  */
 
 /* image in menu-card adjustment */

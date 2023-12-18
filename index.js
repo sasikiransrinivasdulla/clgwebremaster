@@ -1,5 +1,5 @@
 const gradient = "linear-gradient(to bottom, black, rgba(0,0,0,0))";
-
+const nav2text7= document.getElementById("nav-bar2-text7");
 
 function increaseNumber(targetElement, endValue) {
     let currentNumber = 0;
@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav2text5= document.getElementById("nav-bar2-text5");
     const nav2text6= document.getElementById("nav-bar2-text6");
     const nav2text7= document.getElementById("nav-bar2-text7");
-    console.log(nav2text7);
+    const nav2text8= document.getElementById("nav-bar2-text8");
+    const dropdownTextElementUGC=document.getElementById("dropdownTextElementUGC");
+    const dropdownTextElementNIRF=document.getElementById("dropdownTextElementNIRF");
     const showDiv = document.querySelector('.nav-color');
     navbar.style.backgroundColor ='transparent';
     navbar2.style.backgroundColor = "transparent";
@@ -114,11 +116,15 @@ document.addEventListener('DOMContentLoaded', function () {
             nav2text6.classList.remove("hover-underline-animation");
             nav2text6.classList.add("hover-underline-animation-1");
             nav2text6.style.color="black";
-            nav2text7.classList.remove("hover-underline-animation","navbar2-dropdown");
-            nav2text7.classList.add("hover-underline-animation-1","navbar2-dropdown-chnage");
-            nav2text7.style.color="black";
+            nav2text7.classList.remove("hover-underline-animation");
+            nav2text7.classList.add("hover-underline-animation-1");
+            dropdownTextElementUGC.setAttribute('style', 'color: black !important;font-weight:500');
+            nav2text8.classList.remove("hover-underline-animation");
+            nav2text8.classList.add("hover-underline-animation-1");
+            dropdownTextElementNIRF.setAttribute('style', 'color: black !important;font-weight:500');
             navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
+            console.log(nav2text7)
         }
     }
 
@@ -150,7 +156,7 @@ button.addEventListener("click", function() {
 //code for top button
 
 let mybutton = document.getElementById("myBtn");
-console.log(mybutton);
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -172,8 +178,10 @@ function scrollFunction() {
     const nav2text4 = document.getElementById("nav-bar2-text4");
     const nav2text5= document.getElementById("nav-bar2-text5");
     const nav2text6= document.getElementById("nav-bar2-text6");
-    const nav2text7= document.getElementById("nav-bar2-text7");
+
     const nav2text8= document.getElementById("nav-bar2-text8");
+    const dropdownTextElementUGC=document.getElementById("dropdownTextElementUGC");
+    const dropdownTextElementNIRF=document.getElementById("dropdownTextElementNIRF");
     const showDiv = document.querySelector('.nav-color');
     const navelement=document.getElementById('second-large-navbar');
     navbar.style.backgroundColor = "transparent";
@@ -197,9 +205,12 @@ function scrollFunction() {
     nav2text6.classList.remove("hover-underline-animation-1");
     nav2text6.classList.add("hover-underline-animation");
     nav2text6.style.color="white";
-    nav2text7.classList.remove("hover-underline-animation-1","navbar2-dropdown-change");
-    nav2text7.classList.add("hover-underline-animation","navbar2-dropdown");
-    nav2text7.style.color="white";
+    nav2text7.classList.remove("hover-underline-animation-1");
+    nav2text7.classList.add("hover-underline-animation");
+    dropdownTextElementUGC.setAttribute('style', 'color: white !important;font-weight:500');
+    nav2text8.classList.remove("hover-underline-animation-1");
+    nav2text8.classList.add("hover-underline-animation");
+    dropdownTextElementNIRF.setAttribute('style', 'color: white !important;font-weight:500');
     navelement.classList.remove("shadow-lg");
   }
 }

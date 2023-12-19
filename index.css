@@ -187,7 +187,7 @@ hr{
 }
 /* PLACEMENT STATS COUNT ELEMENTS  */
 .count-increase {
-    font-size: 60px;
+    font-size: 2em;
     font-family: 'Oswald', sans-serif;
     color:#b1040e ;
 }
@@ -221,7 +221,7 @@ hr{
 .wcu-card-title {
     color: #323f4b;
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -687,6 +687,15 @@ i {
         background-position: center;
     }
 }
+.branch-card-container{
+    box-sizing: content-box;
+}
+.branch-card-center{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 .branch-card{
     transition: all 1s ease;
 }
@@ -914,18 +923,7 @@ i {
    }
 }
 
-/* font-size of placements */
-@media screen and (max-width: 768px) {
-    .count-increase{
-        font-size: 35px;
-    }
-}
-@media screen and (max-width: 446px) {
-    .count-increase{
-        font-size: 25px;
-        
-    }
-}
+
 
 .bg-darker{
     --bs-bg-opacity: 1;

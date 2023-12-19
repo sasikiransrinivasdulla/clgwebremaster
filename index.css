@@ -323,9 +323,9 @@ footer p {
 }
 
 .logo {
-    height: 200px;
-    width: 150px;
-    padding-top: 40px !important;
+    height: 6rem;
+    width: fit-content;
+    
 
 }
 

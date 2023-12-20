@@ -118,10 +118,10 @@ document.addEventListener('DOMContentLoaded', function () {
             nav2text6.style.color="black";
             nav2text7.classList.remove("hover-underline-animation");
             nav2text7.classList.add("hover-underline-animation-1");
-            dropdownTextElementUGC.setAttribute('style', 'color: black !important;font-weight:500');
+            dropdownTextElementUGC.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
             nav2text8.classList.remove("hover-underline-animation");
             nav2text8.classList.add("hover-underline-animation-1");
-            dropdownTextElementNIRF.setAttribute('style', 'color: black !important;font-weight:500');
+            dropdownTextElementNIRF.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
             navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
             console.log(nav2text7)
@@ -207,10 +207,10 @@ function scrollFunction() {
     nav2text6.style.color="white";
     nav2text7.classList.remove("hover-underline-animation-1");
     nav2text7.classList.add("hover-underline-animation");
-    dropdownTextElementUGC.setAttribute('style', 'color: white !important;font-weight:500');
+    dropdownTextElementUGC.setAttribute('style', 'color: white !important;font-weight:500;border-style:none;');
     nav2text8.classList.remove("hover-underline-animation-1");
     nav2text8.classList.add("hover-underline-animation");
-    dropdownTextElementNIRF.setAttribute('style', 'color: white !important;font-weight:500');
+    dropdownTextElementNIRF.setAttribute('style', 'color: white !important;font-weight:500;border-style:none;');
     navelement.classList.remove("shadow-lg");
   }
 }

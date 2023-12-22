@@ -13,6 +13,7 @@
     />
     <meta name="author" content="GDSC x SVEC" />
     <title>Sri Vasavi Engineering College</title>
+    <link rel="icon" href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -627,16 +628,37 @@
               href="http://srivasaviengg.ac.in/feestructure.php"
               >Category B</a
             >
-            <a
-              class="p-2 small-navbar-items-last-div-anchor"
-              href="http://srivasaviengg.ac.in/"
-              >UGC</a
-            >
-            <a
-              class="p-2 small-navbar-items-last-div-anchor"
-              href="http://srivasaviengg.ac.in/"
-              >NIRF</a
-            >
+            <a>
+              <div class="dropdown">
+                <a class="btn  dropdown-toggle" style="border-style: none;box-shadow: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  UGC
+                </a>
+              
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Academic Council</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Board of Studies</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Finance Committee</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">IQAC</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Non Statustory Committe</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Fee Structure</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Undertaking</a></li>
+                </ul>
+              </div>
+
+            </a>
+            <a>
+              <div class="dropdown">
+                <a class="btn  dropdown-toggle" style="border-style: none;box-shadow: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NIRF
+                </a>
+              
+                <ul class="dropdown-menu small-navbar-items-last-div-anchor">
+                  <li><a class="dropdown-item mobile-view-information-nirf dropdown-item-content" href="#">SVEC-Overall Category NIRF</a></li>
+                  <li><a class="dropdown-item mobile-view-information-nirf dropdown-item-content" href="#">SVEC-Engineering Category NIRF</a></li>
+                </ul>
+              </div>
+
+            </a>
             <a
             href="./templates/academics.html"
             class="p-2 small-navbar-items-last-div-anchor"
@@ -1199,8 +1221,8 @@
           <div class="col-6 col-lg-3" data-aos="fade-up">
             <h5>Quick Links</h5>
             <ul class="list-unstyled quicklinks">
-              <li><a href="#" style="text-decoration: none;color:inherit;">Photo Gallery</a></li>
-              <li><a href="#" style="text-decoration: none;color:inherit;">Contact Us</a></li>
+              <li><a href="https://sves.org.in/ecap/olpaymentlogin.aspx" style="text-decoration: none;color:inherit;">Online Fee Payment</a></li>
+              <li><a href="https://sves.org.in/ecap/consultancyfee.aspx" style="text-decoration: none;color:inherit;">Consultant Fee</a></li>
               <li><a href="./templates/hostel.html" style="text-decoration: none;color: inherit;">Hostels</a></li>
               <li>
                 <a href="./templates/sports.html" style="text-decoration: none;color: inherit;">Sports <br />Facililties</a>
@@ -1212,9 +1234,10 @@
             <h5>Useful Links</h5>
             <ul class="list-unstyled quicklinks">
               <li><a href="./" style="text-decoration: none;color:inherit;">Home</a></li>
-              <li><a href="#" style="text-decoration: none;color:inherit;">Administration</a></li>
-              <li><a href="#" style="text-decoration: none;color:inherit;">Academics</a></li>
-              <li><a href="#" style="text-decoration: none;color:inherit;">Departmrnts</a></li>
+              <li><a href="./templates/academics.html" style="text-decoration: none;color:inherit;">Administration</a></li>
+              <li><a href="./templates/academics.html" style="text-decoration: none;color:inherit;">Academics</a></li>
+              <li><a href="./templates/campusLife.html" style="text-decoration: none;color:inherit;">Campus Life</a></li>
+              <li><a href="https://sves.org.in/ecap/" style="text-decoration: none;color:inherit;">E-cap</a></li>
             </ul>
           </div>
           <div class="col-12 col-lg-3" data-aos="fade-up">
@@ -1272,7 +1295,7 @@
               >
               <span class="phone">
                 <i class="fas fa-envelope" style="margin-right: 4px"> </i
-                >principal@srivasaviengg.ac.in
+                ><a href="mailto:principal@srivasaviengg.ac.in" style="text-decoration: none;color: inherit;">principal@srivasaviengg.ac.in</a>
               </span>
             </p>
           </div>

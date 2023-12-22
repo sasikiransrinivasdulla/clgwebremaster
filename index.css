@@ -94,6 +94,9 @@ body {
     font-weight: 500;
     font-size: 1rem;
 }
+.mobile-view-information-ugc,.mobile-view-information-nirf{
+    font-size: 0.7rem;
+}
 .shadow-layer {
     width: 100%;
     height: 100%;

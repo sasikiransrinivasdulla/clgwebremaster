@@ -38,6 +38,25 @@ body{
     font-weight: 500;
     font-size: 20px;
 }
+.dropdown-item-content:hover {
+    color:white !important;
+    background-color: #b1040e !important;
+}
+.dropdown-item-content{
+    color: black;
+    background-color: white;
+}
+.dept-dropdown-items,.dept-dropdown-item:hover{
+    background-color: #b1040e!important;
+    color: white !important;
+}
+.dept-dropdown-items,.dept-dropdown-items{
+    background-color:white !important;
+    color: black!important;
+}
+.mobile-view-information-ugc,.mobile-view-information-nirf{
+    font-size: 0.7rem;
+}
 .shadow-layer {
     width: 100%;
     height: 100%;

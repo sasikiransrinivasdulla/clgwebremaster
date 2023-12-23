@@ -308,23 +308,28 @@ a {
 }
 
 .phone {
-    color: #ff5a2c;
+    color: #ff5a2c !important;
     font-family: Poppins Helvetica, sans-serif;
     /* font-size: 15px; */
     display: block;
     margin-top: 4px;
+    font-size: 0.9rem;
 }
-
+.phone-small{
+    font-size: 0.7rem;
+}
 footer p {
 
     font-size: 16px;
 }
 
 .address {
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 7px;
 }
-
+.address-small{
+    font-size: 01rem;
+}
 .logo {
     height: 6rem;
     width: fit-content;

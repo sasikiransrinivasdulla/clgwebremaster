@@ -13,14 +13,14 @@ footer a {
     align-items: center;
 }
 
-.list-unstyled.social-icons {
+.list-unstyled .social-icons {
     list-style: none;
     padding: 0;
     margin: 15px 0;
     display: flex;
 }
 
-.list-unstyled.social-icons li {
+.list-unstyled .social-icons li {
     margin: 0 10px;
     height: 20px;
 
@@ -44,6 +44,10 @@ footer a {
     /* font-size: 15px; */
     display: block;
     margin-top: 4px;
+    font-size: 0.9rem;
+}
+.phone-small{
+    font-size: 0.7rem;
 }
 
 footer p {
@@ -53,14 +57,15 @@ footer p {
 }
 
 .address {
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 7px;
 }
-
+.address-small{
+    font-size: 1rem;
+}
 .logo {
-    height: 180px;
-    width: 153px;
-    padding-top: 10px !important;
+    height: 6rem ;
+    width: fit-content !important;
 
 }
 

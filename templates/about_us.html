@@ -1,0 +1,1082 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>About us</title>
+  <style type="text/css">
+    th{
+      color: red;
+    }
+    h1,h2,h3,h4,h5{
+      color: red;
+
+    }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Slabo+27px&display=swap');
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image-container {
+ text-align: center;
+  margin: 20px; 
+ 
+  border-radius: 10px; 
+  padding: 10px; 
+  background: #fff;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 500px;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 10px;
+  border: 5px solid #D70F0F;
+  width: 500px; 
+}
+.head3{
+  font:14px/1 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  font:Slabo+27px, 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+
+}
+
+main {
+  min-width: 320px;
+  max-width: 1300px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+  border: 5px solid #D70F0F;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f0e0';
+}
+
+
+label[for*='2']:before {
+  content: '\f06e';
+}
+
+label[for*='3']:before {
+  content: '\f017';
+}
+
+label[for*='4']:before {
+  content: '\f19d';
+}
+label[for*='5']:before {
+  content: '\f1ad';
+}
+label[for*='6']:before {
+  content: '\f183';
+}
+label[for*='7']:before {
+  content: '\f095';
+}
+
+label:hover {
+  color: #D70F0F;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 3px solid #D70F0F;
+   border-right: 3px solid #D70F0F;
+    border-left: 3px solid #D70F0F;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7
+
+ {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+.wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 25px;
+   width: 900px;
+
+
+   
+
+ }
+ .user-card {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 900px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+
+}
+ 
+.user-card:before {
+   content: '';
+   position: absolute;
+   height: 300%;
+   width: 173px;
+   background: #D71313;
+   top: -60px;
+   left: -125px;
+   z-index: 0;
+   transform: rotate(17deg);
+ }
+ 
+ .user-card-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   z-index: 3;
+ }
+ 
+ .user-card-img img {
+   width: 150px;
+   height: 200px;
+   object-fit: cover;
+ }
+ 
+ .user-card-info {
+   text-align: center;
+ }
+ 
+ .user-card-info h2 {
+   font-size: 24px;
+   margin: 0;
+   margin-bottom: 10px;
+   font-family: 'Bebas Neue', sans-serif;
+ }
+ 
+ .user-card-info p {
+   font-size: 17px;
+   margin-bottom: 2px;
+ }
+
+ @media only screen and (min-width: 768px) {
+   .user-card {
+     flex-direction: row;
+     align-items: flex-start;
+   }   
+   .user-card-img {
+     margin-right: 20px;
+     margin-bottom: 0;
+   }
+ 
+   .user-card-info {
+     text-align: left;
+   }
+ }
+
+ @media (max-width: 767px){
+   .wrapper{
+      padding-top: 3%;
+   }
+   .user-card:before {
+      width: 300%;
+      height: 200px;
+      transform: rotate(0);
+   }
+   .user-card-info h2 {
+      margin-top: 25px;
+      font-size: 35px;
+   }
+   .user-card-info p {
+      display: block;
+      margin-bottom: 15px;
+     
+ }
+}
+ @media (max-width: 450px){
+  .user-card-info p{
+   font-size: 20px!important;
+  }
+
+ }
+
+ .main1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-image{
+      position: relative;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      background: url('https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693834930/CollegeBuilding_eh7qjr.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .hero-image::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0,.5);
+    }
+    .hero-content{
+      position: relative;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0 auto;
+    }
+    .hero-content-inner h1{
+      font-size: 60px;
+      color: #fff;
+      margin-bottom: 40px;
+      color: red;
+    }
+    .hero-content-inner p{
+      width: 100%;
+      margin: 0 auto;
+      font-size: 26px;
+      font-weight: normal;
+      color: #fff;
+      line-height: 50px;
+    }
+    @media(max-width: 768px){
+      .hero-content{
+        width: 100%;
+      }
+      .hero-content-inner h1{
+        font-size: 30px;
+        color: red;
+
+      }
+      .hero-content-inner p{
+        width: 100%;
+        font-size: 13px;
+        line-height: 22px;
+      
+
+      }
+    }
+    @media  (min-width: 1050px)  {
+      .mainn{
+        margin-right:120px;
+        margin-left:140px
+
+      }
+      .mainn2 {
+        margin-right: 100px;
+        margin-left: 280px;
+      }
+      .mainn3{
+        margin-right: 100px;
+        margin-left: 380px;
+      }
+    }
+   
+    @media only screen and (min-width: 1040px) and (max-width: 1050px)  {
+      .mainn{
+        margin-right:50px;
+        margin-left:50px
+
+      }
+      .mainn2 {
+        margin-right: 100px;
+        margin-left: 300px;
+      }
+      .mainn3{
+        margin-right: 100px;
+        margin-left: 400px;
+      }
+    }
+  
+  
+   
+    
+    
+    
+  </style>
+  <script>
+    $(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+  </head>
+  <body>
+    <div id="header"></div>
+<h1>About us</h1>
+
+<main >
+  
+    <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1" class="head3"><b>About SVEC</b></label>
+    
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2" class="head3"><b>Vision</b></label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3" class="head3"><b>Mission</b></label>
+
+    
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4" class="head3"><b>Sri vasavi Society</b></label>
+
+  <input id="tab5" type="radio" name="tabs">
+  <label for="tab5" class="head3"><b>Board Of Governance</b></label>
+  <input id="tab6" type="radio" name="tabs">
+  <label for="tab6" class="head3"><b>IQAC</b></label>
+  <input name="tabs" id="tab7" type="radio">
+  <label for="tab7" class="head3"><b>Contact Us</b></label>
+
+  
+
+    
+  <section id="content1">
+    <div class="image-container">
+        <img src="https://static.zollege.in/public/college_data/images/appImage/15276_13.jpg?tr=h-250,w-400,c-force">
+      </div>
+    <p align="justify">
+    <b style="color:#D70F0F;font-size:20px">Sri Vasavi Engineering College</b>, considered one of the best engineering colleges in Andhra Pradesh, started its journey in the year 2001. Since its inception, the college has been striving to provide quality technical education to its students and making them industry ready. Sri Vasavi Engineering College exemplifies quality in various fields ranging from Engineering, Pharmacy to Business Administration courses and is rated as one among the top 10 engineering colleges in Andhra Pradesh. The world class laboratories, the mammoth library which radiates knowledge, audio visual classrooms with plug and play ambience, state-of-the art sports complex, Indoor stadium, seminar halls, auditorium, lawns and gardens and parking facilities make Sri Vasavi stand out among the multitude of engineering colleges in the state today.
+    </p>
+    <p align="justify">
+    Highly qualified Faculty always contributes to the knowledge levels of students and facilitate their placement in top most MNCs every year. NBA & NAAC accreditations bear testimony to top notch facilities available in the campus.SVEC became an autonomous engineering college in 2018 and is fine tuning its course curricula to suit the ever growing industry needs.
+    </p>
+    <p align="justify">
+      SVEC started new engineering courses CST and ECT which are highly prospective in the present job scenario besides offering the best engineering courses like ECE, CSE, EEE, Mechanical and Civil. The college has an MBA wing which always strives to transform students into entrepreneurs.
+    </p>
+    <p align="justify"> 
+      The MBA wing functions like one of the best MBA colleges in A.P by infusing the students with requisite business skills. The placements division always strives hard to entice prime global and Multi-national companies to visit the SVEC campus for conducting placement drives. The NSS unit helps students to inculcate discipline and civic sense among themselves to make them responsible citizens of this nation.
+    </p>
+    <p align="justify">
+      Research and Development activities in the college represent a large and rapidly growing effort put forth by the stakeholders which creates new and improved technology that surely gives an edge over. The Eco-Friendly projects undertaken by the college started producing results in the form of awards and accolades.
+    </p>
+    <P align="justify">
+      The RTA approved pollution checkup center, Power generation using solar panels, Battery Vehicles designed by students, Technical exhibitions and trade shows will surely give students a practical exposure in the campus itself.
+    </P>
+  </section>
+    
+  <section id="content2">
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlD_tGzmDM4YmEEqMMS2NyycIcCAIps4gXz536ux7HoVSQTndOSzqn_17URTG0kgR5KFA&usqp=CAU">
+      </div>
+    <p align="justify">
+    <b style="font-weight: 600">&#10146;</b>To be a premier technological institute striving for excellence with global perspective and commitment to the Nation..
+    </p>
+   
+  </section>
+    
+  <section id="content3">
+     <div class="image-container">
+        <img src="https://media.istockphoto.com/id/501539900/photo/mission.jpg?s=612x612&w=0&k=20&c=uuBrHh7uTv1ZLeenWiYfr2KK9Vk_Y7Pcy6DaJPZPIT0=">
+      </div>
+    <p>
+      <b style="font-weight: 600">&#10146;</b> To produce Engineering graduates of professional quality and global perspective through Learner Centric Education.
+    </p>
+    <p>
+
+   
+ <b style="font-weight: 600">&#10146;</b>To establish linkages with government, industry and Research laboratories to promote R&amp;D activities and to disseminate innovations.
+    </p>
+    <p>
+      <b style="font-weight: 600">&#10146;</b> To create an eco-system in the institute that leads to holistic development and ability for life- long learning.
+    </p>
+  </section>
+    
+  <section id="content4">
+   <div class="main1" >
+  <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="https://srivasaviengg.ac.in/image/yns.jpg" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2 style="color:red;">Hon's President</h2>
+             
+              <p align="justify"> The main source of inspiration and guidance to us is <strong style="color:red;">Sri Yeerra Narayana Swamy </strong>M.A., LLB., Ex. M.L.A., Tadepalligudem, who took exceptional care in moulding the college into a model institution. He is the Honorary President of the institution.</p>
+            </div>
+        </div>
+    </div>
+     <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="  https://srivasaviengg.ac.in/image/grandhis.jpg
+" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2 style="color:red;">President</h2>
+             
+              <p align="justify">Our President, <strong style="color:red;">Sri Grandhi Satyanarayana</strong> has good experience in education field. He has been running a  school,colleges and degree colleges in the name of GMR Educational Institutions for the last 16 years.</p>
+            </div>
+        </div>
+    </div>
+     <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="https://srivasaviengg.ac.in/image/chalamcharala.jpg" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2 style="color:red;">Secretary & Correspondent</h2>
+             
+              <p align="justify" >Our Secretary &amp; Correspondent, <b style="color:red;">Sri Chalamcharla V.V.Subba Rao</b>  is a personality with an enhanced caliber of leadership and assertive skills. These qualities contribute to the elevation of the institution in a big way. He revels in shaping the career of the students with his unparalleled vision and mission. He also has plans to extend his vision and goals across the man made barriers and wish to earn global reputation.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+<div>
+ 
+  <table class="table table-striped" style="margin-left:10px ; width: 850px;">
+  <thead>
+    <tr>
+      <th scope="col" >SNO</th>
+      <th scope="col" >Members</th>
+      <th scope="col" >Designation</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Sri Ch. Srimanarayana Murthy</td>
+    <td>Vice President</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td>Sri Pabolu Venkateswara Rao</td>
+    <td>Joint Secretary</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Sri Ch. V. R. K Subbarao</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>Sri P. Bala Kasaiah</td>
+    <td>Treasurer</td>
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+     <td>Smt. Grandhi Ratnavathi</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td>Sri Ch.Sai Lakshmana Rao</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+     <td>Sri Ch. V. R Ramana Murthy</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">8</th>
+      <td>Sri Juluri Neelakanteswara Rao</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">9</th>
+     <td>Sri P.Rama Krishna Rao</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">10</th>
+      <td>Sri Kanamarlapudi L.N.Prasad</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">11</th>
+      <td>Sri Maddali Mohan Babu</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">12</th>
+      <td>Sri Kotla Venkata Rama Krishna Rao  </td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">13</th>
+     <td>Sri Nunna Lakshmi Narayana</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">14</th>
+     <td>Sri P.Chenchu Subbarao</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">15</th>
+     <td>Smt. Kolla Parvathi Devi</td>
+    <td>Member</td>
+    </tr>
+     <tr>
+      <th scope="row">16</th>
+     <td>Smt. N.Sreedevi</td>
+    <td>Member</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+  </section>
+
+  <section id="content5">
+    <h2 class="head1"><b>Board of Governors</b></h2>
+    <p align="justify">
+  Board of governance is a deciding component of organizational effectiveness and a crucial part of the functioning of an organizations. Good governance ensures that objectives are realized, resources are well managed, and the interests of stakeholders are protected and reflected in key decisions.
+  </p>
+  <br>
+  <h5 style="margin-bottom: 30px;">The following is the Board of Governors(BOG) of Sri Vasavi Engineering College:</h5>
+  <div>
+
+<table class="table table-striped" >
+<thead>
+  <tr>
+    <th scope="col">SNO</th>
+  <th scope="col">Name of the Member</th>
+  <th scope="col">Organization</th>
+  <th scope="col">BOG Designation</th>
+  <th scope="col">Phone No</th>
+    
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">1</th>
+    <td>Sri O. P. Goenka</td>
+  <td>Technical Director, FFF Ltd., TPG. </td>
+  <td>Chairperson</td>
+  <td>9848023102</td>
+  </tr>
+  <tr>
+    <th scope="row">2</th>
+    <td>Sri Grandhi Satyanarayana</td>
+  <td>President of the College</td>
+  <td>Member (Management)</td>
+  <td>9848105097</td>
+  </tr>
+  <tr>
+    <th scope="row">3</th>
+
+  <td>Sri Ch.V.V.Subba Rao</td>
+  <td>Secretary  &amp; Correspondent </td>
+  <td>Member (Management)</td>
+  <td>9848144836</td>
+  </tr>
+    <tr>
+    <th scope="row">4</th>
+    <td>Sri Pabolu Venkateswara Rao </td>
+  <td>Joint Secretary of the College </td>
+  <td>Member (Management)</td>
+  <td>9440182237</td>
+  </tr>
+    <tr>
+    <th scope="row">5</th>
+  <td>Sri Peruri Bala Kasaiah </td>
+  <td>Treasurer of the College </td>
+  <td>Member (Management)</td>
+  <td>9490110934</td>
+  </tr>
+    <tr>
+    <th scope="row">6</th>
+    <td>Sri N. Rajasekhar </td>
+  <td>Assoc. Professor &amp; HOD, <br>Dept. of BSH </td>
+  <td>Member (Faculty Representation) </td>
+  <td>9885739808</td>
+  </tr>
+    <tr>
+    <th scope="row">7</th>
+    
+  <td>Dr. D. Jaya Kumari</td>
+  <td>Professor &amp; HOD <br>Dept. of CSE </td>
+  <td>Member (Faculty Representation) </td>
+  <td>9885066229</td>
+  </tr>
+    <tr>
+    <th scope="row">8</th>
+    <td>The Regional Officer</td>
+  <td>AICTE,SCRO, Hyderabad </td>
+  <td>Member ,AICTE Nominee </td>
+  <td></td>
+  </tr>
+    <tr>
+    <th scope="row">9</th>
+  <td>Prof.(Dr.) Upendra D. Patel</td>
+  <td>Professor &amp; Head,<br> Civil Engineering Dept.,<br>The M S University of Baroda, <br> Vadodara</td>
+  <td>Member, UGC Nominee  </td>
+  <td>9687961022</td>
+  </tr>
+    <tr>
+    <th scope="row">10</th>
+  
+  <td>The Regional Joint Director</td>
+  <td>Technical Edn., Kakinada. </td>
+  <td>Member , State Govt. Nominee  </td>
+  <td></td>
+  </tr>
+    <tr>
+    <th scope="row">11</th>
+    <td>Dr. K. V. Ramana  </td>
+  <td>Professor of CSE UCEK, <br>JNTUK, Kakinada</td>
+  <td>Member</td>
+  <td>9177780000</td>
+  </tr>
+    <tr>
+    <th scope="row">12</th>
+  <td>The Principal</td>
+  <td>Govt. Polytechnic ,  Tadepalligudem </td>
+  <td>Member ,SBTET Nominee-State Govt.  </td>
+  <td>9010222178</td>
+  </tr>
+    <tr>
+    <th scope="row">13</th>
+    <td>Sri V. Rajanna </td>
+  <td>Vice President &amp; Regional Head, <br>
+Tata Consultancy Services,<br> Hyderabad. </td>
+  <td>Member (Industry Representation) </td>
+  <td></td>
+  </tr>
+    <tr>
+    <th scope="row">14</th>
+  <td>Dr.T. Ramesh   </td>
+  <td>Retd. Professor of CSE,<br>NIT Warangal</td>
+  <td>Member </td>
+  <td>9490455118</td>
+  </tr>
+    <tr>
+    <th scope="row">15</th>
+  <td>Sri Ch. Apparao</td>
+  <td>Technical Director</td>
+  <td>Invited Member</td>
+  <td>9705288855</td>
+  </tr>
+    <tr>
+    <th scope="row">16</th>
+    <td>Dr. Ch. Rambabu</td>
+  <td>Professor &amp; Dean (Student Affairs)</td>
+  <td>Invited Member</td>
+  <td>9441447199</td>
+  </tr>
+    <th scope="row">17</th>
+  
+  <td>Dr. G V N S R Ratnakara Rao</td>
+  <td>Principal </td>
+  <td>Principal of the college &amp; Member Secretary    </td>
+  <td>9490799102<br>7893799102</td>
+  </tr>
+  
+</tbody>
+</table>
+</div>
+  </section>
+
+  <section id="content6">
+    <h2 class="mainn1" style="color:red;margin-bottom: 60px;margin-top:60px">IQAC - Internal Quality Assurance Cell</h2>
+    <p align="justify">
+      <b style="font-weight: 600">&#10146;</b>
+      As per the guidelines of National Assessment &amp; Accreditation Council (NAAC), every accredited institution should establish an Internal Quality Assurance Cell (IQAC), as a post accreditation quality sustenance measure.
+    </p>
+    <p align="justify">
+      <b style="font-weight: 600">&#10146;</b>
+      he prime task of the IQAC is to develop a system for conscious, consistent and catalytic improvement in the overall performance of the institution. For this during the post accreditation period, it will channelize all efforts and measures of the institution towards promoting its holistic academic excellence.
+    </p>
+    <p align="justify">
+      <b style="font-weight: 600">&#10146;</b>
+      It will be a facilitative and participative unit of the institution which has the potential to become a vehicle for assuring in quality enhancement by working out planned interventionist strategies to remove deficiencies and enhance quality like the "quality circles" in industries.
+    </p>
+    <p align="justify">
+      <b style="font-weight: 600">&#10146;</b>
+      In addition to ensuring the implementations of quality checks and measures it has to prepare the <b>Annual Quality Assurance Report (AQAR)</b> as per guidelines and parameters of NAAC, to be submitted to NAAC every year.
+    </p>
+    <p align="justify"> 
+      <b style="font-weight: 600">&#10146;</b>
+      The cell acts as a nodal agency of the college for coordinating quality related activities, including adopting and dissemination of good practices.
+    </p>
+    <p align="justify" style="color:red;margin-bottom: 10px;"> 
+      <b style="font-weight: 600">&#10146;</b>
+    Reconstituted Internal Quality Assurance Cell (IQAC) effective from<b> 03-07-2023</b> is as follows
+    </p>
+
+      
+
+
+      
+<div style="margin-top:20px;margin-bottom: 20px; " class="mainn" >
+
+
+<table class="table table-striped" style=" width: 850px;" >
+<tbody>
+  <tr style="text-align: center;">
+  <th colspan="3" scope="col" style="text-align: center;"><b>Chairperson</b></th>
+</tr>
+
+<tr>
+  <td colspan="3" style="text-align: center;">Dr. Guduru. VNSR. Ratnakara Rao, Principal</td>
+</tr>
+<tr>
+  <th colspan="3" scope="col" style="text-align: center;"><b>Co-Ordinator</b></th>
+</tr>
+
+<tr>
+  <td colspan="3" style="text-align: center;">Dr. G .Loshma , Professor &amp; Head, AIM</td>
+</tr>
+  <tr>
+    <th scope="col">SNO</th>
+    <th scope="col">Name of the Member</th>
+    <th scope="col">Designation</th>
+    
+  </tr>
+  <tr>
+    <th scope="row">1</th>
+    <td>Dean Student Affairs-Dr. Ch. Rambabu , Professor, EEE</td>
+  <td>Member</td>
+  </tr>
+  <tr>
+    <th scope="row">2</th>
+  <td>Dean R&amp;D-Dr. V. S. Naresh , Professor, CSE</td>
+  <td>Member</td>
+  </tr>
+  <tr>
+    <th scope="row">3</th>
+    <td>HOD CE-Dr. G. Radhakrishnan, Professor, CE</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">4</th>
+    <td>HOD EEE-Dr. D. Sudha Rani , Professor, EEE</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">5</th>
+  <td>HOD ME-Dr. M.V. Ramesh , Professor , ME</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">6</th>
+    <td>HOD ECE-Dr. E. Kusuma Kumari , Professor, ECE</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">7</th>
+  <td>HOD CSE-Dr. D. Jaya Kumari , Professor, CSE</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">8</th>
+    <td>HOD BS&amp;H-Sri. N. Raja Sekhar , Assoc. Professor, BS&amp;H</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">9</th>
+  <td>HOD MBA-Sri. D. Naveen Kumar, Asst. Professor, MBA</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">10</th>
+    <td>Head, Placements-Sri. P.N.V. Gopala Krishna, Assoc. Professor, ME</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">11</th>
+    <td>Section Head, English-Dr. T. Sujani, Assoc. Professor, BS&amp;H </td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">12</th>
+    <td>Section Head, Mathematics, Sri Sk. Dhana Prasad, Asst. Professor, BS&amp;H</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">13</th>
+  <td>Section Head, Physics, Sri. P.Sita Rama RajuAssoc. Professor, BS&amp;H </td>
+  <td>Member</td>
+  
+  </tr>
+    <tr>
+    <th scope="row">14</th>
+  <td>Section Head, Chemistry-Ms. S.S.V Suma Latha, Asst. Professor, BS&amp;H </td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">15</th>
+    <td>Sri. K. N. H Srinivas, Assoc. Professor, ECE</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">16</th>
+    <td>Controller of Examinations-Sri. Ch.V.S.R. Gopala Krishna, Sr.Asst.Prof, EEE</td>
+  <td>Member</td>  
+  </tr>
+    <tr>
+    <th scope="row">17</th>
+  <td>Sri. Ch. Apparao, Director Technical-Management Representative</td>
+  <td>Member</td> 
+  </tr>
+    <tr>
+    <th scope="row">18</th>
+  <td>Mr. Ch. Narayana Rao, Administrative Officer</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">19</th>
+  <td>Mr. Ganesh Somisetti, Head of HR,coMakeIT Software Pvt.Ltd, Hyderabad</td>
+  <td>Member</td>
+  </tr>
+    <tr>
+    <th scope="row">20</th>
+    <td>Mr. Eedala Rambabu, Specialist,MicroFocus Private Limited, Bangalore</td>
+  <td>Member</td> 
+  </tr>
+    <tr>
+    <th scope="row">21</th>
+  <td>Mr. M. Mahesh-Retd. Principal , Govt. Polytechnic, Tadepalligudem</td>
+  <td>Member</td>  
+  </tr>
+    <tr>
+    <th scope="row">22</th>
+    <td>Ms. Satti Sri Satya - 21A81A05C3 - Dept. of CSE</td>
+  <td>Member</td> 
+  </tr>
+</tbody>
+</table>
+</div>
+<div style="margin-top:20px;margin-bottom: 20px; " class="mainn" >
+<h2 class="mainn2" style="color:red;margin-bottom: 60px;margin-top:60px">IQAC Minutes of Meetings</h2>
+
+
+<table class="table table-striped" style=" width: 850px;text-align: center;">
+
+<tbody><tr><th>A.Y 2023-24</th></tr>
+<tr><td>1. Minutes of Meeting held on 17-08-2023-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2017-08-2023_1.pdf" target="_newtab">View</a></td></tr>
+<tr><th>A.Y 2022-23</th></tr>
+<tr><td>1. Minutes of Meeting held on 10-01-2023-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2010-01-2023_1.pdf" target="_newtab">View</a></td></tr>
+<tr><td>2. Minutes of Meeting held on 04-05-2023-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%204-05-2023_2.pdf" target="_newtab">View</a></td></tr>
+<tr><th>A.Y 2021-22</th></tr>
+<tr><td>1. Minutes of Meeting held on 23-04-2022-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2023-04-2022.pdf" target="_newtab">View</a></td></tr>
+<tr><td>2. Minutes of Meeting held on 10-05-2022-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2010-05-2022_2.pdf" target="_newtab">View</a></td></tr>
+<tr><th>A.Y 2020-21</th></tr>
+<tr><td>1. Minutes of Meeting held on 04-01-2021-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2004-01-2021_1.pdf" target="_newtab">View</a></td></tr>
+<tr><td>2. Minutes of Meeting held on 24-04-2021-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2024-04-2021_2.pdf" target="_newtab">View</a></td></tr>
+<tr><th>A.Y 2019-20</th></tr>
+<tr><td>1. Minutes of Meeting held on 16-10-2019-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2016-10-2019_1.pdf" target="_newtab">View</a></td></tr>
+<tr><td>2. Minutes of Meeting held on 18-04-2020-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20the%20meeting%2018-04-2020_2.pdf" target="_newtab">View</a></td></tr>
+<tr><th>A.Y 2018-19</th></tr>
+<tr><td>1. Minutes of Meeting held on 30-11-2018-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20Meeting_30-11-2018_1.pdf" target="_newtab">View</a></td></tr>
+<tr><td>2. Minutes of Meeting held on 25-04-2019-<a href="http://srivasaviengg.ac.in/IQAC/Minutes%20of%20Meeting_25-04-2019_2.pdf" target="_newtab">View</a></td></tr>
+</tbody></table>
+
+
+
+</div>
+<div style="margin-top:20px;margin-bottom: 20px; " class="mainn" >
+<h2 style="color:red;margin-bottom: 60px;margin-top:60px" class="mainn3">AQAR</h2>
+
+  <table class="table table-striped" style=" width: 850px;text-align: center;">
+  <tbody>
+    <tr>
+      <th scope="row">STUDENT SATISFACTION SURVEY(SSS)</th>
+    </tr>
+      <tr>
+        <td scope="row">
+          <p>
+            <b style="font-weight: 600">&#10146;</b>
+            SSS Survey Report 2021-22-<a href="http://srivasaviengg.ac.in/IQAC/NAAC%20SSS%202021-22.pdf" target="_newtab">View</a>
+          </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+              SSS Survey Report 2020-21-<a href="http://srivasaviengg.ac.in/IQAC/NAAC%20SSS%202020-21.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+              SSS Survey Report 2019-20-<a href="http://srivasaviengg.ac.in/IQAC/NAAC%20SSS%202019-20.pdf" target="_newtab">View</a>
+            </p>
+          </td>
+    
+
+    </tr>
+    <tr>
+      <th scope="row">Annual Quality Assurance Report(AQAR)</th>
+        </tr>
+        <tr>
+        <td scope="row">
+          <p>
+            <b style="font-weight: 600">&#10146;</b>
+            AQAR 2021-22-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2021-22.pdf" target="_newtab">View</a>
+          </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+              AQAR 2020-21-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2020-21.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+              AQAR 2019-20-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2019-20.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            AQAR 2018-19-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2018-19.pdf" target="_newtab">View.</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            AQAR 2017-18-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2017-18.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            AQAR 2016-17-<a href="http://srivasaviengg.ac.in/IQAC/SVEC-AQAR-2016-17.pdf" target="_newtab">View</a>
+            </p>
+          </td>
+    </tr>
+    <tr>
+      <th scope="row">Academic Caldendars </th>
+      </tr>
+      <tr>
+        <td scope="row">
+          <p>
+            <b style="font-weight: 600">&#10146;</b>
+            Academic Calendar 2022-23-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2022-23.pdf" target="_newtab">View</a>
+          </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+              Academic Calendar 2021-22-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2021-22.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            Academic Calendar 2020-21-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2020-21.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            Academic Calendar 2019-20-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2019-20.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+          Academic Calendar 2018-19-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2018-19.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+            Academic Calendar 2017-18-<a href="http://srivasaviengg.ac.in/IQAC/Academic-2017-18.pdf" target="_newtab">View</a>
+            </p>
+            <p>
+              <b style="font-weight: 600">&#10146;</b>
+          Academic Calendar 2016-17-<a href="http://srivasaviengg.ac.in/uploads/Academic-2016-17.pdf" target="_newtab">View</a>
+            </p>
+          </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>
+  </section>
+
+  <section id="content7">
+<div class="hero-image">
+<div class="hero-content">
+  <div class="hero-content-inner">
+    <h1>Contact Us</h1>
+    <p>Sri Vasavi Engineering College,Pedatadepalli,</p>
+    <p>Tadepalligudem -534 101.</p>
+    <p>West Godavari Dist.,Andhra Pradesh.</p>
+    <p>phone Nos.: +91-8818-284355, 284344, 284544</p>
+    <p>Fax No.: +91-8818-284322</p>
+    <p>Email : principal@srivasaviengg.ac.in</p>
+    
+    
+
+</div>
+</div>
+</div>
+    </section>
+   
+  
+</main>
+<div id="footer"></div>
+</body>
+</html>

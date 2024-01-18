@@ -12,6 +12,7 @@ body {
 .logo-image {
     height: 40px;
     width: 200px;
+
 }
 /* fixed image  */
 .fixed-main-image {
@@ -936,4 +937,10 @@ i {
 .bg-darker{
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
+#mouImages > img{
+
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }

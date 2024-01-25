@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
+:root{
+    font-size: 15px;
+}
 body {
     margin: 0;
-    font-family: "Poppins" !important;
+
 }
 /* navbar color  */
 .bg-color {
@@ -467,9 +469,18 @@ footer h5 {
 
 
 /* media query for display navbars and dropdowns */
-.dept-dropdown-items{
-    font-size: 0.8rem !important;
-}
+.drop {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0 !important;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+  }
 .dept-dropdown-items:hover{
     background-color: #b1040e !important;
     color: white !important;
@@ -478,25 +489,18 @@ footer h5 {
     background-color:white !important;
     color: black!important;
 }
-@media screen and (max-width:576px){
-    #smallVisible{
-        display: block;
-    }
-    .dept-dropdown-items{
-        padding-left: 0.4rem !important;
-    }
-    #bigVisible{
-        display: none;
-    }
+
+.dept-dropdown-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box !important;
+    font-size: 0.5rem !important;
+    font-weight:bold;
 }
-@media not screen and (max-width:576px){
-    #smallVisible{
-        display: none;
-    }
-    #bigVisible{
-        display: block;
-    }
-}
+
 /* something  */
 @media not screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large {

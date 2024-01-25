@@ -397,7 +397,7 @@
             >
               <div class="dropdown show">
                 <a
-                  class="btn btn-white w-100 dropdown-toggle"
+                  class="btn btn-white w-100 dropdown-toggle text-center"
                   style="border-style: none; font-weight: bold"
                   href="#"
                   role="button"
@@ -410,30 +410,29 @@
                 </a>
 
                 <div
-                  class="dropdown-menu w-100 p-1"
+                  class="dropdown-menu p-1 text-center"
                   aria-labelledby="dropdownMenuLink"
-                >
-                  <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    style="padding: 10px; padding-top: 2px"
+                  style="min-width: 100%;max-width: inherit;"
+                  >
+                <a
+                    class="dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
                     href="./templates/admin/maintechdirector.html"
-                    >Director-Technical</a
+                    >Director-Technical
+                    </a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    style="padding: 10px; padding-top: 2px"
+                  class="dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
                     href="./templates/admin/principal.html"
                     >Principal</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    style="padding: 10px; padding-top: 2px"
+                  class="dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
                     href="./templates/admin/ourdeans.html"
                     >Deans</a
                   >
                   <a
-                    class="dropdown-item dept-dropdown-items drop"
-                    style="padding: 10px; padding-top: 2px"
+                  class="dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+
                     href="./templates/admin/departmentheads.html"
                     >Head of the Departments</a
                   >
@@ -455,118 +454,30 @@
               </div>
             </div>
             <div
-              class="col-6 col-md-4 text-center"
-              style="border: 1px solid grey; box-sizing: border-box"
-            >
-              <div class="dropdown show">
-                <a
-                  class="btn btn-white w-100 dropdown-toggle"
-                  style="border-style: none; font-weight: bold"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Departments
-                </a>
-                <style>
-                  .drop {
-                    font-weight: 600;
-                    font-size: 9px;
-                    /* padding: 10px; */
-                    padding: 0;
-                    padding-top: 15px;
-                    /* padding-bottom: 15px; */
-                    /* border-bottom: 3px solid gray; */
-                  }
-                </style>
-
-                <div
-                class="dropdown-menu w-100 p-2"
-                aria-labelledby="dropdownMenuLink"
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/cse.html"
-                  ><div style="width: 100%">
-                    <span id="bigVisible"> Computer Science & Engineering</span>
-                    <span id="smallVisible" >Computer Science <br/> & Engineering</span>
-                  </div>
-                  </a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/cst.html"
-                  ><div style="width: 100%">
-                    <span id="bigVisible"> Computer Science & Technology</span>
-                    <span id="smallVisible" >Computer Science <br/> & Technology</span>
-                  </div></a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/cai.html"
-                  ><div style="width: 100%">
-                    <span id="bigVisible"> Computer Science & Engineering (AI)</span>
-                    <span id="smallVisible" >Computer Science <br/> & Engineering (AI)</span>
-                  </div></a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/aiml.html"
-                >
-                <div style="width: 100%">
-                  <span id="bigVisible"> Artificial Intelligence & Machine Learning</span>
-                  <span id="smallVisible" >Artificial Intelligence <br/> & Machine Learning</span>
-                </div>
-                </a>
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/ece.html"
-                >
-                <div style="width: 100%">
-                  <span id="bigVisible"> Electronics & Communication Engineering</span>
-                  <span id="smallVisible" >Electronics & <br/>Communication <br/>Engineering</span>
-                </div> 
-                </a>
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/ect.html"
-                >
-                <div style="width: 100%">
-                  <span id="bigVisible"> Electronics & Communication Technology</span>
-                  <span id="smallVisible" >Electronics & <br/>Communication <br/>Technology</span>
-                </div>
-                </a>
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/eee.html"
-                >
-                  <div>Electrical & Electronic<br />Engineering</div>
-                </a>
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/mech.html"
-                  >Mechanical Engineering</a
-                >
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/civil.html"
-                  >Civil Engineering
-                </a>
-                <a class="dropdown-item dept-dropdown-items drop" href="">
-                  <div>Basic Science<br />Humanities</div>
-                </a>
-                <a
-                  class="dropdown-item dept-dropdown-items drop"
-                  href="./templates/DEPT/mba.html"
-                >
-                  <div>Masters in Business<br />Administration</div>
-                </a>
-                </div>
-              </div>
-            </div>
+            class="col-6 col-md-4 text-center"
+            style="border: 1px solid grey; box-sizing: border-box"
+          >
+          <div class="dropdown">
+            <a class="btn  dropdown-toggle  w-100" style="border-style: none;box-shadow: none;font-weight: bold;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departments
+            </a>
+          
+            <ul class="dropdown-menu w-100 p-3">
+              <li ><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Computer Science Engineering</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Computer Science & Technology</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Computer Science & Engineering (AI)</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Artificial Intelligence & Learning</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Electronics & Communication Engineering</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Electronics & Communication Technology</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Electrical & Electronic Engineering</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Mechanical Engineering</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Civil Engineering</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Basic Science Humanities</a></li>
+              <li><a class="dropdown-item  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="#" style="font-weight: 800;">Masters in Business Administration</a></li>
+            </ul>
+          </div>
+          </div>
+            
             <div
               class="col-6 col-md-4 text-center"
               style="border: 1px solid grey; box-sizing: border-box"

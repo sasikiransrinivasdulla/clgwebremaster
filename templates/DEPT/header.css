@@ -90,9 +90,7 @@ body{
     font-size: 80px;
     text-shadow: 5px 5px 5px #000000;
 }
-.dept-dropdown-items{
-    font-size: 0.8rem !important;
-}
+
 .dept-dropdown-items:hover{
     background-color: var(--redColor) !important;
     color: white !important;
@@ -101,22 +99,18 @@ body{
     background-color:white !important;
     color: black!important;
 }
-@media screen and (max-width:576px){
-    #smallVisible{
-        display: block;
-    }
-    #bigVisible{
-        display: none;
-    }
+.dept-dropdown-text{
+    width: 100%;font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: fit-content;
+    font-family: "Poppins";
 }
-@media not screen and (max-width:576px){
-    #smallVisible{
-        display: none;
-    }
-    #bigVisible{
-        display: block;
-    }
-}
+
 /* something  */
 @media not screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large {

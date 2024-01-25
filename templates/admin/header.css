@@ -90,27 +90,15 @@ body{
   .dropdown-menu {
     display: none;
   }
-.dept-dropdown-items{
-    font-size: 0.8rem !important;
-}
-@media screen and (max-width:576px){
-    #smallVisible{
-        display: block;
-    }
-    .dept-dropdown-items{
-        padding-left: 0.4rem !important;
-    }
-    #bigVisible{
-        display: none;
-    }
-}
-@media not screen and (max-width:576px){
-    #smallVisible{
-        display: none;
-    }
-    #bigVisible{
-        display: block;
-    }
+.dept-dropdown-text{
+    width: 100%;font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: fit-content;
 }
 /* something  */
 @media not screen and (min-width:0px) and (max-width:991px) {

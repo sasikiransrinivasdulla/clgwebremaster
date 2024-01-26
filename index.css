@@ -483,7 +483,6 @@ footer h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
   }
 .dept-dropdown-items:hover{
     background-color: #b1040e !important;

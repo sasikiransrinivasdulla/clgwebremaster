@@ -142,18 +142,18 @@ body {
 
 /* .menu-item-link {
     color: #d0b200;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-size: 10px;
     font-weight: 500;
 } */
 .meaningful-text{
     font-weight: 800;
-    font-family: "Roboto";
+    font-family: "Poppins";
 }
 /* PURPOSE ITEMS CARDS TITLE  */
 .menu-card-title {
     color: #323f4b;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-size: 1.2rem !important;
     font-weight: BOLD;
     margin-top: 30px;
@@ -230,14 +230,14 @@ hr{
 
 .wcu-card-title {
     color: #323f4b;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-size: 0.8rem;
     font-weight: bold;
 }
 
 .wcu-section-heading {
     color: #323f4b;
-    font-family: "Roboto";
+    font-family: "Poppins";
     width: 100%;
     padding: 20px;
     font-weight: bold;
@@ -742,7 +742,7 @@ i {
 /* animation */
 .menu-card-title {
     color: #323f4b;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-size: 1.2rem !important;
     font-weight: BOLD;
     margin-top: 24px;
@@ -802,7 +802,7 @@ i {
 /* new animation starts here  */
 .menu-card-title2 {
     color:black;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-size: 25px;
     font-weight: BOLD;
     margin-top: 24px;

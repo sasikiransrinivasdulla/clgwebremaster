@@ -2214,6 +2214,6 @@ i {
 
 @media screen and (max-width:767px) {
   #dept-head {
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
 }

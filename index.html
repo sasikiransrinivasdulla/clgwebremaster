@@ -18,8 +18,27 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- testimonials externals starts here -->
+    <!-- Swiper CSS -->
 
+    <link rel="stylesheet" href="./testinomials_css/swiper-bundle.min.css" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="./testinomials_css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- testimonials externals ends here -->
+<!--Swiper JS -->
+<script src="./testinomials_css/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="./testinomials_css/script.js"></script>
+
+<!-- JavaScript -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
       rel="stylesheet"
@@ -375,7 +394,7 @@
         </button>
       </nav>
       <div class="small-navbar-menu-navbar bg-white" id="menuItems">
-        <div class="container-fluid text-center" style="border: 1px solid grey">
+        <div class="container-fluid text-center " style="border: 1px solid grey;">
           <div class="row text-center" style="border: 1px solid grey">
             <div
               class="col-6 col-md-4 text-center"
@@ -749,60 +768,12 @@
       <!-- news start here  -->
       <h1 class="text-center mt-5  news-title wcu-section-heading" data-aos="fade-up" >NEWS & EVENTS</h1>
       <h4 class="text-center mt-3 news-desc" data-aos="fade-up">Stories about people, research, and innovation across the Farm</h4>
-      <div class="container mt-5" data-aos="fade-up">
+      <div class="container mt-5" >
           <div class="row flex flex-wrap">
               <div class="col-12 ">
                 <div id="newsAndEvents"></div>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-4 mt-3">
-                <div class="card shadow">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
-                        class="card-img-top"
-                        alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Card title</h5>
-                        <p class="card-text ">
-                            Some quick example text to build on the card title and make up the bulk
-                            of the card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 mt-3">
-              <div class="card shadow">
-                  <img
-                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                  />
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text ">
-                          Some quick example text to build on the card title and make up the bulk
-                          of the card's content.
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-4 mt-3">
-            <div class="card shadow">
-                <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
-                    class="card-img-top"
-                    alt="Sunset Over the Sea"
-                />
-                <div class="card-body">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <p class="card-text ">
-                        Some quick example text to build on the card title and make up the bulk
-                        of the card's content.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3">
                 <div class="card shadow">
                     <img
                         src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
@@ -861,7 +832,7 @@
         <h1 style="font-weight: bold;">Placement Stats</h1>
       </div>
 
-      <div class="company-logos" data-aos="fade-up">
+      <div class="company-logos" >
         <div class="company-logos-slide">
           <img src="./company_icons/1.png" alt="Company Icon" />
           <img src="./company_icons/2.png" alt="Company Icon" />
@@ -1229,7 +1200,71 @@
           </div>
         </div>
         <div class="empty-1"></div>
+        <div class="placement-content mt-5" id="placement-stats" data-aos="fade-up">
+          <h1 style="font-weight: bold;">Testimonies</h1>
+        </div>
+        <div class="testimony">
+        
+          <div>
+            <section class="containertest">
+              <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                  <div class="slide swiper-slide">
+                    <img src="testinomy_images/img1.jpg" alt="" class="image" />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aperiam, saepe provident dolorem a quaerat quo error
+                      facere nihil deleniti eligendi ipsum adipisci, fugit,
+                      architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
 
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                      <span class="name">Marnie Lotter</span>
+                      <span class="job">Web Developer</span>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <img src="testinomy_images/img2.jpg" alt="" class="image" />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aperiam, saepe provident dolorem a quaerat quo error
+                      facere nihil deleniti eligendi ipsum adipisci, fugit,
+                      architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                      <span class="name">Marnie Lotter</span>
+                      <span class="job">Web Developer</span>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <img src="testinomy_images/img3.jpg" alt="" class="image" />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aperiam, saepe provident dolorem a quaerat quo error
+                      facere nihil deleniti eligendi ipsum adipisci, fugit,
+                      architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                      <span class="name">Marnie Lotter</span>
+                      <span class="job">Web Developer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nav-btn d-none"></div>
+                <div class="swiper-button-prev nav-btn d-none"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+          </div>
+        </div>
         
       </div>
       <div class="placement-content " id="placement-stats" data-aos="fade-up">

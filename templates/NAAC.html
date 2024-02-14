@@ -11,16 +11,16 @@
 
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="../css/NAACstyle.css">
+	<link rel="stylesheet" href="../../css/departments/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
-		<link rel="stylesheet" href="../css/animate.css">
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/media-queries.css">
+	<link rel="stylesheet" href="../../css/departments/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../css/departments/animate.css">
+	<link rel="stylesheet" href="../../css/departments/style.css">
+	<link rel="stylesheet" href="../../css/departments/media-queries.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -44,43 +44,37 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-	
-	<script> 
-		$(function(){
-		  $("#header").load("./header.html"); 
-		  $("#footer").load("./footer.html"); 
-		});
-		</script>
 </head>
 
 <body>
-   <div id="header"></div>
+
+	<div id="header"></div>
+
 	<!-- Wrapper -->
-	<div class="wrapper">
+	<div class="wrapper ">
 
 		<!-- Sidebar -->
 		<nav class="sidebar side content-down">
 
 			<!-- close sidebar menu -->
-			<div class="dismiss  mb-4">
+			<div class="dismiss">
 				<i class="fas fa-arrow-left"></i>
 			</div>
 
 			<div class="">
 
-				<h3 class="ml-3 m-4"
-					style="font-size: 30px;font-weight: 700;color: #fff;letter-spacing: 1px;font-family: 'Poppins', Arial, Helvetica, sans-serif;padding-top:50px !important;">
-					Departments<a href="index.html"></a>
+				<h3 class="ml-3"
+					style="font-size: 30px;font-weight: 700;color: #fff;letter-spacing: 1px;font-family: 'Poppins', Arial, Helvetica, sans-serif; padding-top: 50px !important;">
+					NAAC Page<a href="index.html"></a>
 				</h3>
 
 			</div>
 
-			<ul class="my-2 list-unstyled components mb-5">
+			<ul class="my-2 list-unstyled components mb-5 mt-5 top-div">
 				<li class="active list-group-item">
 					<a onclick="
 						location.reload();
-						" data-toggle="tab">Department Profile</a>
+						" data-toggle="tab">NAAC Profile</a>
 				</li>
 				<li class="list-group-item">
 					<a href="#tab1" onclick="window.scrollTo({top:0 });return false" data-toggle="tab">Institutional
@@ -143,7 +137,7 @@
 		<!------------------------------------------TAB 1 CONTENT STARTS---------------->
 		<div class="tab-pane" id="tab1">
 
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; ">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 
 				<div class="p-2">
 					<h1 class="text-center my-4" id="pdfDOWNLOADER11">
@@ -233,7 +227,7 @@
 
 		<div class="tab-pane" id="tab2">
 
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						IQAC
@@ -580,7 +574,8 @@
 		<!------------------------------------------TAB 3 CONTENT STARTS---------------->
 
 		<div class="tab-pane " id="tab3">
-			<div class="container mt-0 ml-0 ml-sm-auto mb-3 tab-content" style="border-width: 2px; margin-top:80px;">
+			<div class="container mt-0 ml-0 ml-sm-auto mb-3 tab-content" id="main-heading"
+				style="border-width: 2px; margin-top:80px;">
 				<div class="py-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Stakeholder Feedback
@@ -680,7 +675,7 @@
 		<!------------------------------------------------TAB 4 CONTENT START------------->
 		<!------------------------------------------------TAB 4 CONTENT START------------->
 		<div class="tab-pane" id="tab5">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="py-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Extended Profile
@@ -724,7 +719,7 @@
 
 		<div class="tab-pane" id="tab5">
 
-			<div class="tab-content container border-2 mb-3 ml-0 ml-sm-auto" style="margin-top:100px !important;">
+			<div class="tab-content container border-2 mb-3 ml-0 ml-sm-auto">
 				<div class="container mt-0 ">
 					<h1 class="text-center mb-3" style="color: #850209; margin-top:20px;">LIBRARY</h1>
 					<div class="row" style="display: flex;justify-content: center;align-items: center;">
@@ -820,7 +815,7 @@
 
 
 		<div class="tab-pane" id="tab7">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-I
@@ -1156,7 +1151,7 @@
 		<!----------------------------------------------TAB 8 STARTS--------------->
 		<!----------------------------------------------TAB 8 STARTS--------------->
 		<div class="tab-pane container" id="tab8">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-II
@@ -2292,7 +2287,7 @@
 
 		<!-------------------------------------------------------TAB 9 STARTS CONTENT------------->
 		<div class="tab-pane container" id="tab9">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-III
@@ -2784,7 +2779,7 @@
 
 		<!-----------------------------------------------------TAB 10 STARTS -------------------->
 		<div class="tab-pane" id="tab10">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-IV
@@ -3151,7 +3146,7 @@
 
 		<!------------------------------------------------TAB 11 STARTS HTML----------------->
 		<div class="tab-pane" id="tab11">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-V
@@ -3837,7 +3832,7 @@
 
 		<!----------------------------------------TAB 12 STARTS------------------->
 		<div class="tab-pane" id="tab12">
-			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0 ml-0 ml-sm-auto  tab-content" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-VI
@@ -4151,7 +4146,7 @@
 
 		<!---------------------------------------TAB 13 STARTS-------------------------------->
 		<div class="tab-pane" id="tab13">
-			<div class="container my-4 mt-0  tab-content ml-0 ml-sm-auto" style="border-width: 2px; margin-top:100px !important;">
+			<div class="container my-4 mt-0  tab-content ml-0 ml-sm-auto" id="main-heading" style="border-width: 2px; ">
 				<div class="p-2">
 					<h1 class="text-center" id="pdfDOWNLOADER11">
 						Criterion-VII
@@ -4421,7 +4416,8 @@
 
 			<div id="content" class="container-fluid container my-5">
 				<a href="">
-					<img class="img-fluid mb-4 mt-5" src="../images/NAACimg/naac.png" style="aspect-ratio: 16/4;" /></a>
+					<img class="img-fluid mb-4 mt-4 mt-sm-5 mt-xs-4 mt-md-5 pt-2" id="naac-img" src="../images/NAACimg/naac.png"
+						style="aspect-ratio: 16/4;" /></a>
 				<div class="tab-content border-3 p-0 p-sm-4" id="nav-tabContent">
 					<div class="tab-pane fade show active p-3" id="nav-department" role="tabpanel"
 						aria-labelledby="nav-department-tab">
@@ -4547,9 +4543,7 @@
 
 
 		<!-- End wrapper -->
-		<div id="footer">
-			
-		</div>
+		<div id="footer"></div>
 		<!-- Javascript -->
 		<script>
 			// J to handle tab/accordion behavior
@@ -4667,20 +4661,24 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"></script>
-			<script src="../js/departments/jquery-3.3.1.min.js"></script>
-			<script src="../js/departments/jquery-migrate-3.0.0.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-				integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-				crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-				integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-				crossorigin="anonymous"></script>
-			<script src="../js/departments/jquery.backstretch.min.js"></script>
-			<script src="../js/departments/wow.min.js"></script>
-			<script src="../js/departments/jquery.waypoints.min.js"></script>
-			<script src="../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
-			<script src="../js/departments/scripts.js"></script>
+			<script src="../../js/departments/jquery-3.3.1.min.js"></script>
+			<script src="../../js/departments/jquery-migrate-3.0.0.min.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+			<script src="../../js/departments/jquery.backstretch.min.js"></script>
+			<script src="../../js/departments/wow.min.js"></script>
+			<script src="../../js/departments/jquery.waypoints.min.js"></script>
+			<script src="../../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
+			<script src="../../js/departments/scripts.js"></script>
 
+		<script>
+			$(function () {
+				$("#header").load("./header.html");
+				$("#footer").load("./footer.html");
+			});
+		</script>
 </body>
-
-</html>

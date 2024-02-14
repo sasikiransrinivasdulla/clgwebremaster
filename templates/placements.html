@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/placement_styles.css">
+  <title>Placements</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-tag-cloud.min.js"></script>
-  <title>Placements</title>
-  <link rel="stylesheet" href="../css/placement_styles.css">
-
+  <script src="https://kit.fontawesome.com/b2b9ab5ba1.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
@@ -23,7 +24,7 @@
       height: 5%;
     }
 
-    .header {
+    .header-top {
       transform: translateY(-20px);
     }
 
@@ -77,12 +78,6 @@
 
     .carousel-indicators .active {
       background-color: #fff;
-    }
-
-    body {
-      font-size: 20px;
-      font-family: 'Poppins', sans-serif;
-      /* padding-top: 100px; */
     }
 
     a {
@@ -144,523 +139,994 @@
       display: none;
     }
 
-    .header a {
+    .header-top a {
       color: #fff !important;
       font-weight: 500;
       transition: all 0.1s ease;
     }
 
-    .header a:hover {
+    .header-top a:hover {
       font-weight: 700;
+    }
+  </style>
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    .main {
+      margin-top: 140px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+      .main {
+        margin-top: 70px;
+      }
+    }
+
+    .place-text {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 400px) {
+      .place-text {
+        text-align: justify;
+      }
     }
   </style>
 
 </head>
 
 <body>
-  <div class="root">
-    <div class="top">
-      <div style="transform: translateX(-25px);">
-        <h1 style="transform: translateY(-35px);font-weight: 700;">Placements</h1>
-        <h3 class="mx-auto header"><a href="index.html">Home</a><span>//</span><a href="placement.html">Placements</a>
-        </h3>
-      </div>
-    </div>
-    <div class="gallery">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  <div>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-color fixed nav-elements-large">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex" style="gap: 10px; align-items: center; color: #fff">
+            <a href="#">
+              <img style="height: 60px; width: 300px"
+                src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1694167975/formlogo_fx3rcb.png" alt="Your Image"
+                height="50" width="50" />
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="flex-grow: 0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item hover-overline-animation">
+                <a class="nav-link" href="../../index.html" style="color: #fff; font-weight: 500">Home</a>
+              </li>
+              <li class="nav-item hover-overline-animation">
+                <div class="dropdown show">
+                  <a class="btn w-100 dropdown-toggle pt-2" style="border-style: none; color: #fff; font-weight: 500"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Administration
+                  </a>
+                  <div class="dropdown-menu w-100 p-2" style="width: fit-content !important"
+                    aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item dept-dropdown-items"
+                      href="./admin/maintechdirector.html">Director-Technical</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./admin/principal.html">Principal</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./admin/ourdeans.html">Deans</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./admin/departmentheads.html">Head of the
+                      Departments</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item hover-overline-animation">
+                <a class="nav-link" href="./academics.html" style="color: #fff; font-weight: 500">
+                  <div class="text-center">Academics</div>
+                </a>
+              </li>
+              <li class="nav-item hover-overline-animation">
+                <div class="dropdown show">
+                  <a class="btn btn-white w-100 dropdown-toggle pt-2"
+                    style="border-style: none; font-weight: 500; color: #fff" href="#" role="button"
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Departments
+                  </a>
+
+                  <div class="dropdown-menu w-100 p-2" style="width: fit-content !important"
+                    aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/cse.html">
+                      <div>Computer Science & Engineering</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./cst.html">
+                      <div>Computer Science & Technology</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/cai.html">Computer Science
+                      Engineering(AI)</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/aiml.html">
+                      <div>
+                        Artificial Intelligence & <br />Machine Learning
+                      </div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/ece.html">
+                      <div>Electronics & Communication <br />Engineering</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./ect.html">
+                      <div>Electronics & Communication <br />Technology</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./eee.html">
+                      <div>Electrical & Electronic<br />Engineering</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/mech.html">Mechanical Engineering</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/civil.html">Civil Engineering</a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/mba.html">
+                      <div>Basic Science<br />Humanities</div>
+                    </a>
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/mba.html">
+                      <div>Masters in Business<br />Administration</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item hover-overline-animation">
+                <a class="nav-link" href="./campusLife.html" style="color: #fff; font-weight: 500">
+                  <div class="text-center">Campus Life</div>
+                </a>
+              </li>
+              <li class="nav-item hover-overline-animation">
+                <a class="nav-link" href="../placements.html" style="color: #fff; font-weight: 500">Placements</a>
+              </li>
+              <li class="nav-item dropdown d-none">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="color: #fff">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/pic1.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
-          </div>
-          <div class="carousel-item">
-            <img src="images/pic2.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
-          </div>
-          <div class="carousel-item">
-            <img src="images/pic3.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
-          </div>
-          <div class="carousel-item">
-            <img src="images/pic4.jpg" class="d-block w-100 img-fluid" alt="Slide 4">
-          </div>
-          <div class="carousel-item">
-            <img src="images/pic5.jpg" class="d-block w-100 img-fluid" alt="Slide 5">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="content-speech mt-5 p-5 text-center ">
+      </nav>
+      <div class="second2-navbar-large nav-elements-large d-flex flex-row justify-content-center shadow"
+        id="second-large-navbar">
+        <div class="second2-navbar-large-contents text-center d-flex flex-row justify-content-center">
+          <a href="./V_Grivence.html" class="m-2 hover-underline-animation" id="nav-bar2-text"
+            style="text-decoration: none !important; color:black">V Grievance</a>
+          <a href="./NAAC.html" class="m-2 hover-underline-animation" id="nav-bar2-text2"
+            style="text-decoration: none !important; color:black">
+            NAAC
+          </a>
 
-      <p style="color: darkred;" class="text-justify text-sm-center">
-        At our college, we don't just prepare students for careers; we
-        ignite their passions and propel them towards success. Our placement
-        program is more than a bridge to the professional world; it's a
-        launchpad for dreams and aspirations. With a commitment to
-        excellence and a relentless pursuit of innovation, we connect our
-        students with opportunities that match their skills and ambitions.
-        Our alumni have soared to great heights, achieving remarkable feats
-        in diverse industries. Join us, and let your journey be guided by
-        knowledge, mentorship, and the promise of a brighter future. Your
-        success story begins here, at our college
-      </p>
-
-    </div>
-  </div>
-  <div class="placechart mt-5 ">
-    <h1 style="font-family: 'Poppins', sans-serif;text-align: center;">Placement Statistics</h1>
-    <div class="container-chart mt-4">
-      <div class="chart">
-        <canvas width="300" height="300" id="year2022Chart"></canvas>
-        <p>Placements for 2022</p>
-      </div>
-      <div class="chart">
-        <canvas width="300" height="300" id="year2021Chart"></canvas>
-        <p>Placements for 2021</p>
-      </div>
-      <div class="chart">
-        <canvas width="300" height="300" id="year2020Chart"></canvas>
-        <p>Placements for 2020</p>
-      </div>
-      <div class="chart">
-        <canvas width="300" height="300" id="year2019Chart"></canvas>
-        <p>Placements for 2019</p>
-      </div>
-      <div class="chart">
-        <canvas width="300" height="300" id="year2018Chart"></canvas>
-        <p>Placements for 2018</p>
-      </div>
-      <div class="chart">
-        <canvas width="300" height="300" id="year2017Chart"></canvas>
-        <p>Placements for 2017</p>
-      </div>
-    </div>
-  </div>
-  <div class="table-responsive p-3 container text-center mx-auto" style="max-width: 100%; padding: 50px;">
-    <table class="table table-bordered mx-auto faculty-table m-4 table-responsive table-striped table-hover"
-      style="max-width: fit-content;">
-      <thead style="background-color: #343a40;
-    color: #ffffff;">
-        <tr>
-          <th style="color: #ffffff;">Category</th>
-          <th style="color: #ffffff;">2022-23</th>
-          <th style="color: #ffffff;">2021-22</th>
-          <th style="color: #ffffff;">2020-21</th>
-          <th style="color: #ffffff;">2019-20</th>
-          <th style="color: #ffffff;">2018-19</th>
-          <th style="color: #ffffff;">2017-18</th>
-          <th style="color: #ffffff;">2016-17</th>
-          <th style="color: #ffffff;">2015-16</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>UG</td>
-          <td>479</td>
-          <td>1308</td>
-          <td>631</td>
-          <td>434</td>
-          <td>383</td>
-          <td>248</td>
-          <td>275</td>
-          <td>299</td>
-        </tr>
-        <tr>
-          <td>PG</td>
-          <td>101</td>
-          <td>77</td>
-          <td>14</td>
-          <td>18</td>
-          <td>41</td>
-          <td>04</td>
-          <td>31</td>
-          <td>37</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>580</td>
-          <td>1385</td>
-          <td>645</td>
-          <td>452</td>
-          <td>424</td>
-          <td>252</td>
-          <td>306</td>
-          <td>336</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="rest mx-4 pt-5">
-    <div class="team">
-      <details open class="details-example">
-        <summary>Our Team</summary>
-        <div class="content">
-          <div class="message ">
-            <div class="row">
-              <div class="col-md-4 p-5 my-auto">
-                <img src="images\GK Placements.jpg" class="img-fluid"
-                  style="border-radius: 10px; width: 100%;height: 100%;">
+          <a href="http://srivasaviengg.ac.in/r&d_profile.php" class="m-2 hover-underline-animation" id="nav-bar2-text4"
+            style="text-decoration: none !important; color:black">R & D</a>
+          <a href="./mandates.html" class="m-2 hover-underline-animation" id="nav-bar2-text5"
+            style="text-decoration: none !important; color:black">Mandates</a>
+          <a href="./category-b.html" class="m-2 hover-underline-animation"
+            id="nav-bar2-text6" style="text-decoration: none !important; color:black">Category B</a>
+          <a>
+            <div class="dropdown show hover-underline-animation pt-2">
+              <a class="m-2 w-100 dropdown-toggle pt-2" style="text-decoration: none !important; color:black" href="#"
+                role="button" id="nav-bar2-text7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                UGC
+              </a>
+              <div class="dropdown-menu w-100 p-2" style="width: fit-content !important"
+                aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20OVERALL.pdf">Board
+                  Of Governance</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Academic
+                  Council</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Board
+                  of Studies</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Finance
+                  Committee</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">IQAC</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Non
+                  Statustory Committe</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Fee
+                  Structure</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">Undertaking</a>
               </div>
-              <div class="col-md-8 my-auto text-center">
-                <!-- <h1></h1> -->
-                <h1 class="text-center">P N V GOPALA KRISHNA</h1>
-                <p class="mx-auto"> Associate Professor(Mechanical) & Head - Placements</p>
-                <p class="mx-auto"> Sri Vasavi Engineering College</p>
+            </div>
+          </a>
+          <a>
+            <div class="dropdown show hover-underline-animation pt-2">
+              <a class="m-2 w-100 dropdown-toggle pt-2" style="text-decoration: none !important; color:black" href="#"
+                role="button" id="nav-bar2-text7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                NIRF
+              </a>
+              <div class="dropdown-menu w-100 p-2" style="width: fit-content !important"
+                aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20OVERALL.pdf">SVEC-Overall
+                  Category NIRF</a>
+                <a class="dropdown-item dept-dropdown-items"
+                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf">SVEC-Engineering
+                  Category NIRF</a>
+              </div>
+            </div>
+          </a>
+          <a href="./about_us.html" class="m-2 hover-underline-animation" id="nav-bar2-text3"
+            style="text-decoration: none !important; color:black">About Us</a>
+        </div>
+      </div>
+    </div>
+    <nav class="nav-elements-small fixed-top">
+      <nav class="small-navbar p-1 pb-2">
+        <div class="d-flex flex-row">
+          <a href="#">
+            <img src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1694167975/formlogo_fx3rcb.png"
+              class="logo-image mt-2" />
+          </a>
+        </div>
+        <button class="small-navbar-nav-button mt-2" id="button">
+          <i class="fa-solid fa-bars" id="changeItem"></i>
+        </button>
+      </nav>
+      <div class="small-navbar-menu-navbar bg-white" id="menuItems">
+        <div class="container-fluid text-center px-0" style="border: 1px solid grey">
+          <div class="row text-center" style="border: 1px solid grey">
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="small-navbar-nav-item p-2">
+                <a class="small-navbar-items-last-div-anchor active" aria-current="page" href="../../index.html"
+                  style="color: #000000; font-weight: bold !important">Home</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="dropdown show">
+                <a class="btn w-100 dropdown-toggle text-center" style="border-style: none; font-weight: bold" href="#"
+                  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Administration
+                </a>
 
-                <p class="mx-auto"> MOBILE: 9849511367 || O:08818284355(Ext:319)</p>
-                <p class="mx-auto"><strong>Email:</strong> <a href="mailto:svectpo@srivasaviengg.ac.in"
-                    class="text-danger" style="font-weight: 500;">svectpo@srivasaviengg.ac.in</a></p>
+                <div class="dropdown-menu p-1 text-center" aria-labelledby="dropdownMenuLink"
+                  style="min-width: 100%;max-width: inherit;">
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./admin/maintechdirector.html">Director-Technical
+                  </a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./admin/principal.html">Principal</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./admin/ourdeans.html">Deans</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./admin/departmentheads.html">Head of the Departments</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="small-navbar-nav-item p-2">
+                <a class="small-navbar-items-last-div-anchor active" aria-current="page" href="./academics.html"
+                  style="color: #000000; font-weight: bold !important">Academics</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="dropdown show">
+                <a class="btn w-100 dropdown-toggle text-center" style="border-style: none; font-weight: bold" href="#"
+                  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Departments
+                </a>
 
-                <p class="mx-auto"><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/svectpo/"
-                    target="_blank" class="text-danger" style="font-weight: 500;">See Profile</a></p>
+                <div class="dropdown-menu p-1 text-center" aria-labelledby="dropdownMenuLink"
+                  style="min-width: 100%;max-width: inherit;">
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/cse.html">Computer Science Engineering
+                  </a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/cst.html">Computer Science & Technology</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/cai.html">Computer Science & Engineering (AI)</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/aiml.html">Artificial Intelligence & Learning</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/ece.html">Electronics & Communication Engineering</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/ece.html">Electronics & Communication Technology</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/eee.html">Electrical & Electronic Engineering</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/me.html">Mechanical Engineering</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/civil.html">Civil Engineering</a><a
+                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/bsh.html">Basic Science Humanities</a>
+                  <a class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                    href="./DEPT/mba.html">Masters in Business Administration</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="small-navbar-nav-item p-2">
+                <a class="small-navbar-items-last-div-anchor active" aria-current="page" href="./campusLife.html"
+                  style="color: #000000; font-weight: bold !important">Campus Life</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-center" style="border: 1px solid grey; box-sizing: border-box">
+              <div class="small-navbar-nav-item p-2">
+                <a class="small-navbar-items-last-div-anchor active" aria-current="page" href="../placements.html"
+                  style="color: #000000; font-weight: bold !important">Placements</a>
               </div>
             </div>
           </div>
-          <div class="p-3 " style="display: flex;justify-content: center; align-items: center;">
-            <div class="table-responsive mx-auto">
-              <table class="table table-bordered faculty-table mb-4 table-responsive table-striped table-hover"
-                id="faculty-profile">
-                <thead style="background-color: #343a40;
-                color: #ffffff;">
-                  <tr>
-                    <th style="color: #ffffff;">S.No</th>
-                    <th style="color: #ffffff;">Name of the Faculty</th>
-                    <th style="color: #ffffff;">Designation</th>
-                    <th style="color: #ffffff;">Branch</th>
-                    <th style="color: #ffffff;">Mobile No&nbsp;&nbsp;</th>
-                    <th style="color: #ffffff;">Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Mr. A.Rajesh</td>
-                    <td>Sr. Asst. Professor &amp; <br>Placement Officer</td>
-                    <td>CSE</td>
-                    <td>9849528282</td>
-                    <td>placements@srivasaviengg.ac.in</td>
-                  </tr>
+        </div>
+        <div class="small-navbar-last-div-navbar p-2" style="
+            border: 1px solid grey;
+            border-bottom-width: 1px;
+            border-top-width: 0px;
+          ">
+          <p class="text-center" style="font-weight: bold">Information for:</p>
+          <div class="small-navbar-items-last-div-element p-0">
+            <a class="p-2 small-navbar-items-last-div-anchor" href="./V_Grivence.html">V Grievance</a>
+            <a class="p-2 small-navbar-items-last-div-anchor" href="./NAAC.html">NAAC
+            </a>
 
-                  <tr>
-                    <td>2</td>
-                    <td>Mr. M.Y.Sekharam</td>
-                    <td>Asst. Professor</td>
-                    <td>CSE</td>
-                    <td>9949947033</td>
-                    <td>cseplacements@srivasaviengg.ac.in</td>
-                  </tr>
+            <a class="p-2 small-navbar-items-last-div-anchor" href="http://srivasaviengg.ac.in/r&d_profile.php">R &
+              D</a>
+            <a class="p-2 small-navbar-items-last-div-anchor" href="./category-b.html">Category B</a>
+            <a>
+              <div class="dropdown">
+                <a class="btn  dropdown-toggle" style="border-style: none;box-shadow: none;" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  UGC
+                </a>
 
-                  <tr>
-                    <td>3</td>
-                    <td>Mr. M.Vinod Kumar</td>
-                    <td>Asst. Professor</td>
-                    <td>ECE</td>
-                    <td>9014640210</td>
-                    <td>eceplacements@srivasaviengg.ac.in</td>
-                  </tr>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Academic
+                      Council</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Board of
+                      Studies</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Finance
+                      Committee</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">IQAC</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Non Statustory
+                      Committe</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content" href="#">Fee
+                      Structure</a></li>
+                  <li><a class="dropdown-item mobile-view-information-ugc dropdown-item-content"
+                      href="#">Undertaking</a>
+                  </li>
+                </ul>
+              </div>
 
-                  <tr>
-                    <td>4</td>
-                    <td>Mr. M. Venkata Suman</td>
-                    <td>Asst. Professor</td>
-                    <td>ECE</td>
-                    <td>8985325729</td>
-                    <td>eceplacements@srivasaviengg.ac.in</td>
-                  </tr>
+            </a>
+            <a>
+              <div class="dropdown">
+                <a class="btn  dropdown-toggle" style="border-style: none;box-shadow: none;" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  NIRF
+                </a>
 
+                <ul class="dropdown-menu small-navbar-items-last-div-anchor">
+                  <li><a class="dropdown-item mobile-view-information-nirf dropdown-item-content" href="#">SVEC-Overall
+                      Category NIRF</a></li>
+                  <li><a class="dropdown-item mobile-view-information-nirf dropdown-item-content"
+                      href="#">SVEC-Engineering Category NIRF</a></li>
+                </ul>
+              </div>
 
-                  <tr>
-                    <td>5</td>
-                    <td>Mr. A.Uma Siva Naga Prasad</td>
-                    <td>Asst. Professor</td>
-                    <td>EEE </td>
-                    <td>9491669415</td>
-                    <td>eeeplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>6</td>
-                    <td>Mr. M. M. Swany Naidu</td>
-                    <td>Asst. Professor</td>
-                    <td>EEE </td>
-                    <td>9908233322</td>
-                    <td>eeeplacements@srivasaviengg.ac.in</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Mr. M V Nagendra</td>
-                    <td>Asst. Professor</td>
-                    <td>ME</td>
-                    <td>9666076376</td>
-                    <td>mechplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>8</td>
-                    <td>Mr. Sk.Arief</td>
-                    <td>Asst. Professor</td>
-                    <td>ME</td>
-                    <td>9182606974</td>
-                    <td>mechplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>9</td>
-                    <td>Mr. J Vijaya Chandra</td>
-                    <td>Asst. Professor </td>
-                    <td>CE</td>
-                    <td>8096041195</td>
-                    <td>civilplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>10</td>
-                    <td>Mr. M PremKumar Raju</td>
-                    <td>Asst. Professor </td>
-                    <td>CE</td>
-                    <td>8978769373</td>
-                    <td>civilplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>11</td>
-                    <td>Mr. T.Dileep</td>
-                    <td>Asst. Professor</td>
-                    <td> MBA</td>
-                    <td>9885240322</td>
-                    <td>mbaplacements@srivasaviengg.ac.in</td>
-                  </tr>
-
-                  <tr>
-                    <td>12</td>
-                    <td>Mr. P.Bharath</td>
-                    <td>Asst. Professor</td>
-                    <td> MBA</td>
-                    <td>8125175244</td>
-                    <td>mbaplacements@srivasaviengg.ac.in</td>
-                  </tr>
-                </tbody>
-              </table>
+            </a>
+            <a href="./about_us.html" class="p-2 small-navbar-items-last-div-anchor">About Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="header.js">
+    </script>
+  </div>
+  <div class="main">
+    <div class="root">
+      <h1 class="text-center mb-3" style="font-weight: 500;color: #850209;">Placements</h1>
+      <div class="gallery">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../images/placement/pic1.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/placement/pic2.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/placement/pic3.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/placement/pic4.jpg" class="d-block w-100 img-fluid" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/placement/pic5.jpg" class="d-block w-100 img-fluid" alt="Slide 5">
             </div>
           </div>
+
         </div>
+      </div>
+      <div class="content-speech mt-5 p-4 pt-2 text-center ">
 
-      </details>
+        <p style="color: darkred;" class="place-text ">
+          At our college, we don't just prepare students for careers; we
+          ignite their passions and propel them towards success. Our placement
+          program is more than a bridge to the professional world; it's a
+          launchpad for dreams and aspirations. With a commitment to
+          excellence and a relentless pursuit of innovation, we connect our
+          students with opportunities that match their skills and ambitions.
+          Our alumni have soared to great heights, achieving remarkable feats
+          in diverse industries. Join us, and let your journey be guided by
+          knowledge, mentorship, and the promise of a brighter future. Your
+          success story begins here, at our college
+        </p>
+
+      </div>
     </div>
-    <div class="companies">
-      <details class="details-example">
-        <summary>Companies Visited</summary>
-        <div class="content">
-          <div class="company-icons m-5">
-            <img src="./images/our-recruiters.png" class="img-fluid" style="border: solid #850209; border-radius: 4%;"
-              alt="" srcset="">
-          </div>
+    <div class="placechart mt-5 ">
+      <h1 style="font-family: 'Poppins', sans-serif;text-align: center;">Placement Statistics</h1>
+      <div class="container-chart mt-4">
+        <div class="chart">
+          <canvas width="300" height="300" id="year2022Chart"></canvas>
+          <p>Placements for 2022</p>
         </div>
-      </details>
+        <div class="chart">
+          <canvas width="300" height="300" id="year2021Chart"></canvas>
+          <p>Placements for 2021</p>
+        </div>
+        <div class="chart">
+          <canvas width="300" height="300" id="year2020Chart"></canvas>
+          <p>Placements for 2020</p>
+        </div>
+        <div class="chart">
+          <canvas width="300" height="300" id="year2019Chart"></canvas>
+          <p>Placements for 2019</p>
+        </div>
+        <div class="chart">
+          <canvas width="300" height="300" id="year2018Chart"></canvas>
+          <p>Placements for 2018</p>
+        </div>
+        <div class="chart">
+          <canvas width="300" height="300" id="year2017Chart"></canvas>
+          <p>Placements for 2017</p>
+        </div>
+      </div>
     </div>
+    <div class="table-responsive p-3 container text-center mx-auto" style="max-width: 100%; padding: 50px;">
 
-
-    <details>
-      <summary>College Profile</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> College Profile - <a
-          href="http://srivasaviengg.ac.in/uploads/placement_College_Brochure.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-
-    <details>
-      <summary>Placement Details of 2022-23</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2022-23 - <a href="http://srivasaviengg.ac.in/uploads/place_2022-23.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-
-
-    <details>
-      <summary>Placement Details of 2021-22</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2021-22 - <a href="http://srivasaviengg.ac.in/uploads/place_2021-22.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2020-21</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2020-21 - <a href="http://srivasaviengg.ac.in/uploads/place_2020-21.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2019-20</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2019-20 - <a href="http://srivasaviengg.ac.in/uploads/place_2019-20.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2018-19</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2018-19 - <a href="http://srivasaviengg.ac.in/uploads/place_2018-19.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2017-18</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2017-18 - <a href="http://srivasaviengg.ac.in/uploads/place_2017-18.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2016-17</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2016-17 - <a href="http://srivasaviengg.ac.in/uploads/place_2016-17.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-    <details>
-      <summary>Placement Details of 2015-16</summary>
-      <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
-        2015-16 - <a href="http://srivasaviengg.ac.in/uploads/place_2015-16.pdf" target="_blank"
-          class="text-danger bold">View</a></li>
-    </details>
-
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-  <script>
-    var TrandingSlider = new Swiper(".tranding-slider", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      loop: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 3000, // Set the delay in milliseconds (3 seconds)
-      },
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script>
-    var carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
-      interval: 3000, // set interval to 3 seconds
-      wrap: true // enable wrap for continuous sliding
-    });
-  </script>
-  <script>
-    // Sample data for each department and each year
-    var years = ['2017', '2018', '2019', '2020', '2021', '2022'];
-    var departments = ['Civil', 'Mech', 'EEE', 'ECE', 'CSE', 'MBA'];
-    var placementData = [
-      // Add data for each department and year
-
-      [12, 18, 8, 25, 20, 17], // Year 2017
-      [14, 20, 10, 28, 22, 18], // Year 2018
-      [15, 22, 10, 28, 25, 20], // Year 2019
-      [18, 25, 12, 32, 30, 25], // Year 2020
-      [20, 28, 15, 36, 32, 28], // Year 2021
-      [22, 30, 18, 40, 35, 30] // Year 2022
-
-    ];
-
-    // Continue adding more years as needed
-
-
-    // Function to create doughnut chart for a specific year with loading animation
-    function createYearChartWithLoadingAnimation(year, data) {
-      var chartCanvas = document.getElementById('year' + year + 'Chart').getContext('2d');
-      var doughnutChart = new Chart(chartCanvas, {
-        type: 'doughnut',
-        data: {
-          labels: departments,
-          datasets: [{
-            label: year,
-            data: new Array(data.length).fill(0), // Initialize data with zeros
-            borderWidth: 1,
-            backgroundColor: [
-              '#B1040E',
-              '#650010',
-              '#000000',
-              '#333138',
-              '#7F7B82',
-              '#7F7B90'
-            ]
-          }]
-        },
-        options: {
-          responsive: false,
-          maintainAspectRatio: false,
-          title: {
-            display: true,
-            text: 'Placements for ' + year,
-          },
-          layout: {
-            padding: {
-              top: 20,
-              right: 20,
-              bottom: 20,
-              left: 20
-            }
-          },
-          animation: {
-            animateRotate: true,
-            animateScale: true
+      <table class="table-responsive table-bordered table-hover table-striped text-center mx-auto"
+        style="max-width: 100%; padding: 50px;">
+        <style>
+          th,
+          td {
+            padding: 8px;
+            font-weight: 500;
           }
-        }
+        </style>
+        <thead style="background-color: #343a40;">
+          <tr>
+            <th style="color: #ffffff;">Category</th>
+            <th style="color: #ffffff;">2022-23</th>
+            <th style="color: #ffffff;">2021-22</th>
+            <th style="color: #ffffff;">2020-21</th>
+            <th style="color: #ffffff;">2019-20</th>
+            <th style="color: #ffffff;">2018-19</th>
+            <th style="color: #ffffff;">2017-18</th>
+            <th style="color: #ffffff;">2016-17</th>
+            <th style="color: #ffffff;">2015-16</th>
+          </tr>
+        </thead>
+        <tbody class="table-hover table-bordered table-striped">
+          <tr>
+            <td>UG</td>
+            <td>479</td>
+            <td>1308</td>
+            <td>631</td>
+            <td>434</td>
+            <td>383</td>
+            <td>248</td>
+            <td>275</td>
+            <td>299</td>
+          </tr>
+          <tr>
+            <td>PG</td>
+            <td>101</td>
+            <td>77</td>
+            <td>14</td>
+            <td>18</td>
+            <td>41</td>
+            <td>04</td>
+            <td>31</td>
+            <td>37</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>580</td>
+            <td>1385</td>
+            <td>645</td>
+            <td>452</td>
+            <td>424</td>
+            <td>252</td>
+            <td>306</td>
+            <td>336</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="rest mx-4 pt-5">
+      <div class="team">
+        <details open class="details-example">
+          <summary>Our Team</summary>
+          <div class="content">
+            <div class="message ">
+              <div class="row">
+                <div class="col-md-4 p-5 my-auto">
+                  <img src="../images/placement/GK Placements.jpg" class="img-fluid"
+                    style="border-radius: 10px; width: 100%;height: 100%;">
+                </div>
+                <div class="col-md-8 my-auto text-center">
+                  <!-- <h1></h1> -->
+                  <h1 class="text-center">P N V GOPALA KRISHNA</h1>
+                  <p class="mx-auto"> Associate Professor(Mechanical) & Head - Placements</p>
+                  <p class="mx-auto"> Sri Vasavi Engineering College</p>
+
+                  <p class="mx-auto"> MOBILE: 9849511367 || O:08818284355(Ext:319)</p>
+                  <p class="mx-auto"><strong>Email:</strong> <a href="mailto:svectpo@srivasaviengg.ac.in"
+                      class="text-danger" style="font-weight: 500;">svectpo@srivasaviengg.ac.in</a></p>
+
+                  <p class="mx-auto"><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/svectpo/"
+                      target="_blank" class="text-danger" style="font-weight: 500;">See Profile</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 " style="display: flex;justify-content: center; align-items: center;">
+              <div class="table-responsive mx-auto">
+                <table class="table table-bordered faculty-table mb-4 table-responsive table-striped table-hover"
+                  id="faculty-profile">
+                  <thead style="background-color: #343a40;
+                    color: #ffffff;">
+                    <tr>
+                      <th style="color: #ffffff;">S.No</th>
+                      <th style="color: #ffffff;">Name of the Faculty</th>
+                      <th style="color: #ffffff;">Designation</th>
+                      <th style="color: #ffffff;">Branch</th>
+                      <th style="color: #ffffff;">Mobile No&nbsp;&nbsp;</th>
+                      <th style="color: #ffffff;">Email</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mr. A.Rajesh</td>
+                      <td>Sr. Asst. Professor &amp; Placement Officer</td>
+                      <td>CSE</td>
+                      <td>9849528282</td>
+                      <td><a href="mailto:placements@srivasaviengg.ac.in"
+                          style="color: darkred;">placements@srivasaviengg.ac.in</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Mr. M.Y.Sekharam</td>
+                      <td>Asst. Professor</td>
+                      <td>CSE</td>
+                      <td>9949947033</td>
+                      <td><a href="mailto:cseplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">cseplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Mr. M.Vinod Kumar</td>
+                      <td>Asst. Professor</td>
+                      <td>ECE</td>
+                      <td>9014640210</td>
+                      <td><a href="mailto:eceplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">eceplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Mr. M. Venkata Suman</td>
+                      <td>Asst. Professor</td>
+                      <td>ECE</td>
+                      <td>8985325729</td>
+                      <td><a href="mailto:eceplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">eceplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Mr. A.Uma Siva Naga Prasad</td>
+                      <td>Asst. Professor</td>
+                      <td>EEE</td>
+                      <td>9491669415</td>
+                      <td><a href="mailto:eeeplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">eeeplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Mr. M. M. Swany Naidu</td>
+                      <td>Asst. Professor</td>
+                      <td>EEE</td>
+                      <td>9908233322</td>
+                      <td><a href="mailto:eeeplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">eeeplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Mr. M V Nagendra</td>
+                      <td>Asst. Professor</td>
+                      <td>ME</td>
+                      <td>9666076376</td>
+                      <td><a href="mailto:mechplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">mechplacements@srivasaviengg.ac.in</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Mr. Sk.Arief</td>
+                      <td>Asst. Professor</td>
+                      <td>ME</td>
+                      <td>9182606974</td>
+                      <td><a href="mailto:mechplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">mechplacements@srivasaviengg.ac.in</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Mr. J Vijaya Chandra</td>
+                      <td>Asst. Professor</td>
+                      <td>CE</td>
+                      <td>8096041195</td>
+                      <td><a href="mailto:civilplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">civilplacements@srivasaviengg.ac.in</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Mr. M PremKumar Raju</td>
+                      <td>Asst. Professor</td>
+                      <td>CE</td>
+                      <td>8978769373</td>
+                      <td><a href="mailto:civilplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">civilplacements@srivasaviengg.ac.in</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Mr. T.Dileep</td>
+                      <td>Asst. Professor</td>
+                      <td>MBA</td>
+                      <td>9885240322</td>
+                      <td><a href="mailto:mbaplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">mbaplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Mr. P.Bharath</td>
+                      <td>Asst. Professor</td>
+                      <td>MBA</td>
+                      <td>8125175244</td>
+                      <td><a href="mailto:mbaplacements@srivasaviengg.ac.in"
+                          style="color: darkred;">mbaplacements@srivasaviengg.ac.in</a></td>
+                    </tr>
+                  </tbody>
+
+
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </details>
+      </div>
+      <div class="companies">
+        <details class="details-example">
+          <summary>Companies Visited</summary>
+          <div class="content">
+            <div class="company-icons m-5">
+              <img src="../images/placement/our-recruiters.png" class="img-fluid" style="border: solid #850209; border-radius: 4%;"
+                alt="" srcset="">
+            </div>
+          </div>
+        </details>
+      </div>
+
+
+      <details>
+        <summary>College Profile</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> College Profile - <a
+            href="http://srivasaviengg.ac.in/uploads/placement_College_Brochure.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+
+      <details>
+        <summary>Placement Details of 2022-23</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2022-23 - <a href="http://srivasaviengg.ac.in/uploads/place_2022-23.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+
+
+      <details>
+        <summary>Placement Details of 2021-22</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2021-22 - <a href="http://srivasaviengg.ac.in/uploads/place_2021-22.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2020-21</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2020-21 - <a href="http://srivasaviengg.ac.in/uploads/place_2020-21.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2019-20</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2019-20 - <a href="http://srivasaviengg.ac.in/uploads/place_2019-20.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2018-19</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2018-19 - <a href="http://srivasaviengg.ac.in/uploads/place_2018-19.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2017-18</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2017-18 - <a href="http://srivasaviengg.ac.in/uploads/place_2017-18.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2016-17</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2016-17 - <a href="http://srivasaviengg.ac.in/uploads/place_2016-17.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+      <details>
+        <summary>Placement Details of 2015-16</summary>
+        <li style="margin-left: 25px;  text-align: left; list-style-type: none;margin:10px"> Placement Details of
+          2015-16 - <a href="http://srivasaviengg.ac.in/uploads/place_2015-16.pdf" target="_blank"
+            class="text-danger bold">View</a></li>
+      </details>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var TrandingSlider = new Swiper(".tranding-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000, // Set the delay in milliseconds (3 seconds)
+        },
       });
-
-      // Update the chart data with the actual values and redraw the chart
-      doughnutChart.data.datasets[0].data = data;
-      doughnutChart.update();
-    }
-
-
-    // Function to handle intersection observer entries
-    function handleIntersection(entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var charts = document.querySelectorAll('.container-chart canvas');
-          charts.forEach(function (chart, index) {
-            createYearChartWithLoadingAnimation(years[index], placementData[index]);
-          });
-          observer.disconnect(); // Stop observing once the charts are created
-        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script>
+      var carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+        interval: 3000, // set interval to 3 seconds
+        wrap: true // enable wrap for continuous sliding
       });
-    }
+    </script>
+    <script>
+      // Sample data for each department and each year
+      var years = ['2017', '2018', '2019', '2020', '2021', '2022'];
+      var departments = ['Civil', 'Mech', 'EEE', 'ECE', 'CSE', 'MBA'];
+      var placementData = [
+        // Add data for each department and year
 
-    // Create an intersection observer to watch for the <p> tag
-    var paragraph = document.querySelector('.placechart p');
-    var observer = new IntersectionObserver(handleIntersection, { rootMargin: "0px" });
-    observer.observe(paragraph);
+        [12, 18, 8, 25, 20, 17], // Year 2017
+        [14, 20, 10, 28, 22, 18], // Year 2018
+        [15, 22, 10, 28, 25, 20], // Year 2019
+        [18, 25, 12, 32, 30, 25], // Year 2020
+        [20, 28, 15, 36, 32, 28], // Year 2021
+        [22, 30, 18, 40, 35, 30] // Year 2022
+
+      ];
+
+      // Continue adding more years as needed
 
 
-  </script>
+      // Function to create doughnut chart for a specific year with loading animation
+      function createYearChartWithLoadingAnimation(year, data) {
+        var chartCanvas = document.getElementById('year' + year + 'Chart').getContext('2d');
+        var doughnutChart = new Chart(chartCanvas, {
+          type: 'doughnut',
+          data: {
+            labels: departments,
+            datasets: [{
+              label: year,
+              data: new Array(data.length).fill(0), // Initialize data with zeros
+              borderWidth: 1,
+              backgroundColor: [
+                '#B1040E',
+                '#650010',
+                '#000000',
+                '#333138',
+                '#7F7B82',
+                '#7F7B90'
+              ]
+            }]
+          },
+          options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            title: {
+              display: true,
+              text: 'Placements for ' + year,
+            },
+            layout: {
+              padding: {
+                top: 20,
+                right: 20,
+                bottom: 20,
+                left: 20
+              }
+            },
+            animation: {
+              animateRotate: true,
+              animateScale: true
+            }
+          }
+        });
+
+        // Update the chart data with the actual values and redraw the chart
+        doughnutChart.data.datasets[0].data = data;
+        doughnutChart.update();
+      }
+
+
+      // Function to handle intersection observer entries
+      function handleIntersection(entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var charts = document.querySelectorAll('.container-chart canvas');
+            charts.forEach(function (chart, index) {
+              createYearChartWithLoadingAnimation(years[index], placementData[index]);
+            });
+            observer.disconnect(); // Stop observing once the charts are created
+          }
+        });
+      }
+
+      // Create an intersection observer to watch for the <p> tag
+      var paragraph = document.querySelector('.placechart p');
+      var observer = new IntersectionObserver(handleIntersection, { rootMargin: "0px" });
+      observer.observe(paragraph);
+
+
+    </script>
+  </div>
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <img class="logo" src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
+            alt="College-logo" style="margin-bottom: 20px" />
+          <p style="font-size: 16px; opacity: 0.8;text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at,
+            accusamus dolores quas praesentium voluptatum odio quo dolorem.
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled quicklinks">
+            <li><a href="https://sves.org.in/ecap/olpaymentlogin.aspx" style="text-decoration: none;color:inherit;">Online Fee Payment</a></li>
+            <li><a href="https://sves.org.in/ecap/consultancyfee.aspx" style="text-decoration: none;color:inherit;">Consultant Fee</a></li>
+            <li><a href="./templates/hostel.html" style="text-decoration: none;color: inherit;">Hostels</a></li>
+            <li>
+              <a href="./templates/sports.html" style="text-decoration: none;color: inherit;">Sports <br />Facililties</a>
+            </li>
+            <li><a href="#" style="text-decoration: none;color:inherit;">Transport</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Useful Links</h5>
+          <ul class="list-unstyled quicklinks">
+            <li><a href="./" style="text-decoration: none;color:inherit;">Home</a></li>
+            <li><a href="./templates/academics.html" style="text-decoration: none;color:inherit;">Administration</a></li>
+            <li><a href="./templates/academics.html" style="text-decoration: none;color:inherit;">Academics</a></li>
+            <li><a href="./templates/campusLife.html" style="text-decoration: none;color:inherit;">Campus Life</a></li>
+            <li><a href="https://sves.org.in/ecap/" style="text-decoration: none;color:inherit;">E-cap</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5 data-aos="fade-up">Connect with Us</h5>
+          <ul class="list-unstyled social-icons">
+            <li>
+              <a class="facebook" href="https://www.facebook.com/profile.php?id=100067829822379"
+                style="text-decoration: none;color:inherit;"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
+            </li>
+            <li>
+              <a style="text-decoration: none;color:inherit;" class="twitter" href="https://twitter.com/svectpg"
+                target="twitter"><i class="fab fa-x-twitter" style="font-size: 24px"></i></a>
+            </li>
+            <li>
+              <a style="text-decoration: none;color:inherit;" class="instagram"
+                href="https://www.instagram.com/gdsc.svec/" target="instagram"><i class="fab fa-instagram"
+                  style="font-size: 24px"></i></a>
+            </li>
+            <li>
+              <a class="linkedin" href="#" style="text-decoration: none;color:inherit;"><i class="fab fa-linkedin"
+                  style="font-size: 24px"></i></a>
+            </li>
+            <li>
+              <a style="text-decoration: none;color:inherit;" class="youtube" href="https://www.youtube.com/@GDSC_SVEC"
+                target="youtube"><i class="fab fa-youtube" style="font-size: 24px"></i></a>
+            </li>
+          </ul>
+          <h5 data-aos="fade-up">Contact Us</h5>
+          <p class="d-none d-md-block address">
+            Sri Vasavi Engineering College <br />
+            Pedatadepalli,Tadepalligudem <br />534 101 West Godavari Dist.,
+            <br />Andhra Pradesh.
+          <div class="d-none d-md-block"> <span class="phone"><i class="fas fa-phone"
+                style="margin-right: 4px"></i>+91-8818284322 (9:30 AM-4:30 PM)</span>
+            <span class="phone">
+              <i class="fas fa-envelope" style="margin-right: 4px;color: #ff5a2c;"> </i>principal@srivasaviengg.ac.in
+            </span>
+          </div>
+
+          </p>
+          <p class="d-block d-md-none address address-small text-center">
+            Sri Vasavi Engineering College
+            Pedatadepalli,Tadepalligudem 534 101 West Godavari Dist.,
+            Andhra Pradesh.
+
+          <div class="d-block d-md-none d-flex flex-row justify-content-between">
+            <span class="phone phone-small"><i class="fas fa-phone" style="margin-right: 4px"></i>+91-8818284322
+              <br />(9:30 AM-4:30 PM)</span>
+            <span class="phone phone-small">
+              <i class="fas fa-envelope" style="margin-right: 4px;"> </i><a href="mailto:principal@srivasaviengg.ac.in"
+                style="text-decoration: none;color: #ff5a2c !important;">principal@srivasaviengg.ac.in</a>
+            </span>
+          </div>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; opacity: 0.7">
+      Powered by
+      <a href="../templates/webdevs.html" style="font-weight: 700; margin-right: 5px; margin-left: 5px">
+        <span style="color: #4285f4">G</span>
+        <span style="color: #34a853">D</span>
+        <span style="color: #fbbc05">S</span>
+        <span style="color: #ea4335; margin-right: 5px">C </span>Web Devs</a>
+    </p>
+    <p style="text-align: center; opacity: 0.7;margin:0;" class="pb-3">
+      Copyright © 2023 Sri Vasavi Engineering College. All Rights Reserved.
+    </p>
+
+  </footer>
 </body>
 
 </html>

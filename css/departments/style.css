@@ -894,7 +894,7 @@ body a {
   text-align: center;
 }
 
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 995px) {
 
 
   .accordion-content {
@@ -1013,7 +1013,7 @@ body a {
   }
 }
 
-@media screen and (min-width: 997px) {
+@media screen and (min-width: 996px) {
 
   .side {
     padding-top: 140px;
@@ -1373,7 +1373,7 @@ footer h5 {
   }
 }
 
-@media screen and (min-width: 997px) {
+@media screen and (min-width: 996px) {
   #dept-head {
     font-size: 27px;
   }
@@ -1514,13 +1514,13 @@ footer h5 {
 
 @media screen and (min-width: 375px) {
   #main-heading {
-    margin-top: 110px !important;
+    margin-top: 120px !important;
   }
 }
 
 @media screen and (max-width: 375px) {
   #main-heading {
-    margin-top: 0px !important;
+    margin-top: 30px !important;
   }
 }
 

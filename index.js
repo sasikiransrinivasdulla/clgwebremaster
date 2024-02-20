@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownTextElementNIRF.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
             navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
-            console.log(nav2text7)
+
         }
     }
 

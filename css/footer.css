@@ -63,8 +63,8 @@ footer p {
 .address-small{
     font-size: 1rem;
 }
-.logo {
-    height: 6rem ;
+.logo-footer {
+    height: 7em ;
     width: fit-content !important;
 
 }

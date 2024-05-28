@@ -10,6 +10,20 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
+.code-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.code-items p{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: black;
+    margin: 5px;
+
+}
 /* navbar color  */
 .bg-color {
     background-color: #b1040e;

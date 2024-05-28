@@ -22,11 +22,21 @@
       $("#footer").load("./footer.html");
     });
   </script>
+  <style>
+    .body-container{
+        margin-top: 5rem;
+    }
+    @media screen and (min-width:768px){
+        .body-container{
+          margin-top: 12rem;
+        }
+    }
+  </style>
 </head>
 
 <body>
   <div id="header"></div>
-  <div id="body-container" style="margin-top: 12rem">
+  <div class="body-container" >
     <header class="bg-light text-center py-4">
       <h1 class="display-6 text-danger hover-underline-animation">
         <b>Our Technical Director</b>

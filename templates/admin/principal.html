@@ -16,17 +16,28 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+  
   <script>
     $(function () {
       $("#header").load("./header.html");
       $("#footer").load("./footer.html");
     });
   </script>
+  <style>
+    .body-container{
+            margin-top: 5rem;
+        }
+        @media screen and (min-width:768px){
+        .body-container{
+          margin-top: 14rem;
+        }
+      }
+  </style>
 </head>
 
 <body>
   <div id="header"></div>
-  <div id="body_container" style="margin-top: 12rem">
+  <div class="body-container" >
     <header class="bg-light text-center py-4">
       <h1 class="display-6 text-danger hover-underline-animation">
         <b>Our Principal</b>

@@ -1150,14 +1150,14 @@
   .table-responsive {
 	/* max-height: 400px; */
 	overflow-y: auto;
-	font-size: 18px !important;
+	font-size: 1rem;
 	max-width: max-content !important;
   }
   
   .table {
 	width: 100%;
 	border-collapse: collapse;
-	font-size: 18px !important;
+	font-size: 1rem;
   }
   
   .table th,

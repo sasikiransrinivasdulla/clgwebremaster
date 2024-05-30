@@ -26,8 +26,9 @@ strong {
 }
 
 .nav-content {
-  font-size: 0.5rem !important;
+  font-size: 0.9375 !important;
 }
+
 
 .medium-paragraph {
   font-size: 18px;
@@ -1143,14 +1144,14 @@ body a {
 .table-responsive {
   /* max-height: 400px; */
   overflow-y: auto;
-  font-size: 18px !important;
+  font-size: 0.9375rem;
   max-width: max-content !important;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 18px !important;
+  font-size: 0.9375rem;
 }
 
 .table th,

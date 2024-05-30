@@ -662,6 +662,10 @@
       <h1 style="font-family: 'Poppins', sans-serif;text-align: center;">Placement Statistics</h1>
       <div class="container-chart mt-4">
         <div class="chart">
+          <canvas width="300" height="300" id="year2023Chart"></canvas>
+          <p>Placements for 2023</p>
+        </div>
+        <div class="chart">
           <canvas width="300" height="300" id="year2022Chart"></canvas>
           <p>Placements for 2022</p>
         </div>
@@ -748,7 +752,7 @@
         </tbody>
       </table>
     </div>
-    <div class="rest mx-4 pt-5">
+    <div class="rest pt-5">
       <div class="team">
         <details open class="details-example">
           <summary>Our Team</summary>
@@ -1027,17 +1031,18 @@
     </script>
     <script>
       // Sample data for each department and each year
-      var years = ['2017', '2018', '2019', '2020', '2021', '2022'];
+      var years = ['2017', '2018', '2019', '2020', '2021', '2022','2023'];
       var departments = ['Civil', 'Mech', 'EEE', 'ECE', 'CSE', 'MBA'];
       var placementData = [
         // Add data for each department and year
 
-        [12, 18, 8, 25, 20, 17], // Year 2017
-        [14, 20, 10, 28, 22, 18], // Year 2018
-        [15, 22, 10, 28, 25, 20], // Year 2019
-        [18, 25, 12, 32, 30, 25], // Year 2020
-        [20, 28, 15, 36, 32, 28], // Year 2021
-        [22, 30, 18, 40, 35, 30] // Year 2022
+        [8, 45, 33, 46, 70, 5], // Year 2017
+        [22, 58, 41, 86, 187, 41], // Year 2018
+        [11, 40, 43, 116, 228, 16], // Year 2019
+        [9, 39, 83, 182, 318, 19], // Year 2020
+        [47, 121, 199, 360, 599, 72], // Year 2021
+        [28, 66, 84, 174, 230, 104], // Year 2022
+        [28, 49, 69, 55, 135, 49], // Year 2023
 
       ];
 

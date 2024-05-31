@@ -1,0 +1,25 @@
+name: Deploy to GCP
+
+on:
+  push:
+    branches:
+      - main  # Change to your branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to GCP
+      env:
+        GCP_INSTANCE_IP: ${{ secrets.GCP_INSTANCE_IP }}
+        GCP_SSH_USER: ${{ secrets.GCP_SSH_USER }}
+        GCP_SSH_KEY: ${{ secrets.GCP_SSH_KEY }}
+      run: |
+        echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
+        chmod 600 ssh_key
+        ssh -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'bash -s' < /usr/local/bin/update_repo.sh
+        rm ssh_key

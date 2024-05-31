@@ -27,7 +27,7 @@ jobs:
 
         # Execute the script
         echo "Executing update_repo.sh"
-        ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'bash /usr/local/bin/update_repo.sh'
+        ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'sudo bash /usr/local/bin/update_repo.sh'
 
         # Remove the SSH key file
         rm ssh_key

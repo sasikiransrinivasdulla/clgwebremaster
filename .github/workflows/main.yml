@@ -21,7 +21,7 @@ jobs:
       run: |
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
         chmod 600 ssh_key
-        echo ssh_key
+        cat ssh_key
 
         # Debug step to verify the home directory and the presence of the script
         echo "Checking home directory on GCP instance"

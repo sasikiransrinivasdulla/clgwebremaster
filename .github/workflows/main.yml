@@ -23,17 +23,6 @@ jobs:
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
         chmod 600 ssh_key
 
-        # Debug step to verify the content of the SSH key file
-        echo "Content of ssh_key file:"
-        cat ssh_key
-
-        # Debug step to verify the home directory and the presence of the script
-        echo "Checking home directory on GCP instance"
-        ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'ls -l ~'
-
-        echo "Checking /usr/local/bin directory on GCP instance"
-        ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'ls -l /usr/local/bin'
-
         echo "Displaying the contents of update_repo.sh"
         ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'cat /usr/local/bin/update_repo.sh'
 

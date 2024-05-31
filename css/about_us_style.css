@@ -7,7 +7,7 @@
       height: auto;
 
       text-align: center;
-      background: url('https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693834930/CollegeBuilding_eh7qjr.jpg');
+      background: url('https://res.cloudinary.com/dqe4ld4cx/image/upload/v1708488770/CollegeBuilding1_cehj8v.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -376,30 +376,7 @@ blockquote p{
   padding-bottom: 5px;
 
 }
-.mainheading h1:before {
-  width: 28px;
-  height: 5px;
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  margin-left: -14px;
-  background-color: #b80000;
 
-
-}
-.mainheading h1:after {
-  width: 100px;
-  height: 1px;
-  display: block;
-  content: "";
-  position: relative;
-  margin-top: 25px;
-  left: 50%;
-  margin-left: -50px;
-  background-color: #b80000;
-}
 .side{
   padding-top: 55px;
  }

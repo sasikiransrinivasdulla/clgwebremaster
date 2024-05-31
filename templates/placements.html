@@ -200,7 +200,7 @@
 
 <body>
   <div>
-    <div class="fixed-top">
+    <div class="fixed-top shadow">
       <nav class="navbar navbar-expand-lg bg-color fixed nav-elements-large">
         <div class="container-fluid">
           <div class="navbar-brand d-flex" style="gap: 10px; align-items: center; color: #fff">
@@ -281,7 +281,7 @@
                     </a>
                     <a class="dropdown-item dept-dropdown-items" href="./DEPT/mech.html">Mechanical Engineering</a>
                     <a class="dropdown-item dept-dropdown-items" href="./DEPT/civil.html">Civil Engineering</a>
-                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/mba.html">
+                    <a class="dropdown-item dept-dropdown-items" href="./DEPT/bsh.html">
                       <div>Basic Science<br />Humanities</div>
                     </a>
                     <a class="dropdown-item dept-dropdown-items" href="./DEPT/mba.html">
@@ -349,27 +349,27 @@
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/List%20of%20Board%20of%20Studies_2021_22.pdf"                  >Board of Studies</a
+                  href="http://srivasaviengg.ac.in/uploads/List%20of%20Board%20of%20Studies_2021_22.pdf">Board of Studies</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/Finance_Committee_2021_2022.png"                  >Finance Committee</a
+                  href="http://srivasaviengg.ac.in/Finance_Committee_2021_2022.png">Finance Committee</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/iqac_members_2021_2022.png"                  >IQAC</a
+                  href="http://srivasaviengg.ac.in/uploads/iqac_members_2021_2022.png">IQAC</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/College%20Level%20Committees%202021-22.pdf"                  >Non Statustory Committe</a
+                  href="http://srivasaviengg.ac.in/uploads/College%20Level%20Committees%202021-22.pdf">Non Statustory Committe</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/fee.png"                  >Fee Structure</a
+                  href="http://srivasaviengg.ac.in/uploads/fee.png">Fee Structure</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/Undertaking_2021_2022.jpg"                  >Undertaking</a
+                  href="http://srivasaviengg.ac.in/uploads/Undertaking_2021_2022.jpg">Undertaking</a
                 >
               </div>
             </div>
@@ -662,6 +662,10 @@
       <h1 style="font-family: 'Poppins', sans-serif;text-align: center;">Placement Statistics</h1>
       <div class="container-chart mt-4">
         <div class="chart">
+          <canvas width="300" height="300" id="year2023Chart"></canvas>
+          <p>Placements for 2023</p>
+        </div>
+        <div class="chart">
           <canvas width="300" height="300" id="year2022Chart"></canvas>
           <p>Placements for 2022</p>
         </div>
@@ -748,7 +752,7 @@
         </tbody>
       </table>
     </div>
-    <div class="rest mx-4 pt-5">
+    <div class="rest pt-5">
       <div class="team">
         <details open class="details-example">
           <summary>Our Team</summary>
@@ -1027,17 +1031,18 @@
     </script>
     <script>
       // Sample data for each department and each year
-      var years = ['2017', '2018', '2019', '2020', '2021', '2022'];
+      var years = ['2017', '2018', '2019', '2020', '2021', '2022','2023'];
       var departments = ['Civil', 'Mech', 'EEE', 'ECE', 'CSE', 'MBA'];
       var placementData = [
         // Add data for each department and year
 
-        [12, 18, 8, 25, 20, 17], // Year 2017
-        [14, 20, 10, 28, 22, 18], // Year 2018
-        [15, 22, 10, 28, 25, 20], // Year 2019
-        [18, 25, 12, 32, 30, 25], // Year 2020
-        [20, 28, 15, 36, 32, 28], // Year 2021
-        [22, 30, 18, 40, 35, 30] // Year 2022
+        [8, 45, 33, 46, 70, 5], // Year 2017
+        [22, 58, 41, 86, 187, 41], // Year 2018
+        [11, 40, 43, 116, 228, 16], // Year 2019
+        [9, 39, 83, 182, 318, 19], // Year 2020
+        [47, 121, 199, 360, 599, 72], // Year 2021
+        [28, 66, 84, 174, 230, 104], // Year 2022
+        [28, 49, 69, 55, 135, 49], // Year 2023
 
       ];
 

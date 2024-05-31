@@ -23,8 +23,7 @@ jobs:
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
         chmod 600 ssh_key
 
-        echo "Displaying the contents of update_repo.sh"
-        ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'cat /usr/local/bin/update_repo.sh'
+       
 
         # Execute the script
         echo "Executing update_repo.sh"

@@ -910,7 +910,7 @@ body a {
   }
 
   #dept-head {
-    font-size: 27px !important;
+    font-size: 1.5rem;
   }
 
   .tab-content {
@@ -1356,20 +1356,26 @@ footer h5 {
   justify-content: center;
   align-items: center;
   background-color: #850209 !important;
-  width: 20px !important;
+  width: fit-content !important;
   transition: all 0.2ms;
 }
 
 .open-menu:hover {
   opacity: 0.85;
 }
-
+.open-menu span {
+  display: none;
+}
 #content h2 {
   margin-top: 80px;
 }
-
+@media screen and (orientation:landscape){
+  .open-menu span{
+    display: block !important;
+  }
+}
 /* < !------------------sidenav style--> */
-@media screen and (min-width: 768px) and (max-width: 800px) {
+/* @media screen and (min-width: 768px) and (max-width: 800px) {
   #dept-head {
     font-size: 27px;
   }
@@ -1379,7 +1385,7 @@ footer h5 {
   #dept-head {
     font-size: 27px;
   }
-}
+} */
 
 @media screen and (min-width: 996px) and (max-width: 1221px) {
   #nav-department .row h2 {

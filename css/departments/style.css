@@ -24,7 +24,9 @@ strong {
   font-size: 18px;
   font-weight: 500;
 }
-
+#nav-bar2-text7{
+  background-color: white !important;
+}
 .nav-content {
   font-size: 0.9375 !important;
 }

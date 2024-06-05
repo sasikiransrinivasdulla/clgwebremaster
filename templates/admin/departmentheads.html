@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -87,11 +91,9 @@
         transform: scaleX(1);
         transform-origin: bottom right;
       }
-      
-      
 
       @media screen and (max-width: 768px) {
-        .header_main{
+        .header_main {
           margin-top: 5px;
           padding: 10px;
         }
@@ -99,11 +101,11 @@
           padding-top: 20px; /* Adjust padding-top for smaller screens */
         }
       }
-      #body-container{
+      #body-container {
         margin-top: 6rem;
       }
-      @media screen and (min-width:768px){
-        #body-container{
+      @media screen and (min-width: 768px) {
+        #body-container {
           margin-top: 14rem;
         }
       }
@@ -111,26 +113,23 @@
         text-decoration: none;
         color: #fff;
       }
-      .hod-image{
+      .hod-image {
         height: 200px;
       }
-      .hod-name{
+      .hod-name {
         font-size: 1.2rem;
         color: #000;
         font-family: "Roboto";
         font-weight: bold;
       }
-      .hod-dept{
+      .hod-dept {
         font-size: 1rem;
         color: #000;
         font-family: "Roboto";
-
       }
-      .card-container{
+      .card-container {
         height: fit-content;
       }
-     
-      
     </style>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -146,284 +145,360 @@
   </head>
   <body>
     <div id="header"></div>
-      <div id="body-container">
-        <div >
-          <div class="back-gr">
-            <div class="header_main">
-              <h1
-                style="font-size: 40px; color: #c5121b"
-                class="hover-underline-animation"
-              >
-                Our Department Heads
-              </h1>
-            </div>
+    <div id="body-container">
+      <div>
+        <div class="back-gr">
+          <div class="header_main">
+            <h1
+              style="font-size: 40px; color: #c5121b"
+              class="hover-underline-animation"
+            >
+              Our Department Heads
+            </h1>
           </div>
-          <!-- large devices code -->
-          <div class="d-none d-md-block container text-center mb-5 mt-4">
-            <div class="row">
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow" >
-                  <div>
-                    <img loading="lazy"
-                  class="hod-image"
+        </div>
+        <!-- large devices code -->
+        <div class="d-none d-md-block container text-center mb-5 mt-4">
+          <div class="row">
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
                     src="../../images/departments/ce/pujith_hod.png"
                     alt="Profile image"
                   />
-                  </div>
-                  <div class="dean-content d-flex flex-row justify-content-center p-2 w-100" >
-                    <div class="d-flex flex-column justify-content-center">
-                      <h1 class="hod-name">Dr.G. Radha Krishnan</h1>
-                    <h1 class="hod-dept">Civil Department</h1>
-                    </div>
-                  </div>
                 </div>
-                
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow" >
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/eee/eeehod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Dr.D.Sudha Rani</h1>
-                    <h1 class="hod-dept">Electrical and Electronics Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/me/mechhod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Dr.M.V.Ramesh</h1>
-                    <h1 class="hod-dept">Mechanical Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/ece/ecehod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
-                    <h1 class="hod-dept">Electronics and Communication Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans ">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/cse/cse_hod1.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
-                    <h1 class="hod-dept">Computer and Science Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/cai/aihod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Dr.G.Loshma</h1>
-                    <h1 class="hod-dept">Computer and Science Engineering(AI)<br/>&<br/>Artificial Intelligence & Machine Learning</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/admin/naresh.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
-                    <h1 class="hod-dept">Basic Sciences and Humanities</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 card-deans mb-2 ">
-                <div class="card-container d-flex flex-row justify-content-center shadow">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/mba/mbaHod1.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100">
-                    <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
-                    <h1 class="hod-dept">MBA Department</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Small devices code -->
-          <div class="d-block d-md-none container text-center mb-5">
-            <div class="row">
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2 ">
-                  <div >
-                    <img loading="lazy"
-                    class="hod-image "
-                      src="../../images/departments/ce/pujith_hod.png"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
+                <div
+                  class="dean-content d-flex flex-row justify-content-center p-2 w-100"
+                >
+                  <div class="d-flex flex-column justify-content-center">
                     <h1 class="hod-name">Dr.G. Radha Krishnan</h1>
                     <h1 class="hod-dept">Civil Department</h1>
                   </div>
                 </div>
               </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
+            </div>
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
                     class="hod-image"
-                      src="../../images/departments/eee/eeehod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Dr.D.Sudha Rani</h1>
-
-                    <h1 class="hod-dept">Electrical and Electronics Engineering Department</h1>
-                  </div>
+                    src="../../images/departments/eee/eeehod.jpg"
+                    alt="Profile image"
+                  />
                 </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/me/mechhod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Dr.M.V.Ramesh</h1>
-
-                    <h1 class="hod-dept">Mechanical Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/ece/ecehod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
-                    <h1 class="hod-dept">Electronics and Communication Engineering Department</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/cse/cse_hod1.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
-                    <h1 class="hod-dept">Computer and Science Engineering Department
-                    </h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/cai/aihod.jpg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Dr.G.Loshma</h1>
-
-                    <h1 class="hod-dept">Computer and Science Engineering(AI)<br/>
-                      &<br/>
-                      Artificial Intelligence & Machine Learning</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/admin/naresh.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
-
-                    <h1 class="hod-dept">Basic Sciences and Humanities</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 card-deans">
-                <div class="card-container d-flex flex-column shadow mb-2">
-                  <div>
-                    <img loading="lazy"
-                    class="hod-image"
-                      src="../../images/departments/mba/mbaHod1.jpeg"
-                      alt="Profile image"
-                    />
-                  </div>
-                  <div class="dean-content text-center d-flex flex-column justify-content-center p-3">
-                    <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
-  
-                    <h1 class="hod-dept">MBA Department</h1>
-                  </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Dr.D.Sudha Rani</h1>
+                  <h1 class="hod-dept">
+                    Electrical and Electronics Engineering Department
+                  </h1>
                 </div>
               </div>
             </div>
-            
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/me/mechhod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Dr.M.V.Ramesh</h1>
+                  <h1 class="hod-dept">Mechanical Engineering Department</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/ece/ecehod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
+                  <h1 class="hod-dept">
+                    Electronics and Communication Engineering Department
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 card-deans">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/cse/cse_hod1.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
+                  <h1 class="hod-dept">
+                    Computer and Science Engineering Department
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/cai/aihod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Dr.G.Loshma</h1>
+                  <h1 class="hod-dept">
+                    Computer and Science Engineering(AI)<br />&<br />Artificial
+                    Intelligence & Machine Learning
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/admin/naresh.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
+                  <h1 class="hod-dept">Basic Sciences and Humanities</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 card-deans mb-2">
+              <div
+                class="card-container d-flex flex-row justify-content-center shadow"
+              >
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/mba/mbaHod1.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3 w-100"
+                >
+                  <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
+                  <h1 class="hod-dept">MBA Department</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Small devices code -->
+        <div class="d-block d-md-none container text-center mb-5">
+          <div class="row">
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/ce/pujith_hod.png"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.G. Radha Krishnan</h1>
+                  <h1 class="hod-dept">Civil Department</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/eee/eeehod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.D.Sudha Rani</h1>
+
+                  <h1 class="hod-dept">
+                    Electrical and Electronics Engineering Department
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/me/mechhod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.M.V.Ramesh</h1>
+
+                  <h1 class="hod-dept">Mechanical Engineering Department</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/ece/ecehod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.E.Kusuma Kumari</h1>
+                  <h1 class="hod-dept">
+                    Electronics and Communication Engineering Department
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/cse/cse_hod1.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.D.Jaya Kumari</h1>
+                  <h1 class="hod-dept">
+                    Computer and Science Engineering Department
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/cai/aihod.jpg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Dr.G.Loshma</h1>
+
+                  <h1 class="hod-dept">
+                    Computer and Science Engineering(AI)<br />
+                    &<br />
+                    Artificial Intelligence & Machine Learning
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/admin/naresh.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Mr.N.Raja Sekhar</h1>
+
+                  <h1 class="hod-dept">Basic Sciences and Humanities</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card-deans">
+              <div class="card-container d-flex flex-column shadow mb-2">
+                <div>
+                  <img
+                    loading="lazy"
+                    class="hod-image"
+                    src="../../images/departments/mba/mbaHod1.jpeg"
+                    alt="Profile image"
+                  />
+                </div>
+                <div
+                  class="dean-content text-center d-flex flex-column justify-content-center p-3"
+                >
+                  <h1 class="hod-name">Mr.D.Naveen Kumar</h1>
+
+                  <h1 class="hod-dept">MBA Department</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
     <div id="footer"></div>
   </body>
 </html>

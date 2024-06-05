@@ -1,312 +1,420 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="mt-3">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
+      type="image/x-icon"
+    />
+    <title>Alumni Engagement</title>
 
-<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/departments/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../../css/departments/jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="../../css/departments/animate.css" />
+    <link rel="stylesheet" href="../../css/departments/style.css" />
+    <link rel="stylesheet" href="../../css/departments/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
 
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
-		type="image/x-icon">
-	<title>Alumni Engagement</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="../../css/departments/bshstyle.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="../../css/departments/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="../../css/departments/animate.css">
-	<link rel="stylesheet" href="../../css/departments/style.css">
-	<link rel="stylesheet" href="../../css/departments/media-queries.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!--dept profile link tag-->
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Optional: jQuery (required for some Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<!--dept profile link tag-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Optional: Popper.js (required for some Bootstrap components) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+    <style>
+      details {
+        margin-bottom: 10px;
+      }
+      .content-down {
+        margin-top: 5rem;
+      }
+      @media screen and (max-width: 568px) {
+        .content-down {
+          margin-top: 4rem;
+        }
+      }
+    </style>
+  </head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-	<!-- Optional: jQuery (required for some Bootstrap components) -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <body>
+    <div id="header"></div>
+    <!-- Wrapper -->
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<!-- Optional: Popper.js (required for some Bootstrap components) -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-	<script>
-		$(function () {
-			$("#header").load("./header.html");
-			$("#footer").load("./footer.html");
-		});
-	</script>
-	<style>
-		details {
-			margin-bottom: 10px;
-		}
-	</style>
-</head>
+    <!-- -----------------------MIDDLE OPTINONS Content STARTS (MISSION ,VISION ETC)------------------------------- -->
 
-<body>
-	<div id="header"></div>
-	<!-- Wrapper -->
-	
+    <!-- Content -->
+    <div class="content m-0">
+      <div class="container content-down">
+        <!-- Profile selection buttons -->
+        <div class="nav-content mb-2">
+          <details open>
+            <summary>March 2024</summary>
+            <!-- Faculty Profile Table (Initially hidden) -->
+            <div class="nav-content mb-5">
+              <div class="container">
+                <div
+                  class="row"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <div class="col-12 text-center">
+                    <h5 class="mt-3">
+                      Our Head of Placements Met Sri Vasavi Alumni Working At
+                      Hexaware Technologies
+                    </h5>
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM.jpeg"
+                      alt="Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM%20(1).jpeg"
+                      alt="Image 2"
+                      class="img-fluid"
+                    />
+                  </div>
 
-	<!-- -----------------------MIDDLE OPTINONS Content STARTS (MISSION ,VISION ETC)------------------------------- -->
-
-	<!-- Content -->
-	<div class="content m-0 content-down">
-
-		<div class="container mt-4">
-
-            <!-- Profile selection buttons -->
-            <div class=" nav-content mb-2">
-                <details open>
-                    <summary>March 2024</summary>
-                    <!-- Faculty Profile Table (Initially hidden) -->
-					<div class="nav-content mb-5">
-						<div class="container">
-							<div class="row" style="display: flex;
-									justify-content: center;
-									align-items: center;
-									">
-									<div class="col-12 text-center">
-										<h5 class="mt-3">Our Head of Placements Met Sri Vasavi Alumni Working At Hexaware Technologies</h5>
-									</div>
-									<div class="col-12 col-lg-5 m-3">
-										<img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM.jpeg" alt="Image 1" class="img-fluid">
-									</div>
-									<div class="col-12 col-lg-5 m-3">
-										<img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM%20(1).jpeg" alt="Image 2" class="img-fluid">
-									</div>
-									
-								<div class="col-12 col-lg-5 m-3">
-									<img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM%20(2).jpeg" alt="Image 1" class="img-fluid">
-								</div>
-								<div class="col-12 col-lg-5 m-3">
-									<img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.14%20AM.jpeg" alt="Image 2" class="img-fluid">
-								</div>
-
-							</div>
-						</div>
-                </details>
-                <!-- Course Information Table (Initially hidden) -->
-                <details>
-                    <summary>Febraury 2024</summary>
-                    <div class=" mb-4 " style="display: flex;justify-content: center;align-items: center;" >
-                        <div class="nav-content mb-5">
-                            <div class="container">
-                                <div class="row" style="display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        ">
-                                        <div class="col-12 ">
-                                            <h5 class="mt-3 text-center">We are happy to inform you that with the support of our 2004-2008 Alumni Mr.dinesh kamal somanchi (https://www.linkedin.com/in/dineshkamalsomanchi/ ) we have conducted MAJULAH INFOTECH exclusive on-campus drive on Feb 25th, 2024</h5>
-                                        <p style="font-size: 1rem;">The following Five students were selected</p>
-                                        <ul style="font-size: 1rem;">
-                                            <li>20A81A0520,JAGU JASWANTH</li>
-                                            <li>20A81A0609,CHIRLA ROHIT SRI SURYANARAYANA REDDY</li>
-                                            <li>20A81A05P4,SRI ANIL DURGA RAM</li>
-                                            <li>20A81A0619,JELLA DURGA SATYA PRIYANKA</li>
-                                            <li>20A81A0628,MADDU VATSALTA</li>
-                                        </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-5 m-3">
-                                            <img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.17%20AM.jpeg" alt="Image 1" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 col-lg-5 m-3">
-                                            <img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.17%20AM%20(1).jpeg" alt="Image 2" class="img-fluid">
-                                        </div>
-                                        
-                                    
-    
-                                </div>
-                            </div>
-                    </div>
-                </details>
-                <details>
-                    <summary>January 2024</summary>
-                    <div class=" mb-4 " style="display: flex;justify-content: center;align-items: center;" >
-                        <div class="nav-content mb-5">
-                            <div class="container">
-                                <div class="row" style="display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        ">
-                                        <div class="col-12 ">
-                                            <h5 class="mt-3 text-center">We are happy to inform you that with the support of our 2010-2014 Alumni Mr.Harsha Uppala (https://www.linkedin.com/in/harsha-uppala-8706309a/ ) we have conducted S2 technology on campus drive on Jan 5th& 6th , 2024</h5>
-                                        <p style="font-size: 1rem;">The following Two students got selected</p>
-                                        <ul style="font-size: 1rem;">
-                                            <li>CHITAKANI GOWTHAM KUMAR</li>
-                                            <li>PADMANABHUNI LAKSHMI CHARITHA</li>
-        
-                                        </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-5 m-3">
-                                            <img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.39%20AM.jpeg" alt="Image 1" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 col-lg-5 m-3">
-                                            <img src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.39%20AM%20(1).jpeg" alt="Image 2" class="img-fluid">
-                                        </div>
-                                        
-                                    
-    
-                                </div>
-                            </div>
-                    </div>
-                </details>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.13%20AM%20(2).jpeg"
+                      alt="Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-03-19%20at%2011.57.14%20AM.jpeg"
+                      alt="Image 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
+          </details>
+          <!-- Course Information Table (Initially hidden) -->
+          <details>
+            <summary>Febraury 2024</summary>
+            <div class="nav-content mb-5">
+              <div class="container">
+                <div
+                  class="row"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <div class="col-12">
+                    <p class="mt-3 text-center">
+                      We are happy to inform you that with the support of our
+                      2004-2008 Alumni
+                      <span style="font-weight: bold"
+                        >Mr.Dinesh Kamal Somanchi</span
+                      >
+                      we have conducted
+                      <span style="font-weight: bold">MAJULAH INFOTECH</span>
+                      exclusive on-campus drive on Feb 25th, 2024
+                    </p>
+                    <p style="font-size: 1rem">
+                      The following Five students were selected
+                    </p>
+                    <ul style="font-size: 1rem">
+                      <li>20A81A0520,JAGU JASWANTH</li>
+                      <li>20A81A0609,CHIRLA ROHIT SRI SURYANARAYANA REDDY</li>
+                      <li>20A81A05P4,SRI ANIL DURGA RAM</li>
+                      <li>20A81A0619,JELLA DURGA SATYA PRIYANKA</li>
+                      <li>20A81A0628,MADDU VATSALTA</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.17%20AM.jpeg"
+                      alt="Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.17%20AM%20(1).jpeg"
+                      alt="Image 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>January 2024</summary>
+            <div class="nav-content mb-5">
+              <div class="container">
+                <div
+                  class="row"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <div class="col-12">
+                    <p class="mt-3 text-center">
+                      We are happy to inform you that with the support of our
+                      2010-2014 Alumni
+                      <span style="font-weight: bold">Mr.Harsha Uppala</span> we
+                      have conducted
+                      <span style="font-weight: bold">S2 technology</span> on
+                      campus drive on Jan 5th& 6th , 2024
+                    </p>
+                    <p style="font-size: 1rem">
+                      The following Two students got selected
+                    </p>
+                    <ul style="font-size: 1rem">
+                      <li>CHITAKANI GOWTHAM KUMAR</li>
+                      <li>PADMANABHUNI LAKSHMI CHARITHA</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.39%20AM.jpeg"
+                      alt="Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-5 m-3">
+                    <img
+                      src="https://srivasaviengg.ac.in/uploads/WhatsApp%20Image%202024-02-28%20at%2011.20.39%20AM%20(1).jpeg"
+                      alt="Image 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
         </div>
+      </div>
+    </div>
+    <!-- End content -->
 
+    <!-- End wrapper -->
+    <div id="footer"></div>
+    <!-- Javascript -->
+    <script>
+      // J to handle tab/accordion behavior
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all tab links and accordion buttons
+        const tabLinks = document.querySelectorAll(".nav-link");
+        const accordionCards = document.querySelectorAll(".accordion .card");
 
+        // Add click event listeners to tab links
+        tabLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            // Hide all tab content
+            document.querySelectorAll(".tab-pane").forEach(function (pane) {
+              pane.classList.remove("show", "active");
+            });
 
-	</div>
-	<!-- End content -->
+            // Show the selected tab content
+            const targetId = link
+              .getAttribute("data-bs-target")
+              .replace("#", "");
+            document.getElementById(targetId).classList.add("show", "active");
+          });
+        });
 
-	</div>
-	<!-- End wrapper -->
-	<div id="footer">
-	</div>
-	<!-- Javascript -->
-	<script>
-		// J to handle tab/accordion behavior
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get all tab links and accordion buttons
-			const tabLinks = document.querySelectorAll(".nav-link");
-			const accordionCards = document.querySelectorAll(".accordion .card");
+        // Add click event listeners to accordion cards
+        accordionCards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            // Hide all accordion content
+            document
+              .querySelectorAll(".accordion-content .card .collapse")
+              .forEach(function (collapse) {
+                collapse.classList.remove("show");
+              });
 
-			// Add click event listeners to tab links
-			tabLinks.forEach(function (link) {
-				link.addEventListener("click", function () {
-					// Hide all tab content
-					document.querySelectorAll(".tab-pane").forEach(function (pane) {
-						pane.classList.remove("show", "active");
-					});
+            // Show the selected accordion content
+            const targetId = card
+              .getAttribute("data-bs-target")
+              .replace("#", "");
+            document.getElementById(targetId).classList.add("show");
+          });
+        });
+      });
+    </script>
 
-					// Show the selected tab content
-					const targetId = link.getAttribute("data-bs-target").replace("#", "");
-					document.getElementById(targetId).classList.add("show", "active");
-				});
-			});
+    <!--  -->
 
-			// Add click event listeners to accordion cards
-			accordionCards.forEach(function (card) {
-				card.addEventListener("click", function () {
-					// Hide all accordion content
-					document.querySelectorAll(".accordion-content .card .collapse").forEach(function (collapse) {
-						collapse.classList.remove("show");
-					});
+    <script>
+      function show(id) {
+        const contentContainer = document.querySelector("#content");
+        const selectedTab = document.querySelector(id);
 
-					// Show the selected accordion content
-					const targetId = card.getAttribute("data-bs-target").replace("#", "");
-					document.getElementById(targetId).classList.add("show");
-				});
-			});
-		});
+        if (selectedTab) {
+          // Replace the content of #content with the selected tab's content
+          contentContainer.innerHTML = selectedTab.innerHTML;
+        }
+        document.querySelector(".sidebar").classList.remove("active");
+        removeActiveFromAnchors();
+        // Remove the overlay
+        document.querySelector(".overlay").classList.remove("active");
+      }
 
-	</script>
+      const dismissButton = document.querySelector(".dismiss");
+      const contentContainer = document.querySelector("#content");
 
+      dismissButton.addEventListener("click", function () {
+        // Hide the sidebar and reset active states
+        document.querySelector(".sidebar").classList.remove("active");
+        removeActiveFromAnchors();
 
-	<!--  -->
+        // Restore the original content in the content container
+      });
 
-	<script>
-		function show(id) {
-			const contentContainer = document.querySelector("#content");
-			const selectedTab = document.querySelector(id);
+      const originalContentHTML = contentContainer.innerHTML;
 
-			if (selectedTab) {
-				// Replace the content of #content with the selected tab's content
-				contentContainer.innerHTML = selectedTab.innerHTML;
-			}
-			document.querySelector(".sidebar").classList.remove("active");
-			removeActiveFromAnchors();
-			// Remove the overlay
-			document.querySelector(".overlay").classList.remove("active");
-		}
+      function removeActiveFromAnchors() {
+        const anchors = document.querySelectorAll(
+          ".list-unstyled.components li a"
+        );
+        anchors.forEach((anchor) => {
+          anchor.classList.remove("active");
+        });
+      }
 
-		const dismissButton = document.querySelector(".dismiss");
-		const contentContainer = document.querySelector("#content");
+      function removeActiveFromLis() {
+        const anchors = document.querySelectorAll(
+          ".list-unstyled.components li"
+        );
+        anchors.forEach((anchor) => {
+          anchor.classList.remove("active");
+        });
+      }
 
-		dismissButton.addEventListener("click", function () {
-			// Hide the sidebar and reset active states
-			document.querySelector(".sidebar").classList.remove("active");
-			removeActiveFromAnchors();
+      // Add click event listeners to navlinks
+      const navlinks = document.querySelectorAll(
+        ".list-unstyled.components li a"
+      );
+      navlinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          removeActiveFromAnchors();
+          this.classList.add("active");
+          show(this.getAttribute("href"));
+        });
+      });
+      const navlink = document.querySelectorAll(
+        ".list-unstyled.components li "
+      );
+      navlink.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          removeActiveFromLis();
+          this.classList.add("active");
+          show(this.getAttribute("href"));
+        });
+      });
+    </script>
 
-			// Restore the original content in the content container
+    <!--  -->
 
-		});
-
-		const originalContentHTML = contentContainer.innerHTML;
-
-		function removeActiveFromAnchors() {
-			const anchors = document.querySelectorAll(".list-unstyled.components li a");
-			anchors.forEach((anchor) => {
-				anchor.classList.remove("active");
-			});
-
-		}
-
-		function removeActiveFromLis() {
-			const anchors = document.querySelectorAll(".list-unstyled.components li");
-			anchors.forEach((anchor) => {
-				anchor.classList.remove("active");
-			});
-
-		}
-
-		// Add click event listeners to navlinks
-		const navlinks = document.querySelectorAll(".list-unstyled.components li a");
-		navlinks.forEach((link) => {
-			link.addEventListener("click", function (e) {
-				e.preventDefault();
-				removeActiveFromAnchors();
-				this.classList.add("active");
-				show(this.getAttribute("href"));
-			});
-		});
-		const navlink = document.querySelectorAll(".list-unstyled.components li ");
-		navlink.forEach((link) => {
-			link.addEventListener("click", function (e) {
-				e.preventDefault();
-				removeActiveFromLis();
-				this.classList.add("active");
-				show(this.getAttribute("href"));
-			});
-		});
-	</script>
-
-	<!--  -->
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
-	<script src="../../js/departments/jquery-3.3.1.min.js"></script>
-	<script src="../../js/departments/jquery-migrate-3.0.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<script src="../../js/departments/jquery.backstretch.min.js"></script>
-	<script src="../../js/departments/wow.min.js"></script>
-	<script src="../../js/departments/jquery.waypoints.min.js"></script>
-	<script src="../../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="../../js/departments/scripts.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/departments/jquery-3.3.1.min.js"></script>
+    <script src="../../js/departments/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/departments/jquery.backstretch.min.js"></script>
+    <script src="../../js/departments/wow.min.js"></script>
+    <script src="../../js/departments/jquery.waypoints.min.js"></script>
+    <script src="../../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../js/departments/scripts.js"></script>
+  </body>
 </html>

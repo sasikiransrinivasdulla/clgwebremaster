@@ -74,9 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav2text6= document.getElementById("nav-bar2-text6");
     const nav2text7= document.getElementById("nav-bar2-text7");
     const nav2text8= document.getElementById("nav-bar2-text8");
-    const codeTest = document.getElementById("codeTest");
+    const nav2text9= document.getElementById("nav-bar2-text9");
+    const eamcetCode = document.getElementById("codeTest");
     const dropdownTextElementUGC=document.getElementById("dropdownTextElementUGC");
     const dropdownTextElementNIRF=document.getElementById("dropdownTextElementNIRF");
+    const dropdownTextElementOthers=document.getElementById("dropdownTextElementOthers");
     const showDiv = document.querySelector('.nav-color');
     navbar.style.backgroundColor ='transparent';
     navbar2.style.backgroundColor = "transparent";
@@ -124,10 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownTextElementUGC.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
             nav2text8.classList.remove("hover-underline-animation");
             nav2text8.classList.add("hover-underline-animation-1");
-            codeTest.classList.remove("hover-underline-animation");
-            codeTest.classList.add("hover-underline-animation-1");
-            codeTest.style.color="black";
+            nav2text9.classList.remove("hover-underline-animation");
+            nav2text9.classList.add("hover-underline-animation-1");
             dropdownTextElementNIRF.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
+            dropdownTextElementOthers.setAttribute('style', 'color: black !important;font-weight:500;border-style:none;');
+            eamcetCode.classList.remove("hover-underline-animation");
+            eamcetCode.classList.add("hover-underline-animation-1");
+            eamcetCode.style.color="black";
             navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
 
@@ -140,23 +145,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Small Navbar js
 let button = document.getElementById("button");
-let flag = 0;
+let flag = false;
 let icon = document.getElementById("changeItem");
 let menu = document.getElementById("menuItems");
+menu.style.display="none";
 button.addEventListener("click", function() {
-    if (flag === 0) {
+    console.log(menu);
+    if (flag === false) {
         icon.classList.remove("fa-solid", "fa-bars");
         icon.classList.add("fa-solid", "fa-xmark");
-        menu.classList.toggle("small-navbar-menu-navbar");
-        flag = 1;
+        menu.style.display="block";
+        flag = true;
     } else {
         icon.classList.remove("fa-solid", "fa-xmark");
         icon.classList.add("fa-solid", "fa-bars");
-        menu.classList.toggle("small-navbar-menu-navbar");
-        flag = 0;
+        menu.style.display="none";
+        flag = false;
     }
 });
+document.addEventListener('click', function(event) {
+    const menuItems = document.getElementById('smallMenuItems');
+    if (!menuItems.contains(event.target)) {
+        console.log("hello");
 
+        if(flag === true) {
+            icon.classList.remove("fa-solid", "fa-xmark");
+            icon.classList.add("fa-solid", "fa-bars");
+            menu.style.display="none";
+            flag = false;
+        }
+    }
+});
 //Small Navbar js ends
 
 //code for top button
@@ -185,11 +204,13 @@ function scrollFunction() {
     const nav2text4 = document.getElementById("nav-bar2-text4");
     const nav2text5= document.getElementById("nav-bar2-text5");
     const nav2text6= document.getElementById("nav-bar2-text6");
-    const codeTest = document.getElementById("codeTest");
-
+    const eamcetCode = document.getElementById("codeTest");
     const nav2text8= document.getElementById("nav-bar2-text8");
+    const nav2text9= document.getElementById("nav-bar2-text9");
+
     const dropdownTextElementUGC=document.getElementById("dropdownTextElementUGC");
     const dropdownTextElementNIRF=document.getElementById("dropdownTextElementNIRF");
+    const dropdownTextElementOthers=document.getElementById("dropdownTextElementOthers");
     const showDiv = document.querySelector('.nav-color');
     const navelement=document.getElementById('second-large-navbar');
     navbar.style.backgroundColor = "transparent";
@@ -216,13 +237,16 @@ function scrollFunction() {
     nav2text6.style.color="white";
     nav2text7.classList.remove("hover-underline-animation-1");
     nav2text7.classList.add("hover-underline-animation");
-    codeTest.classList.remove("hover-underline-animation-1");
-    codeTest.classList.add("hover-underline-animation");
-    codeTest.style.color="white";
+    eamcetCode.classList.remove("hover-underline-animation-1");
+    eamcetCode.classList.add("hover-underline-animation");
+    eamcetCode.style.color="white";
     dropdownTextElementUGC.setAttribute('style', 'color: white !important;font-weight:500;border-style:none;');
     nav2text8.classList.remove("hover-underline-animation-1");
     nav2text8.classList.add("hover-underline-animation");
+    nav2text9.classList.remove("hover-underline-animation-1");
+    nav2text9.classList.add("hover-underline-animation");
     dropdownTextElementNIRF.setAttribute('style', 'color: white !important;font-weight:500;border-style:none;');
+    dropdownTextElementOthers.setAttribute('style', 'color: white !important;font-weight:500;border-style:none;');
     navelement.classList.remove("shadow-lg");
   }
 }
@@ -232,5 +256,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 

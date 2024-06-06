@@ -55,7 +55,7 @@ body{
 .second2-navbar-large-contents {
     border: 2 solid red;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .dropdown-item-content:hover {
     color:white !important;
@@ -109,7 +109,9 @@ body{
     font-size: 80px;
     text-shadow: 5px 5px 5px #000000;
 }
-
+.dept-dropdown-items{
+    font-size: 0.8rem !important;
+}
 .dept-dropdown-items:hover{
     background-color: var(--redColor) !important;
     color: white !important;

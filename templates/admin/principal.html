@@ -1,125 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Principal</title>
-  <link rel="icon" href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
-    type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/b2b9ab5ba1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  
-  <script>
-    $(function () {
-      $("#header").load("./header.html");
-      $("#footer").load("./footer.html");
-    });
-  </script>
-  <style>
-    .body-container{
-            margin-top: 5rem;
-        }
-        @media screen and (min-width:768px){
-        .body-container{
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+    <style>
+      .body-container {
+        margin-top: 5rem;
+      }
+      @media screen and (min-width: 768px) {
+        .body-container {
           margin-top: 14rem;
         }
       }
-  </style>
-</head>
+      .name-bg {
+        font-size: 1.3rem;
+      }
+      .email {
+        text-decoration: none;
+        color: #b1040e;
+      }
+      .email:hover {
+        color: #b1040e;
+      }
+      .flip-horizontal {
+        transform: rotateY(180deg);
+        display: inline-block; /* Ensure the icon maintains its inline-block behavior */
+      }
+      .lead {
+        text-align: center;
+        font-size: 1rem !important;
+      }
+    </style>
+  </head>
 
-<body>
-  <div id="header"></div>
-  <div class="body-container" >
-    <header class="bg-light text-center py-4">
-      <h1 class="display-6 text-danger hover-underline-animation">
-        <b>Our Principal</b>
-      </h1>
-    </header>
+  <body>
+    <div id="header"></div>
+    <div class="body-container">
+      <header class="bg-light text-center py-4">
+        <h1 class="display-6 text-danger hover-underline-animation">
+          <b>Our Principal</b>
+        </h1>
+      </header>
 
-    <main class="container mt-5">
-      <section class="row">
-        
-
-        <div class="col-lg-5">
-          <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
-              <img src="../../images/admin/principal.jpg" class="img-fluid rounded w-100"
-              alt="Technical Director Image" />
-            <h3 class="name-bg">Dr Gudur VNSR Ratnakar Rao</h3>
-            <div class="social ">
-              <a href="#" class="btn btn-danger">
+      <main class="container mt-5">
+        <section class="row">
+          <div class="col-lg-5">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="../../images/admin/principal.jpg"
+                class="img-fluid rounded w-100"
+                alt="Technical Director Image"
+              />
+              <h3 class="name-bg pt-2">Dr. Guduru VNSR Ratnakara Rao</h3>
+              <a
+                class="email"
+                href="mailto:principal@srivasaviengg.ac.in"
+                target="_blank"
+              >
+                principal@srivasaviengg.ac.in</a
+              >
+              <div class="social">
+                <!-- <a href="#" class="btn btn-danger">
                 <i class="bi bi-twitter"></i> Tweet
-              </a>
+              </a> -->
 
-              <!-- Email Button -->
-              <!-- <a href="mailto:recipient@example.com" class="btn btn-danger ms-2">
+                <!-- Email Button -->
+                <!-- <a href="mailto:recipient@example.com" class="btn btn-danger ms-2">
                     <i class="bi bi-envelope-fill"></i> Email
                 </a>
          -->
-              <!-- WhatsApp Button -->
-              <!-- <a href="https://api.whatsapp.com/send?phone=123456789" class="btn btn-success ms-2" target="_blank">
+                <!-- WhatsApp Button -->
+                <!-- <a href="https://api.whatsapp.com/send?phone=123456789" class="btn btn-success ms-2" target="_blank">
                     <i class="bi bi-whatsapp"></i> WhatsApp
                 </a> -->
-              
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-7 d-flex align-items-center">
-          <div class="content-section">
-            <h4 class="lead" style="line-height: 2rem">
-              <em><i class="bi bi-quote"></i>Dr. Guduru VNSR Ratnakara Rao obtained his ME in Mechanical Engineering from Gulbarga University and his Doctorate from
-              JNTU Hyderabad. After his initial teaching stint in Chennai, he served at BVC Engineering College, Odalarevu, AP for
-              almost a decade as Assistant Professor, Associate Professor, and Professor. Dr. Ratnakar became the Principal of
-              Praveenya Institute of Marine Engineering and Maritime Studies, Visakhapatnam, and Bhimavaram Institute of Engineering
-              Technology, Bhimavaram, between 2011 and 2013.<i class="bi bi-quote"></i></em>
-            </h4>
+          <div class="col-lg-7 d-flex align-items-center">
+            <div class="content-section">
+              <h4 class="lead" style="line-height: 2rem">
+                <em
+                  ><i class="bi bi-quote"></i>At this institution, we believe in
+                  nurturing not just minds, but hearts. Every student matters,
+                  and every lesson learned is a step toward a brighter future.<i
+                    class="bi bi-quote flip-horizontal"
+                  ></i
+                ></em>
+              </h4>
+            </div>
           </div>
+        </section>
+      </main>
+      <div class="container mt-4 text-center">
+        <div class="title">
+          <h1 class="hover-underline-animation">Principal Profile</h1>
         </div>
-      </section>
-    </main>
-    <div class="container mt-4 text-center">
-      <div class="title">
-        <h1 class="hover-underline-animation">Principal Profile</h1>
-      </div>
-      <div class="content">
-               <p class="lead" style="text-align: justify;">
-          Dr. Guduru VNSR Ratnakara Rao obtained his ME in Mechanical Engineering from Gulbarga University and his Doctorate from
-          JNTU Hyderabad. After his initial teaching stint in Chennai, he served at BVC Engineering College, Odalarevu, AP for
-          almost a decade as Assistant Professor, Associate Professor, and Professor. Dr. Ratnakar became the Principal of
-          Praveenya Institute of Marine Engineering and Maritime Studies, Visakhapatnam, and Bhimavaram Institute of Engineering
-          Technology, Bhimavaram, between 2011 and 2013.
-          <br>
-          <br>
-          He joined Sri Vasavi Engineering College, Tadepalligudem, in 2013 as Professor and Head of the Mechanical Engineering
-          Department. Since 2015, as Dean of Academic Affairs, he has actively participated in the college's administration. Dr.
-          Ratnakar is a member of esteemed professional societies like ISTE and IE and has research publications in international
-          journals of high repute.
-          <br>
-          <br>
-          Dr. Ratnakar played a crucial role in getting Sri Vasavi NBA-accredited as the coordinator of accreditation work. He
-          also laid the foundations for Outcome-Based Education (OBE) in the college and actively pursued its implementation. In
-          June 2018, Dr. Ratnakar took charge as the Principal of Sri Vasavi Engineering College and is steering the college
-          toward higher destinations.
-          <br>
-          <br>
-          For any further communication, you can reach Dr. Ratnakar via email at principal@srivasaviengg.ac.in.
-          <br>
-          <br>
-          <a class="btn btn-danger" href="mailto:principal@srivasaviengg.ac.in" target="_blank">email-id:
-            principal@srivasaviengg.ac.in</a>
-        </p>
+        <div class="content">
+          <p class="lead" style="text-align: justify">
+            Dr. Guduru VNSR Ratnakara Rao obtained his ME in Mechanical
+            Engineering from Gulbarga University and his Doctorate from JNTU
+            Hyderabad. After his initial teaching stint in Chennai, he served at
+            BVC Engineering College, Odalarevu, AP for almost a decade as
+            Assistant Professor, Associate Professor, and Professor. Dr.
+            Ratnakara became the Principal of Praveenya Institute of Marine
+            Engineering and Maritime Studies, Visakhapatnam, and Bhimavaram
+            Institute of Engineering Technology, Bhimavaram, between 2011 and
+            2013.
+            <br />
+            <br />
+            He joined Sri Vasavi Engineering College, Tadepalligudem, in 2013 as
+            Professor and Head of the Mechanical Engineering Department. Since
+            2015, as Dean of Academic Affairs, he has actively participated in
+            the college's administration. Dr. Ratnakara is a member of esteemed
+            professional societies like ISTE and IE and has research
+            publications in international journals of high repute.
+            <br />
+            <br />
+            Dr. Ratnakara played a crucial role in getting Sri Vasavi
+            NBA-accredited as the coordinator of accreditation work. He also
+            laid the foundations for Outcome-Based Education (OBE) in the
+            college and actively pursued its implementation. In June 2018, Dr.
+            Ratnakara took charge as the Principal of Sri Vasavi Engineering
+            College and is steering the college toward higher destinations.
+            <br />
+            <br />
+            For any further communication, you can reach Dr. Ratnakara via email
+            at
+            <span style="font-weight: bold">principal@srivasaviengg.ac.in</span
+            >.
+            <br />
+            <br />
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="footer"></div>
-</body>
-
+    <div id="footer"></div>
+  </body>
 </html>

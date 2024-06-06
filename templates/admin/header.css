@@ -53,6 +53,9 @@ body {
   color: white !important;
   background-color: #b1040e !important;
 }
+.dept-dropdown-items {
+  font-size: 0.8rem !important;
+}
 .dropdown-item-content {
   color: black;
   background-color: white;

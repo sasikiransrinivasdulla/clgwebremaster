@@ -11,7 +11,7 @@
 	<title>R&D-Department</title>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="assets\css\style.css">
+	<link rel="stylesheet" href="../../css/departments/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -51,11 +51,21 @@
 			$("#footer").load("./footer.html");
 		});
 	</script>
+	<style>
+		.rnd-content-down{
+			margin-top: 14rem;
+		}
+		@media screen and (max-width: 576px) {
+			.rnd-content-down{
+				margin-top: 5rem;
+			}
+		}
+	</style>
 </head>
 
 <body>
-
 	<div id="header"></div>
+
 	<!-- Wrapper -->
 	<div class="wrapper">
 
@@ -251,6 +261,7 @@
 		<!------------------------------------------TAB 3 CONTENT STARTS---------------->
 
 		<div class="tab-pane " id="tab3">
+<<<<<<< HEAD
 			<div class="container mt-7 mb-3 tab-content" style="border-width: 2px; margin-top:80px;">
 				<h2 style="color:#850209; margin-bottom: 18px; margin-top:20px;">Conference Proceedings</h2>
 				<div class=" nav-content">
@@ -263,8 +274,23 @@
 								id="pdfDOWNLOADER11" style="margin-left: 5px;">- View</a>
 						</li>
 					</ul>
+=======
+				<div class=" nav-content rnd-content-down ml-3 mr-3" >
+					
+					<details open>
+						<summary>Conference Proceedings</summary>
+						<ul class="list-unstyled" style="margin-top: 20px; ">
+							<li>NCDECT-2203<a
+									href="https://srivasaviengg.ac.in/uploads/r&d_uploads/Proceedings_of_AICTE-2023_Book.pdf"
+									target="_blank" id="pdfDOWNLOADER11" style="margin-left: 5px;">- View</a></li>
+							<li>ICETEM-2020<a
+									href="https://srivasaviengg.ac.in/uploads/r&d_uploads/UPDATED%20ICETEM-2020%20on%2006.04-.2021%20(1).pdf" target="_blank"
+									id="pdfDOWNLOADER11" style="margin-left: 5px;">- View</a>
+							</li>
+						</ul>
+					</details>
+>>>>>>> 932524cdf54377f39bcbb3707fa1123af63efdc6
 				</div>
-			</div>
 
 		</div>
 		<!------------------------------------------TAB 3 CONTENT ENDS---------------->
@@ -272,7 +298,7 @@
 		<div class="tab-pane" id="tab4">
 			<div class="container mt-7 mb-3 tab-content" style="border-width: 2px; margin-top:80px;">
 			<h3 class="text-center mt-5 pt-3" style="color: #850209;">Projects</h3>
-			<h2 class="text-primary text-center" style="margin-bottom: 10px !important;">Projects Sanctioned/On-going/completed</h2>
+			<h2 class="text-center" style="margin-bottom: 10px !important;">Projects Sanctioned/On-going/completed</h2>
 			<div class=" tab4-table" style="display: flex;justify-content: center; align-items: center;">
 				<table class="table table-bordered faculty-table mb-4 table-responsive table-striped table-hover"
 					id="faculty-profile" class="tab4-table">

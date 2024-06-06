@@ -12,16 +12,15 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var mySwiper = new Swiper('.mySwiper', {
+document.addEventListener("DOMContentLoaded", function () {
+  var mySwiper = new Swiper(".mySwiper", {
     // Your existing Swiper configuration options
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     loop: true, // Enable loop

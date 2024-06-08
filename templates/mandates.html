@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="mt-3">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -7,16 +7,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <title>Mandates</title>
     <link
       rel="icon"
       href="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png"
       type="image/x-icon"
     />
+    <title>Mandates</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/mandates_styles.css" />
+    <link rel="stylesheet" href="../../css/departments/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
@@ -33,7 +32,13 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="../../css/departments/jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="../../css/departments/animate.css" />
+    <link rel="stylesheet" href="../../css/departments/style.css" />
+    <link rel="stylesheet" href="../../css/departments/media-queries.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -75,22 +80,1021 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
     <script>
       $(function () {
         $("#header").load("./header.html");
         $("#footer").load("./footer.html");
       });
     </script>
+    <style>
+      .rnd-content-down {
+        margin-top: 14rem;
+      }
+      @media screen and (max-width: 576px) {
+        .rnd-content-down {
+          margin-top: 5rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="header"></div>
+
+    <!-- Wrapper -->
+
     <!-- -----------------------MIDDLE OPTINONS Content STARTS (MISSION ,VISION ETC)------------------------------- -->
 
     <!-- Content -->
-    <div class="content m-0">
-      <div id="content" class="container my-5">
-        <h2 class="mb-4 mt-0 text-center pt-0">Mandates</h2>
+    <div class="content ml-0">
+      <div id="content" class="container-fluid">
+        <h2 class="mb-4" style="margin-top: 10rem">Mandates</h2>
+
+        <div class="container-fluid my-5" id="large">
+          <nav>
+            <div
+              class="nav flex-column flex-lg-row"
+              id="nav-tab"
+              role="tablist"
+            >
+              <button
+                class="nav-link active ml-md-0"
+                id="nav-department-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-department"
+                type="button"
+                role="tab"
+                aria-controls="nav-department"
+                aria-selected="true"
+                style="font-weight: bold"
+              >
+                HR Policy
+              </button>
+
+              <button
+                class="nav-link"
+                id="nav-vision-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-vision"
+                type="button"
+                role="tab"
+                aria-controls="nav-vision"
+                aria-selected="false"
+                style="font-weight: bold"
+              >
+                Mandatory Disclosure
+              </button>
+
+              <button
+                class="nav-link"
+                id="nav-mission-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-mission"
+                type="button"
+                role="tab"
+                aria-controls="nav-mission"
+                aria-selected="false"
+                style="font-weight: bold"
+              >
+                Anti Ragging
+              </button>
+
+              <button
+                class="nav-link"
+                id="nav-pos-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-pos"
+                type="button"
+                role="tab"
+                aria-controls="nav-pos"
+                aria-selected="false"
+                style="font-weight: bold"
+              >
+                ARIIA,NIRF,AICTE
+              </button>
+              <button
+              class="nav-link"
+              id="nav-pos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-stoc"
+              type="button"
+              role="tab"
+              aria-controls="nav-pos"
+              aria-selected="false"
+              style="font-weight: bold"
+            >
+              STOC-2020
+            </button>
+            <button
+            class="nav-link"
+            id="nav-pos-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-feedback"
+            type="button"
+            role="tab"
+            aria-controls="nav-pos"
+            aria-selected="false"
+            style="font-weight: bold"
+          >
+            Feedback
+          </button>
+          <button
+          class="nav-link"
+          id="nav-pos-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-nba"
+          type="button"
+          role="tab"
+          aria-controls="nav-pos"
+          aria-selected="false"
+          style="font-weight: bold"
+        >
+          NBA-ABC Scheme
+        </button>
+            </div>
+          </nav>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active p-3"
+              id="nav-department"
+              role="tabpanel"
+              aria-labelledby="nav-department-tab"
+            >
+            <div class="card-body">
+              <h3 class="text-center">HR Policy</h3>
+              <ul class="text-center list-unstyled my-0">
+                <li class="my-0 text-center">
+                  HUMAN RESOURCES AND QUALITY POLICY -
+                  <a
+                    href="http://srivasaviengg.ac.in/uploads/csemous/csemous_2017-2018.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    id="pdfDOWNLOADER11"
+                  >
+                    View</a
+                  >
+                </li>
+              </ul>
+          </div>
+
+            </div>
+            <div
+              class="tab-pane fade p-3"
+              id="nav-vision"
+              role="tabpanel"
+              aria-labelledby="nav-vision-tab"
+            >
+              <h2 style="margin-top: 10px">Mandatory Disclosure</h2>
+              <div class="card-body">
+                <div style="margin-top: 10px;">
+                  <h4 >NBA & NAAC Status</h4>
+
+                  <ul >
+                    <li>
+                      <p>
+                        NBA & NAAC Status -
+                        <a
+                          href="uploads/NBA_NAAC.jpg"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+
+                  <h4>NAAC Accreditation</h4>
+
+                  <ul >
+                    <li>
+                      <p>
+                        NAAC Accreditation Status -
+                        <a
+                          href="uploads/NAAC Accreditation.jpg"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+
+                  <h4>NBA Accreditation</h4>
+
+                  <ul >
+                    <li>
+                      <p>
+                        NBA Accreditation Copy -
+                        <a
+                          href="nba_acc.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+
+                  <h4 >Information submitted to AICTE</h4>
+                  <ul>
+                    <li>
+                      <p>
+                        AICTE Application Part 1, 2 Report 2023_24 -
+                        <a
+                          href="aicte_2023_1_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2022_23 -
+                        <a
+                          href="aicte_2022_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2022_23 -
+                        <a
+                          href="aicte_2022_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2021_22 -
+                        <a
+                          href="aicte_2021_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2021_22 -
+                        <a
+                          href="aicte_2021_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 1 & 2 Report 2010_21 -
+                        <a
+                          href="aicte_2020_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2019_20 -
+                        <a
+                          href="aicte_2019_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2019_20 -
+                        <a
+                          href="aicte_2019_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2018_19 -
+                        <a
+                          href="aicte_2018_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2018_19 -
+                        <a
+                          href="aicte_2018_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade p-3"
+              id="nav-mission"
+              role="tabpanel"
+              aria-labelledby="nav-mission-tab"
+            >
+              <h2 style="margin-top: 10px" class="text-center">Anti Ragging</h2>
+              <div class="card-body">
+                <div class="profile margin-topmain">
+                  <ul>
+                    <li>
+                      Anti Ragging during the A.Y-2022-23 -
+                      <a
+                        href="uploads/2022-23 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2021-22 -
+                      <a
+                        href="uploads/2021-22 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging wardens and care takers during the
+                      A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti-ragging wardens and care takers.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging Committees during the A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti-ragging committee.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2019-20 -
+                      <a
+                        href="uploads/2019-20 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2018-19 -
+                      <a
+                        href="uploads/2018-19 anti-ragging (2).pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade p-3"
+              id="nav-pos"
+              role="tabpanel"
+              aria-labelledby="nav-pos-tab"
+            >
+            <div class="card-body">
+              <h2 style="margin-top: 10px">ARIIA, NIRF, AICTE</h2>
+              <p
+                style="
+                  font-weight: 700;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                    sans-serif;
+                  color: #850209 !important;
+                  font-size: 19px;
+                "
+              >
+                ARIIA :
+              </p>
+              <ul class=" my-2">
+                <li>
+                  ARIIA Details
+                  <a
+                    href="uploads/ariia_details.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+              </ul>
+              <p
+                style="
+                  font-weight: 700;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                    sans-serif;
+                  color: #850209 !important;
+                  font-size: 19px;
+                "
+              >
+                NIRF :
+              </p>
+              <ul>
+                <li>
+                  For National Institutional Ranking Framework (NIRF) Full
+                  Report-2023 -
+                  <a
+                    href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF OVERALL.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <li>
+                  For National Institutional Ranking Framework (NIRF)
+                  Engineering-2023 -
+                  <a
+                    href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF Engg.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <br />
+                <li>
+                  For National Institutional Ranking Framework (NIRF) Full
+                  Report-2022 -
+                  <a
+                    href="uploads/nirf_files/nirf_details_2022.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <li>
+                  For National Institutional Ranking Framework (NIRF)
+                  Engineering-2022 -
+                  <a
+                    href="uploads/nirf_files/nirf_details_eng_2022.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <br />
+
+                <li>
+                  For National Institutional Ranking Framework (NIRF) Full
+                  Report-2021 -
+                  <a
+                    href="uploads/nirf_files/nirf_details_2021.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <li>
+                  For National Institutional Ranking Framework (NIRF)
+                  Engineering-2021 -
+                  <a
+                    href="uploads/nirf_files/NIRF_Eng_2021.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <br />
+                <li>
+                  For National Institutional Ranking Framework (NIRF) Full
+                  Report-2020 -
+                  <a
+                    href="uploads/nirf_files/nirf_details_2020.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+                <li>
+                  For National Institutional Ranking Framework (NIRF)
+                  Engineering-2020 -
+                  <a
+                    href="uploads/nirf_files/NIRF_Eng.pdf"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </li>
+              </ul>
+              <p
+                style="
+                  font-weight: 700;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                    sans-serif;
+                  color: #850209 !important;
+                  font-size: 19px;
+                "
+              >
+                AICTE :
+              </p>
+              <td>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2022-23 -
+                    <a
+                      href="uploads/AICTE/AICTE_2022-23.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2021-22 -
+                    <a
+                      href="uploads/AICTE/AICTE_2021-22.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2020-21 -
+                    <a
+                      href="uploads/AICTE/AICTE_2020-21.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2019-20 -
+                    <a
+                      href="uploads/AICTE/AICTE_2019-20.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2018-19 -
+                    <a
+                      href="uploads/AICTE/AICTE_2018-19.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2017-18 -
+                    <a
+                      href="uploads/AICTE/AICTE_2017-18.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2016-17 -
+                    <a
+                      href="uploads/AICTE/AICTE_2016-17.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2015-16 -
+                    <a
+                      href="uploads/AICTE/AICTE_2015-16.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2014-15 -
+                    <a
+                      href="uploads/AICTE/AICTE_2014-15.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2013-14 -
+                    <a
+                      href="uploads/AICTE/AICTE_2013-14.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2012-13 -
+                    <a
+                      href="uploads/AICTE/AICTE_2012-13.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2011-12 -
+                    <a
+                      href="uploads/AICTE/AICTE_2011-12.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2010-11 -
+                    <a
+                      href="uploads/AICTE/AICTE_2010-11.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2009-10 -
+                    <a
+                      href="uploads/AICTE/AICTE_2009-10.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2008-09 -
+                    <a
+                      href="uploads/AICTE/AICTE_2008-09.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2007-08 -
+                    <a
+                      href="uploads/AICTE/AICTE_2007-08.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2006-07 -
+                    <a
+                      href="uploads/AICTE/AICTE_2006-07.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2005-06 -
+                    <a
+                      href="uploads/AICTE/AICTE_2005-06.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2004-05 -
+                    <a
+                      href="uploads/AICTE/AICTE_2004-05.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2003-04 -
+                    <a
+                      href="uploads/AICTE/AICTE_2003-04.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2002-03 -
+                    <a
+                      href="uploads/AICTE/AICTE_2002-03.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="bullet1"
+                  style="list-style-image: url('image/li.gif')"
+                >
+                  <li>
+                    APPROVAL 2001-02 -
+                    <a
+                      href="uploads/AICTE/AICTE_2001-02.PDF"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >View</a
+                    >
+                  </li>
+                </ul>
+              </td>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade p-3"
+              id="nav-stoc"
+              role="tabpanel"
+              aria-labelledby="nav-pos-tab"
+            >
+            <div class="card-body">
+              <h2 style="margin-top: 10px">STOC-2020</h2><br>
+              <h3 style="padding-top: 10px;">CMT Microsoft for Online Submission of Papers</h3>
+              <ul>
+                <li>
+                  <p color="blue">
+                    National Virtual Conference on Solutions To Overcome
+                    COVID-19 Crisis (STOC2020) -
+                    <a
+                      href="STOC 2020.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </p>
+                </li>
+              </ul>
+          </div>
+            </div>
+            <div
+            class="tab-pane fade p-3"
+            id="nav-feedback"
+            role="tabpanel"
+            aria-labelledby="nav-pos-tab"
+          >
+          <div class="card-body">
+            <h3 style="text-align: center;">Feedback</h3>
+            <ul>
+              <li>
+                <p color="blue">
+                  Dear Students/Faculty, please login into your e-cap
+                  account to submit feedback -
+                  <a
+                    href="http://sves.org.in/ecap/"
+                    target="_blank"
+                    id="pdfDOWNLOADER11"
+                    id="pdfDOWNLOADER11"
+                    >Click here</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+
+          <div
+          class="tab-pane fade p-3"
+          id="nav-nba"
+          role="tabpanel"
+          aria-labelledby="nav-pos-tab"
+        >
+        <div class="card-body">
+          <h2 class="text-center my-4">NAD-ABC Scheme</h2>
+          <div class="container">
+            <h4 class="text-center" class="text-center">
+              Video Gallery
+            </h4>
+            <div class="row">
+              <div class="item active col-md-6 col-sm-12 mt-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="http://srivasaviengg.ac.in/uploads/nbabac/video1.mp4"
+                  frameborder="0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+
+              <div class="item col-md-6 col-sm-12 mt-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="http://srivasaviengg.ac.in/uploads/nbabac/video2.mp4"
+                  frameborder="0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+
+              <div class="item col-md-6 col-sm-12 mt-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="http://srivasaviengg.ac.in/uploads/nbabac/video3.mp4"
+                  frameborder="0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+
+              <div class="item col-md-6 col-sm-12 mt-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="http://srivasaviengg.ac.in/uploads/nbabac/video4.mp4"
+                  frameborder="0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+          </div>
+        </div>
+
         <div class="accordion-content" id="small">
           <div class="accordion" id="accordionTabs">
             <div
@@ -100,7 +1104,7 @@
               aria-expanded="false"
             >
               <div class="card-header" id="nav-department-heading">
-                <h2 class="mt-0 mb-0 text-center">
+                <h2 class="mt-0 mb-0">
                   <button class="btn btn-link">HR Policy</button>
                 </h2>
               </div>
@@ -111,22 +1115,29 @@
                 class="collapse show"
                 aria-labelledby="nav-department-tab"
               >
-                <div class="card-body">
-                  <h3 class="text-center">HR Policy</h3>
-                  <ul class="text-center list-unstyled my-0">
-                    <li class="my-0 text-center">
-                      HUMAN RESOURCES AND QUALITY POLICY -
-                      <a
-                        href="http://srivasaviengg.ac.in/uploads/csemous/csemous_2017-2018.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        id="pdfDOWNLOADER11"
-                      >
-                        View</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+              <div
+              class="tab-pane fade show active collapse p-3"
+              id="nav-department"
+              class="collapse show"
+              aria-labelledby="nav-department-tab"
+            >
+              <div class="card-body">
+                <h3 class="text-center">HR Policy</h3>
+                <ul class="text-center list-unstyled my-0">
+                  <li class="my-0 text-center">
+                    HUMAN RESOURCES AND QUALITY POLICY -
+                    <a
+                      href="http://srivasaviengg.ac.in/uploads/csemous/csemous_2017-2018.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      id="pdfDOWNLOADER11"
+                    >
+                      View</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
               </div>
             </div>
             <div
@@ -138,7 +1149,7 @@
               <a href="#nav-vision-content">
                 <div class="card-header" id="nav-vision-heading">
                   <h2 class="mt-0 mb-0">
-                    <button class="btn btn-link">Mandatory Disclosure</button>
+                    <button class="btn btn-link">Mandates Disclosure</button>
                   </h2>
                 </div>
               </a>
@@ -147,193 +1158,193 @@
                 id="nav-vision-content"
                 aria-labelledby="nav-vision-heading"
               >
-                <div class="card-body">
-                  <div class="">
-                    <h4 class="text-center">NBA & NAAC Status</h4>
+              <div class="card-body">
+                <div class="">
+                  <h4 class="text-center">NBA & NAAC Status</h4>
 
-                    <ul class="text-center">
-                      <li>
-                        <p>
-                          NBA & NAAC Status -
-                          <a
-                            href="uploads/NBA_NAAC.jpg"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
+                  <ul class="text-center">
+                    <li>
+                      <p>
+                        NBA & NAAC Status -
+                        <a
+                          href="uploads/NBA_NAAC.jpg"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
 
-                    <h4 class="text-center">NAAC Accreditation</h4>
+                  <h4 class="text-center">NAAC Accreditation</h4>
 
-                    <ul class="text-center">
-                      <li>
-                        <p>
-                          NAAC Accreditation Status -
-                          <a
-                            href="uploads/NAAC Accreditation.jpg"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
+                  <ul class="text-center">
+                    <li>
+                      <p>
+                        NAAC Accreditation Status -
+                        <a
+                          href="uploads/NAAC Accreditation.jpg"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
 
-                    <h4 class="text-center">NBA Accreditation</h4>
+                  <h4 class="text-center">NBA Accreditation</h4>
 
-                    <ul class="text-center">
-                      <li>
-                        <p>
-                          NBA Accreditation Copy -
-                          <a
-                            href="nba_acc.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
+                  <ul class="text-center">
+                    <li>
+                      <p>
+                        NBA Accreditation Copy -
+                        <a
+                          href="nba_acc.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
 
-                    <h4 class="text-center">Information submitted to AICTE</h4>
-                    <ul class="text-center">
-                      <li>
-                        <p>
-                          AICTE Application Part 1, 2 Report 2023_24 -
-                          <a
-                            href="aicte_2023_1_2.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                  <h4 class="text-center">Information submitted to AICTE</h4>
+                  <ul class="text-center">
+                    <li>
+                      <p>
+                        AICTE Application Part 1, 2 Report 2023_24 -
+                        <a
+                          href="aicte_2023_1_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 2 Report 2022_23 -
-                          <a
-                            href="aicte_2022_2.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2022_23 -
+                        <a
+                          href="aicte_2022_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 1 Report 2022_23 -
-                          <a
-                            href="aicte_2022_1.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2022_23 -
+                        <a
+                          href="aicte_2022_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 2 Report 2021_22 -
-                          <a
-                            href="aicte_2021_2.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2021_22 -
+                        <a
+                          href="aicte_2021_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 1 Report 2021_22 -
-                          <a
-                            href="aicte_2021_1.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2021_22 -
+                        <a
+                          href="aicte_2021_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 1 & 2 Report 2010_21 -
-                          <a
-                            href="aicte_2020_1.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 1 & 2 Report 2010_21 -
+                        <a
+                          href="aicte_2020_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 2 Report 2019_20 -
-                          <a
-                            href="aicte_2019_2.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2019_20 -
+                        <a
+                          href="aicte_2019_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 1 Report 2019_20 -
-                          <a
-                            href="aicte_2019_1.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2019_20 -
+                        <a
+                          href="aicte_2019_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 2 Report 2018_19 -
-                          <a
-                            href="aicte_2018_2.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
+                    <li>
+                      <p>
+                        AICTE Application Part 2 Report 2018_19 -
+                        <a
+                          href="aicte_2018_2.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
 
-                      <li>
-                        <p>
-                          AICTE Application Part 1 Report 2018_19 -
-                          <a
-                            href="aicte_2018_1.php"
-                            target="_blank"
-                            id="pdfDOWNLOADER11"
-                            id="pdfDOWNLOADER11"
-                            >Click here</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+                    <li>
+                      <p>
+                        AICTE Application Part 1 Report 2018_19 -
+                        <a
+                          href="aicte_2018_1.php"
+                          target="_blank"
+                          id="pdfDOWNLOADER11"
+                          id="pdfDOWNLOADER11"
+                          >Click here</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
                 </div>
+              </div>
               </div>
             </div>
             <div
@@ -355,83 +1366,83 @@
                 class="collapse"
                 aria-labelledby="nav-vision-heading"
               >
-                <div class="card-body">
-                  <h3 class="text-center">Anti Ragging</h3>
-                  <div class="profile margin-topmain">
-                    <ul class="text-center">
-                      <li>
-                        Anti Ragging during the A.Y-2022-23 -
-                        <a
-                          href="uploads/2022-23 anti-ragging.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging during the A.Y-2021-22 -
-                        <a
-                          href="uploads/2021-22 anti-ragging.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging during the A.Y-2020-21 -
-                        <a
-                          href="uploads/2020-21 anti ragging.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging wardens and care takers during the
-                        A.Y-2020-21 -
-                        <a
-                          href="uploads/2020-21 anti-ragging wardens and care takers.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging Committees during the A.Y-2020-21 -
-                        <a
-                          href="uploads/2020-21 anti-ragging committee.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging during the A.Y-2019-20 -
-                        <a
-                          href="uploads/2019-20 anti-ragging.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                      <br />
-                      <li>
-                        Anti Ragging during the A.Y-2018-19 -
-                        <a
-                          href="uploads/2018-19 anti-ragging (2).pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+              <div class="card-body">
+                <h3 class="text-center">Anti Ragging</h3>
+                <div class="profile margin-topmain">
+                  <ul class="text-center">
+                    <li>
+                      Anti Ragging during the A.Y-2022-23 -
+                      <a
+                        href="uploads/2022-23 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2021-22 -
+                      <a
+                        href="uploads/2021-22 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging wardens and care takers during the
+                      A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti-ragging wardens and care takers.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging Committees during the A.Y-2020-21 -
+                      <a
+                        href="uploads/2020-21 anti-ragging committee.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2019-20 -
+                      <a
+                        href="uploads/2019-20 anti-ragging.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      Anti Ragging during the A.Y-2018-19 -
+                      <a
+                        href="uploads/2018-19 anti-ragging (2).pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
               </div>
             </div>
             <div
@@ -443,7 +1454,7 @@
               <a href="#nav-peos-content">
                 <div class="card-header" id="nav-peos-heading">
                   <h2 class="mt-0 mb-0">
-                    <button class="btn btn-link">ARIIA, NIRF, AICTE</button>
+                    <button class="btn btn-link">ARIIA,NIRF,AICTE</button>
                   </h2>
                 </div>
               </a>
@@ -453,475 +1464,476 @@
                 class="collapse"
                 aria-labelledby="nav-peos-heading"
               >
-                <div class="card-body">
-                  <h2 style="margin-top: 10px">ARIIA, NIRF, AICTE</h2>
-                  <p
-                    style="
-                      font-weight: 700;
-                      text-align: center;
-                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
-                        sans-serif;
-                      color: #850209 !important;
-                      font-size: 19px;
-                    "
+              <div class="card-body">
+                <h2 style="margin-top: 10px">ARIIA, NIRF, AICTE</h2>
+                <p
+                  style="
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                      sans-serif;
+                    color: #850209 !important;
+                    font-size: 19px;
+                  "
+                >
+                  ARIIA :
+                </p>
+                <ul class="text-center my-2">
+                  <li>
+                    ARIIA Details
+                    <a
+                      href="uploads/ariia_details.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                </ul>
+                <p
+                  style="
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                      sans-serif;
+                    color: #850209 !important;
+                    font-size: 19px;
+                  "
+                >
+                  NIRF :
+                </p>
+                <ul class="text-center">
+                  <li>
+                    For National Institutional Ranking Framework (NIRF) Full
+                    Report-2023 -
+                    <a
+                      href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF OVERALL.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <li>
+                    For National Institutional Ranking Framework (NIRF)
+                    Engineering-2023 -
+                    <a
+                      href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF Engg.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <br />
+                  <li>
+                    For National Institutional Ranking Framework (NIRF) Full
+                    Report-2022 -
+                    <a
+                      href="uploads/nirf_files/nirf_details_2022.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <li>
+                    For National Institutional Ranking Framework (NIRF)
+                    Engineering-2022 -
+                    <a
+                      href="uploads/nirf_files/nirf_details_eng_2022.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <br />
+
+                  <li>
+                    For National Institutional Ranking Framework (NIRF) Full
+                    Report-2021 -
+                    <a
+                      href="uploads/nirf_files/nirf_details_2021.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <li>
+                    For National Institutional Ranking Framework (NIRF)
+                    Engineering-2021 -
+                    <a
+                      href="uploads/nirf_files/NIRF_Eng_2021.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <br />
+                  <li>
+                    For National Institutional Ranking Framework (NIRF) Full
+                    Report-2020 -
+                    <a
+                      href="uploads/nirf_files/nirf_details_2020.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                  <li>
+                    For National Institutional Ranking Framework (NIRF)
+                    Engineering-2020 -
+                    <a
+                      href="uploads/nirf_files/NIRF_Eng.pdf"
+                      target="_blank"
+                      id="pdfDOWNLOADER11"
+                      >Click here</a
+                    >
+                  </li>
+                </ul>
+                <p
+                  style="
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                      sans-serif;
+                    color: #850209 !important;
+                    font-size: 19px;
+                  "
+                >
+                  AICTE :
+                </p>
+                <td>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
                   >
-                    ARIIA :
-                  </p>
-                  <ul class="text-center my-2">
                     <li>
-                      ARIIA Details
+                      APPROVAL 2022-23 -
                       <a
-                        href="uploads/ariia_details.pdf"
+                        href="uploads/AICTE/AICTE_2022-23.PDF"
                         target="_blank"
                         id="pdfDOWNLOADER11"
-                        >Click here</a
+                        >View</a
                       >
                     </li>
                   </ul>
-                  <p
-                    style="
-                      font-weight: 700;
-                      text-align: center;
-                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
-                        sans-serif;
-                      color: #850209 !important;
-                      font-size: 19px;
-                    "
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
                   >
-                    NIRF :
-                  </p>
-                  <ul class="text-center">
                     <li>
-                      For National Institutional Ranking Framework (NIRF) Full
-                      Report-2023 -
+                      APPROVAL 2021-22 -
                       <a
-                        href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF OVERALL.pdf"
+                        href="uploads/AICTE/AICTE_2021-22.PDF"
                         target="_blank"
                         id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <li>
-                      For National Institutional Ranking Framework (NIRF)
-                      Engineering-2023 -
-                      <a
-                        href="uploads/nirf_files/SRI VASAVI ENGINEERING COLLEGE20230103 NIRF Engg.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <br />
-                    <li>
-                      For National Institutional Ranking Framework (NIRF) Full
-                      Report-2022 -
-                      <a
-                        href="uploads/nirf_files/nirf_details_2022.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <li>
-                      For National Institutional Ranking Framework (NIRF)
-                      Engineering-2022 -
-                      <a
-                        href="uploads/nirf_files/nirf_details_eng_2022.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <br />
-
-                    <li>
-                      For National Institutional Ranking Framework (NIRF) Full
-                      Report-2021 -
-                      <a
-                        href="uploads/nirf_files/nirf_details_2021.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <li>
-                      For National Institutional Ranking Framework (NIRF)
-                      Engineering-2021 -
-                      <a
-                        href="uploads/nirf_files/NIRF_Eng_2021.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <br />
-                    <li>
-                      For National Institutional Ranking Framework (NIRF) Full
-                      Report-2020 -
-                      <a
-                        href="uploads/nirf_files/nirf_details_2020.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
-                      >
-                    </li>
-                    <li>
-                      For National Institutional Ranking Framework (NIRF)
-                      Engineering-2020 -
-                      <a
-                        href="uploads/nirf_files/NIRF_Eng.pdf"
-                        target="_blank"
-                        id="pdfDOWNLOADER11"
-                        >Click here</a
+                        >View</a
                       >
                     </li>
                   </ul>
-                  <p
-                    style="
-                      font-weight: 700;
-                      text-align: center;
-                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
-                        sans-serif;
-                      color: #850209 !important;
-                      font-size: 19px;
-                    "
+
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
                   >
-                    AICTE :
-                  </p>
-                  <td>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2022-23 -
-                        <a
-                          href="uploads/AICTE/AICTE_2022-23.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2021-22 -
-                        <a
-                          href="uploads/AICTE/AICTE_2021-22.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                    <li>
+                      APPROVAL 2020-21 -
+                      <a
+                        href="uploads/AICTE/AICTE_2020-21.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2020-21 -
-                        <a
-                          href="uploads/AICTE/AICTE_2020-21.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2019-20 -
+                      <a
+                        href="uploads/AICTE/AICTE_2019-20.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2019-20 -
-                        <a
-                          href="uploads/AICTE/AICTE_2019-20.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2018-19 -
+                      <a
+                        href="uploads/AICTE/AICTE_2018-19.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2018-19 -
-                        <a
-                          href="uploads/AICTE/AICTE_2018-19.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2017-18 -
+                      <a
+                        href="uploads/AICTE/AICTE_2017-18.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2017-18 -
-                        <a
-                          href="uploads/AICTE/AICTE_2017-18.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2016-17 -
+                      <a
+                        href="uploads/AICTE/AICTE_2016-17.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2016-17 -
-                        <a
-                          href="uploads/AICTE/AICTE_2016-17.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2015-16 -
+                      <a
+                        href="uploads/AICTE/AICTE_2015-16.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2014-15 -
+                      <a
+                        href="uploads/AICTE/AICTE_2014-15.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2013-14 -
+                      <a
+                        href="uploads/AICTE/AICTE_2013-14.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2012-13 -
+                      <a
+                        href="uploads/AICTE/AICTE_2012-13.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2011-12 -
+                      <a
+                        href="uploads/AICTE/AICTE_2011-12.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2010-11 -
+                      <a
+                        href="uploads/AICTE/AICTE_2010-11.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2009-10 -
+                      <a
+                        href="uploads/AICTE/AICTE_2009-10.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2008-09 -
+                      <a
+                        href="uploads/AICTE/AICTE_2008-09.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2015-16 -
-                        <a
-                          href="uploads/AICTE/AICTE_2015-16.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2014-15 -
-                        <a
-                          href="uploads/AICTE/AICTE_2014-15.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2013-14 -
-                        <a
-                          href="uploads/AICTE/AICTE_2013-14.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2012-13 -
-                        <a
-                          href="uploads/AICTE/AICTE_2012-13.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2011-12 -
-                        <a
-                          href="uploads/AICTE/AICTE_2011-12.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2010-11 -
-                        <a
-                          href="uploads/AICTE/AICTE_2010-11.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2009-10 -
-                        <a
-                          href="uploads/AICTE/AICTE_2009-10.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2008-09 -
-                        <a
-                          href="uploads/AICTE/AICTE_2008-09.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2007-08 -
+                      <a
+                        href="uploads/AICTE/AICTE_2007-08.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2007-08 -
-                        <a
-                          href="uploads/AICTE/AICTE_2007-08.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2006-07 -
+                      <a
+                        href="uploads/AICTE/AICTE_2006-07.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2006-07 -
-                        <a
-                          href="uploads/AICTE/AICTE_2006-07.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2005-06 -
+                      <a
+                        href="uploads/AICTE/AICTE_2005-06.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2005-06 -
-                        <a
-                          href="uploads/AICTE/AICTE_2005-06.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2004-05 -
+                      <a
+                        href="uploads/AICTE/AICTE_2004-05.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2004-05 -
-                        <a
-                          href="uploads/AICTE/AICTE_2004-05.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2003-04 -
+                      <a
+                        href="uploads/AICTE/AICTE_2003-04.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2003-04 -
-                        <a
-                          href="uploads/AICTE/AICTE_2003-04.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2002-03 -
+                      <a
+                        href="uploads/AICTE/AICTE_2002-03.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
 
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2002-03 -
-                        <a
-                          href="uploads/AICTE/AICTE_2002-03.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-
-                    <ul
-                      class="text-center bullet1"
-                      style="list-style-image: url('image/li.gif')"
-                    >
-                      <li>
-                        APPROVAL 2001-02 -
-                        <a
-                          href="uploads/AICTE/AICTE_2001-02.PDF"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          >View</a
-                        >
-                      </li>
-                    </ul>
-                  </td>
-                </div>
+                  <ul
+                    class="text-center bullet1"
+                    style="list-style-image: url('image/li.gif')"
+                  >
+                    <li>
+                      APPROVAL 2001-02 -
+                      <a
+                        href="uploads/AICTE/AICTE_2001-02.PDF"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        >View</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </div>
               </div>
             </div>
+
             <div
               class="card"
               data-bs-toggle="collapse"
-              data-bs-target="#nav-pos-content"
+              data-bs-target="#nav-stoc"
               aria-expanded="true"
             >
-              <a href="#nav-pos-content">
-                <div class="card-header" id="nav-pos-heading">
+              <a href="#nav-stoc">
+                <div class="card-header" id="nav-peos-heading">
                   <h2 class="mt-0 mb-0">
                     <button class="btn btn-link">STOC-2020</button>
                   </h2>
@@ -929,38 +1941,39 @@
               </a>
               <div
                 class="tab-pane fade show active collapse p-3 collapsing"
-                id="nav-pos-content"
+                id="nav-stoc"
                 class="collapse"
-                aria-labelledby="nav-pos-heading"
+                aria-labelledby="nav-peos-heading"
               >
-                <div class="card-body">
-                  <h3>CMT Microsoft for Online Submission of Papers</h3>
-                  <ul class="text-center">
-                    <li>
-                      <p color="blue">
-                        National Virtual Conference on Solutions To Overcome
-                        COVID-19 Crisis (STOC2020) -
-                        <a
-                          href="STOC 2020.pdf"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+              <div class="card-body">
+                <h3>CMT Microsoft for Online Submission of Papers</h3>
+                <ul class="text-center">
+                  <li>
+                    <p color="blue">
+                      National Virtual Conference on Solutions To Overcome
+                      COVID-19 Crisis (STOC2020) -
+                      <a
+                        href="STOC 2020.pdf"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
               </div>
             </div>
+
             <div
               class="card"
               data-bs-toggle="collapse"
-              data-bs-target="#nav-psos-content"
+              data-bs-target="#nav-feedback"
               aria-expanded="true"
             >
-              <a href="#nav-psos-content">
-                <div class="card-header" id="nav-psos-heading">
+              <a href="#nav-feedback">
+                <div class="card-header" id="nav-peos-heading">
                   <h2 class="mt-0 mb-0">
                     <button class="btn btn-link">Feedback</button>
                   </h2>
@@ -968,38 +1981,39 @@
               </a>
               <div
                 class="tab-pane fade show active collapse p-3 collapsing"
-                id="nav-psos-content"
+                id="nav-feedback"
                 class="collapse"
-                aria-labelledby="nav-psos-heading"
+                aria-labelledby="nav-peos-heading"
               >
-                <div class="card-body">
-                  <h3>Feedback</h3>
-                  <ul class="text-center">
-                    <li>
-                      <p color="blue">
-                        Dear Students/Faculty, please login into your e-cap
-                        account to submit feedback -
-                        <a
-                          href="http://sves.org.in/ecap/"
-                          target="_blank"
-                          id="pdfDOWNLOADER11"
-                          id="pdfDOWNLOADER11"
-                          >Click here</a
-                        >
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+              <div class="card-body">
+                <h3>Feedback</h3>
+                <ul>
+                  <li>
+                    <p color="blue">
+                      Dear Students/Faculty, please login into your e-cap
+                      account to submit feedback -
+                      <a
+                        href="http://sves.org.in/ecap/"
+                        target="_blank"
+                        id="pdfDOWNLOADER11"
+                        id="pdfDOWNLOADER11"
+                        >Click here</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
               </div>
             </div>
+
             <div
               class="card"
               data-bs-toggle="collapse"
-              data-bs-target="#nav-cos-content"
+              data-bs-target="#nav-nba"
               aria-expanded="true"
             >
-              <a href="#nav-cos-content">
-                <div class="card-header" id="nav-cos-heading">
+              <a href="#nav-nba">
+                <div class="card-header" id="nav-peos-heading">
                   <h2 class="mt-0 mb-0">
                     <button class="btn btn-link">NBA-ABC Scheme</button>
                   </h2>
@@ -1007,59 +2021,59 @@
               </a>
               <div
                 class="tab-pane fade show active collapse p-3 collapsing"
-                id="nav-cos-content"
+                id="nav-nba"
                 class="collapse"
-                aria-labelledby="nav-cos-heading"
+                aria-labelledby="nav-peos-heading"
               >
-                <div class="card-body">
-                  <h3 class="text-center my-4">NAD-ABC Scheme</h3>
-                  <div class="container">
-                    <h4 class="text-center" class="text-center">
-                      Video Gallery
-                    </h4>
-                    <div class="row">
-                      <div class="item active col-md-6 col-sm-12 mt-4">
-                        <iframe
-                          width="100%"
-                          height="300"
-                          src="http://srivasaviengg.ac.in/uploads/nbabac/video1.mp4"
-                          frameborder="0"
-                          allowfullscreen=""
-                        ></iframe>
-                      </div>
+              <div class="card-body">
+                <h3 class="text-center my-4">NAD-ABC Scheme</h3>
+                <div class="container">
+                  <h4 class="text-center" class="text-center">
+                    Video Gallery
+                  </h4>
+                  <div class="row">
+                    <div class="item active col-md-6 col-sm-12 mt-4">
+                      <iframe
+                        width="100%"
+                        height="300"
+                        src="http://srivasaviengg.ac.in/uploads/nbabac/video1.mp4"
+                        frameborder="0"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
 
-                      <div class="item col-md-6 col-sm-12 mt-4">
-                        <iframe
-                          width="100%"
-                          height="300"
-                          src="http://srivasaviengg.ac.in/uploads/nbabac/video2.mp4"
-                          frameborder="0"
-                          allowfullscreen=""
-                        ></iframe>
-                      </div>
+                    <div class="item col-md-6 col-sm-12 mt-4">
+                      <iframe
+                        width="100%"
+                        height="300"
+                        src="http://srivasaviengg.ac.in/uploads/nbabac/video2.mp4"
+                        frameborder="0"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
 
-                      <div class="item col-md-6 col-sm-12 mt-4">
-                        <iframe
-                          width="100%"
-                          height="300"
-                          src="http://srivasaviengg.ac.in/uploads/nbabac/video3.mp4"
-                          frameborder="0"
-                          allowfullscreen=""
-                        ></iframe>
-                      </div>
+                    <div class="item col-md-6 col-sm-12 mt-4">
+                      <iframe
+                        width="100%"
+                        height="300"
+                        src="http://srivasaviengg.ac.in/uploads/nbabac/video3.mp4"
+                        frameborder="0"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
 
-                      <div class="item col-md-6 col-sm-12 mt-4">
-                        <iframe
-                          width="100%"
-                          height="300"
-                          src="http://srivasaviengg.ac.in/uploads/nbabac/video4.mp4"
-                          frameborder="0"
-                          allowfullscreen=""
-                        ></iframe>
-                      </div>
+                    <div class="item col-md-6 col-sm-12 mt-4">
+                      <iframe
+                        width="100%"
+                        height="300"
+                        src="http://srivasaviengg.ac.in/uploads/nbabac/video4.mp4"
+                        frameborder="0"
+                        allowfullscreen=""
+                      ></iframe>
                     </div>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -1075,133 +2089,7 @@
     <!-- End content -->
 
     <!-- End wrapper -->
-    <footer class="bg-dark text-light py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <p style="font-size: 16px; opacity: 0.8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at,
-              accusamus dolores quas praesentium voluptatum odio quo dolorem,
-              commodi possimus maxime voluptatibus eius atque placeat optio
-              reprehenderit nihil. Asperiores, delectus.
-            </p>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h5>Quick Links</h5>
-            <ul class="text-center my-2 list-unstyled quicklinks">
-              <li><a href="#">Photo Gallery</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Hostels</a></li>
-              <li>
-                <a href="#">Sports Facililties</a>
-              </li>
-              <li><a href="#">Transport</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h5>Useful Links</h5>
-            <ul class="text-center my-2 list-unstyled quicklinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h5>Connect with Us</h5>
-            <ul class="text-center my-2 list-unstyled social-icons">
-              <li>
-                <a class="facebook" href="#"
-                  ><i class="fab fa-facebook" style="font-size: 24px"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="twitter"
-                  href="https://twitter.com/Gdsc_Svec"
-                  target="twitter"
-                  ><i class="fab fa-x-twitter" style="font-size: 24px"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="instagram"
-                  href="https://www.instagram.com/gdsc.svec/"
-                  target="instagram"
-                  ><i class="fab fa-instagram" style="font-size: 24px"></i
-                ></a>
-              </li>
-              <li>
-                <a class="linkedin" href="#"
-                  ><i class="fab fa-linkedin" style="font-size: 24px"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="youtube"
-                  href="https://www.youtube.com/@GDSC_SVEC"
-                  target="youtube"
-                  ><i class="fab fa-youtube" style="font-size: 24px"></i
-                ></a>
-              </li>
-            </ul>
-
-            <h5>Contact Us</h5>
-
-            <p class="address">
-              Sri Vasavi Engineering College Pedatadepalli,Tadepalligudem 534
-              101 West Godavari Dist., Andhra Pradesh.
-
-              <span class="phone"
-                ><i class="fas fa-phone" style="margin-right: 4px"></i
-                ><a href="tel:+918818284322">+91-8818284322 </a> (9:30 AM-4:30
-                PM)</span
-              >
-              <span
-                class="phone"
-                style="color: #ff5a2c !important; text-decoration: none"
-              >
-                <i class="fas fa-envelope" style="margin-right: 4px"> </i
-                ><a
-                  href="mailto:principal@srivasaviengg.ac.in"
-                  style="color: #ff5a2c !important; text-decoration: none"
-                  >principal@srivasaviengg.ac.in</a
-                >
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <p style="text-align: center; opacity: 0.7" class="mb-0">
-        A Mark By
-        <a
-          href="./templates/webdevs.html"
-          style="
-            font-weight: 700;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-          "
-        >
-          <div style="word-spacing: 0.2rem">
-            <span style="color: #4285f4; margin-right: 0.2rem">G</span>
-            <span style="color: #34a853; margin-right: 0.2rem">D</span>
-            <span style="color: #fbbc05; margin-right: 0.2rem">S</span>
-            <span style="color: #ea4335; margin-right: 0.1rem">C</span>
-
-            <span style="font-size: 2rem; font-weight: 800"> X </span>
-            <span> S V E C</span>
-          </div>
-        </a>
-      </p>
-      <p style="text-align: center; opacity: 0.7">
-        Copyright © 2023 Sri Vasavi Engineering College. All Rights Reserved.
-      </p>
-    </footer>
+    <div id="footer"></div>
     <!-- Javascript -->
     <script>
       // J to handle tab/accordion behavior
@@ -1246,6 +2134,79 @@
       });
     </script>
 
+    <!--  -->
+
+    <script>
+      function show(id) {
+        const contentContainer = document.querySelector("#content");
+        const selectedTab = document.querySelector(id);
+
+        if (selectedTab) {
+          // Replace the content of #content with the selected tab's content
+          contentContainer.innerHTML = selectedTab.innerHTML;
+        }
+        document.querySelector(".sidebar").classList.remove("active");
+        removeActiveFromAnchors();
+        // Remove the overlay
+        document.querySelector(".overlay").classList.remove("active");
+      }
+
+      const dismissButton = document.querySelector(".dismiss");
+      const contentContainer = document.querySelector("#content");
+
+      dismissButton.addEventListener("click", function () {
+        // Hide the sidebar and reset active states
+        document.querySelector(".sidebar").classList.remove("active");
+        removeActiveFromAnchors();
+
+        // Restore the original content in the content container
+      });
+
+      const originalContentHTML = contentContainer.innerHTML;
+
+      function removeActiveFromAnchors() {
+        const anchors = document.querySelectorAll(
+          ".list-unstyled.components li a"
+        );
+        anchors.forEach((anchor) => {
+          anchor.classList.remove("active");
+        });
+      }
+
+      function removeActiveFromLis() {
+        const anchors = document.querySelectorAll(
+          ".list-unstyled.components li"
+        );
+        anchors.forEach((anchor) => {
+          anchor.classList.remove("active");
+        });
+      }
+
+      // Add click event listeners to navlinks
+      const navlinks = document.querySelectorAll(
+        ".list-unstyled.components li a"
+      );
+      navlinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          removeActiveFromAnchors();
+          this.classList.add("active");
+          show(this.getAttribute("href"));
+        });
+      });
+      const navlink = document.querySelectorAll(
+        ".list-unstyled.components li "
+      );
+      navlink.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          removeActiveFromLis();
+          this.classList.add("active");
+          show(this.getAttribute("href"));
+        });
+      });
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1254,6 +2215,8 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="../../js/departments/jquery-3.3.1.min.js"></script>
+    <script src="../../js/departments/jquery-migrate-3.0.0.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -1264,5 +2227,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../../js/departments/jquery.backstretch.min.js"></script>
+    <script src="../../js/departments/wow.min.js"></script>
+    <script src="../../js/departments/jquery.waypoints.min.js"></script>
+    <script src="../../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../js/departments/scripts.js"></script>
   </body>
 </html>

@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav2text7 = document.getElementById("nav-bar2-text7");
   const nav2text8 = document.getElementById("nav-bar2-text8");
   const nav2text9 = document.getElementById("nav-bar2-text9");
+  const nav2text10 = document.getElementById("nav-bar2-text10");
   const eamcetCode = document.getElementById("codeTest");
   const dropdownTextElementUGC = document.getElementById(
     "dropdownTextElementUGC"
@@ -142,6 +143,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "style",
         "color: black !important;font-weight:500;border-style:none;"
       );
+      nav2text10.classList.remove("hover-underline-animation");
+      nav2text10.classList.add("hover-underline-animation-1");
+      nav2text10.style.color = "black";
       eamcetCode.classList.remove("hover-underline-animation");
       eamcetCode.classList.add("hover-underline-animation-1");
       eamcetCode.style.color = "black";
@@ -219,6 +223,7 @@ function scrollFunction() {
     const eamcetCode = document.getElementById("codeTest");
     const nav2text8 = document.getElementById("nav-bar2-text8");
     const nav2text9 = document.getElementById("nav-bar2-text9");
+    const nav2text10 = document.getElementById("nav-bar2-text10");
 
     const dropdownTextElementUGC = document.getElementById(
       "dropdownTextElementUGC"
@@ -274,6 +279,9 @@ function scrollFunction() {
       "style",
       "color: white !important;font-weight:500;border-style:none;"
     );
+    nav2text10.classList.remove("hover-underline-animation-1");
+    nav2text10.classList.add("hover-underline-animation");
+    nav2text10.style.color = "white";
     navelement.classList.remove("shadow-lg");
   }
 }

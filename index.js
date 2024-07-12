@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownTextElementOthers = document.getElementById(
     "dropdownTextElementOthers"
   );
-  const showDiv = document.querySelector(".nav-color");
+  const showDiv = document.querySelector(".meaningful-text");
   navbar.style.backgroundColor = "transparent";
   navbar2.style.backgroundColor = "transparent";
   navbar2ndLarge.style.backgroundColor = "transparent";
@@ -234,7 +234,7 @@ function scrollFunction() {
     const dropdownTextElementOthers = document.getElementById(
       "dropdownTextElementOthers"
     );
-    const showDiv = document.querySelector(".nav-color");
+    const showDiv = document.querySelector(".meaningful-text");
     const navelement = document.getElementById("second-large-navbar");
     navbar.style.backgroundColor = "transparent";
     navbar2.style.backgroundColor = "transparent";

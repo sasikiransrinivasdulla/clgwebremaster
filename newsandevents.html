@@ -1,139 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Site</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <style>
-        /* Add custom styles for ribbon */
-        .ribbon {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 22px;
-            font-weight: 700;
-            background-color: #b1040e;
-            color: #fff;
-            padding: 5px 10px;
-            z-index: 1;
+      /* Add custom styles for ribbon */
+      .ribbon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+        font-weight: 700;
+        background-color: #b1040e;
+        color: #fff;
+        padding: 5px 10px;
+        z-index: 1;
+      }
+
+      .ribbon::before {
+        content: "";
+        position: absolute;
+        top: 68%;
+
+        left: 0px;
+        border: solid transparent;
+        border-width: 14px;
+        border-top-color: #b1040e;
+        transform: translateX(-50%) rotate(-270deg);
+      }
+      .button-color {
+        background-color: #b1040e;
+        color: white;
+      }
+      .button-div {
+        text-align: right;
+      }
+      .card {
+        border-color: #fff;
+      }
+      .scrollable-text-container {
+        max-height: 200px; /* Adjust this value according to your needs */
+        overflow: hidden;
+      }
+
+      .scrollable-text {
+        animation: scroll-up 10s linear infinite; /* Adjust duration and timing function as needed */
+        margin-top: 10px;
+        font-size: 0.9375rem;
+      }
+
+      .scrollable-text-container:hover .scrollable-text {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll-up {
+        0% {
+          transform: translateY(5%);
         }
-
-        .ribbon::before {
-            content: '';
-            position: absolute;
-            top: 68%;
-            
-            left: 0px;
-            border: solid transparent;
-            border-width: 14px;
-            border-top-color: #b1040e;
-            transform: translateX(-50%) rotate(-270deg);
+        100% {
+          transform: translateY(-80%);
         }
-        .button-color{
-            background-color: #b1040e;
-            color: white;
-        }
-        .button-div{
-            text-align: right;
-        }
-        .card{
-            border-color: #fff;
-        }
-        .scrollable-text-container {
-    max-height: 200px ; /* Adjust this value according to your needs */
-    overflow: hidden;
-}
-
-.scrollable-text {
-    animation: scroll-up 10s linear infinite; /* Adjust duration and timing function as needed */
-    margin-top: 10px;
-    font-size: 0.9375rem;
-
-}
-
-.scrollable-text-container:hover .scrollable-text {
-    animation-play-state: paused;
-}
-
-
-@keyframes scroll-up {
-    0% {
-        transform: translateY(5%);
-    }
-    100% {
-        transform: translateY(-80%);
-    }
-}
-
-
+      }
     </style>
-</head>
-<body>
-
-<div class="container mt-5">
-    <div class="row">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
         <!-- Card 1 -->
-        <div class="col-12 col-md-6 position-relative pt-3 shadow ">
-            <!-- Ribbon for Card 1 -->
-            <div class="ribbon ">News</div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title mt-5">News Headline</h5>
-<ul>
-    <li>Congradulations for getting NAAC A in the second cycle of NAAC Peer review</li>
-    <li>Amadeus Grabs Vasavians at 13LPA!! </li>
-    <li>E-waste Management has been started </li>
-    <li>Vasavi has the vision studio for the pictorification of brilliant ideas</li>
-</ul>                 
-
-                </div>
+        <div class="col-12 col-md-6 position-relative pt-3 shadow">
+          <!-- Ribbon for Card 1 -->
+          <div class="ribbon">News</div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mt-5">News Headline</h5>
+              <ul>
+                <li>
+                  Congradulations for getting NAAC A in the second cycle of NAAC
+                  Peer review
+                </li>
+                <li>Amadeus Grabs Vasavians at 13LPA!!</li>
+                <li>E-waste Management has been started</li>
+                <li>
+                  Vasavi has the vision studio for the pictorification of
+                  brilliant ideas
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="col-12 col-md-6 position-relative pt-3 shadow ">
-            <!-- Ribbon for Card 2 -->
-            <div class="ribbon ">Results</div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="scrollable-text-container">
-                        <ul class="scrollable-text">
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-                            <li>Btech V20 VI Sem Regular and Supplymentry - <span class="text-danger">click</span></li>
-
-                        </ul>                    </div>                    
-                </div>
+        <div class="col-12 col-md-6 position-relative pt-3 shadow">
+          <!-- Ribbon for Card 2 -->
+          <div class="ribbon">Results</div>
+          <div class="card">
+            <div class="card-body">
+              <div class="scrollable-text-container">
+                <ul class="scrollable-text">
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                  <li>
+                    Btech V20 VI Sem Regular and Supplymentry -
+                    <span class="text-danger">click</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

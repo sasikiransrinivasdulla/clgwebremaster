@@ -44,15 +44,23 @@ body {
 .nav-elements-large {
   display: none;
 }
-#dropdownMenuLink {
+#dropdownMenuLink,#nestedDropdown {
   border: 0px !important;
   box-shadow: none !important;
 }
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu {
   display: block;
+  margin-top: 0.125em;
+}
+.dropend:hover > .dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  margin-left: 0.125em;
 }
 
 .dropdown-menu {
+  box-shadow: none;
   display: none;
 }
 .dropdown-item-content:hover {
@@ -961,3 +969,4 @@ i {
   object-fit: contain;
   mix-blend-mode: color-burn;
 }
+

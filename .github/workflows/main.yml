@@ -3,7 +3,8 @@ name: Deploy to GCP
 on:
   push:
     branches:
-      - main  # Change to your branch if different
+      - main
+      - umar  # Change to your branch if different
 
 jobs:
   deploy:

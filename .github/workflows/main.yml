@@ -20,12 +20,13 @@ jobs:
         GCP_SSH_KEY: ${{ secrets.GCP_SSH_KEY }}
       run: |
         # Create the SSH key file
-        echo "${{ secrets.GCP_INSTANCE_IP }}"
-        echo "${{ secrets.GCP_SSH_USER }}"
+        
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
         chmod 600 ssh_key
        
         # Execute the script
+        echo "${{ secrets.GCP_INSTANCE_IP }}"
+        echo "${{ secrets.GCP_SSH_USER }}"
         echo "Executing update_repo.sh"
         ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'sudo bash /usr/local/bin/update_repo.sh'
         # Remove the SSH key file

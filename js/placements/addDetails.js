@@ -69,6 +69,7 @@
     iframe.width = '60%';
     iframe.height = '500px';
     iframe.className = 'text-center';
+    iframe.frameBorder = '0';
     div.appendChild(iframe);
 
     // Append div to details

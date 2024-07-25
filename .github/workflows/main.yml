@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - umar  # Change to your branch if different
+      - umar
 
 jobs:
   deploy:
@@ -23,12 +23,8 @@ jobs:
         # Create the SSH key file
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key
         chmod 600 ssh_key
-
-       
-
         # Execute the script
         echo "Executing update_repo.sh"
         ssh -vvv -o StrictHostKeyChecking=no -i ssh_key ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_INSTANCE_IP }} 'sudo bash /usr/local/bin/update_repo.sh'
-
         # Remove the SSH key file
         rm ssh_key

@@ -169,7 +169,6 @@ body {
 .meaningful-text {
   font-weight: 800;
   font-family: "Poppins";
-  text-align: justify;
 }
 /* PURPOSE ITEMS CARDS TITLE  */
 .menu-card-title {
@@ -232,10 +231,6 @@ hr {
   width: 100px;
 }
 
-#newsAndPlacementsContainer{
-  background-color: #f3f6fb;
-  padding-bottom: 2rem;
-}
 /* COURSES OFFERED CARD  */
 .wcu-card-image {
   width: 87px;

@@ -524,7 +524,7 @@ footer h5 {
 }
 
 /* something  */
-@media not screen and (min-width: 0px) and (max-width: 1023px) {
+@media not screen and (min-width: 0px) and (max-width: 991px) {
   .nav-elements-large {
     display: block !important;
   }
@@ -540,7 +540,7 @@ footer h5 {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1023px) {
+@media screen and (min-width: 0px) and (max-width: 991px) {
   .nav-elements-large {
     display: none !important;
   }

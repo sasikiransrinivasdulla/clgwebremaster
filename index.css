@@ -40,6 +40,10 @@ body {
   background-attachment: fixed;
   background-image: url("https://res.cloudinary.com/dqe4ld4cx/image/upload/v1708488770/CollegeBuilding1_cehj8v.jpg");
 }
+.ios-strech-fix
+{
+  height: intrinsic;
+}
 /* LARGE NAVBAR DISPLAY CSS  */
 .nav-elements-large {
   display: none;

@@ -653,104 +653,109 @@
               </div>
             </div>
             <div
-              class="col-6 col-md-4 text-center"
-              style="border: 1px solid grey; box-sizing: border-box"
-            >
-              <!-- <div class="dropdown">
-            <a class="btn dropdown-toggle w-100" style="border-style: none;box-shadow: none;font-weight: bold;min-width: 100%;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Departments
-            </a>
+            class="col-6 col-md-4 text-center"
+            style="border: 1px solid grey; box-sizing: border-box;"
+          >
+            <div class="dropdown show">
+              <a
+                class="btn w-100 dropdown-toggle text-center"
+                style="border-style: none; font-weight: bold;"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Departments
+              </a>
           
-            <ul class="dropdown-menu w-100 p-3">
-              <li ><a class="dropdown-item dept-dropdown-items  dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center drop" href="./templates/DEPT/cse.html" style="font-weight: 800;">Computer Science Engineering</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/cst.html" style="font-weight: 800;">Computer Science & Technology</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/cai.html" style="font-weight: 800;">Computer Science & Engineering (AI)</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/aiml.html" style="font-weight: 800;">Artificial Intelligence & Learning</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/ece.html" style="font-weight: 800;">Electronics & Communication Engineering</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/ece.html" style="font-weight: 800;">Electronics & Communication Technology</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/eee.html" style="font-weight: 800;">Electrical & Electronic Engineering</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/mech.html" style="font-weight: 800;">Mechanical Engineering</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/civil.html" style="font-weight: 800;">Civil Engineering</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/bsh.html" style="font-weight: 800;">Basic Science Humanities</a></li>
-              <li><a class="dropdown-item dept-dropdown-items dropdown-item-content dept-dropdown-text d-flex flex-row justify-content-center" href="./templates/DEPT/mba.html" style="font-weight: 800;">Masters in Business Administration</a></li>
-            </ul>
-          </div> -->
-              <div class="dropdown show">
+              <div
+                class="dropdown-menu p-1 text-center"
+                aria-labelledby="dropdownMenuLink"
+                style="min-width: 100%; max-width: inherit; max-height: 300px; overflow-y: auto; position: absolute; z-index: 1050; background-color: white; border: 1px solid grey; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+              >
                 <a
-                  class="btn w-100 dropdown-toggle text-center"
-                  style="border-style: none; font-weight: bold"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/cse.html"
                 >
-                  Departments
+                  Computer Science Engineering
                 </a>
-
-                <div
-                  class="dropdown-menu p-1 text-center"
-                  aria-labelledby="dropdownMenuLink"
-                  style="min-width: 100%; max-width: inherit"
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/cst.html"
                 >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/cse.html"
-                    >Computer Science Engineering
-                  </a>
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/cst.html"
-                    >Computer Science & Technology</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/cai.html"
-                    >Computer Science & Engineering (AI)</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/aiml.html"
-                    >Artificial Intelligence & Machine Learning</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/ece.html"
-                    >Electronics & Communication Engineering</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/ect.html"
-                    >Electronics & Communication Technology</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/eee.html"
-                    >Electrical & Electronic Engineering</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/me.html"
-                    >Mechanical Engineering</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/civil.html"
-                    >Civil Engineering</a
-                  ><a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/bsh.html"
-                    >Basic Science & Humanities</a
-                  >
-                  <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="./templates/DEPT/mba.html"
-                    >Masters in Business Administration</a
-                  >
-                </div>
+                  Computer Science & Technology
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/cai.html"
+                >
+                  Computer Science & Engineering (AI)
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/aiml.html"
+                >
+                  Artificial Intelligence & Machine Learning
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/ece.html"
+                >
+                  Electronics & Communication Engineering
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/ect.html"
+                >
+                  Electronics & Communication Technology
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/eee.html"
+                >
+                  Electrical & Electronic Engineering
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/me.html"
+                >
+                  Mechanical Engineering
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/civil.html"
+                >
+                  Civil Engineering
+                </a>
+                <a
+                class="dept-dropdown-items drop"
+                style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/bsh.html"
+                >
+                  Basic Science & Humanities
+                </a>
+                <a
+                  class="dept-dropdown-items drop"
+                  style="text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  href="./templates/DEPT/mba.html"
+                >
+                  Masters in Business Administration
+                </a>
               </div>
             </div>
+          </div>
+          
 
             <div
               class="col-6 col-md-4 text-center"
@@ -1082,17 +1087,17 @@
         </div>
       </div>
 
-      <div class="nav-color mt-5"></div>
-      <div class="college-stats" id="lastStats">
-        <div class="stats">
+      <div class="nav-color mt-5 container"></div>
+      <div class="college-stats row" id="lastStats">
+        <div class="stats shadow col-12 col-sm-6 col-lg-3">
           <p id="facultyNumber" class="count-increase">500+</p>
           <p>Faculty</p>
         </div>
-        <div class="stats">
+        <div class="stats shadow col-12 col-sm-6 col-lg-3" >
           <p id="studentsNumber" class="count-increase">5000+</p>
           <p>Students</p>
         </div>
-        <div class="stats">
+        <div class="stats shadow col-12 col-sm-6 col-lg-3">
           <p id="experienceNumber" class="count-increase">23+</p>
           <p>Expertise</p>
         </div>
@@ -1106,7 +1111,7 @@
       class="text-center mt-5 news-title wcu-section-heading"
       data-aos="zoom-in"
     >
-      NEWS & EVENTS
+      NEWS
     </h1>
     <h4 class="text-center mt-3 news-desc" data-aos="fade-up">
       Stories about people, research, and innovation across the Farm
@@ -1172,7 +1177,61 @@
       </div>
 
       <!-- news ends here  -->
-
+         <!-- events section starts here-->
+         <div class="container mt-5">
+          <div class="row justify-content-center">
+            <h1 class="text-center mt-5 news-title wcu-section-heading mb-4" data-aos="zoom-in">
+              EVENTS
+            </h1>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="events-container" style="background-image: url('images/events/event1.png');">
+                <div class="event-bottom">
+                  <div class="event-date">
+                    <h2>15</h2>
+                    <p>SEP</p>
+                  </div>
+                  <div class="event-content">
+                    <h3 class="event-other">SPECIAL EVENT</h3>
+                    <h1>Engineers' Day <br>Honoring Sir M. Visvesvaraya</h1>
+                    <p class="event-time">10:00 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="events-container" style="background-image: url('images/events/event2.png');">
+                <div class="event-bottom">
+                  <div class="event-date">
+                    <h2>23</h2>
+                    <p>SEP</p>
+                  </div>
+                  <div class="event-content">
+                    <h3 class="event-other">FEST</h3>
+                    <h1>Spectra 2k24<br>Annual Tech And Cultural Event</h1>
+                    <p class="event-time">9:30 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="events-container" style="background-image: url('images/events/event3.png');">
+                <div class="event-bottom">
+                  <div class="event-date">
+                    <h2>12</h2>
+                    <p>JAN</p>
+                  </div>
+                  <div class="event-content">
+                    <h3 class="event-other">WORKSHOP</h3>
+                    <h1>Tech Innovators Bootcamp<br> Sri Vasavi</h1>
+                    <p class="event-time">10:00 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+      <!-- Events section ends here-->
       <div class="empty-1"></div>
       <div
         class="placement-content mt-5"
@@ -1216,27 +1275,28 @@
           <img src="./company_icons/31.png" alt="Company Icon" />
         </div>
       </div>
-      <div
-        class="placement-content-1"
-        style="background-color: transparent"
-        data-aos="fade-up"
-      >
-        <div class="stats">
+    =
+      <div class="college-stats row" id="lastStats">
+        <div class="stats col-12 col-sm-6 col-lg-3">
           <p id="placement-2021" class="count-increase">600+</p>
           <p class="placement-size">Placements</p>
           <p>2021</p>
         </div>
-        <div class="stats">
+        <div class="stats col-12 col-sm-6 col-lg-3">
           <p id="placement-2022" class="count-increase">900+</p>
           <p class="placement-size">Placements</p>
+        
           <p>2022</p>
         </div>
-        <div class="stats">
+        <div class="stats col-12 col-sm-6 col-lg-3">
           <p id="placement-2023" class="count-increase">690</p>
           <p class="placement-size">Placements</p>
+          
           <p>2023</p>
         </div>
       </div>
+      
+
       <div class="nav-color mt-5"></div>
       <div class="wcu-section pt-5 pb-4" id="wcuSection">
         <div class="container">

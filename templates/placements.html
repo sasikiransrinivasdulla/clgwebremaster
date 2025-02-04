@@ -214,6 +214,7 @@
         }
       }
     </style>
+    
   </head>
 
   <body>
@@ -1221,11 +1222,11 @@
           </p>
         </div>
       </div>
-      <div class="placechart mt-5 ">
+      <div class="placechart mt-5">
         <h1 style="font-family: 'Poppins', sans-serif; text-align: center">
           Placement Statistics
         </h1>
-        <div class="container-chart mt-4 ">
+        <div class="container-chart mt-4">
           <div class="chart">
             <canvas width="300" height="300" id="year2023Chart"></canvas>
             <p>Placements for 2023</p>
@@ -1512,7 +1513,183 @@
           </details>
         </div>
 
-        
+        <details>
+          <summary>College Profile</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            College Profile -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/placement_College_Brochure.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+
+        <details >
+          <summary>Placement Details of 2022-23</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: center;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2022-23
+            <div>
+              <object
+	data="https://srivasaviengg.ac.in/uploads/place_2022-23.pdf"
+	type="application/pdf"
+	width="900px"
+	height="500px"
+>
+            </div>
+          </li>
+          
+        </details>
+
+        <details>
+          <summary>Placement Details of 2021-22</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2021-22 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2021-22.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+        <details>
+          <summary>Placement Details of 2020-21</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2020-21 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2020-21.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+        <details>
+          <summary>Placement Details of 2019-20</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2019-20 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2019-20.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+          
+        </details>
+        <details>
+          <summary>Placement Details of 2018-19</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2018-19 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2018-19.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+        <details>
+          <summary>Placement Details of 2017-18</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2017-18 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2017-18.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+        <details>
+          <summary>Placement Details of 2016-17</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2016-17 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2016-17.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
+        <details>
+          <summary>Placement Details of 2015-16</summary>
+          <li
+            style="
+              margin-left: 25px;
+              text-align: left;
+              list-style-type: none;
+              margin: 10px;
+            "
+          >
+            Placement Details of 2015-16 -
+            <a
+              href="http://srivasaviengg.ac.in/uploads/place_2015-16.pdf"
+              target="_blank"
+              class="text-danger bold"
+              >View</a
+            >
+          </li>
+        </details>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script
@@ -1598,13 +1775,14 @@
                   data: new Array(data.length).fill(0), // Initialize data with zeros
                   borderWidth: 1,
                   backgroundColor: [
-                    "#B1040E",
-                    "#650010",
-                    "#000000",
-                    "#333138",
-                    "#7F7B82",
-                    "#7F7B90",
-                  ],
+    "#FF6961", // Light Coral
+    "#B22222", // Firebrick
+    "#FF4500", // OrangeRed
+    "#A9A9A9", // Dark Gray
+    "#2C2C2C", // Dark Charcoal
+    "#E9967A"  // Dark Salmon
+],
+
                 },
               ],
             },

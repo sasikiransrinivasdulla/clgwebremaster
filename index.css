@@ -37,8 +37,12 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-image: url("https://res.cloudinary.com/dqe4ld4cx/image/upload/v1708488770/CollegeBuilding1_cehj8v.jpg");
+}
+.ios-strech-fix
+{
+  height: intrinsic;
 }
 /* LARGE NAVBAR DISPLAY CSS  */
 .nav-elements-large {
@@ -169,7 +173,6 @@ body {
 .meaningful-text {
   font-weight: 800;
   font-family: "Poppins";
-  text-align: justify;
 }
 /* PURPOSE ITEMS CARDS TITLE  */
 .menu-card-title {
@@ -232,10 +235,6 @@ hr {
   width: 100px;
 }
 
-#newsAndPlacementsContainer{
-  background-color: #f3f6fb;
-  padding-bottom: 2rem;
-}
 /* COURSES OFFERED CARD  */
 .wcu-card-image {
   width: 87px;
@@ -972,11 +971,10 @@ i {
 
 .stats {
   width: 100%;
-  max-width: 170px; 
-  padding-top: 20px;
-  border-radius: 20px;
+  max-width: 3rem; 
+  padding-top: 2rem;
+  border-radius: 1rem;
   margin:20px;
-  background: linear-gradient(to bottom, #b1040e, transparent 20%);
   text-align: center;
   box-sizing: border-box; 
 }

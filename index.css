@@ -989,8 +989,12 @@ i {
   background-size: cover;
   background-position: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
+.events-container:hover{
+  transform: scale(1.05);
 
+}
 .event-bottom {
   position: absolute;
   bottom: 10px;

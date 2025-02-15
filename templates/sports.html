@@ -25,6 +25,103 @@
         $("#footer").load("./footer.html");
       });
     </script>
+    <style>
+      /* General Layout and Styling */
+.games-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f4f6f9; /* A softer background for a more modern feel */
+    border-radius: 15px; /* Rounded corners for a modern aesthetic */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle background shadow */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Modern touch */
+}
+
+/* Game Cards */
+.game-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Cards Hover Effect */
+.game-card:hover {
+    transform: translateY(-8px); /* Slight lift */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Deep shadow for a more modern feel */
+    background-color: #fafafa; /* Light background change on hover */
+}
+
+/* Game Titles */
+.game-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #b1040e;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Game List */
+.game-list {
+    list-style-type: none;
+    font-size: 1rem;
+    padding-left: 0;
+    color: #666;
+}
+
+.game-list li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.game-list li:hover {
+    color: #333; /* Modern hover color */
+}
+
+/* Columns */
+.col-12.col-md-6 {
+    margin-bottom: 30px;
+    padding: 0 15px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Indoor and Outdoor Game Sections */
+.col-12.col-md-6:first-child:hover {
+    transform: translateY(-12px); /* Slight lift for hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.col-12.col-md-6:last-child:hover {
+    transform: translateY(-12px); /* Slight lift for hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design (Ensure smooth behavior on mobile) */
+@media (max-width: 767px) {
+    .game-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .section-title {
+        font-size: 1.3rem; /* Slightly smaller font size on mobile */
+    }
+}
+
+
+    </style>
   </head>
   <body>
     <!-- Header included here -->
@@ -34,16 +131,23 @@
       <div class="text-center" style="font-size: 40px; font-weight: bold">
         Sports Sphere
       </div>
-      <div style="margin: 30px" class="cubp">
-        Clubs in a college are vibrant and diverse communities of students who
-        come together to pursue shared interests, hobbies, and passions outside
-        of their academic commitments. These clubs provide opportunities for
-        students to connect, learn, and grow while fostering a sense of
-        belonging and camaraderie. Whether focused on cultural exploration,
-        academic enrichment, sports, or service, college clubs offer a dynamic
-        platform for personal development, social engagement, and the formation
-        of lasting friendships.
+      <div class="container">
+        <div class="cubp my-4 px-3" style="max-width: 900px; margin: 0 auto;">
+          <p style="font-size: 1rem;text-align: justify;">
+            Clubs in a college are vibrant and diverse communities of students who
+            come together to pursue shared interests, hobbies, and passions outside
+            of their academic commitments. These clubs provide opportunities for
+            students to connect, learn, and grow while fostering a sense of
+            belonging and camaraderie. Whether focused on cultural exploration,
+            academic enrichment, sports, or service, college clubs offer a dynamic
+            platform for personal development, social engagement, and the formation
+            of lasting friendships.
+          </p>
+        </div>
       </div>
+      
+      </div>
+      
     </div>
 
     <div class="container-fluid mt-5">
@@ -120,7 +224,7 @@
       </div>
     </div>
 
-    <!-- MLSC Club -->
+    
     <div class="container mlsc" style="margin-top: 100px">
       <div class="row">
         <div class="col-md-6">
@@ -167,6 +271,7 @@
         </div>
       </div>
     </div>
+  
     <div
       style="
         margin: 60px 0px;
@@ -175,140 +280,39 @@
         text-align: center;
       "
     >
-      <center>Sports <span>Clubs</span></center>
-    </div>
-    <div class="container campclubs">
-      <div class="colu">
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/adventure.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Adventure Club</h5>
-            <p class="card-text">
-              Join the Adventure Club and explore exciting outdoor activities.
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
+    
+    <div class="container games-section">
+      <h2 class="section-title">Games Provided by SVEC</h2>
+  
+      <div class="row">
+          <!-- Indoor Games Section -->
+          <div class="col-12 col-md-6">
+              <div class="game-card">
+                  <u><h3 class="game-title">Indoor Games</h3></u>
+                  <ul class="game-list">
+                      <li>Table Tennis</li>
+                      <li>Badminton</li>
+                      <li>Carrom</li>
+                      <li>Chess</li>
+                  </ul>
+              </div>
           </div>
-        </div>
+  
+          <!-- Outdoor Games Section -->
+          <div class="col-12 col-md-6">
+              <div class="game-card">
+                  <u><h3 class="game-title">Outdoor Games</h3></u>
+                  <ul class="game-list">
+                      <li>Cricket</li>
+                      <li>Basketball</li>
+                      <li>Volleyball</li>
+                      <li>Kabadi</li>
+                  </ul>
+              </div>
+          </div>
       </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Canteen Club</h5>
-            <p class="card-text">
-              Experience delicious cuisines and join our Canteen Club.
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Music Club</h5>
-            <p class="card-text">
-              Express yourself through music by joining our Music Club.
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="colu">
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Another Music Club</h5>
-            <p class="card-text">
-              Join this music club for even more musical experiences.
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Yet Another Music Club</h5>
-            <p class="card-text">
-              For those who can't get enough of music, here's another club for
-              you.
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">One More Music Club</h5>
-            <p class="card-text">
-              Because you can never have too many music clubs, right?
-            </p>
-            <a
-              href="#"
-              class="btn text-white"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
+  </div>
+    
       </div>
     </div>
 
@@ -354,39 +358,37 @@
       // Function to handle the scroll event for left column
       function handleScrollLeft() {
         const contentContainerLeft = document.querySelector(".image-container");
-        const contentContainerTop =
-          contentContainerLeft.getBoundingClientRect().top;
-
+        const contentContainerTop = contentContainerLeft.getBoundingClientRect().top;
+    
         // Define the scroll position where you want the animation to trigger
         const triggerScrollPosition = window.innerHeight / 2;
-
+    
         if (contentContainerTop < triggerScrollPosition) {
           // When you scroll to the desired position, add the animation class
           contentContainerLeft.classList.add("card-slide-animation");
         }
       }
-
+    
       // Add a scroll event listener to trigger the animation for the left column
       window.addEventListener("scroll", handleScrollLeft);
-
+    
       // Function to handle the scroll event for right column
       function handleScrollRight() {
-        const contentContainerRight =
-          document.querySelector(".images-container");
-        const contentContainerTop =
-          contentContainerRight.getBoundingClientRect().top;
-
+        const contentContainerRight = document.querySelector(".images-container");
+        const contentContainerTop = contentContainerRight.getBoundingClientRect().top;
+    
         // Define the scroll position where you want the animation to trigger
         const triggerScrollPosition = window.innerHeight / 2;
-
+    
         if (contentContainerTop < triggerScrollPosition) {
           // When you scroll to the desired position, add the animation class
           contentContainerRight.classList.add("card-slide-right-animation");
         }
       }
-
+    
       // Add a scroll event listener to trigger the animation for the right column
       window.addEventListener("scroll", handleScrollRight);
     </script>
+    
   </body>
 </html>

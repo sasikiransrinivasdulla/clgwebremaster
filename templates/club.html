@@ -25,16 +25,48 @@
         $("#footer").load("./footer.html");
       });
     </script>
+
+    <style>
+      /* Fade-in Animation */
+.fade-in-image {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  width: 100%; /* Ensures images scale to fit their container */
+  height: 10rem; /* Fixed height for consistent sizing */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* Image shadow */
+  border-radius: 0.625rem; /* Rounded corners */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Optional: Adjust for responsiveness on smaller screens */
+@media (max-width: 768px) { /* Bootstrap's small screen size breakpoint */
+  .fade-in-image {
+    height: 12rem; /* Adjust image size for smaller screens */
+  }
+}
+
+</style>
+
   </head>
   <body>
     <!-- Header included here -->
     <div id="header"></div>
 
-    <div class="text-center container Startclub" style="margin-top: 180px">
-      <div class="text-center" style="font-size: 40px; font-weight: bold">
+    <div class="text-center container Startclub" style="margin-top: 13rem;">
+      <!-- Main Header for the Club Directory -->
+      <div class="text-center" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 2rem;">
         College Clubs Directory
       </div>
-      <div style="margin: 30px" class="cubp">
+      
+      <!-- Description of College Clubs -->
+      <div class="cubp" style="font-size: 1rem; margin: 0 2rem;text-align: justify;">
         Clubs in a college are vibrant and diverse communities of students who
         come together to pursue shared interests, hobbies, and passions outside
         of their academic commitments. These clubs provide opportunities for
@@ -45,6 +77,8 @@
         of lasting friendships.
       </div>
     </div>
+    
+    
 
     <div class="container-fluid mt-5">
       <center>
@@ -68,29 +102,27 @@
       <center>Tech <span>Clubs</span></center>
     </div>
 
-    <div class="container">
+    
       <div class="row">
         <!-- Left column with an image -->
         <div class="col-md-6">
-          <div class="image-container">
-            <img
-              src="../images/campusLife/clubs.jpg"
-              alt="Image"
-              class="img-fluid"
-              style="border-radius: 10px"
-            />
+          <img
+          src="../images/campusLife/gdg.jpeg"
+          alt="Google Developer Group"
+          class="img-fluid fade-in-image"
+          />
           </div>
-        </div>
-
+      
+    
         <!-- Right column with content -->
         <div class="col-md-6">
           <div
             class="content-container"
             style="border-radius: 5px; color: #fff"
           >
-            <h2>Google Developer Student Clubs</h2>
+            <h2>Google Developer Group</h2>
             <p>
-              The Google Developer Student Clubs (DSC) in our college serve as
+              The Google Developer Group(GDG) in our college serve as
               dynamic hubs for aspiring developers and tech enthusiasts. These
               clubs provide opportunities for students to engage in hands-on
               workshops, collaborative projects, and networking events focused
@@ -104,12 +136,7 @@
             </p>
             <button
               class="btn"
-              style="
-                color: #fff;
-                border-radius: 5px;
-                border: 2px solid #fff;
-                cursor: pointer;
-              "
+              style="color: #fff; border-radius: 5px; border: 2px solid #fff; cursor: pointer;"
             >
               Join Now
             </button>
@@ -117,39 +144,31 @@
         </div>
       </div>
     </div>
-
+    
     <!-- MLSC Club -->
-    <div class="container mlsc" style="margin-top: 100px">
+    <div class="container mlsc" style="margin-top: 4rem;">
       <div class="row">
         <div class="col-md-6">
-          <div
-            class="contents-container"
-            style="border-radius: 5px; color: #fff"
-          >
+          <div class="contents-container" style="border-radius: 5px; color: #fff">
             <h2 class="card-title">Microsoft Students Club</h2>
             <p class="card-text">
               Microsoft Learn Student Clubs at our college are vibrant
               communities where students explore the latest technologies and
-              tools from Microsoft. Through hands-on workshops, coding
-              challenges, and collaborative projects, members dive into topics
-              like cloud computing, artificial intelligence, and data science.
-              With access to Microsoft resources and mentorship from industry
-              professionals, students gain practical skills and insights to
-              thrive in the tech industry. Moreover, these clubs foster a
-              culture of innovation and teamwork, empowering members to tackle
-              real-world problems and make a positive impact in their
-              communities. Joining a Microsoft Learn Student Club opens doors to
-              exciting learning opportunities, career development, and
-              connections with like-minded peers passionate about technology.
+              tools from Microsoft. Through hands-on workshops, coding challenges,
+              and collaborative projects, members dive into topics like cloud
+              computing, artificial intelligence, and data science. With access
+              to Microsoft resources and mentorship from industry professionals,
+              students gain practical skills and insights to thrive in the tech
+              industry. Moreover, these clubs foster a culture of innovation and
+              teamwork, empowering members to tackle real-world problems and make
+              a positive impact in their communities. Joining a Microsoft Learn
+              Student Club opens doors to exciting learning opportunities, career
+              development, and connections with like-minded peers passionate about
+              technology.
             </p>
             <button
               class="btn"
-              style="
-                color: #fff;
-                border-radius: 5px;
-                border: 2px solid #fff;
-                cursor: pointer;
-              "
+              style="color: #fff; border-radius: 5px; border: 2px solid #fff; cursor: pointer;"
             >
               Join Now
             </button>
@@ -158,15 +177,76 @@
         <div class="col-md-6">
           <div class="images-container">
             <img
-              src="../images/campusLife/clubs.jpg"
-              alt="Image"
-              class="img-fluid fade-in"
-              style="border-radius: 10px"
-            />
+            src="../images/campusLife/mlsc.jpeg"
+           alt="Microsoft Students Club"
+          class="img-fluid fade-in-image"
+          />
+
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- GeeksforGeeks Club -->
+    <div class="container" style="margin-top: 4rem;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image-container">
+            <img
+  src="../images/campusLife/gfg.jpeg"
+  alt="GeeksforGeeks Students Club"
+  class="img-fluid fade-in-image"
+/>
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-container" style="border-radius: 5px; color: #fff">
+            <h2>GeeksforGeeks Students Club</h2>
+            <p>
+              The GeeksforGeeks Student Club at Sri Vasavi Engineering College is a student-driven platform that focuses on enhancing technical skills and fostering a deep understanding of computer science concepts. The club organizes various events, including coding contests, workshops, and technical talks, which help students improve their problem-solving abilities and coding expertise. By leveraging GeeksforGeeks resources, members can master algorithms, data structures, and other key programming concepts.The club encourages students to take a hands-on approach to learning by organizing coding challenges and peer-driven projects that push them to apply their theoretical knowledge to real-world problems. By leveraging the vast array of GeeksforGeeks resources, members are able to dive deep into algorithms, data structures, programming languages, and other critical aspects of computer science.
+            </p>
+            <button
+              class="btn"
+              style="color: #fff; border-radius: 5px; border: 2px solid #fff; cursor: pointer;"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- BlackBox AI Club -->
+    <div class="container mlsc" style="margin-top: 4rem;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contents-container" style="border-radius: 5px; color: #fff">
+            <h2 class="card-title">BlackBox Ai Student Club</h2>
+            <p class="card-text">
+              The club offers students a platform to dive deep into AI concepts, participate in hands-on workshops, and work on real-world projects. By hosting coding challenges, workshops, and seminars, the club helps members enhance their understanding of AI technologies and their applications in various fields. Students get the opportunity to collaborate with peers on innovative AI projects, improving their problem-solving, coding, and research skills.In addition to enhancing technical expertise, the club encourages members to sharpen their research and analytical skills, preparing them for careers in AI and related fields. The combination of practical experience, academic learning, and peer collaboration creates a dynamic environment that fosters creativity, critical thinking, and problem-solving abilities. With its focus on continuous learning and growth, the club empowers students to become the next generation of AI leaders and innovators.
+            </p>
+            <button
+              class="btn"
+              style="color: #fff; border-radius: 5px; border: 2px solid #fff; cursor: pointer;"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="images-container">
+            <img
+  src="../images/campusLife/BBSC.jpeg"
+  alt="BlackBox AI Student Club"
+  class="img-fluid fade-in-image"
+/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+  
     <div
       style="
         margin: 60px 0px;
@@ -175,142 +255,147 @@
         text-align: center;
       "
     >
-      <center>Campus <span>Clubs</span></center>
-    </div>
-    <div class="container campclubs">
-      <div class="colu">
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/adventure.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Adventure Club</h5>
-            <p class="card-text">
-              Join the Adventure Club and explore exciting outdoor activities.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
+    
 
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Canteen Club</h5>
-            <p class="card-text">
-              Experience delicious cuisines and join our Canteen Club.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Music Club</h5>
-            <p class="card-text">
-              Express yourself through music by joining our Music Club.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="colu">
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Another Music Club</h5>
-            <p class="card-text">
-              Join this music club for even more musical experiences.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Yet Another Music Club</h5>
-            <p class="card-text">
-              For those who can't get enough of music, here's another club for
-              you.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="../images/campusLife/canteen.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">One More Music Club</h5>
-            <p class="card-text">
-              Because you can never have too many music clubs, right?
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="background-color: #b1040e; border: 0px"
-              >Learn More</a
-            >
-          </div>
+    
+    <center>Campus <span>Clubs</span></center>
+  </div>
+  <div class="container campclubs">
+    <div class="colu">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/adventure.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Adventure Club</h5>
+          <p class="card-text">
+            Join the Adventure Club and explore exciting outdoor activities.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
+
+    <div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/art.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Art & Crafts Club</h5>
+          <p class="card-text">
+            Students can Express their creativity and imagination
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/social1.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Socail media Club</h5>
+          <p class="card-text">
+            Explore,Learn and engage with various Social media platforms.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="colu">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/dance.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Dancing Club</h5>
+          <p class="card-text">
+            Providing a platform for members to learn,practice and perform various dance styles.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/drama.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Acting Club</h5>
+          <p class="card-text">
+            Providing a platform to explore their passion for acting.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/campusLife/music.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Music Club</h5>
+          <p class="card-text">
+            Providing a platform to share a passion for singing,playing instruments.
+            
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="background-color: #b1040e; border: 0px"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
 
     <!-- Footer included here -->
     <div id="footer"></div>

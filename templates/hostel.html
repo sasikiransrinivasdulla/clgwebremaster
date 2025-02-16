@@ -23,6 +23,53 @@
         $("#footer").load("./footer.html");
       });
     </script>
+    <style>
+      /* style for facilities*/
+      body {
+                font-size: 14px; /* Adjusting body font size to make it smaller */
+                color:#850209; /* Changing text color to red */
+            }
+            .list-group-item {
+                font-size: 12px; /* Small font for the list items */
+            }
+            .card-header h1 {
+                font-size: 24px; /* Reducing font size for the header */
+            }
+            .card-footer p {
+                font-size: 12px; /* Smaller font size for the footer */
+            }
+            /* Feature card default style */
+      .feature-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
+      }
+    
+      /* Hover effect */
+      .feature-card:hover {
+        transform: scale(1.05); /* Slightly increase the size */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Darker shadow */
+        opacity: 0.9;  /* Slightly reduce opacity for effect */
+      }
+      li {
+            font-family: 'Sans-serif'; 
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        h1 {
+            color: #b1040e;
+            text-align: center;
+        }
+        /* Animation for fading in */
+        .fade-in {
+            animation: fadeInAnimation 1.5s ease-in;
+        }
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    
+      </style>
+    
   </head>
   <body>
     <!-- Header included here -->
@@ -32,15 +79,8 @@
       <div class="text-center" style="font-size: 40px; font-weight: bold">
         Hostel Haven
       </div>
-      <div style="margin: 30px" class="cubp">
-        Clubs in a college are vibrant and diverse communities of students who
-        come together to pursue shared interests, hobbies, and passions outside
-        of their academic commitments. These clubs provide opportunities for
-        students to connect, learn, and grow while fostering a sense of
-        belonging and camaraderie. Whether focused on cultural exploration,
-        academic enrichment, sports, or service, college clubs offer a dynamic
-        platform for personal development, social engagement, and the formation
-        of lasting friendships.
+      <div style="margin: 30px;text-align: justify;" class="cubp">
+        The hostel facilities at Sri Vasavi Engineering College are designed to provide a comfortable and conducive environment for students.The hostel experience is aimed at fostering a sense of community and helping students maintain a balanced lifestyle while pursuing their academic goals.
       </div>
     </div>
 
@@ -57,9 +97,8 @@
 
     <div
       
-      style="margin: 60px 0px; font-size: 40px; font-weight: bold;text-align: center;"
+    style="margin-top: 100px;"
     >
-      <center> Hostel <span>Facilities</span></center>
     </div>
 
     <div class="container">
@@ -82,17 +121,18 @@
             class="content-container"
             style="border-radius: 5px; color: #fff"
           >
-            <h2>In-Door Stadium</h2>
-            <p>
-              Our indoor stadium stands as a monumental space within our college campus, embodying the essence of athleticism,
-              teamwork, and community spirit. With its expansive layout and top-tier facilities, it serves as the epicenter of
-              sporting events, from intense matches to friendly competitions, fostering a culture of sportsmanship and camaraderie
-              among students, faculty, and spectators alike. Beyond athletics, the stadium transforms into a versatile venue for
-              various campus activities, including assemblies, concerts, and academic gatherings, providing a dynamic space where
-              ideas thrive and connections flourish. Its presence not only promotes physical well-being and leadership development but
-              also symbolizes our college's commitment to fostering holistic student growth and vibrant campus life.
-            </p>
-            <button class="btn" style="color: #fff; border-radius: 5px;border: 2px solid #fff;cursor: pointer;">Join Now</button>
+            <h2>Gents Hostel</h2>
+            <p>The gents hostel in SVEC provides spacious rooms with basic amenities, ensuring a comfortable stay for students. It features 24/7 security, well-maintained common areas, and access to study rooms. The hostel fosters a disciplined yet friendly environment, perfect for academic focus and social interactions.</p>
+            <p>Hostel No.1:</p>
+            <ul>
+              <li>Intake capacity:250</li>
+              <li>Allocation:Diploma,B.tech 2nd,3rd,4th years</li>
+            </ul>
+            <p>Hostel No.2:</p>
+            <ul>
+              <li>Intake capacity:250</li>
+              <li>Allocation:B.Tech year,M.tech,MCA,MBA</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -106,16 +146,18 @@
             class="contents-container"
             style="border-radius: 5px; color: #fff"
           >
-            <h2 class="card-title">GYM</h2>
-            <p class="card-text">
-              Nestled at the heart of our campus, the college gymnasium is a bustling hub of activity and vitality. Boasting an array
-              of cutting-edge fitness equipment and versatile spaces, it caters to diverse workout preferences, from cardio
-              enthusiasts to strength trainers. More than just a venue for physical exercise, the gym fosters a sense of belonging and
-              camaraderie among students, who gather to challenge themselves, support one another, and celebrate their fitness
-              journeys together. With expert guidance from certified trainers and a welcoming atmosphere, the gym embodies our
-              college's commitment to holistic student wellness, empowering individuals to thrive both academically and personally.
-            </p>
-            <button class="btn" style="color: #fff; border-radius: 5px;border: 2px solid #fff;cursor: pointer;">Join Now</button>
+            <h2 class="card-title">Ladies Hostel</h2>
+            <p class="card-text">The ladies hostel in SVEC offers a safe and peaceful atmosphere for female students, with well-ventilated rooms and essential facilities. It emphasizes security, with round-the-clock surveillance and a supportive community for all residents. The hostel provides a comfortable space for both study and relaxation.</p>
+            <p>Hostel No.1:</p>
+            <ul>
+              <li>Intake capacity:250</li>
+              <li>Allocation:Diploma,B.tech 2nd,3rd,4th years</li>
+            </ul>
+            <p>Hostel No.2:</p>
+            <ul>
+              <li>Intake capacity:250</li>
+              <li>Allocation:B.Tech year,M.tech,MCA,MBA</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-6">
@@ -133,78 +175,110 @@
     <div
       style="margin:60px 0px;font-size: 40px; font-weight: bold;text-align: center;"
     >
-      <center>Sports <span>Clubs</span></center>
+    <div class="tab-pane" id="tab2">
+      <div class="container mt-4">
+        <h2 class="mt-8" style="margin-bottom: 30px; color: #b1040e; font-family: 'Arial', sans-serif;">
+          Hostel Facilities
+        </h2>
+    
+        <!-- Hostel Features List -->
+        <div class="row mt-4 justify-content-center">
+        
+          <!-- Feature 1: Rooms -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="feature-card" style="border: 2px solid #b1040e; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="feature-header" style="background-color:#b1040e ; padding: 20px; text-align: center; color: white;">
+                <span class="icon" style="font-size: 40px;">🛏️</span>
+                <h4 style="font-size: 1.25rem;">Spacious Rooms</h4>
+              </div>
+              <div class="feature-body" style="padding: 20px; text-align: center; font-size: 1rem; line-height: 1.5;">
+                <p>Well-ventilated and comfortable rooms with all necessary furnishings. Ideal for studying and relaxing.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2: Mess -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="feature-card" style="border: 2px solid #b1040e; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="feature-header" style="background-color:#b1040e ; padding: 20px; text-align: center; color: white;">
+                <span class="icon" style="font-size: 40px;">🍽️</span>
+                <h4 style="font-size: 1.25rem;">Hygienic Mess</h4>
+              </div>
+              <div class="feature-body" style="padding: 20px; text-align: center; font-size: 1rem; line-height: 1.5;">
+                <p>Healthy and nutritious food with multiple meal options in Every Day. Fresh ingredients for every meal.</p>
+              </div>
+            </div>
+          </div>
+         
+    
+          <!-- Feature 3: Security -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="feature-card" style="border: 2px solid #b1040e; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="feature-header" style="background-color: #b1040e; padding: 20px; text-align: center; color: white;">
+                <span class="icon" style="font-size: 40px;">🔒</span>
+                <h4 style="font-size: 1.25rem;">24/7 Security</h4>
+              </div>
+              <div class="feature-body" style="padding: 20px; text-align: center; font-size: 1rem; line-height: 1.5;">
+                <p>Round-the-clock security with CCTV surveillance to ensure the safety of all students in Hostel premises</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Feature 4: Wi-Fi -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="feature-card" style="border: 2px solid #b1040e; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="feature-header" style="background-color: #b1040e; padding: 20px; text-align: center; color: white;">
+                <span class="icon" style="font-size: 40px;">📶</span>
+                <h4 style="font-size: 1.25rem;">High-Speed Wi-Fi</h4>
+              </div>
+              <div class="feature-body" style="padding: 20px; text-align: center; font-size: 1rem; line-height: 1.5;">
+                <p>High-speed internet connectivity available in all hostel areas. Stay connected anytime!</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Feature 5: Recreational Facilities -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="feature-card" style="border: 2px solid #b1040e; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="feature-header" style="background-color: #b1040e; padding: 20px; text-align: center; color: white;">
+                <span class="icon" style="font-size: 40px;">🎮</span>
+                <h4 style="font-size: 1.25rem;">Recreational Facilities</h4>
+              </div>
+              <div class="feature-body" style="padding: 20px; text-align: center; font-size: 1rem; line-height: 1.5;">
+                <p>Indoor games, TV lounges, and outdoor sports to unwind and relax after a busy day.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <div class="container campclubs">
-      
-          <div class="colu">
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/adventure.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Adventure Club</h5>
-                      <p class="card-text">Experience delicious cuisines and join our Canteen Club.</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
+    
+    <div class="bg-light py-5">
+      <div class="container fade-in">
+          <div class="card border-0 rounded-lg bg-white">
+              <div class="card-header text-center" style="background-color:#b1040e; color:white;">
+                  <h1 class="mb-0">Hostel Rules & Regulations</h1>
+              </div>
+              <div class="card-body">
+                  <!-- List of rules-->
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>1. Check-In Time:</strong> 2:00 PM onwards.</li>
+                      <li class="list-group-item"><strong>2. Check-Out Time:</strong> 7:30 PM.</li>
+                      <li class="list-group-item"><strong>3. Cleanliness:</strong> Students must keep their area clean and dispose of trash in designated bins.</li>
+                      <li class="list-group-item"><strong>4. Security:</strong> Always lock your door and keep valuables in the provided lockers.</li>
+                      <li class="list-group-item"><strong>5. Noise:</strong> Avoid loud noise or music that can disturb other residents.</li>
+                      <li class="list-group-item"><strong>6. Ragging:</strong> Ragging in any form in the hostel is illegal. Sent to jail range from 6 months to 10 years in jail, with fines up to Rs. 50,000/-.</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center text-muted">
+                  <p class="mb-0">For any inquiries, please contact Phone: 08818-284355.</p>
               </div>
           </div>
-          
-          <div >
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/canteen.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Canteen Club</h5>
-                      <p class="card-text">Experience delicious cuisines and join our Canteen Club.</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
-              </div>
-          </div>
-          
-          <div >
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/canteen.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Music Club</h5>
-                      <p class="card-text">Express yourself through music by joining our Music Club.</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
-              </div>
-          </div>
-      
-  
-      
-          <div class="colu">
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/canteen.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Another Music Club</h5>
-                      <p class="card-text">Join this music club for even more musical experiences.</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
-              </div>
-          </div>
-          
-          <div >
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/canteen.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Yet Another Music Club</h5>
-                      <p class="card-text">For those who can't get enough of music, here's another club for you.</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
-              </div>
-          </div>
-          
-          <div >
-              <div class="card" style="width: 18rem;">
-                  <img src="../images/campusLife/canteen.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">One More Music Club</h5>
-                      <p class="card-text">Because you can never have too many music clubs, right?</p>
-                      <a href="#" class="btn text-white" style="background-color: #b1040e;border:0px;">Learn More</a>
-                  </div>
-              </div>
-          </div>
-      
+      </div>
+  </div>
+
+    
   </div>
   </div>
 

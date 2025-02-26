@@ -1062,13 +1062,24 @@
       </div>
     </div>
 
- <div class="container-fluid fixed-main-image ios-strech-fix w-100 p-0">
-      <div class="shadow-layer p-0">
-        <!-- <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1> -->
-         
+    <div class="container-fluid fixed-main-image ios-strech-fix w-100 p-0" style="position: relative; height: 100vh;">
+      <div class="shadow-layer p-0" style="position: absolute; width: 100%; height: 100%;">
+          <!-- <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1> -->
       </div>
-    </div>    
+      
+      <!-- Scroll Button -->
+      <button class="scroll-button" onclick="scrollDown()" 
+        >
+          Explore Vasavi 
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+      </button>
+  </div>
+  
 
+  
+    
     <!--corousel in home page-->
     <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="display:none">
       <ol class="carousel-indicators">
@@ -1356,8 +1367,8 @@
         <h1 style="font-weight: bold">Placement Stats</h1>
       </div>
 
-      <div class="company-logos">
-        <div class="company-logos-slide">
+      <div class="company-logos" style="overflow: hidden; position: relative; padding: 10px 0; margin-bottom:60px;">
+        <div class="company-logos-slide"  style="display: flex; align-items: center; animation: scroll 20s linear infinite;">
           <img src="./company_icons/1.png" alt="Company Icon" />
           <img src="./company_icons/2.png" alt="Company Icon" />
           <img src="./company_icons/3.png" alt="Company Icon" />

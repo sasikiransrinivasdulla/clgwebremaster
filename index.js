@@ -1,6 +1,6 @@
 const gradient = "linear-gradient(to bottom, black, rgba(0,0,0,0))";
 const nav2text7 = document.getElementById("nav-bar2-text7");
-
+let dropdownn=document.getElementById('')
 function scrollDown() {
   window.scrollTo({
       top: window.innerHeight, 
@@ -10,21 +10,13 @@ function scrollDown() {
 
 function showDropdown(element) {
   let dropdown = element.nextElementSibling;
+  
   dropdown.style.opacity = "1";
   dropdown.style.visibility = "visible";
   dropdown.style.transform = "scale(1)";
 }
 
-function hideDropdown(element) {
-  let dropdown = element.nextElementSibling;
-  setTimeout(() => {
-    if (!dropdown.matches(":hover")) {
-      dropdown.style.opacity = "0";
-      dropdown.style.visibility = "hidden";
-      dropdown.style.transform = "scale(0.8)";
-    }
-  }, 200); // Adds slight delay to allow moving the cursor inside the dropdown
-}
+
 function increaseNumber(targetElement, endValue) {
   let currentNumber = 0;
   const duration = 2300;

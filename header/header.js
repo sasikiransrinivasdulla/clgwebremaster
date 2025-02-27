@@ -2,6 +2,8 @@ let button = document.getElementById("button");
 let flag = false;
 let icon = document.getElementById("changeItem");
 let menu = document.getElementById("menuItems");
+
+
 menu.style.display="none";
 button.addEventListener("click", function() {
     console.log(menu);

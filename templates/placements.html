@@ -1758,6 +1758,13 @@
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
       <script>
+
+        const slider = document.querySelector(".company-logos-slide");
+
+// Clone all images inside the div to make the scrolling infinite
+const clone = slider.cloneNode(true);
+slider.parentElement.appendChild(clone);
+
         var TrandingSlider = new Swiper(".tranding-slider", {
           effect: "coverflow",
           grabCursor: true,

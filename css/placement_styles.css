@@ -533,7 +533,14 @@ details[open]>summary:before {
   height: min-content;
   margin: 0 50px;
 }
+.company-logos-slide::after {
+  content: "";
+  display: flex;
+}
 
+.company-logos-slide::after {
+  content: attr(data-clone);
+}
 .placement-content {
   display: flex;
   flex-direction: column;

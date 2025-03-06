@@ -1,12 +1,29 @@
 const gradient = "linear-gradient(to bottom, black, rgba(0,0,0,0))";
 const nav2text7 = document.getElementById("nav-bar2-text7");
 let dropdownn=document.getElementById('')
+
+let exploreVasaviButton = document.getElementById("exploreVasaviButton");
+
+// Function to scroll down
 function scrollDown() {
-  window.scrollTo({
-      top: window.innerHeight, 
-      behavior: "smooth"
-  });
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth"
+    });
 }
+
+// Hide button when at the top, show it when scrolled down
+window.addEventListener("scroll", function () {
+    if (window.scrollY === 0) {
+        exploreVasaviButton.classList.remove("hidden"); // Hide button when at the top
+    } else {
+        exploreVasaviButton.classList.add("hidden"); // Show button when scrolled down
+    }
+});
+
+// Event listener for clicking the button
+exploreVasaviButton.addEventListener("click", scrollDown);
+
 
 function showDropdown(element) {
   let dropdown = element.nextElementSibling;
@@ -300,11 +317,4 @@ function scrollFunction() {
     nav2text10.style.color = "white";
     navelement.classList.remove("shadow-lg");
   }
-}
-let exploreVasaviButton=document.getElementById('exploreVasaviButton');
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  exploreVasaviButton.classList.add('invisible-explore-vasavi-btn')
 }

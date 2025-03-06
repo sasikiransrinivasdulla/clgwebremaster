@@ -1088,3 +1088,16 @@ i {
   border-radius: 5px;
   z-index: 1000;
 }
+.scroll-button {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,12 +1,29 @@
 const gradient = "linear-gradient(to bottom, black, rgba(0,0,0,0))";
 const nav2text7 = document.getElementById("nav-bar2-text7");
 let dropdownn=document.getElementById('')
+let exploreVasaviButton = document.getElementById("exploreVasaviButton");
+
+// Function to scroll down
 function scrollDown() {
-  window.scrollTo({
-      top: window.innerHeight, 
-      behavior: "smooth"
-  });
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth"
+    });
 }
+
+// hidde button when at the top, show it when scrolled down
+window.addEventListener("scroll", function () {
+    if (window.scrollY === 0) {
+        exploreVasaviButton.classList.remove("hidden"); // show button when at the top
+    } else {
+        exploreVasaviButton.classList.add("hidden"); // hide button when scrolled down
+    }
+});
+
+// Event listener for clicking the button
+exploreVasaviButton.addEventListener("click", scrollDown);
+
+
 
 function showDropdown(element) {
   let dropdown = element.nextElementSibling;

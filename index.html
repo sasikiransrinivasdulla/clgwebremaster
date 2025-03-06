@@ -89,13 +89,14 @@
             class="navbar-brand d-flex"
             style="gap: 10px; align-items: center; color: #fff"
           >
-            <a href="#">
+            <a href="./index.html">
               <img
                 style="height: 5rem; width: fit-content"
                 src="./images/college logo/college_logo.PNG"
                 alt="Your Image"
                 height="100"
                 width="100"
+
               />
             </a>
           </div>
@@ -498,7 +499,15 @@
               Other Links
             </button>
             <ul class="dropdown-menu">
-              <li>
+
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="./templates/facultyAchivements.html"
+                    >Faculty Achievements</a
+                  >
+                </li>
+                <li>
                 <a
                   class="dropdown-item dept-dropdown-items dropdown-item-content"
                   href="https://srivasaviengg.ac.in/uploads/Anti%20Ragging%20Committee%202023-4.pdf"
@@ -996,6 +1005,13 @@
                 <ul class="dropdown-menu">
                   <li>
                     <a
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="./templates/facultyAchivements.html"
+                      >Faculty Achievements</a
+                    >
+                  </li>
+                  <li>
+                    <a
                       class="dropdown-item dropdown-item-content mobile-view-information-ugc"
                       href="https://srivasaviengg.ac.in/uploads/Anti%20Ragging%20Committee%202023-4.pdf"
                       >Anti Ragging Committe</a
@@ -1069,14 +1085,14 @@
       </div>
       
       <!-- Scroll Button -->
-      <button class="scroll-button" onclick="scrollDown()" 
-        >
-          Explore Vasavi 
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
-            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-          </svg>
-      </button>
+      <button id="exploreVasaviButton" class="scroll-button">
+        Explore Vasavi 
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 1-1.506 0z"/>
+        </svg>
+    </button>
   </div>
+  
   
 
   
@@ -1944,7 +1960,7 @@
                 >
               </li>
               <li>
-                <a href="#" style="text-decoration: none; color: inherit"
+                <a href="./templates/transport.html" style="text-decoration: none; color: inherit"
                   >Transport</a
                 >
               </li>

@@ -301,9 +301,10 @@ function scrollFunction() {
     navelement.classList.remove("shadow-lg");
   }
 }
-
+let exploreVasaviButton=document.getElementById('exploreVasaviButton');
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  exploreVasaviButton.classList.add('invisible-explore-vasavi-btn')
 }

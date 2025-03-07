@@ -450,6 +450,13 @@ details[open]>summary:before {
   z-index: -1;
   animation: bgInOut 5s infinite;
 }
+#faculty-profile td,
+#faculty-profile th {
+  padding: 5px !important;
+  /* Adjust this value as needed */
+  line-height: 1!important;
+  /* Reduce line spacing */
+}
 
 @keyframes bgInOut {
   0% {
@@ -475,7 +482,101 @@ details[open]>summary:before {
   }
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.company-logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.company-logos:before,
+.company-logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.company-logos:before {
+  left: 0;
+  background: linear-gradient(to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.41));
+}
+
+.company-logos:after {
+  right: 0;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.41));
+}
+
+.company-logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+  animation-duration: 50s;
+}
+
+
+.company-logos-slide img {
+  height: 50px;
+  margin: 0 50px;
+}
+
+.company-logos-slide .jpeg-img {
+  max-height: 100px;
+  height: min-content;
+  margin: 0 50px;
+}
+.company-logos-slide::after {
+  content: "";
+  display: flex;
+}
+
+.company-logos-slide::after {
+  content: attr(data-clone);
+}
+.placement-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.placement-content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.stats {
+  text-align: center;
+}
+
+hr {
+  border: 1px solid black !important;
+}
 
 .bold {
   font-weight: 600;

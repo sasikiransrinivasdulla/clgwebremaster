@@ -79,10 +79,10 @@
 			</div>
 
 			<ul class="my-2 list-unstyled components" style="margin-bottom: 160px !important;">
-				<li class="active">
+				<li class="active" style="cursor: pointer;">
 					<a onclick="
 										location.reload();
-										" data-toggle="tab">Department Profile</a>
+						" data-toggle="tab">Department Profile</a>
 				</li>
 				<li class="fdp-item">
 					<a href="#tab2" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
@@ -3935,9 +3935,26 @@
 	<div class="content m-0">
 
 		<!-- open sidebar menu -->
-		<a class="btn btn-primary btn-customized open-menu mt-5" href="#" role="button">
-			<i class="fas fa-align-left" style="display: flex;align-items: center;justify-content: center;"></i>
-		</a>
+		 <a
+        class="btn btn-primary btn-customized open-menu mt-5"
+        href="#"
+        role="button"
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <i
+            class="fas fa-align-left"
+            style="display: flex; align-items: center; justify-content: center"
+          ></i>
+          <span>Details</span>
+        </div>
+      </a>
 
 		<div id="content" class="container-fluid my-5">
 			<h2 class="mb-4 mt-0 text-center pt-0" id="main-heading">CST Department</h2>

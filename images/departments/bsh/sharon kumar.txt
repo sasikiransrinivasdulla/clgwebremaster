@@ -1,5 +1,0 @@
-
-The Superposition Theorem states that in a linear, bilateral network with multiple sources, 
-the response (current or voltage) across any element is the algebraic sum of the responses 
-caused by each source acting individually, with all other sources temporarily deactivated 
-(replaced by their internal impedance)

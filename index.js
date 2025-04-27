@@ -339,22 +339,17 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-//for popups
+
+//FOR POPUPS
 window.addEventListener('load', function () {
   var placementModal = new bootstrap.Modal(document.getElementById('placementModal'));
   placementModal.show();
-});
 
-  window.addEventListener('load', function () {
-    var placementModal = new bootstrap.Modal(document.getElementById('placementModal'));
-    placementModal.show();
-
-    // Fix: Remove backdrop manually when modal hides
-    var modalElement = document.getElementById('placementModal');
-    modalElement.addEventListener('hidden.bs.modal', function () {
-      document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
-      document.body.classList.remove('modal-open');
-      document.body.style = ''; // clear inline styles like overflow:hidden
-    });
+  // Cleanup backdrop manually when modal is hidden
+  var modalElement = document.getElementById('placementModal');
+  modalElement.addEventListener('hidden.bs.modal', function () {
+    document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+    document.body.classList.remove('modal-open');
+    document.body.style = ''; // Remove overflow:hidden etc.
   });
-
+});

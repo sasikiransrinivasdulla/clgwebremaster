@@ -340,16 +340,8 @@ function scrollFunction() {
   }
 }
 
-//FOR POPUPS
-window.addEventListener('load', function () {
+// for popups
+document.addEventListener('DOMContentLoaded', function () {
   var placementModal = new bootstrap.Modal(document.getElementById('placementModal'));
   placementModal.show();
-
-  // Cleanup backdrop manually when modal is hidden
-  var modalElement = document.getElementById('placementModal');
-  modalElement.addEventListener('hidden.bs.modal', function () {
-    document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
-    document.body.classList.remove('modal-open');
-    document.body.style = ''; // Remove overflow:hidden etc.
-  });
 });

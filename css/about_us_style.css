@@ -1,115 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-/*CONTACT US*/
-.hero-image {
+
+/* ===== Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Hero Section ===== */
+.hero-image, .body1 {
   position: relative;
-
   height: auto;
-
   text-align: center;
-  background: url("https://res.cloudinary.com/dqe4ld4cx/image/upload/v1708488770/CollegeBuilding1_cehj8v.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("CollegeBuilding1.webp") center/cover no-repeat;
 }
 .hero-image::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0, 0.5);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .hero-content {
   position: relative;
   width: 60%;
+  height: 100vh;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 auto;
 }
 .hero-content-inner h1 {
   font-size: 2rem;
-  color: #fff;
-  margin-bottom: 40px;
   color: red;
+  margin-bottom: 40px;
 }
 .hero-content-inner p {
   width: 100%;
   margin: 0 auto;
   font-size: 1rem;
-  font-weight: normal;
   color: #fff;
 }
-@media (max-width: 768px) {
-  .hero-content {
-    width: 100%;
-  }
-  .hero-content-inner h1 {
-    color: red;
-  }
-  .hero-content-inner p {
-    width: 100%;
-  }
-}
 
-/* MISSION*/
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-}
-
+/* ===== Timeline Section ===== */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 100px auto;
-}
-.container1 {
-  padding: 10px 50px;
-  position: relative;
-  width: 50%;
-
-  animation: movedown 1s linear forwards;
-  opacity: 0;
-}
-@keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-.text-box1 {
-  padding: 20px;
-  background: #ffd28f;
-  position: relative;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 500;
-}
-.left-container1 {
-  left: 0;
-}
-.right-container1 {
-  left: 50%;
-}
-.container1 img {
-  position: absolute;
-  width: 40px;
-  border-radius: 50%;
-  right: -20px;
-  top: 32px;
-  z-index: 10;
-}
-.right-container1 img {
-  left: -20px;
 }
 .timeline::after {
   content: "";
@@ -123,19 +60,40 @@
   z-index: -1;
   animation: moveline 6s linear forwards;
 }
-@keyframes moveline {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
+.container1 {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  opacity: 0;
+  animation: movedown 1s linear forwards;
+}
+.text-box1 {
+  padding: 20px;
+  background: #ffd28f;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .text-box1 h2 {
   font-weight: 600;
   color: #b80000;
 }
-.left-container1-arrow {
+
+/* Timeline Layout */
+.left-container1 { left: 0; }
+.right-container1 { left: 50%; }
+.container1 img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+.right-container1 img { left: -20px; }
+
+/* Arrow Styles */
+.left-container1-arrow, .right-container1-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -143,104 +101,18 @@
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #ffd28f;
-  right: -15px;
 }
-.right-container1-arrow {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #ffd28f;
-  left: -15px;
-}
-.container1:nth-child(1) {
-  animation-delay: 0s;
-}
-.container1:nth-child(2) {
-  animation-delay: 2s;
-}
-.container1:nth-child(3) {
-  animation-delay: 4s;
-}
-@media screen and (max-width: 770px) {
-  .timeline {
-    margin: 50px auto;
-  }
+.left-container1-arrow { border-left: 15px solid #ffd28f; right: -15px; }
+.right-container1-arrow { border-right: 15px solid #ffd28f; left: -15px; }
 
-  .timeline::after {
-    left: 31px;
-  }
+/* Animation Delays */
+.container1:nth-child(1) { animation-delay: 0s; }
+.container1:nth-child(2) { animation-delay: 2s; }
+.container1:nth-child(3) { animation-delay: 4s; }
 
-  .container1 {
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .text-box1 {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .text-box1 small {
-    margin-bottom: 10px;
-  }
-
-  .right-container1 {
-    left: 0;
-  }
-
-  .left-container1 img,
-  .right-container1 img {
-    position: absolute;
-    width: 20px; /* Adjust the size */
-    border-radius: 50%;
-    top: 8px; /* Adjust the top position */
-    z-index: 10;
-    left: 10px;
-  }
-
-  .left-container1-arrow,
-  .right-container1-arrow {
-    border-right: 15px solid #fff;
-    border-left: 0;
-    left: -15px;
-  }
-
-  .container1:nth-child(1),
-  .container1:nth-child(2) {
-    order: 1;
-  }
-
-  .container1:nth-child(3) {
-    order: 2;
-  }
-}
-
-/*about us css*/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.body1 {
-  position: relative;
-  height: auto;
-  text-align: center;
-  background: url("https://res.cloudinary.com/dqe4ld4cx/image/upload/v1708488770/CollegeBuilding1_cehj8v.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8;
-}
-.testimonal1 {
-  padding: 30px 100px;
-}
+/* ===== About Us Section ===== */
+.body1 { opacity: 0.8; }
+.testimonal1 { padding: 30px 100px; }
 article h1 {
   font-size: 50px;
   font-weight: 800;
@@ -249,6 +121,7 @@ article h1 {
   color: #fff;
 }
 article h1:after {
+  content: "";
   height: 5px;
   width: 225px;
   background-color: #fff;
@@ -256,19 +129,12 @@ article h1:after {
   margin: auto;
 }
 article img {
-  height: 200px;
   width: 200px;
+  height: 200px;
   border: 2px solid #fff;
   border-radius: 50%;
-  margin-top: 60px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-blockquote {
-  font-family: sans-serif;
-
-  margin-top: 30px;
-  text-align: justify;
+  margin: 60px auto 30px;
+  object-fit: cover;
 }
 blockquote p {
   line-height: 1.5;
@@ -276,99 +142,96 @@ blockquote p {
   color: #fff;
   font-size: 18px;
 }
-@media only screen and (max-width: 420px) {
-  /* Styles for small screens go here */
-  article h1 {
-    font-size: 20px;
-    font-weight: 800;
-    color: #fff;
-  }
-  blockquote p {
-    font-size: 14px;
 
-    color: #fff;
-  }
-}
-/*SRI VASAVI SOCIETY*/
+/* ===== Team Section ===== */
 .members {
   background-color: #fff;
-  font-family: "Century Gothic";
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Century Gothic";
 }
-
 .team-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 40px 0;
 }
-
 .member1 {
   flex: 1 1 250px;
   margin: 20px;
-  text-align: center;
   padding: 20px 10px;
-  cursor: pointer;
   max-width: 320px;
-  transition: all 0.3s;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
-
 .member1:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-20px);
 }
-
 .member1 img {
-  display: block;
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border: 4px solid #b31312;
   border-radius: 50%;
   margin: 0 auto;
+  object-fit: cover;
 }
-
 .member1 h2 {
   font-size: 15px;
   color: #b31312;
   margin: 12px 0;
 }
-
 .member1 p {
   font-size: 15px;
-  color: black;
+  color: #000;
   line-height: 1.6;
 }
-/***/
-.mainheading h1 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 5px;
+
+/* ===== Utility Classes ===== */
+.mainheading h1 { text-align: center; text-transform: uppercase; }
+.side { padding-top: 55px; }
+.logo { height: 80px; width: fit-content; }
+
+/* ===== Animations ===== */
+@keyframes movedown {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes moveline {
+  to { height: 100%; }
 }
 
-.side {
-  padding-top: 55px;
+/* ===== Media Queries ===== */
+@media (max-width: 992px) {
+  .content-down { padding-top: 10px; }
+  .side { padding-top: 55px; }
 }
-
-@media screen and (min-width: 997px) {
-  .side {
-    padding-top: 140px;
+@media (min-width: 993px) {
+  .content-down { padding-top: 150px !important; }
+  .side { padding-top: 140px; }
+}
+@media (max-width: 768px) {
+  .hero-content { width: 100%; }
+  .timeline { margin: 50px auto; }
+  .timeline::after { left: 31px; }
+  .container1 { width: 100%; padding: 10px; }
+  .right-container1 { left: 0; }
+  .container1 img {
+    width: 20px;
+    left: 10px;
+    top: 8px;
+  }
+  .left-container1-arrow, 
+  .right-container1-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
   }
 }
-.logo {
-  height: 80px;
-  width: fit-content;
-}
-@media screen and (max-width: 992px) {
-  .content-down {
-    padding-top: 10px;
-  }
-}
-@media screen and (min-width: 993px) {
-  .content-down {
-    padding-top: 150px !important;
-  }
+@media (max-width: 420px) {
+  article h1 { font-size: 20px; }
+  blockquote p { font-size: 14px; }
+  .text-box1 { font-size: 14px; }
 }

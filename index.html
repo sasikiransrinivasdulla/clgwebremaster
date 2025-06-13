@@ -1027,18 +1027,24 @@
     </div>
 
     <div class="container-fluid fixed-main-image ios-strech-fix w-100 p-0" style="position: relative; height: 100vh;">
-      <div class="shadow-layer p-0" style="position: absolute; width: 100%; height: 100%;">
-          <!-- <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1> -->
-      </div>
+      <!-- Add loading="eager" and fetchpriority="high" to prioritize loading -->
+      <img src="your-image.jpg" 
+          alt="Sri Vasavi Engineering College"
+          loading="eager"
+          fetchpriority="high"
+          width="1920" 
+          height="1080"
+          class="w-100 h-100 object-fit-cover">
+          
+      <div class="shadow-layer p-0" style="position: absolute; width: 100%; height: 100%;"></div>
       
-      <!-- Scroll Button -->
       <button id="exploreVasaviButton" class="scroll-button">
         Explore Vasavi 
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
-            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 1-1.506 0z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 1-1.506 0z"/>
         </svg>
-    </button>
-  </div>
+      </button>
+    </div>
   
   
 
@@ -2051,7 +2057,7 @@
         </a>
       </div>
       <p style="text-align: center; opacity: 0.7; margin: 0">
-        Copyright © 2023 Sri Vasavi Engineering College. All Rights Reserved.
+        Copyright © 2025 Sri Vasavi Engineering College. All Rights Reserved.
       </p>
     </footer>
 

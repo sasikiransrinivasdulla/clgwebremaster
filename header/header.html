@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
+    <link rel="stylesheet" href="./header.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- ✅ Preconnect for Google Fonts - only once -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- ✅ Load Bootstrap first -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -37,11 +41,11 @@
             class="navbar-brand d-flex"
             style="gap: 10px; align-items: center; color: #fff"
           >
-            <a href="#">
+            <a href="../index.html">
               <img
                 href="/"
                 style="height: 5rem; width: fit-content"
-                src="../../images/college logo/college_logo.PNG"
+                src="../images/college logo/college_logo.PNG"
                 alt="Your Image"
                 height="100"
                 width="100"
@@ -74,7 +78,7 @@
                 >
               </li>
               <li class="nav-item hover-overline-animation">
-                <div class="dropdown">
+                <div class="dropdown show">
                   <a
                     class="btn w-100 dropdown-toggle pt-2"
                     style="border-style: none; color: #fff; font-weight: 500"
@@ -94,22 +98,22 @@
                   >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./admin/maintechdirector.html"
+                      href="../templates/admin/maintechdirector.html"
                       >Director-Technical</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./admin/principal.html"
+                      href="../templates/admin/principal.html"
                       >Principal</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./admin/ourdeans.html"
+                      href="../templates/admin/ourdeans.html"
                       >Deans</a
                     >
                     <a
                       class="dropdown-item dept-dropdown-items"
-                      href="./admin/departmentheads.html"
+                      href="../templates/admin/departmentheads.html"
                       >Head of the Departments</a
                     >
                   </div>
@@ -118,14 +122,14 @@
               <li class="nav-item hover-overline-animation">
                 <a
                   class="nav-link"
-                  href="./academics.html"
+                  href="../templates/admissions.html"
                   style="color: #fff; font-weight: 500"
                 >
-                  <div class="text-center">Academics</div>
+                  <div class="text-center">Admissions</div>
                 </a>
               </li>
               <li class="nav-item hover-overline-animation">
-                <div class="dropdown">
+                <div class="dropdown show">
                   <a
                     class="btn btn-white w-100 dropdown-toggle pt-2"
                     style="border-style: none; font-weight: 500; color: #fff"
@@ -141,119 +145,121 @@
 
                   <div
                     class="dropdown-menu w-100 p-2"
-                    style="min-width: 100%; max-width: inherit; max-height: 300px; overflow-y: auto; position: absolute; z-index: 1050; background-color: white; border: 1px solid grey; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-
+                  style="min-width: 210%; max-width: inherit; max-height: 300px; overflow-y: auto; position: absolute; z-index: 1050; background-color: white; border: 1px solid grey; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
                     aria-labelledby="dropdownMenuLink"
                   >
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
-
-                      href="./DEPT/cse.html"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/cse.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block; padding:5px !important; font-size: 0.9rem;"
+                      id="dropdowncontent"
                     >
-                      <div>Computer Science & Engineering</div>
+                      <div >Computer Science & Engineering</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important;font-size: 0.9rem;"
 
-                      href="./DEPT/cst.html"
+                      href="../templates/DEPT/cst.html"
                     >
                       <div>Computer Science & Technology</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/cai.html"
-                      >Computer Science Engineering(AI)</a
+                      href="../templates/DEPT/cai.html"
+                      >Computer Science & Engineering(AI)</a
                     >
                     <a
-                    class="dropdown-item dept-dropdown-items"
-                    href="#"
-                    >Computer Science Engineering(DS)</a
-                  >
-                    <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/ds.html"
 
-                      href="./DEPT/aiml.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important; font-size: 0.9rem;"
+
+                      >Computer Science & Engineering(DS)</a
+                    >
+                    <a
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/aiml.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important;font-size: 0.9rem;"
+
                     >
                       <div>
-                        Artificial Intelligence & <br />Machine Learning
+                        Artificial Intelligence & Machine Learning
                       </div>
                     </a>
-                   
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/ece.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/ece.html"
                     >
-                      <div>Electronics & Communication <br />Engineering</div>
+                      <div>Electronics & Communication Engineering</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/ect.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/ect.html"
                     >
-                      <div>Electronics & Communication <br />Technology</div>
+                      <div>Electronics & Communication Technology</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/eee.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block; padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/eee.html"
                     >
-                      <div>Electrical & Electronic<br />Engineering</div>
+                      <div>Electrical & Electronic Engineering</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/mech.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block;padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/mech.html"
                       >Mechanical Engineering</a
                     >
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/civil.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block; padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/civil.html"
                       >Civil Engineering</a
                     >
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/bsh.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block; padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/bsh.html"
                     >
-                      <div>Basic Science<br />Humanities</div>
+                      <div>Basic Science & Humanities</div>
                     </a>
                     <a
-                      class="dropdown-item dept-dropdown-items"
-                      style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/DEPT/mba.html"
+                  style="margin:0px !important;font-weight: 400;text-decoration: none; display: block; padding:5px !important; font-size: 0.9rem;"
 
-                      href="./DEPT/mba.html"
                     >
-                      <div>Masters in Business<br />Administration</div>
+                      <div>Masters in Business Administration</div>
                     </a>
                   </div>
                 </div>
               </li>
+            
               <li class="nav-item hover-overline-animation">
                 <a
                   class="nav-link"
-                  href="./campusLife.html"
+                  href="../templates/academics.html"
                   style="color: #fff; font-weight: 500"
                 >
-                  <div class="text-center">Campus Life</div>
+                  <div class="text-center">Academics</div>
                 </a>
               </li>
               <li class="nav-item hover-overline-animation">
                 <a
                   class="nav-link"
-                  href="./placements.html"
+                  href="../templates/placements.html"
                   style="color: #fff; font-weight: 500"
                   >Placements</a
                 >
@@ -282,21 +288,21 @@
         </div>
       </nav>
       <div
-        class="second2-navbar-large nav-elements-large d-flex flex-row justify-content-center"
+        class="second2-navbar-large nav-elements-large d-flex flex-row justify-content-center shadow"
         id="second-large-navbar"
       >
         <div
           class="second2-navbar-large-contents text-center d-flex flex-row justify-content-center"
         >
           <a
-            href="./V_Grivence.html"
+            href="../templates/V_Grivence.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text"
             style="text-decoration: none !important; color: black"
             >V Grievance</a
           >
           <a
-            href="./NAAC.html"
+            href="../templates/NAAC.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text2"
             style="text-decoration: none !important; color: black"
@@ -305,26 +311,33 @@
           </a>
 
           <a
-            href="http://srivasaviengg.ac.in/r&d_profile.php"
+            href="../templates/r&d.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text4"
             style="text-decoration: none !important; color: black"
             >R & D</a
           >
           <a
-            href="./mandates.html"
+            href="../templates/mandates.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text5"
             style="text-decoration: none !important; color: black"
             >Mandates</a
           >
           <a
-            href="./category-b.html"
+            href="../templates/category-b.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text6"
             style="text-decoration: none !important; color: black"
             >Category B</a
           >
+          <a
+          href="../templates/campusLife.html"
+          class="m-2 hover-underline-animation"
+          id="nav-bar2-text6"
+          style="text-decoration: none !important; color: black"
+          >Campus Life</a
+        >
           <a>
             <div class="dropdown show hover-underline-animation pt-2">
               <a
@@ -408,129 +421,97 @@
               >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20OVERALL.pdf"
+                  href="https://srivasaviengg.ac.in/uploads/nirf_files/NIRF%202024%20Overall%2030-01-2024.pdf"
                   >SVEC-Overall Category NIRF</a
                 >
                 <a
                   class="dropdown-item dept-dropdown-items"
-                  href="http://srivasaviengg.ac.in/uploads/nirf_files/SRI%20VASAVI%20ENGINEERING%20COLLEGE20230103%20NIRF%20Engg.pdf"
+                  href="https://srivasaviengg.ac.in/uploads/nirf_files/NIRF%202024%20Engg%2029-01-2024.pdf"
                   >SVEC-Engineering Category NIRF</a
                 >
               </div>
             </div>
           </a>
-          <div class="dropdown hover-underline-animation pt-2">
-            <a
-              class="m-2 w-100 dropdown-toggle pt-2"
-              style="text-decoration: none !important; color: black"
-              href="#"
-              role="button"
-              id="nav-bar2-text8"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Other Links
-            </a>
-            <ul
-              class="dropdown-menu w-100 p-2"
-              style="width: fit-content !important"
-              aria-labelledby="nav-bar2-text8"
-            >
+          <a>
+            <div class="dropdown show hover-underline-animation pt-2">
+              <a
+                class="m-2 w-100 dropdown-toggle pt-2"
+                style="text-decoration: none !important; color: black"
+                href="#"
+                role="button"
+                id="nav-bar2-text8"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Other Links
+              </a>
+              <ul
+                class="dropdown-menu w-100 p-2"
+                style="width: fit-content !important"
+              >
               <li>
                 <a
                   class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://srivasaviengg.ac.in/uploads/Anti%20Ragging%20Committee%202023-4.pdf"
-                  >Anti Ragging Committe</a
+                  href="../templates/facultyAchivements.html"
+                  >Faculty Achievements</a
                 >
               </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://srivasaviengg.ac.in/uploads/Internal%20Compliants%20Committee%202023-24.pdf"
-                  >Internal Complaints Committe</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://srivasaviengg.ac.in/uploads/SC%20ST%20Welfare%20Committee%202023-24.pdf"
-                  >SC/ST Welfare Committe</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://srivasaviengg.ac.in/uploads/INSTITUTION-INDUSTRY%20CELL%202023-24.pdf"
-                  >Institute Industry Cell</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://srivasaviengg.ac.in/uploads/College%20Level%20Committees%20Details.pdf"
-                  >Other Important Committe</a
-                >
-              </li>
-              <li>
-                <div class="dropdown">
+                <li>
                   <a
-                    class="btn btn-secondary dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="nestedDropdown"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://srivasaviengg.ac.in/uploads/Anti%20Ragging%20Committee%202023-4.pdf"
+                    >Anti Ragging Committe</a
                   >
-                    Dropdown link
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="./alumni_engagement.html"
-                  >Alumni Engagement</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item dept-dropdown-items dropdown-item-content"
-                  href="https://entrepreneurialquest.netlify.app"
-                  >Entrepreneurial Quest</a
-                >
-              </li>
-              <li class="dropend">
-
+                </li>
+                <li>
                   <a
-                    class="btn btn-secondary dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="nestedDropdown"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://srivasaviengg.ac.in/uploads/Internal%20Compliants%20Committee%202023-24.pdf"
+                    >Internal Complaints Committe</a
                   >
-                    Dropdown link
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                
-              </li>
-            </ul>
-          </div>
-          
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://srivasaviengg.ac.in/uploads/SC%20ST%20Welfare%20Committee%202023-24.pdf"
+                    >SC/ST Welfare Committe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://srivasaviengg.ac.in/uploads/INSTITUTION-INDUSTRY%20CELL%202023-24.pdf"
+                    >Institute Industry Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://srivasaviengg.ac.in/uploads/College%20Level%20Committees%20Details.pdf"
+                    >Other Important Committe</a
+                  >
+                </li>
+                <!-- <li><a class="dropdown-item dept-dropdown-items dropdown-item-content" href="#">BOS Awards</a></li> -->
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="../templates/alumni_engagement.html"
+                    >Alumni Engagement</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dept-dropdown-items dropdown-item-content"
+                    href="https://entrepreneurialquest.netlify.app"
+                    >Entrepreneurial Quest</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </a>
           <a
-            href="./about_us.html"
+            href="../templates/about_us.html"
             class="m-2 hover-underline-animation"
             id="nav-bar2-text3"
             style="text-decoration: none !important; color: black"
@@ -562,7 +543,7 @@
     <div class="nav-elements-small fixed-top" id="smallMenuItems">
       <nav class="small-navbar p-1 pb-2">
         <div class="d-flex flex-row">
-          <a href="#">
+          <a href="../index.html">
             <img
               src="../images/college logo/college_logo.PNG"
               class="logo-image mt-2"
@@ -574,7 +555,11 @@
         </button>
       </nav>
       <div class="small-navbar-menu-navbar bg-white" id="menuItems">
-        <div class="container-fluid text-center" style="border: 1px solid grey" id="mainItemsMenu">
+        <div
+          class="container-fluid text-center"
+          style="border: 1px solid grey"
+          id="mainItemsMenu"
+        >
           <div class="row text-center" style="border: 1px solid grey">
             <div
               class="col-6 col-md-4 text-center"
@@ -601,7 +586,7 @@
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -644,15 +629,16 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="../templates/academics.html"
+                  href="../templates/admissions.html"
                   style="color: #000000; font-weight: bold !important"
-                  >Academics</a
+                  >Admissions</a
                 >
               </div>
-            </div>
-            <div
+              </div>
+              <div
               class="col-6 col-md-4 text-center"
-              style="border: 1px solid grey; box-sizing: border-box"
+              style="border: 1px solid grey; box-sizing: border-box;"
+
             >
               <div class="dropdown show">
                 <a
@@ -661,7 +647,7 @@
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -671,97 +657,95 @@
                 <div
                   class="dropdown-menu p-1 text-center"
                   aria-labelledby="dropdownMenuLink"
-                  style="min-width: 100%; max-width: inherit; max-height: 300px; overflow-y: auto; position: absolute; z-index: 1050; background-color: white; border: 1px solid grey; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-
+                style="min-width: 100%; max-width: inherit; max-height: 300px; overflow-y: auto; position: absolute; z-index: 1050; background-color: white; border: 1px solid grey; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
                 >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
-
-                    href="../templates/DEPT/cse.html"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/cse.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                 
                     >Computer Science Engineering
                   </a>
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/cst.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
-                    href="../templates/DEPT/cst.html"
                     >Computer Science & Technology</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/cai.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
-                    href="../templates/DEPT/cai.html"
                     >Computer Science & Engineering (AI)</a
                   >
                   <a
-                  class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
+                  class="dept-dropdown-items drop"
                   href="../templates/DEPT/ds.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
-                  style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
-
-                  >Computer Science & Engineering (DS)</a
-                >
-                
+                    >Computer Science & Engineering (DS)</a
+                  >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/aiml.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/aiml.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Artificial Intelligence & Machine Learning</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/ece.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/ece.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Electronics & Communication Engineering</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/ect.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/ect.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Electronics & Communication Technology</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/eee.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/eee.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Electrical & Electronic Engineering</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/mech.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/mech.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Mechanical Engineering</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/civil.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/civil.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Civil Engineering</a
                   ><a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates./templates/DEPT/bsh.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/bsh.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Basic Science Humanities</a
                   >
                   <a
-                    class="p-2 dropdown-item dept-dropdown-items drop w-100 text-justify d-flex flex-row justify-content-center"
-                    href="../templates/DEPT/mba.html"
-                    style="font-weight: 500;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
+                  class="dept-dropdown-items drop"
+                  href="../templates/DEPT/mba.html"
+                  style="font-weight: 400 !important;text-decoration: none; display: block; padding: 8px 0; font-size: 0.9rem;"
 
                     >Masters in Business Administration</a
                   >
                 </div>
               </div>
             </div>
+  
             <div
               class="col-6 col-md-4 text-center"
               style="border: 1px solid grey; box-sizing: border-box"
@@ -770,9 +754,9 @@
                 <a
                   class="small-navbar-items-last-div-anchor active"
                   aria-current="page"
-                  href="../templates/campusLife.html"
+                  href="../templates/academics.html"
                   style="color: #000000; font-weight: bold !important"
-                  >Campus Life</a
+                  >Academics</a
                 >
               </div>
             </div>
@@ -812,9 +796,7 @@
               >NAAC
             </a>
 
-            <a
-              class="p-2 small-navbar-items-last-div-anchor"
-              href="http://srivasaviengg.ac.in/r&d_profile.php"
+            <a class="p-2 small-navbar-items-last-div-anchor" href="./r&d.html"
               >R & D</a
             >
             <a
@@ -824,9 +806,15 @@
             >
             <a
               class="p-2 small-navbar-items-last-div-anchor"
+              href="../templates/campusLife.html"
+              >Campus Life</a
+            >
+            <a
+              class="p-2 small-navbar-items-last-div-anchor"
               href="../templates/mandates.html"
               >Mandates</a
             >
+            
             <a>
               <div class="dropdown">
                 <a
@@ -909,15 +897,15 @@
                 <ul class="dropdown-menu small-navbar-items-last-div-anchor">
                   <li>
                     <a
-                      class="dropdown-item mobile-view-information-nirf dropdown-item-content"
-                      href="#"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="https://srivasaviengg.ac.in/uploads/nirf_files/NIRF%202024%20Overall%2030-01-2024.pdf"
                       >SVEC-Overall Category NIRF</a
                     >
                   </li>
                   <li>
                     <a
-                      class="dropdown-item mobile-view-information-nirf dropdown-item-content"
-                      href="#"
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="https://srivasaviengg.ac.in/uploads/nirf_files/NIRF%202024%20Engg%2029-01-2024.pdf"
                       >SVEC-Engineering Category NIRF</a
                     >
                   </li>
@@ -938,6 +926,13 @@
                 </a>
 
                 <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item dept-dropdown-items dropdown-item-content"
+                      href="../templates/facultyAchivements.html"
+                      >Faculty Achievements</a
+                    >
+                  </li>
                   <li>
                     <a
                       class="dropdown-item dropdown-item-content mobile-view-information-ugc"
@@ -1010,6 +1005,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
+    ></script>
+    <script src="./header.js"></script>
       defer
     ></script>
     <script src="header.js" defer></script>
